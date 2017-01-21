@@ -1,0 +1,2110 @@
+
+../ex:     file format elf32-i386
+
+datum_irig_api.c:
+typedef int32 int;
+typedef int8 char;
+typedef int32 long int;
+typedef uint32 unsigned int;
+typedef uint32 long unsigned int;
+typedef int64 long long int;
+typedef uint64 long long unsigned int;
+typedef int16 short int;
+typedef uint16 short unsigned int;
+typedef int8 signed char;
+typedef uint8 unsigned char;
+typedef float float;
+typedef double double;
+typedef float96 long double;
+typedef float _Decimal32;
+typedef double _Decimal64;
+typedef float128 _Decimal128;
+typedef void void;
+int set_binary_irig_time (unsigned int unix_s /* 0x8 */)
+{ /* 0x80489b0 */
+  /* file datum_irig_api.c line 13 addr 0x80489b0 */
+  /* file datum_irig_api.c line 15 addr 0x80489b6 */
+  /* file datum_irig_api.c line 16 addr 0x80489bd */
+  /* file datum_irig_api.c line 17 addr 0x80489c4 */
+  /* file datum_irig_api.c line 18 addr 0x80489dc */
+  /* file datum_irig_api.c line 19 addr 0x80489e8 */
+  /* file datum_irig_api.c line 20 addr 0x80489ea */
+  /* file datum_irig_api.c line 19 addr 0x80489f7 */
+  /* file datum_irig_api.c line 21 addr 0x8048a06 */
+  /* file datum_irig_api.c line 24 addr 0x8048a13 */
+  /* file datum_irig_api.c line 25 addr 0x8048a1a */
+  /* file datum_irig_api.c line 26 addr 0x8048a25 */
+  /* file datum_irig_api.c line 27 addr 0x8048a30 */
+  /* file datum_irig_api.c line 28 addr 0x8048a3b */
+  /* file datum_irig_api.c line 29 addr 0x8048a43 */
+  /* file datum_irig_api.c line 30 addr 0x8048a5b */
+  /* file datum_irig_api.c line 31 addr 0x8048a67 */
+  /* file datum_irig_api.c line 32 addr 0x8048a69 */
+  /* file datum_irig_api.c line 31 addr 0x8048a76 */
+  /* file datum_irig_api.c line 33 addr 0x8048a85 */
+  /* file datum_irig_api.c line 35 addr 0x8048a92 */
+  /* file datum_irig_api.c line 36 addr 0x8048a97 */
+} /* 0x8048a99 */
+int get_binary_irig_time (union binary_event_time /* id 1 */ *time_storage /* 0x8 */)
+{ /* 0x8048a99 */
+  /* file datum_irig_api.c line 40 addr 0x8048a99 */
+  /* file datum_irig_api.c line 41 addr 0x8048a9c */
+  /* file datum_irig_api.c line 42 addr 0x8048aa7 */
+  /* file datum_irig_api.c line 43 addr 0x8048ab4 */
+  /* file datum_irig_api.c line 45 addr 0x8048ac2 */
+  /* file datum_irig_api.c line 46 addr 0x8048ac7 */
+} /* 0x8048ac9 */
+int show_binary_time (union binary_event_time /* id 1 */ etime /* 0x8 */)
+{ /* 0x8048ac9 */
+  { /* 0x8048ac9 */
+    double result /* 0xfffffff0 */;
+    /* file datum_irig_api.c line 50 addr 0x8048ac9 */
+    /* file datum_irig_api.c line 52 addr 0x8048acf */
+    /* file datum_irig_api.c line 53 addr 0x8048ae3 */
+    /* file datum_irig_api.c line 54 addr 0x8048b1c */
+    /* file datum_irig_api.c line 56 addr 0x8048b32 */
+    /* file datum_irig_api.c line 57 addr 0x8048b37 */
+  } /* 0x8048b39 */
+} /* 0x8048b39 */
+int set_decimal_irig_time (int year /* 0x8 */, int days /* 0xc */, int hours /* 0x10 */, int minutes /* 0x14 */, int seconds /* 0x18 */)
+{ /* 0x8048b39 */
+  unsigned char seconds /* 0xffffffe4 */;
+  unsigned char minutes /* 0xffffffe8 */;
+  unsigned char hours /* 0xffffffec */;
+  short unsigned int days /* 0xfffffff0 */;
+  short unsigned int year /* 0xfffffff4 */;
+  /* file datum_irig_api.c line 62 addr 0x8048b39 */
+  /* file datum_irig_api.c line 64 addr 0x8048b63 */
+  /* file datum_irig_api.c line 65 addr 0x8048b6a */
+  /* file datum_irig_api.c line 66 addr 0x8048b71 */
+  /* file datum_irig_api.c line 67 addr 0x8048b89 */
+  /* file datum_irig_api.c line 68 addr 0x8048b95 */
+  /* file datum_irig_api.c line 69 addr 0x8048b97 */
+  /* file datum_irig_api.c line 68 addr 0x8048ba4 */
+  /* file datum_irig_api.c line 70 addr 0x8048bb3 */
+  /* file datum_irig_api.c line 73 addr 0x8048bc0 */
+  /* file datum_irig_api.c line 74 addr 0x8048bc7 */
+  /* file datum_irig_api.c line 75 addr 0x8048bd3 */
+  /* file datum_irig_api.c line 76 addr 0x8048bdb */
+  /* file datum_irig_api.c line 77 addr 0x8048be7 */
+  /* file datum_irig_api.c line 78 addr 0x8048bef */
+  /* file datum_irig_api.c line 79 addr 0x8048bf7 */
+  /* file datum_irig_api.c line 80 addr 0x8048bff */
+  /* file datum_irig_api.c line 81 addr 0x8048c07 */
+  /* file datum_irig_api.c line 82 addr 0x8048c1f */
+  /* file datum_irig_api.c line 83 addr 0x8048c2b */
+  /* file datum_irig_api.c line 84 addr 0x8048c2d */
+  /* file datum_irig_api.c line 83 addr 0x8048c3a */
+  /* file datum_irig_api.c line 85 addr 0x8048c49 */
+  /* file datum_irig_api.c line 87 addr 0x8048c56 */
+  /* file datum_irig_api.c line 88 addr 0x8048c5b */
+} /* 0x8048c65 */
+int get_decimal_irig_time (union decimal_event_time /* id 2 */ *time_storage /* 0x8 */)
+{ /* 0x8048c65 */
+  /* file datum_irig_api.c line 92 addr 0x8048c65 */
+  /* file datum_irig_api.c line 93 addr 0x8048c68 */
+  /* file datum_irig_api.c line 94 addr 0x8048c73 */
+  /* file datum_irig_api.c line 95 addr 0x8048c80 */
+  /* file datum_irig_api.c line 98 addr 0x8048c8e */
+  /* file datum_irig_api.c line 99 addr 0x8048c93 */
+} /* 0x8048c95 */
+int show_decimal_time (union decimal_event_time /* id 2 */ etime /* 0x8 */)
+{ /* 0x8048c95 */
+  { /* 0x8048c95 */
+    int n_seconds /* 0xfffffff4 */;
+    /* file datum_irig_api.c line 103 addr 0x8048c95 */
+    /* file datum_irig_api.c line 104 addr 0x8048c9d */
+    /* file datum_irig_api.c line 105 addr 0x8048cc0 */
+    /* file datum_irig_api.c line 107 addr 0x8048d08 */
+    /* file datum_irig_api.c line 108 addr 0x8048d0d */
+  } /* 0x8048d17 */
+} /* 0x8048d17 */
+int set_year (int year /* 0x8 */)
+{ /* 0x8048d17 */
+  short unsigned int year /* 0xfffffff4 */;
+  /* file datum_irig_api.c line 113 addr 0x8048d17 */
+  /* file datum_irig_api.c line 114 addr 0x8048d24 */
+  /* file datum_irig_api.c line 115 addr 0x8048d2b */
+  /* file datum_irig_api.c line 116 addr 0x8048d37 */
+  /* file datum_irig_api.c line 117 addr 0x8048d3f */
+  /* file datum_irig_api.c line 118 addr 0x8048d57 */
+  /* file datum_irig_api.c line 119 addr 0x8048d63 */
+  /* file datum_irig_api.c line 120 addr 0x8048d65 */
+  /* file datum_irig_api.c line 119 addr 0x8048d72 */
+  /* file datum_irig_api.c line 121 addr 0x8048d81 */
+  /* file datum_irig_api.c line 122 addr 0x8048d8e */
+  /* file datum_irig_api.c line 123 addr 0x8048d93 */
+} /* 0x8048d95 */
+int get_year (short unsigned int *year /* 0x8 */)
+{ /* 0x8048d95 */
+  /* file datum_irig_api.c line 126 addr 0x8048d95 */
+  /* file datum_irig_api.c line 128 addr 0x8048d9b */
+  /* file datum_irig_api.c line 129 addr 0x8048da2 */
+  /* file datum_irig_api.c line 130 addr 0x8048da9 */
+  /* file datum_irig_api.c line 131 addr 0x8048dc1 */
+  /* file datum_irig_api.c line 132 addr 0x8048dcd */
+  /* file datum_irig_api.c line 133 addr 0x8048dcf */
+  /* file datum_irig_api.c line 132 addr 0x8048ddc */
+  /* file datum_irig_api.c line 134 addr 0x8048deb */
+  /* file datum_irig_api.c line 136 addr 0x8048df8 */
+  /* file datum_irig_api.c line 137 addr 0x8048e10 */
+  /* file datum_irig_api.c line 139 addr 0x8048e31 */
+  /* file datum_irig_api.c line 140 addr 0x8048e36 */
+} /* 0x8048e38 */
+int show_year ()
+{ /* 0x8048e38 */
+  { /* 0x8048e38 */
+    short unsigned int year /* 0xfffffff6 */;
+    /* file datum_irig_api.c line 143 addr 0x8048e38 */
+    /* file datum_irig_api.c line 146 addr 0x8048e3e */
+    /* file datum_irig_api.c line 147 addr 0x8048e45 */
+    /* file datum_irig_api.c line 148 addr 0x8048e4c */
+    /* file datum_irig_api.c line 149 addr 0x8048e64 */
+    /* file datum_irig_api.c line 150 addr 0x8048e70 */
+    /* file datum_irig_api.c line 151 addr 0x8048e72 */
+    /* file datum_irig_api.c line 150 addr 0x8048e7f */
+    /* file datum_irig_api.c line 152 addr 0x8048e8e */
+    /* file datum_irig_api.c line 155 addr 0x8048e9b */
+    /* file datum_irig_api.c line 156 addr 0x8048eb3 */
+    /* file datum_irig_api.c line 157 addr 0x8048ec3 */
+    /* file datum_irig_api.c line 158 addr 0x8048ee2 */
+    /* file datum_irig_api.c line 160 addr 0x8048efc */
+    /* file datum_irig_api.c line 161 addr 0x8048f01 */
+  } /* 0x8048f03 */
+} /* 0x8048f03 */
+int set_irig_mode (int mode /* 0x8 */)
+{ /* 0x8048f03 */
+  /* file datum_irig_api.c line 167 addr 0x8048f03 */
+  /* file datum_irig_api.c line 168 addr 0x8048f09 */
+  /* file datum_irig_api.c line 169 addr 0x8048f10 */
+  /* file datum_irig_api.c line 170 addr 0x8048f16 */
+  /* file datum_irig_api.c line 171 addr 0x8048f1d */
+  /* file datum_irig_api.c line 172 addr 0x8048f23 */
+  /* file datum_irig_api.c line 173 addr 0x8048f2a */
+  /* file datum_irig_api.c line 174 addr 0x8048f30 */
+  /* file datum_irig_api.c line 175 addr 0x8048f37 */
+  /* file datum_irig_api.c line 177 addr 0x8048f49 */
+  /* file datum_irig_api.c line 178 addr 0x8048f59 */
+  /* file datum_irig_api.c line 180 addr 0x8048f60 */
+  /* file datum_irig_api.c line 181 addr 0x8048f78 */
+  /* file datum_irig_api.c line 182 addr 0x8048f84 */
+  /* file datum_irig_api.c line 183 addr 0x8048f86 */
+  /* file datum_irig_api.c line 182 addr 0x8048f93 */
+  /* file datum_irig_api.c line 184 addr 0x8048fa2 */
+  /* file datum_irig_api.c line 185 addr 0x8048faf */
+  /* file datum_irig_api.c line 186 addr 0x8048fb4 */
+} /* 0x8048fb6 */
+int show_board_info ()
+{ /* 0x8048fb6 */
+  { /* 0x8048fb6 */
+    short unsigned int ap_num /* 0xfffffff6 */;
+    short unsigned int year /* 0xfffffff4 */;
+    int i /* 0xfffffff0 */;
+    /* file datum_irig_api.c line 190 addr 0x8048fb6 */
+    /* file datum_irig_api.c line 192 addr 0x8048fbc */
+    /* file datum_irig_api.c line 196 addr 0x8048fc2 */
+    /* file datum_irig_api.c line 197 addr 0x8048fc9 */
+    /* file datum_irig_api.c line 198 addr 0x8048fd0 */
+    /* file datum_irig_api.c line 199 addr 0x8048fe8 */
+    /* file datum_irig_api.c line 200 addr 0x8048ff4 */
+    /* file datum_irig_api.c line 201 addr 0x8048ff6 */
+    /* file datum_irig_api.c line 200 addr 0x8049003 */
+    /* file datum_irig_api.c line 202 addr 0x8049012 */
+    /* file datum_irig_api.c line 205 addr 0x804901f */
+    /* file datum_irig_api.c line 206 addr 0x8049037 */
+    /* file datum_irig_api.c line 207 addr 0x8049047 */
+    /* file datum_irig_api.c line 208 addr 0x8049050 */
+    /* file datum_irig_api.c line 207 addr 0x8049068 */
+    /* file datum_irig_api.c line 209 addr 0x8049071 */
+    /* file datum_irig_api.c line 212 addr 0x804907e */
+    /* file datum_irig_api.c line 213 addr 0x8049085 */
+    /* file datum_irig_api.c line 214 addr 0x804908c */
+    /* file datum_irig_api.c line 215 addr 0x80490a4 */
+    /* file datum_irig_api.c line 216 addr 0x80490b0 */
+    /* file datum_irig_api.c line 217 addr 0x80490b2 */
+    /* file datum_irig_api.c line 216 addr 0x80490bf */
+    /* file datum_irig_api.c line 218 addr 0x80490ce */
+    /* file datum_irig_api.c line 221 addr 0x80490db */
+    /* file datum_irig_api.c line 222 addr 0x80490f3 */
+    /* file datum_irig_api.c line 223 addr 0x8049103 */
+    /* file datum_irig_api.c line 224 addr 0x804910c */
+    /* file datum_irig_api.c line 225 addr 0x804911c */
+    /* file datum_irig_api.c line 226 addr 0x8049125 */
+    /* file datum_irig_api.c line 227 addr 0x8049135 */
+    /* file datum_irig_api.c line 228 addr 0x804913e */
+    /* file datum_irig_api.c line 229 addr 0x804914e */
+    /* file datum_irig_api.c line 231 addr 0x8049169 */
+    /* file datum_irig_api.c line 232 addr 0x8049179 */
+    /* file datum_irig_api.c line 233 addr 0x8049189 */
+    /* file datum_irig_api.c line 237 addr 0x8049193 */
+    /* file datum_irig_api.c line 238 addr 0x804919a */
+    /* file datum_irig_api.c line 239 addr 0x80491a1 */
+    /* file datum_irig_api.c line 240 addr 0x80491b9 */
+    /* file datum_irig_api.c line 241 addr 0x80491c5 */
+    /* file datum_irig_api.c line 242 addr 0x80491c7 */
+    /* file datum_irig_api.c line 241 addr 0x80491d4 */
+    /* file datum_irig_api.c line 243 addr 0x80491e3 */
+    /* file datum_irig_api.c line 246 addr 0x80491f0 */
+    /* file datum_irig_api.c line 247 addr 0x8049208 */
+    /* file datum_irig_api.c line 248 addr 0x8049218 */
+    /* file datum_irig_api.c line 249 addr 0x8049221 */
+    /* file datum_irig_api.c line 250 addr 0x8049231 */
+    /* file datum_irig_api.c line 251 addr 0x804923a */
+    /* file datum_irig_api.c line 252 addr 0x804924a */
+    /* file datum_irig_api.c line 254 addr 0x804925c */
+    /* file datum_irig_api.c line 255 addr 0x804926c */
+    /* file datum_irig_api.c line 256 addr 0x804927c */
+    /* file datum_irig_api.c line 260 addr 0x8049286 */
+    /* file datum_irig_api.c line 261 addr 0x804928d */
+    /* file datum_irig_api.c line 262 addr 0x8049294 */
+    /* file datum_irig_api.c line 263 addr 0x80492ac */
+    /* file datum_irig_api.c line 264 addr 0x80492b8 */
+    /* file datum_irig_api.c line 265 addr 0x80492ba */
+    /* file datum_irig_api.c line 264 addr 0x80492c7 */
+    /* file datum_irig_api.c line 266 addr 0x80492d6 */
+    /* file datum_irig_api.c line 269 addr 0x80492e3 */
+    /* file datum_irig_api.c line 270 addr 0x80492fb */
+    /* file datum_irig_api.c line 271 addr 0x804930b */
+    /* file datum_irig_api.c line 272 addr 0x804932a */
+    /* file datum_irig_api.c line 275 addr 0x8049343 */
+    /* file datum_irig_api.c line 276 addr 0x804934a */
+    /* file datum_irig_api.c line 277 addr 0x8049351 */
+    /* file datum_irig_api.c line 278 addr 0x8049369 */
+    /* file datum_irig_api.c line 279 addr 0x8049375 */
+    /* file datum_irig_api.c line 280 addr 0x8049377 */
+    /* file datum_irig_api.c line 279 addr 0x8049384 */
+    /* file datum_irig_api.c line 281 addr 0x8049393 */
+    /* file datum_irig_api.c line 284 addr 0x80493a0 */
+    /* file datum_irig_api.c line 285 addr 0x80493b8 */
+    /* file datum_irig_api.c line 286 addr 0x80493d7 */
+    /* file datum_irig_api.c line 287 addr 0x80493f9 */
+    /* file datum_irig_api.c line 289 addr 0x8049424 */
+    /* file datum_irig_api.c line 290 addr 0x8049429 */
+  } /* 0x804942b */
+} /* 0x804942b */
+int irig_init ()
+{ /* 0x804942b */
+  { /* 0x804942b */
+    struct _pci_config_regs /* id 3 */ PCR /* 0xfffffdee */;
+    struct pci_dev_info /* id 4 */ inf_F /* 0xfffffeee */;
+    int status /* 0xfffffff0 */;
+    short int year /* 0xffffffde */;
+    char *timestr /* 0xffffffec */;
+    long int unix_time /* 0xffffffe0 */;
+    int fd /* 0xffffffe8 */;
+    long int address /* 0xffffffe4 */;
+    /* file datum_irig_api.c line 296 addr 0x804942b */
+    /* file datum_irig_api.c line 307 addr 0x8049434 */
+    /* file datum_irig_api.c line 308 addr 0x804943d */
+    /* file datum_irig_api.c line 311 addr 0x8049446 */
+    /* file datum_irig_api.c line 312 addr 0x8049458 */
+    /* file datum_irig_api.c line 314 addr 0x8049462 */
+    /* file datum_irig_api.c line 315 addr 0x8049472 */
+    /* file datum_irig_api.c line 319 addr 0x804947c */
+    /* file datum_irig_api.c line 320 addr 0x8049493 */
+    /* file datum_irig_api.c line 322 addr 0x804949c */
+    /* file datum_irig_api.c line 323 addr 0x80494ac */
+    /* file datum_irig_api.c line 324 addr 0x80494d8 */
+    /* file datum_irig_api.c line 326 addr 0x80494e2 */
+    /* file datum_irig_api.c line 329 addr 0x80494f4 */
+    /* file datum_irig_api.c line 331 addr 0x8049519 */
+    /* file datum_irig_api.c line 332 addr 0x8049529 */
+    /* file datum_irig_api.c line 334 addr 0x8049533 */
+    /* file datum_irig_api.c line 335 addr 0x804953c */
+    /* file datum_irig_api.c line 337 addr 0x8049542 */
+    /* file datum_irig_api.c line 338 addr 0x8049552 */
+    /* file datum_irig_api.c line 343 addr 0x804955c */
+    /* file datum_irig_api.c line 344 addr 0x8049587 */
+    /* file datum_irig_api.c line 346 addr 0x8049591 */
+    /* file datum_irig_api.c line 347 addr 0x80495a1 */
+    /* file datum_irig_api.c line 351 addr 0x80495ab */
+    /* file datum_irig_api.c line 352 addr 0x80495b4 */
+    /* file datum_irig_api.c line 354 addr 0x80495ba */
+    /* file datum_irig_api.c line 355 addr 0x80495ca */
+    /* file datum_irig_api.c line 359 addr 0x80495d4 */
+    /* file datum_irig_api.c line 360 addr 0x80495ff */
+    /* file datum_irig_api.c line 362 addr 0x8049609 */
+    /* file datum_irig_api.c line 363 addr 0x8049619 */
+    /* file datum_irig_api.c line 367 addr 0x8049623 */
+    /* file datum_irig_api.c line 368 addr 0x8049657 */
+    /* file datum_irig_api.c line 369 addr 0x8049691 */
+    /* file datum_irig_api.c line 372 addr 0x80496c5 */
+    /* file datum_irig_api.c line 373 addr 0x80496cc */
+    /* file datum_irig_api.c line 374 addr 0x80496e4 */
+    /* file datum_irig_api.c line 375 addr 0x80496f0 */
+    /* file datum_irig_api.c line 376 addr 0x80496f2 */
+    /* file datum_irig_api.c line 375 addr 0x80496ff */
+    /* file datum_irig_api.c line 377 addr 0x804970e */
+    /* file datum_irig_api.c line 380 addr 0x804971b */
+    /* file datum_irig_api.c line 381 addr 0x804972b */
+    /* file datum_irig_api.c line 382 addr 0x8049749 */
+    { /* 0x8049750 */
+      short unsigned int __reg /* 0xfffffff6 */;
+      /* file datum_irig_api.c line 383 addr 0x8049750 */
+    } /* 0x804976c */
+    /* file datum_irig_api.c line 384 addr 0x8049770 */
+    /* file datum_irig_api.c line 385 addr 0x8049788 */
+    /* file datum_irig_api.c line 386 addr 0x80497a1 */
+    /* file datum_irig_api.c line 387 addr 0x80497ad */
+    /* file datum_irig_api.c line 388 addr 0x80497af */
+    /* file datum_irig_api.c line 387 addr 0x80497bc */
+    /* file datum_irig_api.c line 389 addr 0x80497cb */
+    /* file datum_irig_api.c line 391 addr 0x80497d8 */
+    /* file datum_irig_api.c line 392 addr 0x80497dd */
+  } /* 0x80497df */
+} /* 0x80497df */
+void *find_and_attach (struct pci_dev_info /* id 4 */ *inf_F /* 0x8 */)
+{ /* 0x80497df */
+  { /* 0x80497df */
+    void *handle /* 0xfffffff4 */;
+    short unsigned int idx /* 0xfffffff2 */;
+    unsigned int flags /* 0xffffffec */;
+    /* file datum_irig_api.c line 396 addr 0x80497df */
+    /* file datum_irig_api.c line 398 addr 0x80497e5 */
+    /* file datum_irig_api.c line 401 addr 0x80497eb */
+    /* file datum_irig_api.c line 402 addr 0x80497f2 */
+    /* file datum_irig_api.c line 403 addr 0x804980f */
+    /* file datum_irig_api.c line 404 addr 0x8049812 */
+  } /* 0x8049814 */
+} /* 0x8049814 */
+void *reattach_and_fill_info (struct pci_dev_info /* id 4 */ *inf_F /* 0x8 */)
+{ /* 0x8049814 */
+  { /* 0x8049814 */
+    void *handle /* 0xfffffff4 */;
+    short unsigned int idx /* 0xfffffff2 */;
+    unsigned int flags /* 0xffffffec */;
+    /* file datum_irig_api.c line 408 addr 0x8049814 */
+    /* file datum_irig_api.c line 410 addr 0x804981a */
+    /* file datum_irig_api.c line 413 addr 0x8049820 */
+    /* file datum_irig_api.c line 414 addr 0x8049827 */
+    /* file datum_irig_api.c line 415 addr 0x804984b */
+    /* file datum_irig_api.c line 416 addr 0x804984e */
+  } /* 0x8049850 */
+} /* 0x8049850 */
+int irig_deinit ()
+{ /* 0x8049850 */
+  /* file datum_irig_api.c line 420 addr 0x8049850 */
+  /* file datum_irig_api.c line 421 addr 0x8049856 */
+  /* file datum_irig_api.c line 422 addr 0x8049867 */
+  /* file datum_irig_api.c line 423 addr 0x804986c */
+} /* 0x804986e */
+void write_dpram_data (char *addr /* 0x8 */, char *data /* 0xc */, int len /* 0x10 */)
+{ /* 0x804986e */
+  /* file datum_irig_api.c line 429 addr 0x804986e */
+  /* file datum_irig_api.c line 430 addr 0x8049871 */
+  /* file datum_irig_api.c line 431 addr 0x8049873 */
+  /* file datum_irig_api.c line 430 addr 0x8049883 */
+  /* file datum_irig_api.c line 432 addr 0x804988c */
+} /* 0x804988e */
+void read_dpram_data (char *addr /* 0x8 */, char *data /* 0xc */, int len /* 0x10 */)
+{ /* 0x804988e */
+  /* file datum_irig_api.c line 436 addr 0x804988e */
+  /* file datum_irig_api.c line 437 addr 0x8049891 */
+  /* file datum_irig_api.c line 438 addr 0x8049893 */
+  /* file datum_irig_api.c line 437 addr 0x80498a3 */
+  /* file datum_irig_api.c line 439 addr 0x80498ac */
+} /* 0x80498ae */
+(struct %anon5 { /* size 64 */
+  long unsigned int timereq; /* bitsize 32, bitpos 0 */
+  long unsigned int eventreq; /* bitsize 32, bitpos 32 */
+  long unsigned int unlock; /* bitsize 32, bitpos 64 */
+  long unsigned int r1; /* bitsize 32, bitpos 96 */
+  long unsigned int control; /* bitsize 32, bitpos 128 */
+  long unsigned int ack; /* bitsize 32, bitpos 160 */
+  long unsigned int mask; /* bitsize 32, bitpos 192 */
+  long unsigned int intstat; /* bitsize 32, bitpos 224 */
+  long unsigned int minstrb; /* bitsize 32, bitpos 256 */
+  long unsigned int majstrb; /* bitsize 32, bitpos 288 */
+  long unsigned int r2; /* bitsize 32, bitpos 320 */
+  long unsigned int r3; /* bitsize 32, bitpos 352 */
+  long unsigned int time0; /* bitsize 32, bitpos 384 */
+  long unsigned int time1; /* bitsize 32, bitpos 416 */
+  long unsigned int event0; /* bitsize 32, bitpos 448 */
+  long unsigned int event1; /* bitsize 32, bitpos 480 */
+}) *DEV_reg /* 0x804affc */;
+struct %anon6 { /* size 16 */
+  char *input; /* bitsize 32, bitpos 0 */
+  char *output; /* bitsize 32, bitpos 32 */
+  char *GPS; /* bitsize 32, bitpos 64 */
+  char *year; /* bitsize 32, bitpos 96 */
+} DP_ram_ofs /* 0x804b000 */;
+char *DP_ram /* 0x804aff8 */;
+char buffer[10]:uint32 /* 0x804b014 */;
+int pci_handle /* 0x804b010 */;
+void *dev_handle /* 0x804b020 */;
+ datum_irig_api.h:
+typedef union binary_event_time /* id 1 */ binary_event_time;
+typedef union decimal_event_time /* id 2 */ decimal_event_time;
+typedef union binary_strobe_time /* id 0 */ binary_strobe_time;
+typedef union decimal_strobe_time /* id 0 */ decimal_strobe_time;
+typedef struct _pci_config_regs /* id 3 */ _pci_config_regs;
+typedef struct pci_dev_info /* id 4 */ pci_dev_info;
+union binary_event_time { /* size 8 id 1 */
+  struct %anon7 { /* size 8 */
+    unsigned int u_seconds; /* bitsize 20, bitpos 0 */
+    unsigned int n_seconds; /* bitsize 4, bitpos 20 */
+    unsigned int status; /* bitsize 4, bitpos 24 */
+    unsigned int unused; /* bitsize 4, bitpos 28 */
+    unsigned int seconds; /* bitsize 32, bitpos 32 */
+  } bits; /* bitsize 64, bitpos 0 */
+  struct %anon8 { /* size 8 */
+    long unsigned int time0; /* bitsize 32, bitpos 0 */
+    long unsigned int time1; /* bitsize 32, bitpos 32 */
+  } words; /* bitsize 64, bitpos 0 */
+};
+union decimal_event_time { /* size 8 id 2 */
+  struct %anon9 { /* size 8 */
+    unsigned int u_seconds; /* bitsize 20, bitpos 0 */
+    unsigned int n_seconds; /* bitsize 4, bitpos 20 */
+    unsigned int status; /* bitsize 4, bitpos 24 */
+    unsigned int day8; /* bitsize 1, bitpos 28 */
+    unsigned int unused; /* bitsize 3, bitpos 29 */
+    unsigned int seconds; /* bitsize 8, bitpos 32 */
+    unsigned int minutes; /* bitsize 8, bitpos 40 */
+    unsigned int hours; /* bitsize 8, bitpos 48 */
+    unsigned int days; /* bitsize 8, bitpos 56 */
+  } bits; /* bitsize 64, bitpos 0 */
+  struct %anon8 { /* size 8 */
+    long unsigned int time0; /* bitsize 32, bitpos 0 */
+    long unsigned int time1; /* bitsize 32, bitpos 32 */
+  } words; /* bitsize 64, bitpos 0 */
+};
+ /usr/qnx650/target/qnx6/usr/include/stdio.h:
+typedef unsigned int size_t;
+typedef char _Sysch_t;
+typedef int off_t;
+typedef long long int off64_t;
+struct _Filet { /* size 80 id 10 */
+  unsigned int _Mode; /* bitsize 32, bitpos 0 */
+  int _Handle; /* bitsize 32, bitpos 32 */
+  unsigned char *_Buf; /* bitsize 32, bitpos 64 */
+  unsigned char *_Bend; /* bitsize 32, bitpos 96 */
+  unsigned char *_Next; /* bitsize 32, bitpos 128 */
+  unsigned char *_Rend; /* bitsize 32, bitpos 160 */
+  unsigned char *_Wend; /* bitsize 32, bitpos 192 */
+  unsigned char *_Rback; /* bitsize 32, bitpos 224 */
+  unsigned int *_WRback; /* bitsize 32, bitpos 256 */
+  unsigned int _WBack[2]:uint32; /* bitsize 64, bitpos 288 */
+  unsigned char *_Rsave; /* bitsize 32, bitpos 352 */
+  unsigned char *_WRend; /* bitsize 32, bitpos 384 */
+  unsigned char *_WWend; /* bitsize 32, bitpos 416 */
+  struct _Mbstatet /* id 11 */ _Wstate; /* bitsize 64, bitpos 448 */
+  struct _Filet /* id 10 */ *_NextFile; /* bitsize 32, bitpos 512 */
+  unsigned char _Back[2]:uint32; /* bitsize 16, bitpos 544 */
+  unsigned char _Cbuf; /* bitsize 8, bitpos 560 */
+  void *_Flock; /* bitsize 32, bitpos 576 */
+  unsigned char _Spare[4]:uint32; /* bitsize 32, bitpos 608 */
+};
+typedef struct _Filet /* id 10 */ _Filet;
+typedef _Filet FILE;
+typedef struct _Fpost /* id 12 */ fpos_t;
+ /usr/qnx650/target/qnx6/usr/include/sys/platform.h:
+typedef unsigned int _Sizet;
+typedef int _Ssizet;
+typedef unsigned int _Wchart;
+struct _Mbstatet { /* size 8 id 11 */
+  _Wchart _Wchar; /* bitsize 32, bitpos 0 */
+  char _State; /* bitsize 8, bitpos 32 */
+  char _Reserved[3]:uint32; /* bitsize 24, bitpos 40 */
+};
+typedef struct _Mbstatet /* id 11 */ _Mbstatet;
+typedef int _Offt;
+typedef long long int _Off64t;
+struct _Fpost { /* size 16 id 12 */
+  _Off64t _Off; /* bitsize 64, bitpos 0 */
+  _Mbstatet _Wstate; /* bitsize 64, bitpos 64 */
+};
+typedef struct _Fpost /* id 12 */ _Fpost;
+typedef signed char _int8;
+typedef short int _int16;
+typedef int _int32;
+typedef long long int _int64;
+typedef int _intptr;
+typedef unsigned char _uint8;
+typedef short unsigned int _uint16;
+typedef unsigned int _uint32;
+typedef long long unsigned int _uint64;
+typedef unsigned int _uintptr;
+typedef long long unsigned int _Paddr64t;
+typedef unsigned int _Paddr32t;
+typedef _Paddr32t _Paddrt;
+ /usr/qnx650/target/qnx6/usr/include/sys/compiler_gnu.h:
+typedef long long int _GCC_ATTR_ALIGN_64t;
+typedef long long unsigned int _GCC_ATTR_ALIGN_u64t;
+typedef _GCC_ATTR_ALIGN_64t _Int64t;
+typedef _GCC_ATTR_ALIGN_u64t _Uint64t;
+typedef unsigned int _GCC_ATTR_ALIGN_u32t;
+typedef int _GCC_ATTR_ALIGN_32t;
+typedef _GCC_ATTR_ALIGN_u32t _Uint32t;
+typedef _GCC_ATTR_ALIGN_32t _Int32t;
+typedef short int _GCC_ATTR_ALIGN_16t;
+typedef short unsigned int _GCC_ATTR_ALIGN_u16t;
+typedef _GCC_ATTR_ALIGN_16t _Int16t;
+typedef _GCC_ATTR_ALIGN_u16t _Uint16t;
+typedef signed char _GCC_ATTR_ALIGN_8t;
+typedef unsigned char _GCC_ATTR_ALIGN_u8t;
+typedef _GCC_ATTR_ALIGN_8t _Int8t;
+typedef _GCC_ATTR_ALIGN_u8t _Uint8t;
+typedef int _Intptrt;
+typedef unsigned int _Uintptrt;
+typedef long long int _Longlong;
+typedef long long unsigned int _ULonglong;
+typedef char *__gnuc_va_list;
+typedef __gnuc_va_list __NTO_va_list;
+ /usr/qnx650/target/qnx6/usr/include/x86/platform.h:
+typedef unsigned int __jmpbufalign;
+ /usr/qnx650/target/qnx6/usr/include/sys/target_nto.h:
+typedef _Int8t _Intleast8t;
+typedef _Uint8t _Uintleast8t;
+typedef _Int8t _Intfast8t;
+typedef _Uint8t _Uintfast8t;
+typedef _Int16t _Intleast16t;
+typedef _Uint16t _Uintleast16t;
+typedef _Int16t _Intfast16t;
+typedef _Uint16t _Uintfast16t;
+typedef _Int32t _Intleast32t;
+typedef _Uint32t _Uintleast32t;
+typedef _Int32t _Intfast32t;
+typedef _Uint32t _Uintfast32t;
+typedef _Int64t _Intleast64t;
+typedef _Uint64t _Uintleast64t;
+typedef _Int64t _Intfast64t;
+typedef _Uint64t _Uintfast64t;
+typedef _Int64t _Intmaxt;
+typedef _Uint64t _Uintmaxt;
+ /usr/qnx650/target/qnx6/usr/include/stdlib.h:
+typedef _Wchart wchar_t;
+typedef struct %anon13 { /* size 8 */
+  int quot; /* bitsize 32, bitpos 0 */
+  int rem; /* bitsize 32, bitpos 32 */
+} div_t;
+typedef struct %anon13 { /* size 8 */
+  long int quot; /* bitsize 32, bitpos 0 */
+  long int rem; /* bitsize 32, bitpos 32 */
+} ldiv_t;
+typedef struct %anon14 { /* size 16 */
+  _Longlong quot; /* bitsize 64, bitpos 0 */
+  _Longlong rem; /* bitsize 64, bitpos 64 */
+} lldiv_t;
+typedef lldiv_t _Lldiv_t;
+typedef int (_Cmpfun) (/* unknown */);
+ /usr/qnx650/target/qnx6/usr/include/malloc.h:
+enum malloc_opt_cmds { MALLOC_VERIFY, MALLOC_VERIFY_ON, MALLOC_STATS, MALLOC_FREE_CHECK, MALLOC_ARENA_SIZE, MALLOC_MONOTONIC_GROWTH, MALLOC_MEMORY_HOLD, MALLOC_ARENA_CACHE_MAXSZ, MALLOC_ARENA_CACHE_MAXBLK, MALLOC_ARENA_CACHE_FREE_NOW, MALLOC_ERROR_GET_FNPTR, MALLOC_ERROR_SET_FNPTR, MALLOC_LAST };
+struct malloc_stats { /* size 60 id 15 */
+  unsigned int m_small_freemem; /* bitsize 32, bitpos 0 */
+  unsigned int m_freemem; /* bitsize 32, bitpos 32 */
+  unsigned int m_small_overhead; /* bitsize 32, bitpos 64 */
+  unsigned int m_overhead; /* bitsize 32, bitpos 96 */
+  unsigned int m_small_allocmem; /* bitsize 32, bitpos 128 */
+  unsigned int m_allocmem; /* bitsize 32, bitpos 160 */
+  unsigned int m_coreallocs; /* bitsize 32, bitpos 192 */
+  unsigned int m_corefrees; /* bitsize 32, bitpos 224 */
+  unsigned int m_heapsize; /* bitsize 32, bitpos 256 */
+  unsigned int m_frees; /* bitsize 32, bitpos 288 */
+  unsigned int m_allocs; /* bitsize 32, bitpos 320 */
+  unsigned int m_reallocs; /* bitsize 32, bitpos 352 */
+  unsigned int m_small_blocks; /* bitsize 32, bitpos 384 */
+  unsigned int m_blocks; /* bitsize 32, bitpos 416 */
+  unsigned int m_hblocks; /* bitsize 32, bitpos 448 */
+};
+struct mallinfo { /* size 40 id 16 */
+  int arena; /* bitsize 32, bitpos 0 */
+  int ordblks; /* bitsize 32, bitpos 32 */
+  int smblks; /* bitsize 32, bitpos 64 */
+  int hblks; /* bitsize 32, bitpos 96 */
+  int hblkhd; /* bitsize 32, bitpos 128 */
+  int usmblks; /* bitsize 32, bitpos 160 */
+  int fsmblks; /* bitsize 32, bitpos 192 */
+  int uordblks; /* bitsize 32, bitpos 224 */
+  int fordblks; /* bitsize 32, bitpos 256 */
+  int keepcost; /* bitsize 32, bitpos 288 */
+};
+enum mcheck_status { MCHECK_DISABLED = -1, MCHECK_OK, MCHECK_HEAD, MCHECK_TAIL, MCHECK_FREE };
+ /usr/qnx650/target/qnx6/usr/include/sys/wait.h:
+typedef int pid_t;
+typedef int id_t;
+typedef enum { P_ALL, P_PID, P_PGID } idtype_t;
+ /usr/qnx650/target/qnx6/usr/include/signal.h:
+typedef int sig_atomic_t;
+typedef _Int32t pthread_t;
+typedef struct %anon17 { /* size 8 */
+  long int __bits[2]:uint32; /* bitsize 64, bitpos 0 */
+} sigset_t;
+typedef struct %anon18 { /* size 12 */
+  void *ss_sp; /* bitsize 32, bitpos 0 */
+  _Sizet ss_size; /* bitsize 32, bitpos 32 */
+  int ss_flags; /* bitsize 32, bitpos 64 */
+} stack_t;
+typedef struct __ucontext_t /* id 0 */ ucontext_t;
+struct sigaction { /* size 16 id 19 */
+  union %anon20 { /* size 4 */
+    void (*_sa_handler) (/* unknown */); /* bitsize 32, bitpos 0 */
+    void (*_sa_sigaction) (/* unknown */); /* bitsize 32, bitpos 0 */
+  } __sa_un; /* bitsize 32, bitpos 0 */
+  int sa_flags; /* bitsize 32, bitpos 32 */
+  sigset_t sa_mask; /* bitsize 64, bitpos 64 */
+};
+struct sigstack { /* size 8 id 21 */
+  int ss_onstack; /* bitsize 32, bitpos 0 */
+  void *ss_sp; /* bitsize 32, bitpos 32 */
+};
+ /usr/qnx650/target/qnx6/usr/include/sys/siginfo.h:
+typedef _Uint32t clock_t;
+typedef _Uint32t time_t;
+typedef int uid_t;
+struct __timespec { /* size 8 id 22 */
+  time_t __tv_sec; /* bitsize 32, bitpos 0 */
+  long int __tv_nsec; /* bitsize 32, bitpos 32 */
+};
+struct __sched_param { /* size 40 id 23 */
+  int __sched_priority; /* bitsize 32, bitpos 0 */
+  int __sched_curpriority; /* bitsize 32, bitpos 32 */
+  union %anon24 { /* size 32 */
+    int __reserved[8]:uint32; /* bitsize 256, bitpos 0 */
+    struct %anon25 { /* size 24 */
+      int __ss_low_priority; /* bitsize 32, bitpos 0 */
+      int __ss_max_repl; /* bitsize 32, bitpos 32 */
+      struct __timespec /* id 22 */ __ss_repl_period; /* bitsize 64, bitpos 64 */
+      struct __timespec /* id 22 */ __ss_init_budget; /* bitsize 64, bitpos 128 */
+    } __ss; /* bitsize 192, bitpos 0 */
+  } __ss_un; /* bitsize 256, bitpos 64 */
+};
+struct _thread_attr { /* size 76 id 26 */
+  int __flags; /* bitsize 32, bitpos 0 */
+  _Sizet __stacksize; /* bitsize 32, bitpos 32 */
+  void *__stackaddr; /* bitsize 32, bitpos 64 */
+  void (*__exitfunc) (/* unknown */); /* bitsize 32, bitpos 96 */
+  int __policy; /* bitsize 32, bitpos 128 */
+  struct __sched_param /* id 23 */ __param; /* bitsize 320, bitpos 160 */
+  unsigned int __guardsize; /* bitsize 32, bitpos 480 */
+  unsigned int __prealloc; /* bitsize 32, bitpos 512 */
+  int __spare[2]:uint32; /* bitsize 64, bitpos 544 */
+};
+typedef struct _thread_attr /* id 26 */ pthread_attr_t;
+union sigval { /* size 4 id 27 */
+  int sival_int; /* bitsize 32, bitpos 0 */
+  void *sival_ptr; /* bitsize 32, bitpos 0 */
+};
+struct sigevent { /* size 16 id 28 */
+  int sigev_notify; /* bitsize 32, bitpos 0 */
+  union %anon29 { /* size 4 */
+    int __sigev_signo; /* bitsize 32, bitpos 0 */
+    int __sigev_coid; /* bitsize 32, bitpos 0 */
+    int __sigev_id; /* bitsize 32, bitpos 0 */
+    void (*__sigev_notify_function) (/* unknown */); /* bitsize 32, bitpos 0 */
+  } __sigev_un1; /* bitsize 32, bitpos 32 */
+  union sigval /* id 27 */ sigev_value; /* bitsize 32, bitpos 64 */
+  union %anon30 { /* size 4 */
+    struct %anon31 { /* size 4 */
+      short int __sigev_code; /* bitsize 16, bitpos 0 */
+      short int __sigev_priority; /* bitsize 16, bitpos 16 */
+    } __st; /* bitsize 32, bitpos 0 */
+    pthread_attr_t *__sigev_notify_attributes; /* bitsize 32, bitpos 0 */
+  } __sigev_un2; /* bitsize 32, bitpos 96 */
+};
+struct _siginfo { /* size 40 id 32 */
+  int si_signo; /* bitsize 32, bitpos 0 */
+  int si_code; /* bitsize 32, bitpos 32 */
+  int si_errno; /* bitsize 32, bitpos 64 */
+  union %anon33 { /* size 28 */
+    int __pad[7]:uint32; /* bitsize 224, bitpos 0 */
+    struct %anon34 { /* size 16 */
+      pid_t __pid; /* bitsize 32, bitpos 0 */
+      union %anon35 { /* size 12 */
+        struct %anon36 { /* size 8 */
+          uid_t __uid; /* bitsize 32, bitpos 0 */
+          union sigval /* id 27 */ __value; /* bitsize 32, bitpos 32 */
+        } __kill; /* bitsize 64, bitpos 0 */
+        struct %anon37 { /* size 12 */
+          clock_t __utime; /* bitsize 32, bitpos 0 */
+          int __status; /* bitsize 32, bitpos 32 */
+          clock_t __stime; /* bitsize 32, bitpos 64 */
+        } __chld; /* bitsize 96, bitpos 0 */
+      } __pdata; /* bitsize 96, bitpos 32 */
+    } __proc; /* bitsize 128, bitpos 0 */
+    struct %anon38 { /* size 16 */
+      int __fltno; /* bitsize 32, bitpos 0 */
+      void *__fltip; /* bitsize 32, bitpos 32 */
+      void *__addr; /* bitsize 32, bitpos 64 */
+      int __bdslot; /* bitsize 32, bitpos 96 */
+    } __fault; /* bitsize 128, bitpos 0 */
+  } __data; /* bitsize 224, bitpos 96 */
+};
+typedef struct _siginfo /* id 32 */ siginfo_t;
+ /usr/qnx650/host/qnx6/x86/usr/lib/gcc/i486-pc-nto-qnx6.5.0/4.4.2/include/stddef.h:
+ /usr/qnx650/target/qnx6/usr/include/stddef.h:
+typedef _Intptrt ptrdiff_t;
+ /usr/qnx650/target/qnx6/usr/include/unistd.h:
+typedef _Ssizet ssize_t;
+typedef int gid_t;
+typedef _Uint32t useconds_t;
+ /usr/qnx650/target/qnx6/usr/include/time.h:
+typedef int timer_t;
+typedef int clockid_t;
+struct timespec { /* size 8 id 39 */
+  time_t tv_sec; /* bitsize 32, bitpos 0 */
+  long int tv_nsec; /* bitsize 32, bitpos 32 */
+};
+struct itimerspec { /* size 16 id 40 */
+  struct timespec /* id 39 */ it_value; /* bitsize 64, bitpos 0 */
+  struct timespec /* id 39 */ it_interval; /* bitsize 64, bitpos 64 */
+};
+struct tm { /* size 44 id 41 */
+  int tm_sec; /* bitsize 32, bitpos 0 */
+  int tm_min; /* bitsize 32, bitpos 32 */
+  int tm_hour; /* bitsize 32, bitpos 64 */
+  int tm_mday; /* bitsize 32, bitpos 96 */
+  int tm_mon; /* bitsize 32, bitpos 128 */
+  int tm_year; /* bitsize 32, bitpos 160 */
+  int tm_wday; /* bitsize 32, bitpos 192 */
+  int tm_yday; /* bitsize 32, bitpos 224 */
+  int tm_isdst; /* bitsize 32, bitpos 256 */
+  long int tm_gmtoff; /* bitsize 32, bitpos 288 */
+  char *tm_zone; /* bitsize 32, bitpos 320 */
+};
+ /usr/qnx650/target/qnx6/usr/include/inttypes.h:
+typedef struct %anon14 { /* size 16 */
+  _Intmaxt quot; /* bitsize 64, bitpos 0 */
+  _Intmaxt rem; /* bitsize 64, bitpos 64 */
+} imaxdiv_t;
+struct __byte { /* size 2 id 42 */
+  _Uint8t __lo; /* bitsize 8, bitpos 0 */
+  _Uint8t __hi; /* bitsize 8, bitpos 8 */
+};
+struct __short { /* size 4 id 43 */
+  _Uint16t __lo; /* bitsize 16, bitpos 0 */
+  _Uint16t __hi; /* bitsize 16, bitpos 16 */
+};
+struct __long { /* size 8 id 44 */
+  _Uint32t __lo; /* bitsize 32, bitpos 0 */
+  _Uint32t __hi; /* bitsize 32, bitpos 32 */
+};
+ /usr/qnx650/target/qnx6/usr/include/stdint.h:
+typedef _Int8t int8_t;
+typedef _Uint8t uint8_t;
+typedef _Int16t int16_t;
+typedef _Uint16t uint16_t;
+typedef _Int32t int32_t;
+typedef _Uint32t uint32_t;
+typedef _Int64t int64_t;
+typedef _Uint64t uint64_t;
+typedef _Intptrt intptr_t;
+typedef _Uintptrt uintptr_t;
+typedef _Intleast8t intleast8_t;
+typedef _Uintleast8t uintleast8_t;
+typedef _Intfast8t intfast8_t;
+typedef _Uintfast8t uintfast8_t;
+typedef _Intleast16t intleast16_t;
+typedef _Uintleast16t uintleast16_t;
+typedef _Intfast16t intfast16_t;
+typedef _Uintfast16t uintfast16_t;
+typedef _Intleast32t intleast32_t;
+typedef _Uintleast32t uintleast32_t;
+typedef _Intfast32t intfast32_t;
+typedef _Uintfast32t uintfast32_t;
+typedef _Intleast64t intleast64_t;
+typedef _Uintleast64t uintleast64_t;
+typedef _Intfast64t intfast64_t;
+typedef _Uintfast64t uintfast64_t;
+typedef _Intleast8t int_least8_t;
+typedef _Uintleast8t uint_least8_t;
+typedef _Intfast8t int_fast8_t;
+typedef _Uintfast8t uint_fast8_t;
+typedef _Intleast16t int_least16_t;
+typedef _Uintleast16t uint_least16_t;
+typedef _Intfast16t int_fast16_t;
+typedef _Uintfast16t uint_fast16_t;
+typedef _Intleast32t int_least32_t;
+typedef _Uintleast32t uint_least32_t;
+typedef _Intfast32t int_fast32_t;
+typedef _Uintfast32t uint_fast32_t;
+typedef _Intleast64t int_least64_t;
+typedef _Uintleast64t uint_least64_t;
+typedef _Intfast64t int_fast64_t;
+typedef _Uintfast64t uint_fast64_t;
+typedef _Intmaxt intmax_t;
+typedef _Uintmaxt uintmax_t;
+ /usr/qnx650/target/qnx6/usr/include/sys/mman.h:
+typedef _Uint32t mode_t;
+struct __posix_typed_mem_info64 { /* size 24 id 45 */
+  _Uint64t posix_tmi_length; /* bitsize 64, bitpos 0 */
+  _Uint32t __reserved[4]:uint32; /* bitsize 128, bitpos 64 */
+};
+struct posix_typed_mem_info { /* size 24 id 46 */
+  size_t posix_tmi_length; /* bitsize 32, bitpos 0 */
+  _Uint32t __posix_tmi_length_hi; /* bitsize 32, bitpos 32 */
+  _Uint32t __reserved[4]:uint32; /* bitsize 128, bitpos 64 */
+};
+struct mem_info { /* size 24 id 47 */
+  size_t mi_length; /* bitsize 32, bitpos 0 */
+  _Uint32t mi_length_hi; /* bitsize 32, bitpos 32 */
+  _Uint32t mi_reserved[4]:uint32; /* bitsize 128, bitpos 64 */
+};
+ /usr/qnx650/target/qnx6/usr/include/sys/pci_serv.h:
+typedef enum { IOM_PCI_READ_CONFIG_BYTE, IOM_PCI_READ_CONFIG_WORD, IOM_PCI_READ_CONFIG_DWORD, IOM_PCI_WRITE_CONFIG_BYTE, IOM_PCI_WRITE_CONFIG_WORD, IOM_PCI_WRITE_CONFIG_DWORD, IOM_PCI_READ_CONFIG_HANDLE, IOM_PCI_WRITE_CONFIG_HANDLE, IOM_PCI_FIND_DEVICE, IOM_PCI_FIND_CLASS, IOM_PCI_BIOS_PRESENT, IOM_PCI_MAP_ADDRESS, IOM_PCI_GET_VERSION, IOM_PCI_ATTACH_DEVICE, IOM_PCI_DETACH_DEVICE, IOM_PCI_MAP_IRQ, IOM_PCI_RESCAN_BUS, IOM_PCI_IRQ_ROUTING_OPTIONS } PCI_FUNCS;
+struct _pci_present { /* size 12 id 48 */
+  long unsigned int lastbus; /* bitsize 32, bitpos 0 */
+  long unsigned int version; /* bitsize 32, bitpos 32 */
+  long unsigned int hardware; /* bitsize 32, bitpos 64 */
+};
+struct _pci_config { /* size 264 id 49 */
+  short unsigned int bus; /* bitsize 16, bitpos 0 */
+  short unsigned int devfunc; /* bitsize 16, bitpos 16 */
+  short unsigned int offset; /* bitsize 16, bitpos 32 */
+  short unsigned int count; /* bitsize 16, bitpos 48 */
+  unsigned char buffer[256]:uint32; /* bitsize 2048, bitpos 64 */
+};
+struct _pci_config_hdl { /* size 268 id 50 */
+  void *handle; /* bitsize 32, bitpos 0 */
+  short unsigned int offset; /* bitsize 16, bitpos 32 */
+  short unsigned int count; /* bitsize 16, bitpos 48 */
+  size_t size; /* bitsize 32, bitpos 64 */
+  unsigned char buffer[256]:uint32; /* bitsize 2048, bitpos 96 */
+};
+struct _pci_device { /* size 16 id 51 */
+  short unsigned int deviceid; /* bitsize 16, bitpos 0 */
+  short unsigned int vendorid; /* bitsize 16, bitpos 16 */
+  long unsigned int index; /* bitsize 32, bitpos 32 */
+  long unsigned int busnum; /* bitsize 32, bitpos 64 */
+  long unsigned int devfuncnum; /* bitsize 32, bitpos 96 */
+};
+struct _pci_class { /* size 16 id 52 */
+  long unsigned int class; /* bitsize 32, bitpos 0 */
+  long unsigned int index; /* bitsize 32, bitpos 32 */
+  long unsigned int busnum; /* bitsize 32, bitpos 64 */
+  long unsigned int devfuncnum; /* bitsize 32, bitpos 96 */
+};
+struct _pci_map { /* size 12 id 53 */
+  long unsigned int pciaddr; /* bitsize 32, bitpos 0 */
+  long unsigned int cpuaddr; /* bitsize 32, bitpos 32 */
+  long unsigned int flags; /* bitsize 32, bitpos 64 */
+};
+struct _pci_map_irq { /* size 8 id 54 */
+  short unsigned int bus; /* bitsize 16, bitpos 0 */
+  short unsigned int devfunc; /* bitsize 16, bitpos 16 */
+  short unsigned int intno; /* bitsize 16, bitpos 32 */
+  short unsigned int intpin; /* bitsize 16, bitpos 48 */
+};
+struct _pci_version { /* size 4 id 55 */
+  short unsigned int version; /* bitsize 16, bitpos 0 */
+  short unsigned int numdevices; /* bitsize 16, bitpos 16 */
+};
+struct _pci_attach { /* size 252 id 56 */
+  long unsigned int flags; /* bitsize 32, bitpos 0 */
+  void *handle; /* bitsize 32, bitpos 32 */
+  short unsigned int idx; /* bitsize 16, bitpos 64 */
+  short unsigned int filler; /* bitsize 16, bitpos 80 */
+  struct pci_dev_info /* id 4 */ configbuffer; /* bitsize 1920, bitpos 96 */
+};
+struct _pci_detach { /* size 4 id 57 */
+  void *handle; /* bitsize 32, bitpos 0 */
+};
+struct _pci_route_opt { /* size 520 id 58 */
+  short unsigned int irq_info; /* bitsize 16, bitpos 0 */
+  short unsigned int buf_size; /* bitsize 16, bitpos 16 */
+  short unsigned int filler[2]:uint32; /* bitsize 32, bitpos 32 */
+  unsigned char buffer[512]:uint32; /* bitsize 4096, bitpos 64 */
+};
+struct _pci_reply_hdr { /* size 8 id 59 */
+  long unsigned int reply_status; /* bitsize 32, bitpos 0 */
+  long unsigned int reply_length; /* bitsize 32, bitpos 32 */
+};
+struct _pci_message { /* size 536 id 60 */
+  union %anon61 { /* size 8 */
+    struct _io_msg /* id 62 */ i; /* bitsize 64, bitpos 0 */
+  } msg_hdr; /* bitsize 64, bitpos 0 */
+  struct _pci_reply_hdr /* id 59 */ rep_hdr; /* bitsize 64, bitpos 64 */
+  union %anon63 { /* size 520 */
+    struct _pci_present /* id 48 */ present; /* bitsize 96, bitpos 0 */
+    struct _pci_config /* id 49 */ config; /* bitsize 2112, bitpos 0 */
+    struct _pci_config_hdl /* id 50 */ config_hdl; /* bitsize 2144, bitpos 0 */
+    struct _pci_device /* id 51 */ device; /* bitsize 128, bitpos 0 */
+    struct _pci_class /* id 52 */ class; /* bitsize 128, bitpos 0 */
+    struct _pci_map /* id 53 */ map; /* bitsize 96, bitpos 0 */
+    struct _pci_version /* id 55 */ version; /* bitsize 32, bitpos 0 */
+    struct _pci_attach /* id 56 */ lock; /* bitsize 2016, bitpos 0 */
+    struct _pci_detach /* id 57 */ unlock; /* bitsize 32, bitpos 0 */
+    struct _pci_map_irq /* id 54 */ map_irq; /* bitsize 64, bitpos 0 */
+    struct _pci_route_opt /* id 58 */ route_opt; /* bitsize 4160, bitpos 0 */
+  } msg; /* bitsize 4160, bitpos 128 */
+};
+ /usr/qnx650/target/qnx6/usr/include/hw/pci.h:
+struct _pci_config_regs { /* size 256 id 3 */
+  uint16_t Vendor_ID; /* bitsize 16, bitpos 0 */
+  uint16_t Device_ID; /* bitsize 16, bitpos 16 */
+  uint16_t Command; /* bitsize 16, bitpos 32 */
+  uint16_t Status; /* bitsize 16, bitpos 48 */
+  uint8_t Revision_ID; /* bitsize 8, bitpos 64 */
+  uint8_t Class_Code[3]:uint32; /* bitsize 24, bitpos 72 */
+  uint8_t Cache_Line_Size; /* bitsize 8, bitpos 96 */
+  uint8_t Latency_Timer; /* bitsize 8, bitpos 104 */
+  uint8_t Header_Type; /* bitsize 8, bitpos 112 */
+  uint8_t BIST; /* bitsize 8, bitpos 120 */
+  uint32_t Base_Address_Regs[6]:uint32; /* bitsize 192, bitpos 128 */
+  uint32_t CardBus_CIS; /* bitsize 32, bitpos 320 */
+  uint16_t Sub_Vendor_ID; /* bitsize 16, bitpos 352 */
+  uint16_t Sub_System_ID; /* bitsize 16, bitpos 368 */
+  uint32_t ROM_Base_Address; /* bitsize 32, bitpos 384 */
+  uint8_t Capabilities_Pointer; /* bitsize 8, bitpos 416 */
+  uint8_t Reserved2[3]:uint32; /* bitsize 24, bitpos 424 */
+  uint32_t Reserved3; /* bitsize 32, bitpos 448 */
+  uint8_t Interrupt_Line; /* bitsize 8, bitpos 480 */
+  uint8_t Interrupt_Pin; /* bitsize 8, bitpos 488 */
+  uint8_t Min_Gnt; /* bitsize 8, bitpos 496 */
+  uint8_t Max_Lat; /* bitsize 8, bitpos 504 */
+  uint8_t Device_Dependent_Regs[192]:uint32; /* bitsize 1536, bitpos 512 */
+};
+struct _pci_bridge_config_regs { /* size 256 id 64 */
+  uint16_t Vendor_ID; /* bitsize 16, bitpos 0 */
+  uint16_t Device_ID; /* bitsize 16, bitpos 16 */
+  uint16_t Command; /* bitsize 16, bitpos 32 */
+  uint16_t Status; /* bitsize 16, bitpos 48 */
+  uint8_t Revision_ID; /* bitsize 8, bitpos 64 */
+  uint8_t Class_Code[3]:uint32; /* bitsize 24, bitpos 72 */
+  uint8_t Cache_Line_Size; /* bitsize 8, bitpos 96 */
+  uint8_t Latency_Timer; /* bitsize 8, bitpos 104 */
+  uint8_t Header_Type; /* bitsize 8, bitpos 112 */
+  uint8_t BIST; /* bitsize 8, bitpos 120 */
+  uint32_t Base_Address_Regs[2]:uint32; /* bitsize 64, bitpos 128 */
+  uint8_t Primary_Bus_Number; /* bitsize 8, bitpos 192 */
+  uint8_t Secondary_Bus_Number; /* bitsize 8, bitpos 200 */
+  uint8_t Subordinate_Bus_Number; /* bitsize 8, bitpos 208 */
+  uint8_t Secondary_Latency_Timer; /* bitsize 8, bitpos 216 */
+  uint8_t IO_Base; /* bitsize 8, bitpos 224 */
+  uint8_t IO_Limit; /* bitsize 8, bitpos 232 */
+  uint16_t Secondary_Status; /* bitsize 16, bitpos 240 */
+  uint16_t Memory_Base; /* bitsize 16, bitpos 256 */
+  uint16_t Memory_Limit; /* bitsize 16, bitpos 272 */
+  uint16_t Prefetchable_Memory_Base; /* bitsize 16, bitpos 288 */
+  uint16_t Prefetchable_Memory_Limit; /* bitsize 16, bitpos 304 */
+  uint32_t Prefetchable_Base_Upper32; /* bitsize 32, bitpos 320 */
+  uint32_t Prefetchable_Limit_Upper32; /* bitsize 32, bitpos 352 */
+  uint16_t IO_Base_Upper16; /* bitsize 16, bitpos 384 */
+  uint16_t IO_Limit_Upper16; /* bitsize 16, bitpos 400 */
+  uint8_t Capabilities_Pointer; /* bitsize 8, bitpos 416 */
+  uint8_t Reserved1[3]:uint32; /* bitsize 24, bitpos 424 */
+  uint32_t ROM_Base_Address; /* bitsize 32, bitpos 448 */
+  uint8_t Interrupt_Line; /* bitsize 8, bitpos 480 */
+  uint8_t Interrupt_Pin; /* bitsize 8, bitpos 488 */
+  uint16_t Bridge_Control; /* bitsize 16, bitpos 496 */
+  uint8_t Device_Dependent_Regs[192]:uint32; /* bitsize 1536, bitpos 512 */
+};
+struct _pci_cardbus_config_regs { /* size 256 id 65 */
+  uint16_t Vendor_ID; /* bitsize 16, bitpos 0 */
+  uint16_t Device_ID; /* bitsize 16, bitpos 16 */
+  uint16_t Command; /* bitsize 16, bitpos 32 */
+  uint16_t Status; /* bitsize 16, bitpos 48 */
+  uint8_t Revision_ID; /* bitsize 8, bitpos 64 */
+  uint8_t Class_Code[3]:uint32; /* bitsize 24, bitpos 72 */
+  uint8_t Cache_Line_Size; /* bitsize 8, bitpos 96 */
+  uint8_t Latency_Timer; /* bitsize 8, bitpos 104 */
+  uint8_t Header_Type; /* bitsize 8, bitpos 112 */
+  uint8_t BIST; /* bitsize 8, bitpos 120 */
+  uint32_t Socket_Exca_Base_Reg; /* bitsize 32, bitpos 128 */
+  uint8_t Capabilities_Pointer; /* bitsize 8, bitpos 160 */
+  uint8_t reserved1; /* bitsize 8, bitpos 168 */
+  uint16_t Secondary_Status; /* bitsize 16, bitpos 176 */
+  uint8_t Pci_Bus_Num; /* bitsize 8, bitpos 192 */
+  uint8_t Cardbus_Bus_Num; /* bitsize 8, bitpos 200 */
+  uint8_t Sub_Bus_Num; /* bitsize 8, bitpos 208 */
+  uint8_t Cardbus_Latency_Timer; /* bitsize 8, bitpos 216 */
+  uint32_t Mem_Base_Reg_0; /* bitsize 32, bitpos 224 */
+  uint32_t Mem_Limit_Reg_0; /* bitsize 32, bitpos 256 */
+  uint32_t Mem_Base_Reg_1; /* bitsize 32, bitpos 288 */
+  uint32_t Mem_Limit_Reg_1; /* bitsize 32, bitpos 320 */
+  uint32_t Io_Base_Reg_0; /* bitsize 32, bitpos 352 */
+  uint32_t Io_Limit_Reg_0; /* bitsize 32, bitpos 384 */
+  uint32_t Io_Base_Reg_1; /* bitsize 32, bitpos 416 */
+  uint32_t Io_Limit_Reg_1; /* bitsize 32, bitpos 448 */
+  uint8_t Interrupt_Line; /* bitsize 8, bitpos 480 */
+  uint8_t Interrupt_Pin; /* bitsize 8, bitpos 488 */
+  uint16_t Bridge_Control; /* bitsize 16, bitpos 496 */
+  uint16_t Subsystem_Vendor_Id; /* bitsize 16, bitpos 512 */
+  uint16_t Subsystem_Id; /* bitsize 16, bitpos 528 */
+  uint32_t If_Legacy_Base_Reg; /* bitsize 32, bitpos 544 */
+  uint8_t reserved2[56]:uint32; /* bitsize 448, bitpos 576 */
+  uint32_t System_Control; /* bitsize 32, bitpos 1024 */
+  uint8_t reserved3[8]:uint32; /* bitsize 64, bitpos 1056 */
+  uint32_t Multifunction_Routing; /* bitsize 32, bitpos 1120 */
+  uint8_t Retry_Status; /* bitsize 8, bitpos 1152 */
+  uint8_t Card_Control; /* bitsize 8, bitpos 1160 */
+  uint8_t Device_Control; /* bitsize 8, bitpos 1168 */
+  uint8_t Buffer_Control; /* bitsize 8, bitpos 1176 */
+  uint32_t Dma_Reg_0; /* bitsize 32, bitpos 1184 */
+  uint32_t Dma_Reg_1; /* bitsize 32, bitpos 1216 */
+  uint8_t Device_Dependent_Regs[100]:uint32; /* bitsize 800, bitpos 1248 */
+};
+struct _pci_capability_power { /* size 8 id 66 */
+  uint8_t Capability_ID; /* bitsize 8, bitpos 0 */
+  uint8_t Next_Pointer; /* bitsize 8, bitpos 8 */
+  uint16_t Power_PMC; /* bitsize 16, bitpos 16 */
+  uint16_t Power_PMCSR; /* bitsize 16, bitpos 32 */
+  uint8_t Power_PMCSR_BSE; /* bitsize 8, bitpos 48 */
+  uint8_t Power_Data; /* bitsize 8, bitpos 56 */
+};
+struct _pci_capability_agp { /* size 12 id 67 */
+  uint8_t Capability_ID; /* bitsize 8, bitpos 0 */
+  uint8_t Next_Pointer; /* bitsize 8, bitpos 8 */
+  uint8_t Major_Minor_Revision; /* bitsize 8, bitpos 16 */
+  uint8_t Reserved; /* bitsize 8, bitpos 24 */
+  uint32_t AGP_Status; /* bitsize 32, bitpos 32 */
+  uint32_t AGP_Command; /* bitsize 32, bitpos 64 */
+};
+struct _pci_capability_vpd { /* size 8 id 68 */
+  uint8_t Capability_ID; /* bitsize 8, bitpos 0 */
+  uint8_t Next_Pointer; /* bitsize 8, bitpos 8 */
+  uint16_t VPD_Address; /* bitsize 16, bitpos 16 */
+  uint32_t VPD_Data; /* bitsize 32, bitpos 32 */
+};
+struct _pci_capability_slot_numbering { /* size 4 id 69 */
+  uint8_t Capability_ID; /* bitsize 8, bitpos 0 */
+  uint8_t Next_Pointer; /* bitsize 8, bitpos 8 */
+  uint8_t Card_Slot; /* bitsize 8, bitpos 16 */
+  uint8_t Chassis_Number; /* bitsize 8, bitpos 24 */
+};
+struct _pci_capability_msi32 { /* size 12 id 70 */
+  uint8_t Capability_ID; /* bitsize 8, bitpos 0 */
+  uint8_t Next_Pointer; /* bitsize 8, bitpos 8 */
+  uint16_t Message_Control; /* bitsize 16, bitpos 16 */
+  uint32_t Message_Address; /* bitsize 32, bitpos 32 */
+  uint16_t Message_Data; /* bitsize 16, bitpos 64 */
+  uint16_t Filler; /* bitsize 16, bitpos 80 */
+};
+struct _pci_capability_msi64 { /* size 16 id 71 */
+  uint8_t Capability_ID; /* bitsize 8, bitpos 0 */
+  uint8_t Next_Pointer; /* bitsize 8, bitpos 8 */
+  uint16_t Message_Control; /* bitsize 16, bitpos 16 */
+  uint32_t Message_Address; /* bitsize 32, bitpos 32 */
+  uint32_t Message_Address_Upper; /* bitsize 32, bitpos 64 */
+  uint16_t Message_Data; /* bitsize 16, bitpos 96 */
+  uint16_t Filler; /* bitsize 16, bitpos 112 */
+};
+struct _pci_capability_msi32_PVM { /* size 20 id 72 */
+  uint8_t Capability_ID; /* bitsize 8, bitpos 0 */
+  uint8_t Next_Pointer; /* bitsize 8, bitpos 8 */
+  uint16_t Message_Control; /* bitsize 16, bitpos 16 */
+  uint32_t Message_Address; /* bitsize 32, bitpos 32 */
+  uint16_t Message_Data; /* bitsize 16, bitpos 64 */
+  uint16_t Filler; /* bitsize 16, bitpos 80 */
+  uint32_t Mask_Bits; /* bitsize 32, bitpos 96 */
+  uint32_t Pending_Bits; /* bitsize 32, bitpos 128 */
+};
+struct _pci_capability_msi64_PVM { /* size 24 id 73 */
+  uint8_t Capability_ID; /* bitsize 8, bitpos 0 */
+  uint8_t Next_Pointer; /* bitsize 8, bitpos 8 */
+  uint16_t Message_Control; /* bitsize 16, bitpos 16 */
+  uint32_t Message_Address; /* bitsize 32, bitpos 32 */
+  uint32_t Message_Address_Upper; /* bitsize 32, bitpos 64 */
+  uint16_t Message_Data; /* bitsize 16, bitpos 96 */
+  uint16_t Filler; /* bitsize 16, bitpos 112 */
+  uint32_t Mask_Bits; /* bitsize 32, bitpos 128 */
+  uint32_t Pending_Bits; /* bitsize 32, bitpos 160 */
+};
+struct _pci_capability_pcix { /* size 8 id 74 */
+  uint8_t Capability_ID; /* bitsize 8, bitpos 0 */
+  uint8_t Next_Pointer; /* bitsize 8, bitpos 8 */
+  uint16_t PCI_X_Command; /* bitsize 16, bitpos 16 */
+  uint32_t PCI_X_Status; /* bitsize 32, bitpos 32 */
+};
+struct _pci_capability_pcix_bridge { /* size 16 id 75 */
+  uint8_t Capability_ID; /* bitsize 8, bitpos 0 */
+  uint8_t Next_Pointer; /* bitsize 8, bitpos 8 */
+  uint16_t PCI_X_Secondary_Status; /* bitsize 16, bitpos 16 */
+  uint32_t PCI_X_Bridge_Status; /* bitsize 32, bitpos 32 */
+  uint32_t Upstream_Split_Transaction_Control; /* bitsize 32, bitpos 64 */
+  uint32_t Downstream_Split_Transaction_Control; /* bitsize 32, bitpos 96 */
+};
+struct _pci_capability_hot_plug { /* size 8 id 76 */
+  uint8_t Capability_ID; /* bitsize 8, bitpos 0 */
+  uint8_t Next_Pointer; /* bitsize 8, bitpos 8 */
+  uint8_t Dword_Select; /* bitsize 8, bitpos 16 */
+  uint8_t CSP_CIP; /* bitsize 8, bitpos 24 */
+  uint32_t Dword_Data; /* bitsize 32, bitpos 32 */
+};
+struct _pci_capability_pci_express { /* size 36 id 77 */
+  uint8_t Capability_ID; /* bitsize 8, bitpos 0 */
+  uint8_t Next_Pointer; /* bitsize 8, bitpos 8 */
+  uint16_t PCI_Express_Cap_Reg; /* bitsize 16, bitpos 16 */
+  uint32_t Device_Capabilities; /* bitsize 32, bitpos 32 */
+  uint16_t Device_Control; /* bitsize 16, bitpos 64 */
+  uint16_t Device_Status; /* bitsize 16, bitpos 80 */
+  uint32_t Link_Capabilities; /* bitsize 32, bitpos 96 */
+  uint16_t Link_Control; /* bitsize 16, bitpos 128 */
+  uint16_t Link_Status; /* bitsize 16, bitpos 144 */
+  uint32_t Slot_Capabilities; /* bitsize 32, bitpos 160 */
+  uint16_t Slot_Control; /* bitsize 16, bitpos 192 */
+  uint16_t Slot_Status; /* bitsize 16, bitpos 208 */
+  uint16_t Root_Control; /* bitsize 16, bitpos 224 */
+  uint16_t Root_Capabilities; /* bitsize 16, bitpos 240 */
+  uint32_t Root_Status; /* bitsize 32, bitpos 256 */
+};
+struct _pci_capability_msix { /* size 12 id 78 */
+  uint8_t Capability_ID; /* bitsize 8, bitpos 0 */
+  uint8_t Next_Pointer; /* bitsize 8, bitpos 8 */
+  uint16_t Message_Control; /* bitsize 16, bitpos 16 */
+  uint32_t Table_Offset; /* bitsize 32, bitpos 32 */
+  uint32_t PBA_Offset; /* bitsize 32, bitpos 64 */
+};
+struct _pci_msix_table { /* size 16 id 79 */
+  uint32_t Message_Address; /* bitsize 32, bitpos 0 */
+  uint32_t Message_Address_Upper; /* bitsize 32, bitpos 32 */
+  uint32_t Message_Data; /* bitsize 32, bitpos 64 */
+  uint32_t Vector_Control; /* bitsize 32, bitpos 96 */
+};
+struct pci_dev_info { /* size 240 id 4 */
+  uint16_t DeviceId; /* bitsize 16, bitpos 0 */
+  uint16_t VendorId; /* bitsize 16, bitpos 16 */
+  uint16_t SubsystemId; /* bitsize 16, bitpos 32 */
+  uint16_t SubsystemVendorId; /* bitsize 16, bitpos 48 */
+  uint8_t BusNumber; /* bitsize 8, bitpos 64 */
+  uint8_t DevFunc; /* bitsize 8, bitpos 72 */
+  uint8_t Revision; /* bitsize 8, bitpos 80 */
+  uint8_t Rsvd[5]:uint32; /* bitsize 40, bitpos 88 */
+  uint32_t Class; /* bitsize 32, bitpos 128 */
+  uint32_t Irq; /* bitsize 32, bitpos 160 */
+  uint64_t CpuIoTranslation; /* bitsize 64, bitpos 192 */
+  uint64_t CpuMemTranslation; /* bitsize 64, bitpos 256 */
+  uint64_t CpuIsaTranslation; /* bitsize 64, bitpos 320 */
+  uint64_t CpuBmstrTranslation; /* bitsize 64, bitpos 384 */
+  uint64_t PciBaseAddress[6]:uint32; /* bitsize 384, bitpos 448 */
+  uint64_t CpuBaseAddress[6]:uint32; /* bitsize 384, bitpos 832 */
+  uint32_t BaseAddressSize[6]:uint32; /* bitsize 192, bitpos 1216 */
+  uint64_t PciRom; /* bitsize 64, bitpos 1408 */
+  uint64_t CpuRom; /* bitsize 64, bitpos 1472 */
+  uint32_t RomSize; /* bitsize 32, bitpos 1536 */
+  uint32_t Rsvd1; /* bitsize 32, bitpos 1568 */
+  uint64_t BusIoStart; /* bitsize 64, bitpos 1600 */
+  uint64_t BusIoEnd; /* bitsize 64, bitpos 1664 */
+  uint64_t BusMemStart; /* bitsize 64, bitpos 1728 */
+  uint64_t BusMemEnd; /* bitsize 64, bitpos 1792 */
+  uint8_t msi; /* bitsize 8, bitpos 1856 */
+  uint8_t Rsvd2[3]:uint32; /* bitsize 24, bitpos 1864 */
+  uint32_t Rsvd3; /* bitsize 32, bitpos 1888 */
+};
+struct _pci_route_buffer { /* size 6 id 80 */
+  uint16_t BufferSize; /* bitsize 16, bitpos 0 */
+  uint16_t DataBufferOffset; /* bitsize 16, bitpos 16 */
+  uint16_t DataBufferSeg; /* bitsize 16, bitpos 32 */
+};
+typedef struct _pci_route_buffer /* id 80 */ IRQRoutingOptionsBuffer;
+ /usr/qnx650/target/qnx6/usr/include/sys/types.h:
+typedef _Uint32t dev_t;
+typedef _Uint32t blkcnt_t;
+typedef _Uint32t blksize_t;
+typedef _Uint32t fsblkcnt_t;
+typedef _Uint32t fsfilcnt_t;
+typedef _Uint32t nlink_t;
+typedef _Uint32t ino_t;
+typedef _Uint64t ino64_t;
+typedef _Int32t suseconds_t;
+struct _sync { /* size 8 id 81 */
+  int __count; /* bitsize 32, bitpos 0 */
+  unsigned int __owner; /* bitsize 32, bitpos 32 */
+};
+typedef struct _sync /* id 81 */ sync_t;
+struct _sync_attr { /* size 32 id 82 */
+  int __protocol; /* bitsize 32, bitpos 0 */
+  int __flags; /* bitsize 32, bitpos 32 */
+  int __prioceiling; /* bitsize 32, bitpos 64 */
+  int __clockid; /* bitsize 32, bitpos 96 */
+  int __reserved[4]:uint32; /* bitsize 128, bitpos 128 */
+};
+typedef struct _sync_attr /* id 82 */ sync_attr_t;
+typedef struct _sync /* id 81 */ pthread_cond_t;
+typedef struct _sync_attr /* id 82 */ pthread_condattr_t;
+typedef int pthread_key_t;
+typedef struct _sync /* id 81 */ pthread_mutex_t;
+typedef struct _sync_attr /* id 82 */ pthread_mutexattr_t;
+struct _pthread_once { /* size 12 id 83 */
+  int __once; /* bitsize 32, bitpos 0 */
+  sync_t __mutex; /* bitsize 64, bitpos 32 */
+};
+typedef struct _pthread_once /* id 83 */ pthread_once_t;
+typedef _Uint32t key_t;
+typedef char *caddr_t;
+typedef _Paddrt paddr_t;
+typedef _Paddr32t paddr32_t;
+typedef _Paddr64t paddr64_t;
+typedef _Int32t daddr_t;
+typedef _Uint16t msg_t;
+struct iovec { /* size 8 id 84 */
+  void *iov_base; /* bitsize 32, bitpos 0 */
+  _Sizet iov_len; /* bitsize 32, bitpos 32 */
+};
+typedef struct iovec /* id 84 */ iov_t;
+struct _clockadjust { /* size 8 id 85 */
+  long unsigned int tick_count; /* bitsize 32, bitpos 0 */
+  long int tick_nsec_inc; /* bitsize 32, bitpos 32 */
+};
+typedef unsigned char uchar_t;
+typedef short unsigned int ushort_t;
+typedef unsigned int uint_t;
+typedef long unsigned int ulong_t;
+typedef unsigned char u_char;
+typedef short unsigned int u_short;
+typedef unsigned int u_int;
+typedef long unsigned int u_long;
+typedef long unsigned int fixpt_t;
+typedef short unsigned int sel_t;
+typedef short unsigned int ushort;
+typedef unsigned int uint;
+typedef long unsigned int ulong;
+struct _itimer { /* size 16 id 86 */
+  _Uint64t nsec; /* bitsize 64, bitpos 0 */
+  _Uint64t interval_nsec; /* bitsize 64, bitpos 64 */
+};
+ /usr/qnx650/target/qnx6/usr/include/sys/iomsg.h:
+enum _msg_bases { _IO_BASE = 256, _IO_MAX = 511 };
+enum _io__Uint16types { _IO_CONNECT = 256, _IO_READ, _IO_WRITE, _IO_RSVD_CLOSE_OCB, _IO_STAT, _IO_NOTIFY, _IO_DEVCTL, _IO_RSVD_UNBLOCK, _IO_PATHCONF, _IO_LSEEK, _IO_CHMOD, _IO_CHOWN, _IO_UTIME, _IO_OPENFD, _IO_FDINFO, _IO_LOCK, _IO_SPACE, _IO_SHUTDOWN, _IO_MMAP, _IO_MSG, _IO_RSVD, _IO_DUP, _IO_CLOSE, _IO_RSVD_LOCK_OCB, _IO_RSVD_UNLOCK_OCB, _IO_SYNC, _IO_POWER };
+enum _io_msg_xtypes { _IO_XTYPE_NONE, _IO_XTYPE_READCOND, _IO_XTYPE_MQUEUE, _IO_XTYPE_TCPIP, _IO_XTYPE_TCPIP_MSG, _IO_XTYPE_OFFSET, _IO_XTYPE_REGISTRY, _IO_XTYPE_TCPIP_MSG2, _IO_XTYPE_MASK = 255, _IO_XFLAG_DIR_EXTRA_HINT, _IO_XFLAG_NONBLOCK = 16384, _IO_XFLAG_BLOCK = 32768 };
+struct _xtype_readcond { /* size 12 id 87 */
+  _Int32t min; /* bitsize 32, bitpos 0 */
+  _Int32t time; /* bitsize 32, bitpos 32 */
+  _Int32t timeout; /* bitsize 32, bitpos 64 */
+};
+struct _xtype_offset { /* size 8 id 88 */
+  off64_t offset; /* bitsize 64, bitpos 0 */
+};
+struct _io_connect { /* size 44 id 89 */
+  _Uint16t type; /* bitsize 16, bitpos 0 */
+  _Uint16t subtype; /* bitsize 16, bitpos 16 */
+  _Uint32t file_type; /* bitsize 32, bitpos 32 */
+  _Uint16t reply_max; /* bitsize 16, bitpos 64 */
+  _Uint16t entry_max; /* bitsize 16, bitpos 80 */
+  _Uint32t key; /* bitsize 32, bitpos 96 */
+  _Uint32t handle; /* bitsize 32, bitpos 128 */
+  _Uint32t ioflag; /* bitsize 32, bitpos 160 */
+  _Uint32t mode; /* bitsize 32, bitpos 192 */
+  _Uint16t sflag; /* bitsize 16, bitpos 224 */
+  _Uint16t access; /* bitsize 16, bitpos 240 */
+  _Uint16t zero; /* bitsize 16, bitpos 256 */
+  _Uint16t path_len; /* bitsize 16, bitpos 272 */
+  _Uint8t eflag; /* bitsize 8, bitpos 288 */
+  _Uint8t extra_type; /* bitsize 8, bitpos 296 */
+  _Uint16t extra_len; /* bitsize 16, bitpos 304 */
+  char path[1]:uint32; /* bitsize 8, bitpos 320 */
+};
+enum _io_connect_subtypes { _IO_CONNECT_COMBINE, _IO_CONNECT_COMBINE_CLOSE, _IO_CONNECT_OPEN, _IO_CONNECT_UNLINK, _IO_CONNECT_RENAME, _IO_CONNECT_MKNOD, _IO_CONNECT_READLINK, _IO_CONNECT_LINK, _IO_CONNECT_RSVD_UNBLOCK, _IO_CONNECT_MOUNT };
+enum _io_connect_extra_type { _IO_CONNECT_EXTRA_NONE, _IO_CONNECT_EXTRA_LINK, _IO_CONNECT_EXTRA_SYMLINK, _IO_CONNECT_EXTRA_MQUEUE, _IO_CONNECT_EXTRA_PHOTON, _IO_CONNECT_EXTRA_SOCKET, _IO_CONNECT_EXTRA_SEM, _IO_CONNECT_EXTRA_RESMGR_LINK, _IO_CONNECT_EXTRA_PROC_SYMLINK, _IO_CONNECT_EXTRA_RENAME, _IO_CONNECT_EXTRA_MOUNT, _IO_CONNECT_EXTRA_MOUNT_OCB, _IO_CONNECT_EXTRA_TYMEM };
+struct _io_connect_link_reply { /* size 20 id 90 */
+  _Uint32t reserved1; /* bitsize 32, bitpos 0 */
+  _Uint32t file_type; /* bitsize 32, bitpos 32 */
+  _Uint8t eflag; /* bitsize 8, bitpos 64 */
+  _Uint8t reserved2[1]:uint32; /* bitsize 8, bitpos 72 */
+  _Uint16t chroot_len; /* bitsize 16, bitpos 80 */
+  _Uint32t umask; /* bitsize 32, bitpos 96 */
+  _Uint16t nentries; /* bitsize 16, bitpos 128 */
+  _Uint16t path_len; /* bitsize 16, bitpos 144 */
+};
+struct _io_connect_ftype_reply { /* size 8 id 91 */
+  _Uint16t status; /* bitsize 16, bitpos 0 */
+  _Uint16t reserved; /* bitsize 16, bitpos 16 */
+  _Uint32t file_type; /* bitsize 32, bitpos 32 */
+};
+struct _io_connect_entry { /* size 32 id 92 */
+  _Uint32t nd; /* bitsize 32, bitpos 0 */
+  _Int32t pid; /* bitsize 32, bitpos 32 */
+  _Int32t chid; /* bitsize 32, bitpos 64 */
+  _Uint32t handle; /* bitsize 32, bitpos 96 */
+  _Uint32t key; /* bitsize 32, bitpos 128 */
+  _Uint32t file_type; /* bitsize 32, bitpos 160 */
+  _Uint16t prefix_len; /* bitsize 16, bitpos 192 */
+  _Uint16t zero[3]:uint32; /* bitsize 48, bitpos 208 */
+};
+typedef union %anon93 { /* size 44 */
+  struct _io_connect /* id 89 */ connect; /* bitsize 352, bitpos 0 */
+  struct _io_connect_link_reply /* id 90 */ link_reply; /* bitsize 160, bitpos 0 */
+  struct _io_connect_ftype_reply /* id 91 */ ftype_reply; /* bitsize 64, bitpos 0 */
+} io_open_t;
+typedef union %anon93 { /* size 44 */
+  struct _io_connect /* id 89 */ connect; /* bitsize 352, bitpos 0 */
+  struct _io_connect_link_reply /* id 90 */ link_reply; /* bitsize 160, bitpos 0 */
+  struct _io_connect_ftype_reply /* id 91 */ ftype_reply; /* bitsize 64, bitpos 0 */
+} io_unlink_t;
+typedef union %anon93 { /* size 44 */
+  struct _io_connect /* id 89 */ connect; /* bitsize 352, bitpos 0 */
+  struct _io_connect_link_reply /* id 90 */ link_reply; /* bitsize 160, bitpos 0 */
+  struct _io_connect_ftype_reply /* id 91 */ ftype_reply; /* bitsize 64, bitpos 0 */
+} io_rename_t;
+union _io_rename_extra { /* size 1 id 94 */
+  char path[1]:uint32; /* bitsize 8, bitpos 0 */
+};
+typedef union _io_rename_extra /* id 94 */ io_rename_extra_t;
+typedef union %anon93 { /* size 44 */
+  struct _io_connect /* id 89 */ connect; /* bitsize 352, bitpos 0 */
+  struct _io_connect_link_reply /* id 90 */ link_reply; /* bitsize 160, bitpos 0 */
+  struct _io_connect_ftype_reply /* id 91 */ ftype_reply; /* bitsize 64, bitpos 0 */
+} io_mknod_t;
+typedef union %anon93 { /* size 44 */
+  struct _io_connect /* id 89 */ connect; /* bitsize 352, bitpos 0 */
+  struct _io_connect_link_reply /* id 90 */ link_reply; /* bitsize 160, bitpos 0 */
+  struct _io_connect_ftype_reply /* id 91 */ ftype_reply; /* bitsize 64, bitpos 0 */
+} io_readlink_t;
+typedef union %anon93 { /* size 44 */
+  struct _io_connect /* id 89 */ connect; /* bitsize 352, bitpos 0 */
+  struct _io_connect_link_reply /* id 90 */ link_reply; /* bitsize 160, bitpos 0 */
+  struct _io_connect_ftype_reply /* id 91 */ ftype_reply; /* bitsize 64, bitpos 0 */
+} io_link_t;
+struct _io_resmgr_link_extra { /* size 32 id 95 */
+  _Uint32t nd; /* bitsize 32, bitpos 0 */
+  _Int32t pid; /* bitsize 32, bitpos 32 */
+  _Int32t chid; /* bitsize 32, bitpos 64 */
+  _Uint32t handle; /* bitsize 32, bitpos 96 */
+  _Uint32t flags; /* bitsize 32, bitpos 128 */
+  _Uint32t file_type; /* bitsize 32, bitpos 160 */
+  _Uint32t reserved[2]:uint32; /* bitsize 64, bitpos 192 */
+};
+union _io_link_extra { /* size 48 id 96 */
+  struct _msg_info /* id 97 */ info; /* bitsize 384, bitpos 0 */
+  void *ocb; /* bitsize 32, bitpos 0 */
+  struct _io_resmgr_link_extra /* id 95 */ resmgr; /* bitsize 256, bitpos 0 */
+  char path[1]:uint32; /* bitsize 8, bitpos 0 */
+};
+typedef union _io_link_extra /* id 96 */ io_link_extra_t;
+typedef union %anon93 { /* size 44 */
+  struct _io_connect /* id 89 */ connect; /* bitsize 352, bitpos 0 */
+  struct _io_connect_link_reply /* id 90 */ link_reply; /* bitsize 160, bitpos 0 */
+  struct _io_connect_ftype_reply /* id 91 */ ftype_reply; /* bitsize 64, bitpos 0 */
+} io_mount_t;
+struct _io_mount_extra { /* size 64 id 98 */
+  _Uint32t flags; /* bitsize 32, bitpos 0 */
+  _Uint32t nbytes; /* bitsize 32, bitpos 32 */
+  _Uint32t datalen; /* bitsize 32, bitpos 64 */
+  _Uint32t zero[1]:uint32; /* bitsize 32, bitpos 96 */
+  union %anon99 { /* size 48 */
+    struct %anon100 { /* size 48 */
+      struct _msg_info /* id 97 */ info; /* bitsize 384, bitpos 0 */
+    } cl; /* bitsize 384, bitpos 0 */
+    struct %anon101 { /* size 32 */
+      void *ocb; /* bitsize 32, bitpos 0 */
+      void *data; /* bitsize 32, bitpos 32 */
+      char *type; /* bitsize 32, bitpos 64 */
+      char *special; /* bitsize 32, bitpos 96 */
+      void *zero[4]:uint32; /* bitsize 128, bitpos 128 */
+    } srv; /* bitsize 256, bitpos 0 */
+  } extra; /* bitsize 384, bitpos 128 */
+};
+typedef struct _io_mount_extra /* id 98 */ io_mount_extra_t;
+struct _io_combine { /* size 4 id 102 */
+  _Uint16t type; /* bitsize 16, bitpos 0 */
+  _Uint16t combine_len; /* bitsize 16, bitpos 16 */
+};
+struct _io_close { /* size 4 id 103 */
+  _Uint16t type; /* bitsize 16, bitpos 0 */
+  _Uint16t combine_len; /* bitsize 16, bitpos 16 */
+};
+typedef union %anon104 { /* size 4 */
+  struct _io_close /* id 103 */ i; /* bitsize 32, bitpos 0 */
+} io_close_t;
+struct _io_write { /* size 16 id 105 */
+  _Uint16t type; /* bitsize 16, bitpos 0 */
+  _Uint16t combine_len; /* bitsize 16, bitpos 16 */
+  _Int32t nbytes; /* bitsize 32, bitpos 32 */
+  _Uint32t xtype; /* bitsize 32, bitpos 64 */
+  _Uint32t zero; /* bitsize 32, bitpos 96 */
+};
+typedef union %anon106 { /* size 16 */
+  struct _io_write /* id 105 */ i; /* bitsize 128, bitpos 0 */
+} io_write_t;
+struct _io_read { /* size 16 id 107 */
+  _Uint16t type; /* bitsize 16, bitpos 0 */
+  _Uint16t combine_len; /* bitsize 16, bitpos 16 */
+  _Int32t nbytes; /* bitsize 32, bitpos 32 */
+  _Uint32t xtype; /* bitsize 32, bitpos 64 */
+  _Uint32t zero; /* bitsize 32, bitpos 96 */
+};
+typedef union %anon106 { /* size 16 */
+  struct _io_read /* id 107 */ i; /* bitsize 128, bitpos 0 */
+} io_read_t;
+struct _io_stat { /* size 8 id 108 */
+  _Uint16t type; /* bitsize 16, bitpos 0 */
+  _Uint16t combine_len; /* bitsize 16, bitpos 16 */
+  _Uint32t zero; /* bitsize 32, bitpos 32 */
+};
+typedef union %anon109 { /* size 72 */
+  struct _io_stat /* id 108 */ i; /* bitsize 64, bitpos 0 */
+  struct stat /* id 110 */ o; /* bitsize 576, bitpos 0 */
+} io_stat_t;
+struct _io_notify { /* size 64 id 111 */
+  _Uint16t type; /* bitsize 16, bitpos 0 */
+  _Uint16t combine_len; /* bitsize 16, bitpos 16 */
+  _Int32t action; /* bitsize 32, bitpos 32 */
+  _Int32t flags; /* bitsize 32, bitpos 64 */
+  struct sigevent /* id 28 */ event; /* bitsize 128, bitpos 96 */
+  _Int32t mgr[2]:uint32; /* bitsize 64, bitpos 224 */
+  _Int32t flags_extra_mask; /* bitsize 32, bitpos 288 */
+  _Int32t flags_exten; /* bitsize 32, bitpos 320 */
+  _Int32t nfds; /* bitsize 32, bitpos 352 */
+  _Int32t fd_first; /* bitsize 32, bitpos 384 */
+  _Int32t nfds_ready; /* bitsize 32, bitpos 416 */
+  _Int64t timo; /* bitsize 64, bitpos 448 */
+};
+struct _io_notify_reply { /* size 64 id 112 */
+  _Uint32t zero; /* bitsize 32, bitpos 0 */
+  _Uint32t flags; /* bitsize 32, bitpos 32 */
+  _Int32t flags2; /* bitsize 32, bitpos 64 */
+  struct sigevent /* id 28 */ event; /* bitsize 128, bitpos 96 */
+  _Int32t mgr[2]:uint32; /* bitsize 64, bitpos 224 */
+  _Int32t flags_extra_mask; /* bitsize 32, bitpos 288 */
+  _Int32t flags_exten; /* bitsize 32, bitpos 320 */
+  _Int32t nfds; /* bitsize 32, bitpos 352 */
+  _Int32t fd_first; /* bitsize 32, bitpos 384 */
+  _Int32t nfds_ready; /* bitsize 32, bitpos 416 */
+  _Int64t timo; /* bitsize 64, bitpos 448 */
+};
+typedef union %anon113 { /* size 64 */
+  struct _io_notify /* id 111 */ i; /* bitsize 512, bitpos 0 */
+  struct _io_notify_reply /* id 112 */ o; /* bitsize 512, bitpos 0 */
+} io_notify_t;
+struct _io_devctl { /* size 16 id 114 */
+  _Uint16t type; /* bitsize 16, bitpos 0 */
+  _Uint16t combine_len; /* bitsize 16, bitpos 16 */
+  _Int32t dcmd; /* bitsize 32, bitpos 32 */
+  _Int32t nbytes; /* bitsize 32, bitpos 64 */
+  _Int32t zero; /* bitsize 32, bitpos 96 */
+};
+struct _io_devctl_reply { /* size 16 id 115 */
+  _Uint32t zero; /* bitsize 32, bitpos 0 */
+  _Int32t ret_val; /* bitsize 32, bitpos 32 */
+  _Int32t nbytes; /* bitsize 32, bitpos 64 */
+  _Int32t zero2; /* bitsize 32, bitpos 96 */
+};
+typedef union %anon116 { /* size 16 */
+  struct _io_devctl /* id 114 */ i; /* bitsize 128, bitpos 0 */
+  struct _io_devctl_reply /* id 115 */ o; /* bitsize 128, bitpos 0 */
+} io_devctl_t;
+struct _io_pathconf { /* size 8 id 117 */
+  _Uint16t type; /* bitsize 16, bitpos 0 */
+  _Uint16t combine_len; /* bitsize 16, bitpos 16 */
+  short int name; /* bitsize 16, bitpos 32 */
+  _Uint16t zero; /* bitsize 16, bitpos 48 */
+};
+typedef union %anon118 { /* size 8 */
+  struct _io_pathconf /* id 117 */ i; /* bitsize 64, bitpos 0 */
+} io_pathconf_t;
+struct _io_lseek { /* size 16 id 119 */
+  _Uint16t type; /* bitsize 16, bitpos 0 */
+  _Uint16t combine_len; /* bitsize 16, bitpos 16 */
+  short int whence; /* bitsize 16, bitpos 32 */
+  _Uint16t zero; /* bitsize 16, bitpos 48 */
+  _Uint64t offset; /* bitsize 64, bitpos 64 */
+};
+typedef union %anon120 { /* size 16 */
+  struct _io_lseek /* id 119 */ i; /* bitsize 128, bitpos 0 */
+  _Uint64t o; /* bitsize 64, bitpos 0 */
+} io_lseek_t;
+struct _io_chmod { /* size 8 id 121 */
+  _Uint16t type; /* bitsize 16, bitpos 0 */
+  _Uint16t combine_len; /* bitsize 16, bitpos 16 */
+  mode_t mode; /* bitsize 32, bitpos 32 */
+};
+typedef union %anon122 { /* size 8 */
+  struct _io_chmod /* id 121 */ i; /* bitsize 64, bitpos 0 */
+} io_chmod_t;
+struct _io_chown { /* size 12 id 123 */
+  _Uint16t type; /* bitsize 16, bitpos 0 */
+  _Uint16t combine_len; /* bitsize 16, bitpos 16 */
+  _Int32t gid; /* bitsize 32, bitpos 32 */
+  _Int32t uid; /* bitsize 32, bitpos 64 */
+};
+typedef union %anon124 { /* size 12 */
+  struct _io_chown /* id 123 */ i; /* bitsize 96, bitpos 0 */
+} io_chown_t;
+struct _io_utime { /* size 16 id 125 */
+  _Uint16t type; /* bitsize 16, bitpos 0 */
+  _Uint16t combine_len; /* bitsize 16, bitpos 16 */
+  _Int32t cur_flag; /* bitsize 32, bitpos 32 */
+  struct utimbuf /* id 126 */ times; /* bitsize 64, bitpos 64 */
+};
+typedef union %anon127 { /* size 16 */
+  struct _io_utime /* id 125 */ i; /* bitsize 128, bitpos 0 */
+} io_utime_t;
+enum _io_openfd_xtypes { _IO_OPENFD_NONE, _IO_OPENFD_PIPE, _IO_OPENFD_KQUEUE, _IO_OPENFD_ACCEPT, _IO_OPENFD_SCTP_PEELOFF };
+struct _io_openfd { /* size 68 id 128 */
+  _Uint16t type; /* bitsize 16, bitpos 0 */
+  _Uint16t combine_len; /* bitsize 16, bitpos 16 */
+  _Uint32t ioflag; /* bitsize 32, bitpos 32 */
+  _Uint16t sflag; /* bitsize 16, bitpos 64 */
+  _Uint16t xtype; /* bitsize 16, bitpos 80 */
+  struct _msg_info /* id 97 */ info; /* bitsize 384, bitpos 96 */
+  _Uint32t reserved2; /* bitsize 32, bitpos 480 */
+  _Uint32t key; /* bitsize 32, bitpos 512 */
+};
+typedef union %anon129 { /* size 68 */
+  struct _io_openfd /* id 128 */ i; /* bitsize 544, bitpos 0 */
+} io_openfd_t;
+struct _io_fdinfo { /* size 16 id 130 */
+  _Uint16t type; /* bitsize 16, bitpos 0 */
+  _Uint16t combine_len; /* bitsize 16, bitpos 16 */
+  _Uint32t flags; /* bitsize 32, bitpos 32 */
+  _Int32t path_len; /* bitsize 32, bitpos 64 */
+  _Uint32t reserved; /* bitsize 32, bitpos 96 */
+};
+struct _io_fdinfo_reply { /* size 72 id 131 */
+  _Uint32t zero[2]:uint32; /* bitsize 64, bitpos 0 */
+  struct _fdinfo /* id 132 */ info; /* bitsize 512, bitpos 64 */
+};
+typedef union %anon133 { /* size 72 */
+  struct _io_fdinfo /* id 130 */ i; /* bitsize 128, bitpos 0 */
+  struct _io_fdinfo_reply /* id 131 */ o; /* bitsize 576, bitpos 0 */
+} io_fdinfo_t;
+struct _io_lock { /* size 12 id 134 */
+  _Uint16t type; /* bitsize 16, bitpos 0 */
+  _Uint16t combine_len; /* bitsize 16, bitpos 16 */
+  _Uint32t subtype; /* bitsize 32, bitpos 32 */
+  _Int32t nbytes; /* bitsize 32, bitpos 64 */
+};
+struct _io_lock_reply { /* size 12 id 135 */
+  _Uint32t zero[3]:uint32; /* bitsize 96, bitpos 0 */
+};
+typedef union %anon136 { /* size 12 */
+  struct _io_lock /* id 134 */ i; /* bitsize 96, bitpos 0 */
+  struct _io_lock_reply /* id 135 */ o; /* bitsize 96, bitpos 0 */
+} io_lock_t;
+struct _io_space { /* size 24 id 137 */
+  _Uint16t type; /* bitsize 16, bitpos 0 */
+  _Uint16t combine_len; /* bitsize 16, bitpos 16 */
+  _Uint16t subtype; /* bitsize 16, bitpos 32 */
+  short int whence; /* bitsize 16, bitpos 48 */
+  _Uint64t start; /* bitsize 64, bitpos 64 */
+  _Uint64t len; /* bitsize 64, bitpos 128 */
+};
+typedef union %anon138 { /* size 24 */
+  struct _io_space /* id 137 */ i; /* bitsize 192, bitpos 0 */
+  _Uint64t o; /* bitsize 64, bitpos 0 */
+} io_space_t;
+struct _io_shutdown { /* size 4 id 139 */
+  _Uint16t type; /* bitsize 16, bitpos 0 */
+  _Uint16t combine_len; /* bitsize 16, bitpos 16 */
+};
+struct _io_shutdown_reply { /* size 4 id 140 */
+  _Uint32t zero; /* bitsize 32, bitpos 0 */
+};
+typedef union %anon141 { /* size 4 */
+  struct _io_shutdown /* id 139 */ i; /* bitsize 32, bitpos 0 */
+  struct _io_shutdown_reply /* id 140 */ o; /* bitsize 32, bitpos 0 */
+} io_shutdown_t;
+struct _io_mmap { /* size 88 id 142 */
+  _Uint16t type; /* bitsize 16, bitpos 0 */
+  _Uint16t combine_len; /* bitsize 16, bitpos 16 */
+  _Uint32t prot; /* bitsize 32, bitpos 32 */
+  _Uint64t offset; /* bitsize 64, bitpos 64 */
+  struct _msg_info /* id 97 */ info; /* bitsize 384, bitpos 128 */
+  _Uint32t zero[6]:uint32; /* bitsize 192, bitpos 512 */
+};
+struct _io_mmap_reply { /* size 24 id 143 */
+  _Uint32t zero; /* bitsize 32, bitpos 0 */
+  _Uint32t flags; /* bitsize 32, bitpos 32 */
+  _Uint64t offset; /* bitsize 64, bitpos 64 */
+  _Int32t coid; /* bitsize 32, bitpos 128 */
+  _Int32t fd; /* bitsize 32, bitpos 160 */
+};
+typedef union %anon144 { /* size 88 */
+  struct _io_mmap /* id 142 */ i; /* bitsize 704, bitpos 0 */
+  struct _io_mmap_reply /* id 143 */ o; /* bitsize 192, bitpos 0 */
+} io_mmap_t;
+struct _io_dup { /* size 60 id 145 */
+  _Uint16t type; /* bitsize 16, bitpos 0 */
+  _Uint16t combine_len; /* bitsize 16, bitpos 16 */
+  struct _msg_info /* id 97 */ info; /* bitsize 384, bitpos 32 */
+  _Uint32t reserved; /* bitsize 32, bitpos 416 */
+  _Uint32t key; /* bitsize 32, bitpos 448 */
+};
+typedef union %anon146 { /* size 60 */
+  struct _io_dup /* id 145 */ i; /* bitsize 480, bitpos 0 */
+} io_dup_t;
+struct _io_msg { /* size 8 id 62 */
+  _Uint16t type; /* bitsize 16, bitpos 0 */
+  _Uint16t combine_len; /* bitsize 16, bitpos 16 */
+  _Uint16t mgrid; /* bitsize 16, bitpos 32 */
+  _Uint16t subtype; /* bitsize 16, bitpos 48 */
+};
+typedef union %anon61 io_msg_t;
+struct _io_sync { /* size 8 id 147 */
+  _Uint16t type; /* bitsize 16, bitpos 0 */
+  _Uint16t combine_len; /* bitsize 16, bitpos 16 */
+  _Uint32t flag; /* bitsize 32, bitpos 32 */
+};
+typedef union %anon148 { /* size 8 */
+  struct _io_sync /* id 147 */ i; /* bitsize 64, bitpos 0 */
+} io_sync_t;
+struct _io_power { /* size 16 id 149 */
+  _Uint16t type; /* bitsize 16, bitpos 0 */
+  _Uint16t combine_len; /* bitsize 16, bitpos 16 */
+  _Uint32t subtype; /* bitsize 32, bitpos 32 */
+  _Uint32t flags; /* bitsize 32, bitpos 64 */
+  _Int32t mode; /* bitsize 32, bitpos 96 */
+};
+enum _io_power_subtypes { _IO_POWER_GET, _IO_POWER_SET, _IO_POWER_MODES, _IO_POWER_MODEATTR };
+typedef union %anon150 { /* size 16 */
+  struct _io_power /* id 149 */ i; /* bitsize 128, bitpos 0 */
+  struct _pm_power_attr /* id 151 */ o; /* bitsize 128, bitpos 0 */
+} io_power_t;
+ /usr/qnx650/target/qnx6/usr/include/sys/stat.h:
+typedef _Uint64t blkcnt64_t;
+typedef _Uint64t fsblkcnt64_t;
+typedef _Uint64t fsfilcnt64_t;
+struct stat { /* size 72 id 110 */
+  ino_t st_ino; /* bitsize 32, bitpos 0 */
+  ino_t st_ino_hi; /* bitsize 32, bitpos 32 */
+  off_t st_size; /* bitsize 32, bitpos 64 */
+  off_t st_size_hi; /* bitsize 32, bitpos 96 */
+  dev_t st_dev; /* bitsize 32, bitpos 128 */
+  dev_t st_rdev; /* bitsize 32, bitpos 160 */
+  uid_t st_uid; /* bitsize 32, bitpos 192 */
+  gid_t st_gid; /* bitsize 32, bitpos 224 */
+  time_t st_mtime; /* bitsize 32, bitpos 256 */
+  time_t st_atime; /* bitsize 32, bitpos 288 */
+  time_t st_ctime; /* bitsize 32, bitpos 320 */
+  mode_t st_mode; /* bitsize 32, bitpos 352 */
+  nlink_t st_nlink; /* bitsize 32, bitpos 384 */
+  blksize_t st_blocksize; /* bitsize 32, bitpos 416 */
+  _Int32t st_nblocks; /* bitsize 32, bitpos 448 */
+  blksize_t st_blksize; /* bitsize 32, bitpos 480 */
+  blkcnt_t st_blocks; /* bitsize 32, bitpos 512 */
+  blkcnt_t st_blocks_hi; /* bitsize 32, bitpos 544 */
+};
+struct stat64 { /* size 72 id 152 */
+  ino64_t st_ino; /* bitsize 64, bitpos 0 */
+  off64_t st_size; /* bitsize 64, bitpos 64 */
+  dev_t st_dev; /* bitsize 32, bitpos 128 */
+  dev_t st_rdev; /* bitsize 32, bitpos 160 */
+  uid_t st_uid; /* bitsize 32, bitpos 192 */
+  gid_t st_gid; /* bitsize 32, bitpos 224 */
+  time_t st_mtime; /* bitsize 32, bitpos 256 */
+  time_t st_atime; /* bitsize 32, bitpos 288 */
+  time_t st_ctime; /* bitsize 32, bitpos 320 */
+  mode_t st_mode; /* bitsize 32, bitpos 352 */
+  nlink_t st_nlink; /* bitsize 32, bitpos 384 */
+  blksize_t st_blocksize; /* bitsize 32, bitpos 416 */
+  _Int32t st_nblocks; /* bitsize 32, bitpos 448 */
+  blksize_t st_blksize; /* bitsize 32, bitpos 480 */
+  blkcnt64_t st_blocks; /* bitsize 64, bitpos 512 */
+};
+ /usr/qnx650/target/qnx6/usr/include/sys/statvfs.h:
+struct statvfs { /* size 168 id 153 */
+  long unsigned int f_bsize; /* bitsize 32, bitpos 0 */
+  long unsigned int f_frsize; /* bitsize 32, bitpos 32 */
+  fsblkcnt_t f_blocks; /* bitsize 32, bitpos 64 */
+  fsblkcnt_t f_blocks_hi; /* bitsize 32, bitpos 96 */
+  fsblkcnt_t f_bfree; /* bitsize 32, bitpos 128 */
+  fsblkcnt_t f_bfree_hi; /* bitsize 32, bitpos 160 */
+  fsblkcnt_t f_bavail; /* bitsize 32, bitpos 192 */
+  fsblkcnt_t f_bavail_hi; /* bitsize 32, bitpos 224 */
+  fsfilcnt_t f_files; /* bitsize 32, bitpos 256 */
+  fsfilcnt_t f_files_hi; /* bitsize 32, bitpos 288 */
+  fsfilcnt_t f_ffree; /* bitsize 32, bitpos 320 */
+  fsfilcnt_t f_ffree_hi; /* bitsize 32, bitpos 352 */
+  fsfilcnt_t f_favail; /* bitsize 32, bitpos 384 */
+  fsfilcnt_t f_favail_hi; /* bitsize 32, bitpos 416 */
+  long unsigned int f_fsid; /* bitsize 32, bitpos 448 */
+  char f_basetype[16]:uint32; /* bitsize 128, bitpos 480 */
+  long unsigned int f_flag; /* bitsize 32, bitpos 608 */
+  long unsigned int f_namemax; /* bitsize 32, bitpos 640 */
+  long unsigned int f_filler[21]:uint32; /* bitsize 672, bitpos 672 */
+};
+struct statvfs64 { /* size 168 id 154 */
+  long unsigned int f_bsize; /* bitsize 32, bitpos 0 */
+  long unsigned int f_frsize; /* bitsize 32, bitpos 32 */
+  fsblkcnt64_t f_blocks; /* bitsize 64, bitpos 64 */
+  fsblkcnt64_t f_bfree; /* bitsize 64, bitpos 128 */
+  fsblkcnt64_t f_bavail; /* bitsize 64, bitpos 192 */
+  fsfilcnt64_t f_files; /* bitsize 64, bitpos 256 */
+  fsfilcnt64_t f_ffree; /* bitsize 64, bitpos 320 */
+  fsfilcnt64_t f_favail; /* bitsize 64, bitpos 384 */
+  long unsigned int f_fsid; /* bitsize 32, bitpos 448 */
+  char f_basetype[16]:uint32; /* bitsize 128, bitpos 480 */
+  long unsigned int f_flag; /* bitsize 32, bitpos 608 */
+  long unsigned int f_namemax; /* bitsize 32, bitpos 640 */
+  long unsigned int f_filler[21]:uint32; /* bitsize 672, bitpos 672 */
+};
+ /usr/qnx650/target/qnx6/usr/include/sys/neutrino.h:
+struct intrspin { /* size 4 id 155 */
+  unsigned int value; /* bitsize 32, bitpos 0 */
+};
+typedef struct intrspin /* id 155 */ intrspin_t;
+struct _msg_info { /* size 48 id 97 */
+  _Uint32t nd; /* bitsize 32, bitpos 0 */
+  _Uint32t srcnd; /* bitsize 32, bitpos 32 */
+  pid_t pid; /* bitsize 32, bitpos 64 */
+  _Int32t tid; /* bitsize 32, bitpos 96 */
+  _Int32t chid; /* bitsize 32, bitpos 128 */
+  _Int32t scoid; /* bitsize 32, bitpos 160 */
+  _Int32t coid; /* bitsize 32, bitpos 192 */
+  _Int32t msglen; /* bitsize 32, bitpos 224 */
+  _Int32t srcmsglen; /* bitsize 32, bitpos 256 */
+  _Int32t dstmsglen; /* bitsize 32, bitpos 288 */
+  _Int16t priority; /* bitsize 16, bitpos 320 */
+  _Int16t flags; /* bitsize 16, bitpos 336 */
+  _Uint32t reserved; /* bitsize 32, bitpos 352 */
+};
+struct _cred_info { /* size 60 id 156 */
+  uid_t ruid; /* bitsize 32, bitpos 0 */
+  uid_t euid; /* bitsize 32, bitpos 32 */
+  uid_t suid; /* bitsize 32, bitpos 64 */
+  gid_t rgid; /* bitsize 32, bitpos 96 */
+  gid_t egid; /* bitsize 32, bitpos 128 */
+  gid_t sgid; /* bitsize 32, bitpos 160 */
+  _Uint32t ngroups; /* bitsize 32, bitpos 192 */
+  gid_t grouplist[8]:uint32; /* bitsize 256, bitpos 224 */
+};
+struct _client_info { /* size 76 id 157 */
+  _Uint32t nd; /* bitsize 32, bitpos 0 */
+  pid_t pid; /* bitsize 32, bitpos 32 */
+  pid_t sid; /* bitsize 32, bitpos 64 */
+  _Uint32t flags; /* bitsize 32, bitpos 96 */
+  struct _cred_info /* id 156 */ cred; /* bitsize 480, bitpos 128 */
+};
+struct _vtid_info { /* size 32 id 158 */
+  _Int32t tid; /* bitsize 32, bitpos 0 */
+  _Int32t coid; /* bitsize 32, bitpos 32 */
+  _Int32t priority; /* bitsize 32, bitpos 64 */
+  _Int32t srcmsglen; /* bitsize 32, bitpos 96 */
+  _Int32t keydata; /* bitsize 32, bitpos 128 */
+  _Int32t srcnd; /* bitsize 32, bitpos 160 */
+  _Int32t dstmsglen; /* bitsize 32, bitpos 192 */
+  _Int32t zero; /* bitsize 32, bitpos 224 */
+};
+struct _timer_info { /* size 72 id 159 */
+  struct _itimer /* id 86 */ itime; /* bitsize 128, bitpos 0 */
+  struct _itimer /* id 86 */ otime; /* bitsize 128, bitpos 128 */
+  _Uint32t flags; /* bitsize 32, bitpos 256 */
+  _Int32t tid; /* bitsize 32, bitpos 288 */
+  _Int32t notify; /* bitsize 32, bitpos 320 */
+  clockid_t clockid; /* bitsize 32, bitpos 352 */
+  _Uint32t overruns; /* bitsize 32, bitpos 384 */
+  struct sigevent /* id 28 */ event; /* bitsize 128, bitpos 416 */
+};
+struct _sighandler_info { /* size 48 id 160 */
+  siginfo_t siginfo; /* bitsize 320, bitpos 0 */
+  void (*handler) (/* unknown */); /* bitsize 32, bitpos 320 */
+  void *context; /* bitsize 32, bitpos 352 */
+};
+struct _sched_info { /* size 64 id 161 */
+  int priority_min; /* bitsize 32, bitpos 0 */
+  int priority_max; /* bitsize 32, bitpos 32 */
+  _Uint64t interval; /* bitsize 64, bitpos 64 */
+  int priority_priv; /* bitsize 32, bitpos 128 */
+  int reserved[11]:uint32; /* bitsize 352, bitpos 160 */
+};
+struct _pulse { /* size 16 id 162 */
+  _Uint16t type; /* bitsize 16, bitpos 0 */
+  _Uint16t subtype; /* bitsize 16, bitpos 16 */
+  _Int8t code; /* bitsize 8, bitpos 32 */
+  _Uint8t zero[3]:uint32; /* bitsize 24, bitpos 40 */
+  union sigval /* id 27 */ value; /* bitsize 32, bitpos 64 */
+  _Int32t scoid; /* bitsize 32, bitpos 96 */
+};
+struct _thread_name { /* size 12 id 163 */
+  int new_name_len; /* bitsize 32, bitpos 0 */
+  int name_buf_len; /* bitsize 32, bitpos 32 */
+  char name_buf[1]:uint32; /* bitsize 8, bitpos 64 */
+};
+struct _thread_runmask { /* size 4 id 164 */
+  int size; /* bitsize 32, bitpos 0 */
+};
+struct _clockperiod { /* size 8 id 165 */
+  long unsigned int nsec; /* bitsize 32, bitpos 0 */
+  long int fract; /* bitsize 32, bitpos 32 */
+};
+ /usr/qnx650/target/qnx6/usr/include/sched.h:
+struct sched_query { /* size 8 id 166 */
+  _Uint32t extsched; /* bitsize 32, bitpos 0 */
+  _Uint32t reserved; /* bitsize 32, bitpos 32 */
+};
+struct sched_param { /* size 40 id 167 */
+  int sched_priority; /* bitsize 32, bitpos 0 */
+  int sched_curpriority; /* bitsize 32, bitpos 32 */
+  union %anon168 { /* size 32 */
+    int __reserved[8]:uint32; /* bitsize 256, bitpos 0 */
+    struct %anon169 { /* size 24 */
+      int __ss_low_priority; /* bitsize 32, bitpos 0 */
+      int __ss_max_repl; /* bitsize 32, bitpos 32 */
+      struct timespec /* id 39 */ __ss_repl_period; /* bitsize 64, bitpos 64 */
+      struct timespec /* id 39 */ __ss_init_budget; /* bitsize 64, bitpos 128 */
+    } __ss; /* bitsize 192, bitpos 0 */
+  } __ss_un; /* bitsize 256, bitpos 64 */
+};
+typedef struct sched_param /* id 167 */ sched_param_t;
+ /usr/qnx650/target/qnx6/usr/include/sys/storage.h:
+struct _thread_local_storage { /* size 64 id 170 */
+  void (*__exitfunc) (/* unknown */); /* bitsize 32, bitpos 0 */
+  void *__arg; /* bitsize 32, bitpos 32 */
+  int *__errptr; /* bitsize 32, bitpos 64 */
+  int __errval; /* bitsize 32, bitpos 96 */
+  unsigned int __flags; /* bitsize 32, bitpos 128 */
+  int __pid; /* bitsize 32, bitpos 160 */
+  int __tid; /* bitsize 32, bitpos 192 */
+  unsigned int __owner; /* bitsize 32, bitpos 224 */
+  void *__stackaddr; /* bitsize 32, bitpos 256 */
+  unsigned int __reserved1; /* bitsize 32, bitpos 288 */
+  unsigned int __numkeys; /* bitsize 32, bitpos 320 */
+  void **__keydata; /* bitsize 32, bitpos 352 */
+  void *__cleanup; /* bitsize 32, bitpos 384 */
+  void *__fpuemu_data; /* bitsize 32, bitpos 416 */
+  void *__reserved3; /* bitsize 32, bitpos 448 */
+  void (*__sigaction) (/* unknown */); /* bitsize 32, bitpos 480 */
+};
+struct _process_local_storage { /* size 40 id 171 */
+  void *(*__getgot) (/* unknown */); /* bitsize 32, bitpos 0 */
+  void (*__mathemulator) (/* unknown */); /* bitsize 32, bitpos 32 */
+  void *__dll_list; /* bitsize 32, bitpos 64 */
+  void *__reserved[6]:uint32; /* bitsize 192, bitpos 96 */
+  void (*__threadwatch) (/* unknown */); /* bitsize 32, bitpos 288 */
+};
+ /usr/qnx650/target/qnx6/usr/include/sys/states.h:
+enum _THREAD_STATE { STATE_DEAD, STATE_RUNNING, STATE_READY, STATE_STOPPED, STATE_SEND, STATE_RECEIVE, STATE_REPLY, STATE_STACK, STATE_WAITTHREAD, STATE_WAITPAGE, STATE_SIGSUSPEND, STATE_SIGWAITINFO, STATE_NANOSLEEP, STATE_MUTEX, STATE_CONDVAR, STATE_JOIN, STATE_INTR, STATE_SEM, STATE_WAITCTX, STATE_NET_SEND, STATE_NET_REPLY, STATE_MAX = 24 };
+ /usr/qnx650/target/qnx6/usr/include/x86/neutrino.h:
+struct __gcc_fool { /* size 400 id 172 */
+  int __fool[100]:uint32; /* bitsize 3200, bitpos 0 */
+};
+ /usr/qnx650/target/qnx6/usr/include/utime.h:
+struct utimbuf { /* size 8 id 126 */
+  time_t actime; /* bitsize 32, bitpos 0 */
+  time_t modtime; /* bitsize 32, bitpos 32 */
+};
+ /usr/qnx650/target/qnx6/usr/include/sys/ftype.h:
+enum _file_type { _FTYPE_MATCHED = -1, _FTYPE_ALL = -1, _FTYPE_ANY, _FTYPE_FILE, _FTYPE_LINK, _FTYPE_SYMLINK, _FTYPE_PIPE, _FTYPE_SHMEM, _FTYPE_MQUEUE, _FTYPE_SOCKET, _FTYPE_SEM, _FTYPE_PHOTON, _FTYPE_DUMPER, _FTYPE_MOUNT, _FTYPE_NAME, _FTYPE_TYMEM };
+ /usr/qnx650/target/qnx6/usr/include/sys/iomgr.h:
+enum _mgr_types { _IOMGR_FSYS = 2, _IOMGR_TCPIP = 6, _IOMGR_PHOTON = 11, _IOMGR_CAM, _IOMGR_PCI, _IOMGR_NETMGR, _IOMGR_REGISTRY = 16, _IOMGR_PCCARD, _IOMGR_USB, _IOMGR_MEDIA, _IOMGR_PMM, _IOMGR_DISPLAY, _IOMGR_INPUT, _IOMGR_PRIVATE_BASE = 61440, _IOMGR_PRIVATE_MAX = 65535 };
+struct _fdinfo { /* size 64 id 132 */
+  _Uint32t mode; /* bitsize 32, bitpos 0 */
+  _Uint32t ioflag; /* bitsize 32, bitpos 32 */
+  _Uint64t offset; /* bitsize 64, bitpos 64 */
+  _Uint64t size; /* bitsize 64, bitpos 128 */
+  _Uint32t flags; /* bitsize 32, bitpos 192 */
+  _Uint16t sflag; /* bitsize 16, bitpos 224 */
+  _Uint16t count; /* bitsize 16, bitpos 240 */
+  _Uint16t rcount; /* bitsize 16, bitpos 256 */
+  _Uint16t wcount; /* bitsize 16, bitpos 272 */
+  _Uint16t rlocks; /* bitsize 16, bitpos 288 */
+  _Uint16t wlocks; /* bitsize 16, bitpos 304 */
+  _Uint32t zero[6]:uint32; /* bitsize 192, bitpos 320 */
+};
+ /usr/qnx650/target/qnx6/usr/include/sys/pm.h:
+typedef _Int32t pm_power_mode_t;
+struct _pm_power_attr { /* size 16 id 151 */
+  pm_power_mode_t cur_mode; /* bitsize 32, bitpos 0 */
+  pm_power_mode_t new_mode; /* bitsize 32, bitpos 32 */
+  pm_power_mode_t nxt_mode; /* bitsize 32, bitpos 64 */
+  pm_power_mode_t num_modes; /* bitsize 32, bitpos 96 */
+};
+typedef struct _pm_power_attr /* id 151 */ pm_power_attr_t;
+typedef _Uint32t pm_property_t;
+typedef struct %anon173 { /* size 8 */
+  pm_property_t id; /* bitsize 32, bitpos 0 */
+  _Uint32t size; /* bitsize 32, bitpos 32 */
+} pm_property_attr_t;
+typedef union %anon174 { /* size 4 */
+  int coid; /* bitsize 32, bitpos 0 */
+  void *reserved; /* bitsize 32, bitpos 0 */
+} pm_hdl_t;
+typedef struct pmd_attr /* id 175 */ pmd_attr_t;
+typedef struct pmd_mode_attr /* id 176 */ pmd_mode_attr_t;
+struct pmd_mode_attr { /* size 16 id 176 */
+  pm_power_mode_t mode; /* bitsize 32, bitpos 0 */
+  unsigned int flags; /* bitsize 32, bitpos 32 */
+  union %anon177 { /* size 4 */
+    _Uint32t flags; /* bitsize 32, bitpos 0 */
+    void *ptr; /* bitsize 32, bitpos 0 */
+  } drvprivate; /* bitsize 32, bitpos 64 */
+  _Uint32t rsv1; /* bitsize 32, bitpos 96 */
+};
+typedef int (*pmd_setpower_t) (/* unknown */);
+struct pmd_attr { /* size 100 id 175 */
+  pm_hdl_t hdl; /* bitsize 32, bitpos 0 */
+  unsigned int pmm_flags; /* bitsize 32, bitpos 32 */
+  pmd_mode_attr_t *cur_attr; /* bitsize 32, bitpos 64 */
+  unsigned int cur_flags; /* bitsize 32, bitpos 96 */
+  pmd_mode_attr_t *new_attr; /* bitsize 32, bitpos 128 */
+  unsigned int new_flags; /* bitsize 32, bitpos 160 */
+  pm_power_mode_t last_active; /* bitsize 32, bitpos 192 */
+  pmd_mode_attr_t *modes; /* bitsize 32, bitpos 224 */
+  int nmodes; /* bitsize 32, bitpos 256 */
+  void *data; /* bitsize 32, bitpos 288 */
+  pmd_setpower_t setpower; /* bitsize 32, bitpos 320 */
+  short int setpower_flags; /* bitsize 16, bitpos 352 */
+  short int lock_flag; /* bitsize 16, bitpos 368 */
+  short int want_ex; /* bitsize 16, bitpos 384 */
+  short int lock_sh; /* bitsize 16, bitpos 400 */
+  struct sigevent /* id 28 */ event; /* bitsize 128, bitpos 416 */
+  _Uint32t seqno; /* bitsize 32, bitpos 544 */
+  _Uint32t reserved[7]:uint32; /* bitsize 224, bitpos 576 */
+};
+ /usr/qnx650/target/qnx6/usr/include/netinet/in.h:
+typedef uint32_t in_addr_t;
+typedef uint16_t in_port_t;
+typedef _Uint8t sa_family_t;
+struct in_addr { /* size 4 id 178 */
+  in_addr_t s_addr; /* bitsize 32, bitpos 0 */
+};
+struct sockaddr_in { /* size 16 id 179 */
+  uint8_t sin_len; /* bitsize 8, bitpos 0 */
+  sa_family_t sin_family; /* bitsize 8, bitpos 8 */
+  in_port_t sin_port; /* bitsize 16, bitpos 16 */
+  struct in_addr /* id 178 */ sin_addr; /* bitsize 32, bitpos 32 */
+  int8_t sin_zero[8]:uint32; /* bitsize 64, bitpos 64 */
+};
+struct ip_opts { /* size 44 id 180 */
+  struct in_addr /* id 178 */ ip_dst; /* bitsize 32, bitpos 0 */
+  int8_t ip_opts[40]:uint32; /* bitsize 320, bitpos 32 */
+};
+struct ip_mreq { /* size 8 id 181 */
+  struct in_addr /* id 178 */ imr_multiaddr; /* bitsize 32, bitpos 0 */
+  struct in_addr /* id 178 */ imr_interface; /* bitsize 32, bitpos 32 */
+};
+ /usr/qnx650/target/qnx6/usr/include/netinet6/in6.h:
+typedef _Uint32t socklen_t;
+struct in6_addr { /* size 16 id 182 */
+  union %anon183 { /* size 16 */
+    uint8_t __u6_addr8[16]:uint32; /* bitsize 128, bitpos 0 */
+    uint16_t __u6_addr16[8]:uint32; /* bitsize 128, bitpos 0 */
+    uint32_t __u6_addr32[4]:uint32; /* bitsize 128, bitpos 0 */
+  } __u6_addr; /* bitsize 128, bitpos 0 */
+};
+struct sockaddr_in6 { /* size 28 id 184 */
+  uint8_t sin6_len; /* bitsize 8, bitpos 0 */
+  sa_family_t sin6_family; /* bitsize 8, bitpos 8 */
+  in_port_t sin6_port; /* bitsize 16, bitpos 16 */
+  uint32_t sin6_flowinfo; /* bitsize 32, bitpos 32 */
+  struct in6_addr /* id 182 */ sin6_addr; /* bitsize 128, bitpos 64 */
+  uint32_t sin6_scope_id; /* bitsize 32, bitpos 192 */
+};
+struct route_in6 { /* size 32 id 185 */
+  struct rtentry /* id 0 */ *ro_rt; /* bitsize 32, bitpos 0 */
+  struct sockaddr_in6 /* id 184 */ ro_dst; /* bitsize 224, bitpos 32 */
+};
+struct ipv6_mreq { /* size 20 id 186 */
+  struct in6_addr /* id 182 */ ipv6mr_multiaddr; /* bitsize 128, bitpos 0 */
+  unsigned int ipv6mr_interface; /* bitsize 32, bitpos 128 */
+};
+struct in6_pktinfo { /* size 20 id 187 */
+  struct in6_addr /* id 182 */ ipi6_addr; /* bitsize 128, bitpos 0 */
+  unsigned int ipi6_ifindex; /* bitsize 32, bitpos 128 */
+};
+struct ip6_mtuinfo { /* size 32 id 188 */
+  struct sockaddr_in6 /* id 184 */ ip6m_addr; /* bitsize 224, bitpos 0 */
+  uint32_t ip6m_mtu; /* bitsize 32, bitpos 224 */
+};
+ /usr/qnx650/target/qnx6/usr/include/fcntl.h:
+struct flock { /* size 32 id 189 */
+  _Int16t l_type; /* bitsize 16, bitpos 0 */
+  _Int16t l_whence; /* bitsize 16, bitpos 16 */
+  _Int32t l_zero1; /* bitsize 32, bitpos 32 */
+  off_t l_start; /* bitsize 32, bitpos 64 */
+  off_t l_start_hi; /* bitsize 32, bitpos 96 */
+  off_t l_len; /* bitsize 32, bitpos 128 */
+  off_t l_len_hi; /* bitsize 32, bitpos 160 */
+  pid_t l_pid; /* bitsize 32, bitpos 192 */
+  _Uint32t l_sysid; /* bitsize 32, bitpos 224 */
+};
+typedef struct flock /* id 189 */ flock_t;
+struct flock64 { /* size 32 id 190 */
+  _Int16t l_type; /* bitsize 16, bitpos 0 */
+  _Int16t l_whence; /* bitsize 16, bitpos 16 */
+  _Int32t l_zero1; /* bitsize 32, bitpos 32 */
+  off64_t l_start; /* bitsize 64, bitpos 64 */
+  off64_t l_len; /* bitsize 64, bitpos 128 */
+  pid_t l_pid; /* bitsize 32, bitpos 192 */
+  _Uint32t l_sysid; /* bitsize 32, bitpos 224 */
+};
+typedef struct flock64 /* id 190 */ flock64_t;
+datum_irig_test.c:
+typedef int32 int;
+typedef int8 char;
+typedef int32 long int;
+typedef uint32 unsigned int;
+typedef uint32 long unsigned int;
+typedef int64 long long int;
+typedef uint64 long long unsigned int;
+typedef int16 short int;
+typedef uint16 short unsigned int;
+typedef int8 signed char;
+typedef uint8 unsigned char;
+typedef float float;
+typedef double double;
+typedef float96 long double;
+typedef float _Decimal32;
+typedef double _Decimal64;
+typedef float128 _Decimal128;
+typedef void void;
+int main ()
+{ /* 0x80498b0 */
+  { /* 0x80498b0 */
+    uint8_t seconds /* 0xfffffff7 */;
+    uint8_t minutes /* 0xfffffff6 */;
+    uint8_t hours /* 0xfffffff5 */;
+    uint16_t days /* 0xfffffff2 */;
+    uint16_t year2 /* 0xfffffff0 */;
+    uint16_t year1 /* 0xffffffee */;
+    decimal_event_time dec_storage_time /* 0xffffffd4 */;
+    binary_event_time bin_storage_time /* 0xffffffdc */;
+    uint32_t unix_ms /* 0xffffffe8 */;
+    int RS /* 0xffffffe4 */;
+    /* file datum_irig_test.c line 16 addr 0x80498b0 */
+    /* file datum_irig_test.c line 18 addr 0x80498c1 */
+    /* file datum_irig_test.c line 21 addr 0x80498c8 */
+    /* file datum_irig_test.c line 22 addr 0x80498ce */
+    /* file datum_irig_test.c line 23 addr 0x80498d4 */
+    /* file datum_irig_test.c line 24 addr 0x80498da */
+    /* file datum_irig_test.c line 25 addr 0x80498de */
+    /* file datum_irig_test.c line 26 addr 0x80498e2 */
+    /* file datum_irig_test.c line 29 addr 0x80498e6 */
+    /* file datum_irig_test.c line 30 addr 0x80498ee */
+    /* file datum_irig_test.c line 32 addr 0x80498f4 */
+    /* file datum_irig_test.c line 33 addr 0x8049904 */
+    /* file datum_irig_test.c line 86 addr 0x804990b */
+    /* file datum_irig_test.c line 37 addr 0x8049912 */
+    /* file datum_irig_test.c line 38 addr 0x8049923 */
+    /* file datum_irig_test.c line 39 addr 0x8049935 */
+    /* file datum_irig_test.c line 40 addr 0x8049949 */
+    /* file datum_irig_test.c line 41 addr 0x8049956 */
+    /* file datum_irig_test.c line 42 addr 0x8049968 */
+    /* file datum_irig_test.c line 43 addr 0x804997c */
+    /* file datum_irig_test.c line 44 addr 0x8049989 */
+    /* file datum_irig_test.c line 45 addr 0x804999b */
+    /* file datum_irig_test.c line 46 addr 0x80499af */
+    /* file datum_irig_test.c line 47 addr 0x80499bc */
+    /* file datum_irig_test.c line 48 addr 0x80499ce */
+    /* file datum_irig_test.c line 49 addr 0x80499e2 */
+    /* file datum_irig_test.c line 83 addr 0x80499f2 */
+    /* file datum_irig_test.c line 84 addr 0x80499fa */
+    /* file datum_irig_test.c line 86 addr 0x8049a0a */
+  } /* 0x8049a12 */
+} /* 0x8049a12 */
+(struct %anon5 { /* size 64 */
+  long unsigned int timereq; /* bitsize 32, bitpos 0 */
+  long unsigned int eventreq; /* bitsize 32, bitpos 32 */
+  long unsigned int unlock; /* bitsize 32, bitpos 64 */
+  long unsigned int r1; /* bitsize 32, bitpos 96 */
+  long unsigned int control; /* bitsize 32, bitpos 128 */
+  long unsigned int ack; /* bitsize 32, bitpos 160 */
+  long unsigned int mask; /* bitsize 32, bitpos 192 */
+  long unsigned int intstat; /* bitsize 32, bitpos 224 */
+  long unsigned int minstrb; /* bitsize 32, bitpos 256 */
+  long unsigned int majstrb; /* bitsize 32, bitpos 288 */
+  long unsigned int r2; /* bitsize 32, bitpos 320 */
+  long unsigned int r3; /* bitsize 32, bitpos 352 */
+  long unsigned int time0; /* bitsize 32, bitpos 384 */
+  long unsigned int time1; /* bitsize 32, bitpos 416 */
+  long unsigned int event0; /* bitsize 32, bitpos 448 */
+  long unsigned int event1; /* bitsize 32, bitpos 480 */
+}) *DEV_reg /* 0x804affc */;
+struct %anon6 { /* size 16 */
+  char *input; /* bitsize 32, bitpos 0 */
+  char *output; /* bitsize 32, bitpos 32 */
+  char *GPS; /* bitsize 32, bitpos 64 */
+  char *year; /* bitsize 32, bitpos 96 */
+} DP_ram_ofs /* 0x804b000 */;
+char *DP_ram /* 0x804aff8 */;
+char buffer[10]:uint32 /* 0x804b014 */;
+int pci_handle /* 0x804b010 */;
+void *dev_handle /* 0x804b020 */;
+union decimal_strobe_time { /* id 0 */
+};
+union binary_strobe_time { /* id 0 */
+};
+struct rtentry { /* id 0 */
+};
+struct __ucontext_t { /* id 0 */
+};

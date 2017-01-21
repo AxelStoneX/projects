@@ -1,0 +1,15 @@
+CC = gcc
+CFLAGS = -D_LINUX_X86_ -I../../Include -I../Source
+
+OBJS = stest.o
+TARGET = stest
+SRC = stest.c
+
+all: build clean
+
+build: $(OBJS)
+	$(CC) -o $(TARGET)  $(OBJS) $(CFLAGS) $(LIBS)
+
+clean:
+	rm -f *.o *~ core
+

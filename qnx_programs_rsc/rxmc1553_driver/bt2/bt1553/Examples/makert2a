@@ -1,0 +1,16 @@
+CC = qcc -Vgcc_ntox86
+CFLAGS = -D_QNXNTO_PCI_X86_ -g2 -I../../Include -L/usr/lib
+LIBS = -lbusapi
+
+OBJS = example_rt2a.o
+TARGET = tstrt2a 
+SRC = example_rt2a.c
+
+all: $(TARGET) clean
+
+$(TARGET) : $(OBJS)
+	$(CC) -o $(TARGET) $(OBJS) $(CFLAGS) $(LIBS)
+
+clean:
+	rm -f *.o *~ core
+

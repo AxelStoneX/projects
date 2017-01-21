@@ -1,0 +1,97 @@
+#!/bin/sh
+
+QNX_TARG=/usr/qnx650/target/qnx6
+QNX_INC=-I${QNX_TARG}/usr/include
+
+PROC_DIR=`pwd`
+BIN_DIR=`pwd`/bin
+
+# CC_OPT="-Wno-strict-prototypes -fno-strict-aliasing"
+QCC_OPT="-lang-c -Vgcc_ntox86"
+CC_OPT="-D LEND -D __KIT2__"
+
+# Classic "C" compilation, .c extension is supposed
+comp_c()
+{
+ local src_f=$1.c
+ local out_f=${BIN_DIR}/$1.o
+ #echo $out_f
+
+ # echo " "
+ # echo "Compilation  $src_f -> $out_f  started"
+
+ if test -e $out_f;  then
+  rm -f $out_f
+ fi
+
+ gcc -c -gstabs -o $out_f  $CC_OPT $src_f
+#  qcc -c -gstabs -o $out_f $QCC_OPT $src_f
+  
+ echo -n "Compilation  $src_f \t is "
+ if test -e $out_f;  then
+  echo "correct"
+ else
+  echo "failed\n"
+ fi
+}
+
+cd src
+echo "\n ----- /SRC directory -----"
+comp_c First_Program
+comp_c thread_api
+comp_c time_counter
+comp_c time_statistics
+comp_c dbf_t
+comp_c dbf_b
+comp_c second_thread
+comp_c third_thread
+comp_c forth_thread
+comp_c fifth_thread
+cd ..
+
+# === Linking =============================
+TARGET_NAME=ex
+TARGET_FILE=../${TARGET_NAME}
+DBG_FILE=../${TARGET_NAME}.dbg
+
+cd bin
+if test -e First_Program.o -a\
+        -e dbf_t.o -a -e dbf_b.o ;   then
+ 
+ echo "\nLinking  BIN/( *.o ) -> ${TARGET_NAME}  started"
+
+ if test -e ${TARGET_FILE};  then
+  rm -f ${TARGET_FILE}
+ fi
+
+# ar -rc libFML.a libsims.a libdisp.a libm3sys.a
+
+#                                  -L. -lsims -ldisp -lm3sys\
+# ${GCC} -g -o ${TARGET_FILE} prc_rt.o prc_ft.o prc_xt.o prc_ct.o\
+#qcc -lang-c -g -o ${TARGET_FILE} prc_rt.o prc_ft.o prc_xt.o prc_ct.o\
+gcc -g -o ${TARGET_FILE}  First_Program.o dbf_t.o dbf_b.o \
+                          time_counter.o time_statistics.o thread_api.o third_thread.o second_thread.o forth_thread.o fifth_thread.o -L. -lm -lc
+
+
+# -L. -lbustools -lsocket  -lm -lsmall\
+
+ echo -n "Linking  BIN/( *.o ) -> ${TARGET_NAME}  is "
+ if test -e ${TARGET_FILE};  then
+  echo "correct"
+
+  if test -e ${DBG_FILE};  then
+   rm -f ${DBG_FILE}
+  fi
+
+ objdump -g ${TARGET_FILE} > ${DBG_FILE} 2>/dev/null
+
+ else
+  echo "failed"
+ fi
+
+else	
+ echo "\nNot all object files are available" 
+fi
+
+cd ..
+

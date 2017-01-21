@@ -1,0 +1,993 @@
+
+../ex:     file format elf32-i386
+
+main_module.c:
+typedef int32 int;
+typedef int8 char;
+typedef int32 long int;
+typedef uint32 unsigned int;
+typedef uint32 long unsigned int;
+typedef int64 long long int;
+typedef uint64 long long unsigned int;
+typedef int16 short int;
+typedef uint16 short unsigned int;
+typedef int8 signed char;
+typedef uint8 unsigned char;
+typedef float float;
+typedef double double;
+typedef float96 long double;
+typedef float _Decimal32;
+typedef double _Decimal64;
+typedef float128 _Decimal128;
+typedef void void;
+int main (int argc /* 0x8 */, char **argv /* 0xc */)
+{ /* 0x8048880 */
+  { /* 0x8048880 */
+    int main_bar_idx /* 0x22c */;
+    int i /* 0x228 */;
+    struct _pci_config_regs /* id 1 */ PCR /* 0x24 */;
+    char *dev_memory /* 0x224 */;
+    void *dev_handle /* 0x220 */;
+    struct pci_dev_info /* id 2 */ inf_F /* 0x124 */;
+    short unsigned int VendorID /* 0x21e */;
+    short unsigned int DeviceID /* 0x21c */;
+    int RS /* 0x218 */;
+    int pci_handle /* 0x214 */;
+    /* file main_module.c line 4 addr 0x8048880 */
+    /* file main_module.c line 6 addr 0x804888c */
+    /* file main_module.c line 7 addr 0x8048897 */
+    /* file main_module.c line 8 addr 0x80488a1 */
+    /* file main_module.c line 17 addr 0x80488ab */
+    /* file main_module.c line 19 addr 0x80488b6 */
+    /* file main_module.c line 20 addr 0x80488c9 */
+    /* file main_module.c line 21 addr 0x80488d3 */
+    /* file main_module.c line 22 addr 0x80488df */
+    /* file main_module.c line 25 addr 0x80488e9 */
+    /* file main_module.c line 26 addr 0x80488f9 */
+    /* file main_module.c line 28 addr 0x8048909 */
+    /* file main_module.c line 30 addr 0x804891f */
+    /* file main_module.c line 31 addr 0x8048929 */
+    /* file main_module.c line 32 addr 0x8048935 */
+    /* file main_module.c line 34 addr 0x804893f */
+    /* file main_module.c line 35 addr 0x804896e */
+    /* file main_module.c line 37 addr 0x804897a */
+    /* file main_module.c line 38 addr 0x8048987 */
+    /* file main_module.c line 39 addr 0x804899f */
+    /* file main_module.c line 37 addr 0x80489ad */
+    /* file main_module.c line 41 addr 0x80489bf */
+    /* file main_module.c line 42 addr 0x80489c9 */
+    /* file main_module.c line 44 addr 0x80489d5 */
+    /* file main_module.c line 46 addr 0x8048a2d */
+    /* file main_module.c line 47 addr 0x8048a4f */
+    /* file main_module.c line 49 addr 0x8048a72 */
+    /* file main_module.c line 50 addr 0x8048a81 */
+    /* file main_module.c line 51 addr 0x8048a86 */
+  } /* 0x8048a88 */
+} /* 0x8048a88 */
+void *find_and_attach (struct pci_dev_info /* id 2 */ *inf_F /* 0x8 */)
+{ /* 0x8048a88 */
+  { /* 0x8048a88 */
+    void *handle /* 0xfffffff4 */;
+    short unsigned int idx /* 0xfffffff2 */;
+    unsigned int flags /* 0xffffffec */;
+    /* file main_module.c line 54 addr 0x8048a88 */
+    /* file main_module.c line 59 addr 0x8048a8e */
+    /* file main_module.c line 61 addr 0x8048a95 */
+    /* file main_module.c line 63 addr 0x8048aba */
+    /* file main_module.c line 64 addr 0x8048abd */
+  } /* 0x8048abf */
+} /* 0x8048abf */
+void pci_config_show (struct _pci_config_regs /* id 1 */ *PC /* 0x8 */)
+{ /* 0x8048abf */
+  { /* 0x8048abf */
+    int i /* 0xfffffff4 */;
+    /* file main_module.c line 67 addr 0x8048abf */
+    /* file main_module.c line 69 addr 0x8048ac7 */
+    /* file main_module.c line 70 addr 0x8048ad3 */
+    /* file main_module.c line 72 addr 0x8048adf */
+    /* file main_module.c line 71 addr 0x8048ae6 */
+    /* file main_module.c line 72 addr 0x8048ae9 */
+    /* file main_module.c line 71 addr 0x8048af0 */
+    /* file main_module.c line 72 addr 0x8048af3 */
+    /* file main_module.c line 71 addr 0x8048afa */
+    /* file main_module.c line 74 addr 0x8048b30 */
+    /* file main_module.c line 76 addr 0x8048b3c */
+    /* file main_module.c line 75 addr 0x8048b43 */
+    /* file main_module.c line 76 addr 0x8048b46 */
+    /* file main_module.c line 75 addr 0x8048b4d */
+    /* file main_module.c line 76 addr 0x8048b50 */
+    /* file main_module.c line 75 addr 0x8048b57 */
+    /* file main_module.c line 78 addr 0x8048b72 */
+    /* file main_module.c line 79 addr 0x8048b7e */
+    /* file main_module.c line 81 addr 0x8048ba6 */
+    /* file main_module.c line 82 addr 0x8048bb2 */
+    /* file main_module.c line 84 addr 0x8048bda */
+    /* file main_module.c line 85 addr 0x8048be6 */
+    /* file main_module.c line 86 addr 0x8048bef */
+    /* file main_module.c line 85 addr 0x8048c0b */
+    /* file main_module.c line 87 addr 0x8048c15 */
+    /* file main_module.c line 89 addr 0x8048c21 */
+    /* file main_module.c line 90 addr 0x8048c2d */
+    /* file main_module.c line 91 addr 0x8048c43 */
+    /* file main_module.c line 92 addr 0x8048c4f */
+  } /* 0x8048c56 */
+} /* 0x8048c56 */
+struct __ucontext_t { /* id 0 */
+};
+ main_module.h:
+typedef unsigned int LWORD;
+typedef unsigned char BYTE;
+typedef struct _pci_config_regs /* id 1 */ _pci_config_regs;
+typedef struct pci_dev_info /* id 2 */ pci_dev_info;
+ /usr/qnx650/target/qnx6/usr/include/stdio.h:
+typedef unsigned int size_t;
+typedef char _Sysch_t;
+typedef int off_t;
+typedef long long int off64_t;
+struct _Filet { /* size 80 id 3 */
+  unsigned int _Mode; /* bitsize 32, bitpos 0 */
+  int _Handle; /* bitsize 32, bitpos 32 */
+  unsigned char *_Buf; /* bitsize 32, bitpos 64 */
+  unsigned char *_Bend; /* bitsize 32, bitpos 96 */
+  unsigned char *_Next; /* bitsize 32, bitpos 128 */
+  unsigned char *_Rend; /* bitsize 32, bitpos 160 */
+  unsigned char *_Wend; /* bitsize 32, bitpos 192 */
+  unsigned char *_Rback; /* bitsize 32, bitpos 224 */
+  unsigned int *_WRback; /* bitsize 32, bitpos 256 */
+  unsigned int _WBack[2]:uint32; /* bitsize 64, bitpos 288 */
+  unsigned char *_Rsave; /* bitsize 32, bitpos 352 */
+  unsigned char *_WRend; /* bitsize 32, bitpos 384 */
+  unsigned char *_WWend; /* bitsize 32, bitpos 416 */
+  struct _Mbstatet /* id 4 */ _Wstate; /* bitsize 64, bitpos 448 */
+  struct _Filet /* id 3 */ *_NextFile; /* bitsize 32, bitpos 512 */
+  unsigned char _Back[2]:uint32; /* bitsize 16, bitpos 544 */
+  unsigned char _Cbuf; /* bitsize 8, bitpos 560 */
+  void *_Flock; /* bitsize 32, bitpos 576 */
+  unsigned char _Spare[4]:uint32; /* bitsize 32, bitpos 608 */
+};
+typedef struct _Filet /* id 3 */ _Filet;
+typedef _Filet FILE;
+typedef struct _Fpost /* id 5 */ fpos_t;
+ /usr/qnx650/target/qnx6/usr/include/sys/platform.h:
+typedef unsigned int _Sizet;
+typedef int _Ssizet;
+typedef unsigned int _Wchart;
+struct _Mbstatet { /* size 8 id 4 */
+  _Wchart _Wchar; /* bitsize 32, bitpos 0 */
+  char _State; /* bitsize 8, bitpos 32 */
+  char _Reserved[3]:uint32; /* bitsize 24, bitpos 40 */
+};
+typedef struct _Mbstatet /* id 4 */ _Mbstatet;
+typedef int _Offt;
+typedef long long int _Off64t;
+struct _Fpost { /* size 16 id 5 */
+  _Off64t _Off; /* bitsize 64, bitpos 0 */
+  _Mbstatet _Wstate; /* bitsize 64, bitpos 64 */
+};
+typedef struct _Fpost /* id 5 */ _Fpost;
+typedef signed char _int8;
+typedef short int _int16;
+typedef int _int32;
+typedef long long int _int64;
+typedef int _intptr;
+typedef unsigned char _uint8;
+typedef short unsigned int _uint16;
+typedef unsigned int _uint32;
+typedef long long unsigned int _uint64;
+typedef unsigned int _uintptr;
+typedef long long unsigned int _Paddr64t;
+typedef unsigned int _Paddr32t;
+typedef _Paddr32t _Paddrt;
+ /usr/qnx650/target/qnx6/usr/include/sys/compiler_gnu.h:
+typedef long long int _GCC_ATTR_ALIGN_64t;
+typedef long long unsigned int _GCC_ATTR_ALIGN_u64t;
+typedef _GCC_ATTR_ALIGN_64t _Int64t;
+typedef _GCC_ATTR_ALIGN_u64t _Uint64t;
+typedef unsigned int _GCC_ATTR_ALIGN_u32t;
+typedef int _GCC_ATTR_ALIGN_32t;
+typedef _GCC_ATTR_ALIGN_u32t _Uint32t;
+typedef _GCC_ATTR_ALIGN_32t _Int32t;
+typedef short int _GCC_ATTR_ALIGN_16t;
+typedef short unsigned int _GCC_ATTR_ALIGN_u16t;
+typedef _GCC_ATTR_ALIGN_16t _Int16t;
+typedef _GCC_ATTR_ALIGN_u16t _Uint16t;
+typedef signed char _GCC_ATTR_ALIGN_8t;
+typedef unsigned char _GCC_ATTR_ALIGN_u8t;
+typedef _GCC_ATTR_ALIGN_8t _Int8t;
+typedef _GCC_ATTR_ALIGN_u8t _Uint8t;
+typedef int _Intptrt;
+typedef unsigned int _Uintptrt;
+typedef long long int _Longlong;
+typedef long long unsigned int _ULonglong;
+typedef char *__gnuc_va_list;
+typedef __gnuc_va_list __NTO_va_list;
+ /usr/qnx650/target/qnx6/usr/include/x86/platform.h:
+typedef unsigned int __jmpbufalign;
+ /usr/qnx650/target/qnx6/usr/include/sys/target_nto.h:
+typedef _Int8t _Intleast8t;
+typedef _Uint8t _Uintleast8t;
+typedef _Int8t _Intfast8t;
+typedef _Uint8t _Uintfast8t;
+typedef _Int16t _Intleast16t;
+typedef _Uint16t _Uintleast16t;
+typedef _Int16t _Intfast16t;
+typedef _Uint16t _Uintfast16t;
+typedef _Int32t _Intleast32t;
+typedef _Uint32t _Uintleast32t;
+typedef _Int32t _Intfast32t;
+typedef _Uint32t _Uintfast32t;
+typedef _Int64t _Intleast64t;
+typedef _Uint64t _Uintleast64t;
+typedef _Int64t _Intfast64t;
+typedef _Uint64t _Uintfast64t;
+typedef _Int64t _Intmaxt;
+typedef _Uint64t _Uintmaxt;
+ /usr/qnx650/target/qnx6/usr/include/sys/neutrino.h:
+struct intrspin { /* size 4 id 6 */
+  unsigned int value; /* bitsize 32, bitpos 0 */
+};
+typedef struct intrspin /* id 6 */ intrspin_t;
+struct _msg_info { /* size 48 id 7 */
+  _Uint32t nd; /* bitsize 32, bitpos 0 */
+  _Uint32t srcnd; /* bitsize 32, bitpos 32 */
+  int pid; /* bitsize 32, bitpos 64 */
+  _Int32t tid; /* bitsize 32, bitpos 96 */
+  _Int32t chid; /* bitsize 32, bitpos 128 */
+  _Int32t scoid; /* bitsize 32, bitpos 160 */
+  _Int32t coid; /* bitsize 32, bitpos 192 */
+  _Int32t msglen; /* bitsize 32, bitpos 224 */
+  _Int32t srcmsglen; /* bitsize 32, bitpos 256 */
+  _Int32t dstmsglen; /* bitsize 32, bitpos 288 */
+  _Int16t priority; /* bitsize 16, bitpos 320 */
+  _Int16t flags; /* bitsize 16, bitpos 336 */
+  _Uint32t reserved; /* bitsize 32, bitpos 352 */
+};
+struct _cred_info { /* size 60 id 8 */
+  int ruid; /* bitsize 32, bitpos 0 */
+  int euid; /* bitsize 32, bitpos 32 */
+  int suid; /* bitsize 32, bitpos 64 */
+  int rgid; /* bitsize 32, bitpos 96 */
+  int egid; /* bitsize 32, bitpos 128 */
+  int sgid; /* bitsize 32, bitpos 160 */
+  _Uint32t ngroups; /* bitsize 32, bitpos 192 */
+  int grouplist[8]:uint32; /* bitsize 256, bitpos 224 */
+};
+struct _client_info { /* size 76 id 9 */
+  _Uint32t nd; /* bitsize 32, bitpos 0 */
+  int pid; /* bitsize 32, bitpos 32 */
+  int sid; /* bitsize 32, bitpos 64 */
+  _Uint32t flags; /* bitsize 32, bitpos 96 */
+  struct _cred_info /* id 8 */ cred; /* bitsize 480, bitpos 128 */
+};
+struct _vtid_info { /* size 32 id 10 */
+  _Int32t tid; /* bitsize 32, bitpos 0 */
+  _Int32t coid; /* bitsize 32, bitpos 32 */
+  _Int32t priority; /* bitsize 32, bitpos 64 */
+  _Int32t srcmsglen; /* bitsize 32, bitpos 96 */
+  _Int32t keydata; /* bitsize 32, bitpos 128 */
+  _Int32t srcnd; /* bitsize 32, bitpos 160 */
+  _Int32t dstmsglen; /* bitsize 32, bitpos 192 */
+  _Int32t zero; /* bitsize 32, bitpos 224 */
+};
+struct _timer_info { /* size 72 id 11 */
+  struct _itimer /* id 12 */ itime; /* bitsize 128, bitpos 0 */
+  struct _itimer /* id 12 */ otime; /* bitsize 128, bitpos 128 */
+  _Uint32t flags; /* bitsize 32, bitpos 256 */
+  _Int32t tid; /* bitsize 32, bitpos 288 */
+  _Int32t notify; /* bitsize 32, bitpos 320 */
+  int clockid; /* bitsize 32, bitpos 352 */
+  _Uint32t overruns; /* bitsize 32, bitpos 384 */
+  struct sigevent /* id 13 */ event; /* bitsize 128, bitpos 416 */
+};
+struct _sighandler_info { /* size 48 id 14 */
+  struct _siginfo /* id 15 */ siginfo; /* bitsize 320, bitpos 0 */
+  void (*handler) (/* unknown */); /* bitsize 32, bitpos 320 */
+  void *context; /* bitsize 32, bitpos 352 */
+};
+struct _sched_info { /* size 64 id 16 */
+  int priority_min; /* bitsize 32, bitpos 0 */
+  int priority_max; /* bitsize 32, bitpos 32 */
+  _Uint64t interval; /* bitsize 64, bitpos 64 */
+  int priority_priv; /* bitsize 32, bitpos 128 */
+  int reserved[11]:uint32; /* bitsize 352, bitpos 160 */
+};
+struct _pulse { /* size 16 id 17 */
+  _Uint16t type; /* bitsize 16, bitpos 0 */
+  _Uint16t subtype; /* bitsize 16, bitpos 16 */
+  _Int8t code; /* bitsize 8, bitpos 32 */
+  _Uint8t zero[3]:uint32; /* bitsize 24, bitpos 40 */
+  union sigval /* id 18 */ value; /* bitsize 32, bitpos 64 */
+  _Int32t scoid; /* bitsize 32, bitpos 96 */
+};
+struct _thread_name { /* size 12 id 19 */
+  int new_name_len; /* bitsize 32, bitpos 0 */
+  int name_buf_len; /* bitsize 32, bitpos 32 */
+  char name_buf[1]:uint32; /* bitsize 8, bitpos 64 */
+};
+struct _thread_runmask { /* size 4 id 20 */
+  int size; /* bitsize 32, bitpos 0 */
+};
+struct _clockperiod { /* size 8 id 21 */
+  long unsigned int nsec; /* bitsize 32, bitpos 0 */
+  long int fract; /* bitsize 32, bitpos 32 */
+};
+ /usr/qnx650/target/qnx6/usr/include/sys/types.h:
+typedef _Uint32t mode_t;
+typedef _Uint32t dev_t;
+typedef _Ssizet ssize_t;
+typedef _Uint32t time_t;
+typedef _Uint32t clock_t;
+typedef int pid_t;
+typedef _Uint32t blkcnt_t;
+typedef _Uint32t blksize_t;
+typedef _Uint32t fsblkcnt_t;
+typedef _Uint32t fsfilcnt_t;
+typedef _Uint32t nlink_t;
+typedef _Uint32t ino_t;
+typedef _Uint64t ino64_t;
+typedef int id_t;
+typedef int uid_t;
+typedef int gid_t;
+typedef _Uint32t useconds_t;
+typedef _Int32t suseconds_t;
+typedef int timer_t;
+typedef int clockid_t;
+typedef _Int32t pthread_t;
+struct _sync { /* size 8 id 22 */
+  int __count; /* bitsize 32, bitpos 0 */
+  unsigned int __owner; /* bitsize 32, bitpos 32 */
+};
+typedef struct _sync /* id 22 */ sync_t;
+struct _sync_attr { /* size 32 id 23 */
+  int __protocol; /* bitsize 32, bitpos 0 */
+  int __flags; /* bitsize 32, bitpos 32 */
+  int __prioceiling; /* bitsize 32, bitpos 64 */
+  int __clockid; /* bitsize 32, bitpos 96 */
+  int __reserved[4]:uint32; /* bitsize 128, bitpos 128 */
+};
+typedef struct _sync_attr /* id 23 */ sync_attr_t;
+struct __timespec { /* size 8 id 24 */
+  time_t __tv_sec; /* bitsize 32, bitpos 0 */
+  long int __tv_nsec; /* bitsize 32, bitpos 32 */
+};
+struct __sched_param { /* size 40 id 25 */
+  int __sched_priority; /* bitsize 32, bitpos 0 */
+  int __sched_curpriority; /* bitsize 32, bitpos 32 */
+  union %anon26 { /* size 32 */
+    int __reserved[8]:uint32; /* bitsize 256, bitpos 0 */
+    struct %anon27 { /* size 24 */
+      int __ss_low_priority; /* bitsize 32, bitpos 0 */
+      int __ss_max_repl; /* bitsize 32, bitpos 32 */
+      struct __timespec /* id 24 */ __ss_repl_period; /* bitsize 64, bitpos 64 */
+      struct __timespec /* id 24 */ __ss_init_budget; /* bitsize 64, bitpos 128 */
+    } __ss; /* bitsize 192, bitpos 0 */
+  } __ss_un; /* bitsize 256, bitpos 64 */
+};
+struct _thread_attr { /* size 76 id 28 */
+  int __flags; /* bitsize 32, bitpos 0 */
+  _Sizet __stacksize; /* bitsize 32, bitpos 32 */
+  void *__stackaddr; /* bitsize 32, bitpos 64 */
+  void (*__exitfunc) (/* unknown */); /* bitsize 32, bitpos 96 */
+  int __policy; /* bitsize 32, bitpos 128 */
+  struct __sched_param /* id 25 */ __param; /* bitsize 320, bitpos 160 */
+  unsigned int __guardsize; /* bitsize 32, bitpos 480 */
+  unsigned int __prealloc; /* bitsize 32, bitpos 512 */
+  int __spare[2]:uint32; /* bitsize 64, bitpos 544 */
+};
+typedef struct _thread_attr /* id 28 */ pthread_attr_t;
+typedef struct _sync /* id 22 */ pthread_cond_t;
+typedef struct _sync_attr /* id 23 */ pthread_condattr_t;
+typedef int pthread_key_t;
+typedef struct _sync /* id 22 */ pthread_mutex_t;
+typedef struct _sync_attr /* id 23 */ pthread_mutexattr_t;
+struct _pthread_once { /* size 12 id 29 */
+  int __once; /* bitsize 32, bitpos 0 */
+  sync_t __mutex; /* bitsize 64, bitpos 32 */
+};
+typedef struct _pthread_once /* id 29 */ pthread_once_t;
+typedef _Uint32t key_t;
+typedef char *caddr_t;
+typedef _Paddrt paddr_t;
+typedef _Paddr32t paddr32_t;
+typedef _Paddr64t paddr64_t;
+typedef _Int32t daddr_t;
+typedef _Uint16t msg_t;
+struct iovec { /* size 8 id 30 */
+  void *iov_base; /* bitsize 32, bitpos 0 */
+  _Sizet iov_len; /* bitsize 32, bitpos 32 */
+};
+typedef struct iovec /* id 30 */ iov_t;
+struct _clockadjust { /* size 8 id 31 */
+  long unsigned int tick_count; /* bitsize 32, bitpos 0 */
+  long int tick_nsec_inc; /* bitsize 32, bitpos 32 */
+};
+typedef unsigned char uchar_t;
+typedef short unsigned int ushort_t;
+typedef unsigned int uint_t;
+typedef long unsigned int ulong_t;
+typedef unsigned char u_char;
+typedef short unsigned int u_short;
+typedef unsigned int u_int;
+typedef long unsigned int u_long;
+typedef long unsigned int fixpt_t;
+typedef short unsigned int sel_t;
+typedef short unsigned int ushort;
+typedef unsigned int uint;
+typedef long unsigned int ulong;
+struct _itimer { /* size 16 id 12 */
+  _Uint64t nsec; /* bitsize 64, bitpos 0 */
+  _Uint64t interval_nsec; /* bitsize 64, bitpos 64 */
+};
+ /usr/qnx650/target/qnx6/usr/include/signal.h:
+typedef int sig_atomic_t;
+typedef struct %anon32 { /* size 8 */
+  long int __bits[2]:uint32; /* bitsize 64, bitpos 0 */
+} sigset_t;
+typedef struct %anon33 { /* size 12 */
+  void *ss_sp; /* bitsize 32, bitpos 0 */
+  _Sizet ss_size; /* bitsize 32, bitpos 32 */
+  int ss_flags; /* bitsize 32, bitpos 64 */
+} stack_t;
+typedef struct __ucontext_t /* id 0 */ ucontext_t;
+struct sigaction { /* size 16 id 34 */
+  union %anon35 { /* size 4 */
+    void (*_sa_handler) (/* unknown */); /* bitsize 32, bitpos 0 */
+    void (*_sa_sigaction) (/* unknown */); /* bitsize 32, bitpos 0 */
+  } __sa_un; /* bitsize 32, bitpos 0 */
+  int sa_flags; /* bitsize 32, bitpos 32 */
+  sigset_t sa_mask; /* bitsize 64, bitpos 64 */
+};
+struct sigstack { /* size 8 id 36 */
+  int ss_onstack; /* bitsize 32, bitpos 0 */
+  void *ss_sp; /* bitsize 32, bitpos 32 */
+};
+ /usr/qnx650/target/qnx6/usr/include/sys/siginfo.h:
+union sigval { /* size 4 id 18 */
+  int sival_int; /* bitsize 32, bitpos 0 */
+  void *sival_ptr; /* bitsize 32, bitpos 0 */
+};
+struct sigevent { /* size 16 id 13 */
+  int sigev_notify; /* bitsize 32, bitpos 0 */
+  union %anon37 { /* size 4 */
+    int __sigev_signo; /* bitsize 32, bitpos 0 */
+    int __sigev_coid; /* bitsize 32, bitpos 0 */
+    int __sigev_id; /* bitsize 32, bitpos 0 */
+    void (*__sigev_notify_function) (/* unknown */); /* bitsize 32, bitpos 0 */
+  } __sigev_un1; /* bitsize 32, bitpos 32 */
+  union sigval /* id 18 */ sigev_value; /* bitsize 32, bitpos 64 */
+  union %anon38 { /* size 4 */
+    struct %anon39 { /* size 4 */
+      short int __sigev_code; /* bitsize 16, bitpos 0 */
+      short int __sigev_priority; /* bitsize 16, bitpos 16 */
+    } __st; /* bitsize 32, bitpos 0 */
+    pthread_attr_t *__sigev_notify_attributes; /* bitsize 32, bitpos 0 */
+  } __sigev_un2; /* bitsize 32, bitpos 96 */
+};
+struct _siginfo { /* size 40 id 15 */
+  int si_signo; /* bitsize 32, bitpos 0 */
+  int si_code; /* bitsize 32, bitpos 32 */
+  int si_errno; /* bitsize 32, bitpos 64 */
+  union %anon40 { /* size 28 */
+    int __pad[7]:uint32; /* bitsize 224, bitpos 0 */
+    struct %anon41 { /* size 16 */
+      pid_t __pid; /* bitsize 32, bitpos 0 */
+      union %anon42 { /* size 12 */
+        struct %anon43 { /* size 8 */
+          uid_t __uid; /* bitsize 32, bitpos 0 */
+          union sigval /* id 18 */ __value; /* bitsize 32, bitpos 32 */
+        } __kill; /* bitsize 64, bitpos 0 */
+        struct %anon44 { /* size 12 */
+          clock_t __utime; /* bitsize 32, bitpos 0 */
+          int __status; /* bitsize 32, bitpos 32 */
+          clock_t __stime; /* bitsize 32, bitpos 64 */
+        } __chld; /* bitsize 96, bitpos 0 */
+      } __pdata; /* bitsize 96, bitpos 32 */
+    } __proc; /* bitsize 128, bitpos 0 */
+    struct %anon45 { /* size 16 */
+      int __fltno; /* bitsize 32, bitpos 0 */
+      void *__fltip; /* bitsize 32, bitpos 32 */
+      void *__addr; /* bitsize 32, bitpos 64 */
+      int __bdslot; /* bitsize 32, bitpos 96 */
+    } __fault; /* bitsize 128, bitpos 0 */
+  } __data; /* bitsize 224, bitpos 96 */
+};
+typedef struct _siginfo /* id 15 */ siginfo_t;
+ /usr/qnx650/target/qnx6/usr/include/sched.h:
+struct sched_query { /* size 8 id 46 */
+  _Uint32t extsched; /* bitsize 32, bitpos 0 */
+  _Uint32t reserved; /* bitsize 32, bitpos 32 */
+};
+struct sched_param { /* size 40 id 47 */
+  int sched_priority; /* bitsize 32, bitpos 0 */
+  int sched_curpriority; /* bitsize 32, bitpos 32 */
+  union %anon48 { /* size 32 */
+    int __reserved[8]:uint32; /* bitsize 256, bitpos 0 */
+    struct %anon49 { /* size 24 */
+      int __ss_low_priority; /* bitsize 32, bitpos 0 */
+      int __ss_max_repl; /* bitsize 32, bitpos 32 */
+      struct timespec /* id 50 */ __ss_repl_period; /* bitsize 64, bitpos 64 */
+      struct timespec /* id 50 */ __ss_init_budget; /* bitsize 64, bitpos 128 */
+    } __ss; /* bitsize 192, bitpos 0 */
+  } __ss_un; /* bitsize 256, bitpos 64 */
+};
+typedef struct sched_param /* id 47 */ sched_param_t;
+ /usr/qnx650/target/qnx6/usr/include/time.h:
+struct timespec { /* size 8 id 50 */
+  time_t tv_sec; /* bitsize 32, bitpos 0 */
+  long int tv_nsec; /* bitsize 32, bitpos 32 */
+};
+struct itimerspec { /* size 16 id 51 */
+  struct timespec /* id 50 */ it_value; /* bitsize 64, bitpos 0 */
+  struct timespec /* id 50 */ it_interval; /* bitsize 64, bitpos 64 */
+};
+struct tm { /* size 44 id 52 */
+  int tm_sec; /* bitsize 32, bitpos 0 */
+  int tm_min; /* bitsize 32, bitpos 32 */
+  int tm_hour; /* bitsize 32, bitpos 64 */
+  int tm_mday; /* bitsize 32, bitpos 96 */
+  int tm_mon; /* bitsize 32, bitpos 128 */
+  int tm_year; /* bitsize 32, bitpos 160 */
+  int tm_wday; /* bitsize 32, bitpos 192 */
+  int tm_yday; /* bitsize 32, bitpos 224 */
+  int tm_isdst; /* bitsize 32, bitpos 256 */
+  long int tm_gmtoff; /* bitsize 32, bitpos 288 */
+  char *tm_zone; /* bitsize 32, bitpos 320 */
+};
+ /usr/qnx650/target/qnx6/usr/include/sys/storage.h:
+struct _thread_local_storage { /* size 64 id 53 */
+  void (*__exitfunc) (/* unknown */); /* bitsize 32, bitpos 0 */
+  void *__arg; /* bitsize 32, bitpos 32 */
+  int *__errptr; /* bitsize 32, bitpos 64 */
+  int __errval; /* bitsize 32, bitpos 96 */
+  unsigned int __flags; /* bitsize 32, bitpos 128 */
+  int __pid; /* bitsize 32, bitpos 160 */
+  int __tid; /* bitsize 32, bitpos 192 */
+  unsigned int __owner; /* bitsize 32, bitpos 224 */
+  void *__stackaddr; /* bitsize 32, bitpos 256 */
+  unsigned int __reserved1; /* bitsize 32, bitpos 288 */
+  unsigned int __numkeys; /* bitsize 32, bitpos 320 */
+  void **__keydata; /* bitsize 32, bitpos 352 */
+  void *__cleanup; /* bitsize 32, bitpos 384 */
+  void *__fpuemu_data; /* bitsize 32, bitpos 416 */
+  void *__reserved3; /* bitsize 32, bitpos 448 */
+  void (*__sigaction) (/* unknown */); /* bitsize 32, bitpos 480 */
+};
+struct _process_local_storage { /* size 40 id 54 */
+  void *(*__getgot) (/* unknown */); /* bitsize 32, bitpos 0 */
+  void (*__mathemulator) (/* unknown */); /* bitsize 32, bitpos 32 */
+  void *__dll_list; /* bitsize 32, bitpos 64 */
+  void *__reserved[6]:uint32; /* bitsize 192, bitpos 96 */
+  void (*__threadwatch) (/* unknown */); /* bitsize 32, bitpos 288 */
+};
+ /usr/qnx650/target/qnx6/usr/include/sys/states.h:
+enum _THREAD_STATE { STATE_DEAD, STATE_RUNNING, STATE_READY, STATE_STOPPED, STATE_SEND, STATE_RECEIVE, STATE_REPLY, STATE_STACK, STATE_WAITTHREAD, STATE_WAITPAGE, STATE_SIGSUSPEND, STATE_SIGWAITINFO, STATE_NANOSLEEP, STATE_MUTEX, STATE_CONDVAR, STATE_JOIN, STATE_INTR, STATE_SEM, STATE_WAITCTX, STATE_NET_SEND, STATE_NET_REPLY, STATE_MAX = 24 };
+ /usr/qnx650/target/qnx6/usr/include/x86/neutrino.h:
+struct __gcc_fool { /* size 400 id 55 */
+  int __fool[100]:uint32; /* bitsize 3200, bitpos 0 */
+};
+ /usr/qnx650/target/qnx6/usr/include/inttypes.h:
+typedef struct %anon56 { /* size 16 */
+  _Intmaxt quot; /* bitsize 64, bitpos 0 */
+  _Intmaxt rem; /* bitsize 64, bitpos 64 */
+} imaxdiv_t;
+struct __byte { /* size 2 id 57 */
+  _Uint8t __lo; /* bitsize 8, bitpos 0 */
+  _Uint8t __hi; /* bitsize 8, bitpos 8 */
+};
+struct __short { /* size 4 id 58 */
+  _Uint16t __lo; /* bitsize 16, bitpos 0 */
+  _Uint16t __hi; /* bitsize 16, bitpos 16 */
+};
+struct __long { /* size 8 id 59 */
+  _Uint32t __lo; /* bitsize 32, bitpos 0 */
+  _Uint32t __hi; /* bitsize 32, bitpos 32 */
+};
+ /usr/qnx650/target/qnx6/usr/include/stdint.h:
+typedef _Int8t int8_t;
+typedef _Uint8t uint8_t;
+typedef _Int16t int16_t;
+typedef _Uint16t uint16_t;
+typedef _Int32t int32_t;
+typedef _Uint32t uint32_t;
+typedef _Int64t int64_t;
+typedef _Uint64t uint64_t;
+typedef _Intptrt intptr_t;
+typedef _Uintptrt uintptr_t;
+typedef _Intleast8t intleast8_t;
+typedef _Uintleast8t uintleast8_t;
+typedef _Intfast8t intfast8_t;
+typedef _Uintfast8t uintfast8_t;
+typedef _Intleast16t intleast16_t;
+typedef _Uintleast16t uintleast16_t;
+typedef _Intfast16t intfast16_t;
+typedef _Uintfast16t uintfast16_t;
+typedef _Intleast32t intleast32_t;
+typedef _Uintleast32t uintleast32_t;
+typedef _Intfast32t intfast32_t;
+typedef _Uintfast32t uintfast32_t;
+typedef _Intleast64t intleast64_t;
+typedef _Uintleast64t uintleast64_t;
+typedef _Intfast64t intfast64_t;
+typedef _Uintfast64t uintfast64_t;
+typedef _Intleast8t int_least8_t;
+typedef _Uintleast8t uint_least8_t;
+typedef _Intfast8t int_fast8_t;
+typedef _Uintfast8t uint_fast8_t;
+typedef _Intleast16t int_least16_t;
+typedef _Uintleast16t uint_least16_t;
+typedef _Intfast16t int_fast16_t;
+typedef _Uintfast16t uint_fast16_t;
+typedef _Intleast32t int_least32_t;
+typedef _Uintleast32t uint_least32_t;
+typedef _Intfast32t int_fast32_t;
+typedef _Uintfast32t uint_fast32_t;
+typedef _Intleast64t int_least64_t;
+typedef _Uintleast64t uint_least64_t;
+typedef _Intfast64t int_fast64_t;
+typedef _Uintfast64t uint_fast64_t;
+typedef _Intmaxt intmax_t;
+typedef _Uintmaxt uintmax_t;
+ /usr/qnx650/target/qnx6/usr/include/stdlib.h:
+typedef _Wchart wchar_t;
+typedef struct %anon60 { /* size 8 */
+  int quot; /* bitsize 32, bitpos 0 */
+  int rem; /* bitsize 32, bitpos 32 */
+} div_t;
+typedef struct %anon60 { /* size 8 */
+  long int quot; /* bitsize 32, bitpos 0 */
+  long int rem; /* bitsize 32, bitpos 32 */
+} ldiv_t;
+typedef struct %anon56 { /* size 16 */
+  _Longlong quot; /* bitsize 64, bitpos 0 */
+  _Longlong rem; /* bitsize 64, bitpos 64 */
+} lldiv_t;
+typedef lldiv_t _Lldiv_t;
+typedef int (_Cmpfun) (/* unknown */);
+ /usr/qnx650/target/qnx6/usr/include/malloc.h:
+enum malloc_opt_cmds { MALLOC_VERIFY, MALLOC_VERIFY_ON, MALLOC_STATS, MALLOC_FREE_CHECK, MALLOC_ARENA_SIZE, MALLOC_MONOTONIC_GROWTH, MALLOC_MEMORY_HOLD, MALLOC_ARENA_CACHE_MAXSZ, MALLOC_ARENA_CACHE_MAXBLK, MALLOC_ARENA_CACHE_FREE_NOW, MALLOC_ERROR_GET_FNPTR, MALLOC_ERROR_SET_FNPTR, MALLOC_LAST };
+struct malloc_stats { /* size 60 id 61 */
+  unsigned int m_small_freemem; /* bitsize 32, bitpos 0 */
+  unsigned int m_freemem; /* bitsize 32, bitpos 32 */
+  unsigned int m_small_overhead; /* bitsize 32, bitpos 64 */
+  unsigned int m_overhead; /* bitsize 32, bitpos 96 */
+  unsigned int m_small_allocmem; /* bitsize 32, bitpos 128 */
+  unsigned int m_allocmem; /* bitsize 32, bitpos 160 */
+  unsigned int m_coreallocs; /* bitsize 32, bitpos 192 */
+  unsigned int m_corefrees; /* bitsize 32, bitpos 224 */
+  unsigned int m_heapsize; /* bitsize 32, bitpos 256 */
+  unsigned int m_frees; /* bitsize 32, bitpos 288 */
+  unsigned int m_allocs; /* bitsize 32, bitpos 320 */
+  unsigned int m_reallocs; /* bitsize 32, bitpos 352 */
+  unsigned int m_small_blocks; /* bitsize 32, bitpos 384 */
+  unsigned int m_blocks; /* bitsize 32, bitpos 416 */
+  unsigned int m_hblocks; /* bitsize 32, bitpos 448 */
+};
+struct mallinfo { /* size 40 id 62 */
+  int arena; /* bitsize 32, bitpos 0 */
+  int ordblks; /* bitsize 32, bitpos 32 */
+  int smblks; /* bitsize 32, bitpos 64 */
+  int hblks; /* bitsize 32, bitpos 96 */
+  int hblkhd; /* bitsize 32, bitpos 128 */
+  int usmblks; /* bitsize 32, bitpos 160 */
+  int fsmblks; /* bitsize 32, bitpos 192 */
+  int uordblks; /* bitsize 32, bitpos 224 */
+  int fordblks; /* bitsize 32, bitpos 256 */
+  int keepcost; /* bitsize 32, bitpos 288 */
+};
+enum mcheck_status { MCHECK_DISABLED = -1, MCHECK_OK, MCHECK_HEAD, MCHECK_TAIL, MCHECK_FREE };
+ /usr/qnx650/target/qnx6/usr/include/sys/wait.h:
+typedef enum { P_ALL, P_PID, P_PGID } idtype_t;
+ /usr/qnx650/target/qnx6/usr/include/hw/pci.h:
+struct _pci_config_regs { /* size 256 id 1 */
+  uint16_t Vendor_ID; /* bitsize 16, bitpos 0 */
+  uint16_t Device_ID; /* bitsize 16, bitpos 16 */
+  uint16_t Command; /* bitsize 16, bitpos 32 */
+  uint16_t Status; /* bitsize 16, bitpos 48 */
+  uint8_t Revision_ID; /* bitsize 8, bitpos 64 */
+  uint8_t Class_Code[3]:uint32; /* bitsize 24, bitpos 72 */
+  uint8_t Cache_Line_Size; /* bitsize 8, bitpos 96 */
+  uint8_t Latency_Timer; /* bitsize 8, bitpos 104 */
+  uint8_t Header_Type; /* bitsize 8, bitpos 112 */
+  uint8_t BIST; /* bitsize 8, bitpos 120 */
+  uint32_t Base_Address_Regs[6]:uint32; /* bitsize 192, bitpos 128 */
+  uint32_t CardBus_CIS; /* bitsize 32, bitpos 320 */
+  uint16_t Sub_Vendor_ID; /* bitsize 16, bitpos 352 */
+  uint16_t Sub_System_ID; /* bitsize 16, bitpos 368 */
+  uint32_t ROM_Base_Address; /* bitsize 32, bitpos 384 */
+  uint8_t Capabilities_Pointer; /* bitsize 8, bitpos 416 */
+  uint8_t Reserved2[3]:uint32; /* bitsize 24, bitpos 424 */
+  uint32_t Reserved3; /* bitsize 32, bitpos 448 */
+  uint8_t Interrupt_Line; /* bitsize 8, bitpos 480 */
+  uint8_t Interrupt_Pin; /* bitsize 8, bitpos 488 */
+  uint8_t Min_Gnt; /* bitsize 8, bitpos 496 */
+  uint8_t Max_Lat; /* bitsize 8, bitpos 504 */
+  uint8_t Device_Dependent_Regs[192]:uint32; /* bitsize 1536, bitpos 512 */
+};
+struct _pci_bridge_config_regs { /* size 256 id 63 */
+  uint16_t Vendor_ID; /* bitsize 16, bitpos 0 */
+  uint16_t Device_ID; /* bitsize 16, bitpos 16 */
+  uint16_t Command; /* bitsize 16, bitpos 32 */
+  uint16_t Status; /* bitsize 16, bitpos 48 */
+  uint8_t Revision_ID; /* bitsize 8, bitpos 64 */
+  uint8_t Class_Code[3]:uint32; /* bitsize 24, bitpos 72 */
+  uint8_t Cache_Line_Size; /* bitsize 8, bitpos 96 */
+  uint8_t Latency_Timer; /* bitsize 8, bitpos 104 */
+  uint8_t Header_Type; /* bitsize 8, bitpos 112 */
+  uint8_t BIST; /* bitsize 8, bitpos 120 */
+  uint32_t Base_Address_Regs[2]:uint32; /* bitsize 64, bitpos 128 */
+  uint8_t Primary_Bus_Number; /* bitsize 8, bitpos 192 */
+  uint8_t Secondary_Bus_Number; /* bitsize 8, bitpos 200 */
+  uint8_t Subordinate_Bus_Number; /* bitsize 8, bitpos 208 */
+  uint8_t Secondary_Latency_Timer; /* bitsize 8, bitpos 216 */
+  uint8_t IO_Base; /* bitsize 8, bitpos 224 */
+  uint8_t IO_Limit; /* bitsize 8, bitpos 232 */
+  uint16_t Secondary_Status; /* bitsize 16, bitpos 240 */
+  uint16_t Memory_Base; /* bitsize 16, bitpos 256 */
+  uint16_t Memory_Limit; /* bitsize 16, bitpos 272 */
+  uint16_t Prefetchable_Memory_Base; /* bitsize 16, bitpos 288 */
+  uint16_t Prefetchable_Memory_Limit; /* bitsize 16, bitpos 304 */
+  uint32_t Prefetchable_Base_Upper32; /* bitsize 32, bitpos 320 */
+  uint32_t Prefetchable_Limit_Upper32; /* bitsize 32, bitpos 352 */
+  uint16_t IO_Base_Upper16; /* bitsize 16, bitpos 384 */
+  uint16_t IO_Limit_Upper16; /* bitsize 16, bitpos 400 */
+  uint8_t Capabilities_Pointer; /* bitsize 8, bitpos 416 */
+  uint8_t Reserved1[3]:uint32; /* bitsize 24, bitpos 424 */
+  uint32_t ROM_Base_Address; /* bitsize 32, bitpos 448 */
+  uint8_t Interrupt_Line; /* bitsize 8, bitpos 480 */
+  uint8_t Interrupt_Pin; /* bitsize 8, bitpos 488 */
+  uint16_t Bridge_Control; /* bitsize 16, bitpos 496 */
+  uint8_t Device_Dependent_Regs[192]:uint32; /* bitsize 1536, bitpos 512 */
+};
+struct _pci_cardbus_config_regs { /* size 256 id 64 */
+  uint16_t Vendor_ID; /* bitsize 16, bitpos 0 */
+  uint16_t Device_ID; /* bitsize 16, bitpos 16 */
+  uint16_t Command; /* bitsize 16, bitpos 32 */
+  uint16_t Status; /* bitsize 16, bitpos 48 */
+  uint8_t Revision_ID; /* bitsize 8, bitpos 64 */
+  uint8_t Class_Code[3]:uint32; /* bitsize 24, bitpos 72 */
+  uint8_t Cache_Line_Size; /* bitsize 8, bitpos 96 */
+  uint8_t Latency_Timer; /* bitsize 8, bitpos 104 */
+  uint8_t Header_Type; /* bitsize 8, bitpos 112 */
+  uint8_t BIST; /* bitsize 8, bitpos 120 */
+  uint32_t Socket_Exca_Base_Reg; /* bitsize 32, bitpos 128 */
+  uint8_t Capabilities_Pointer; /* bitsize 8, bitpos 160 */
+  uint8_t reserved1; /* bitsize 8, bitpos 168 */
+  uint16_t Secondary_Status; /* bitsize 16, bitpos 176 */
+  uint8_t Pci_Bus_Num; /* bitsize 8, bitpos 192 */
+  uint8_t Cardbus_Bus_Num; /* bitsize 8, bitpos 200 */
+  uint8_t Sub_Bus_Num; /* bitsize 8, bitpos 208 */
+  uint8_t Cardbus_Latency_Timer; /* bitsize 8, bitpos 216 */
+  uint32_t Mem_Base_Reg_0; /* bitsize 32, bitpos 224 */
+  uint32_t Mem_Limit_Reg_0; /* bitsize 32, bitpos 256 */
+  uint32_t Mem_Base_Reg_1; /* bitsize 32, bitpos 288 */
+  uint32_t Mem_Limit_Reg_1; /* bitsize 32, bitpos 320 */
+  uint32_t Io_Base_Reg_0; /* bitsize 32, bitpos 352 */
+  uint32_t Io_Limit_Reg_0; /* bitsize 32, bitpos 384 */
+  uint32_t Io_Base_Reg_1; /* bitsize 32, bitpos 416 */
+  uint32_t Io_Limit_Reg_1; /* bitsize 32, bitpos 448 */
+  uint8_t Interrupt_Line; /* bitsize 8, bitpos 480 */
+  uint8_t Interrupt_Pin; /* bitsize 8, bitpos 488 */
+  uint16_t Bridge_Control; /* bitsize 16, bitpos 496 */
+  uint16_t Subsystem_Vendor_Id; /* bitsize 16, bitpos 512 */
+  uint16_t Subsystem_Id; /* bitsize 16, bitpos 528 */
+  uint32_t If_Legacy_Base_Reg; /* bitsize 32, bitpos 544 */
+  uint8_t reserved2[56]:uint32; /* bitsize 448, bitpos 576 */
+  uint32_t System_Control; /* bitsize 32, bitpos 1024 */
+  uint8_t reserved3[8]:uint32; /* bitsize 64, bitpos 1056 */
+  uint32_t Multifunction_Routing; /* bitsize 32, bitpos 1120 */
+  uint8_t Retry_Status; /* bitsize 8, bitpos 1152 */
+  uint8_t Card_Control; /* bitsize 8, bitpos 1160 */
+  uint8_t Device_Control; /* bitsize 8, bitpos 1168 */
+  uint8_t Buffer_Control; /* bitsize 8, bitpos 1176 */
+  uint32_t Dma_Reg_0; /* bitsize 32, bitpos 1184 */
+  uint32_t Dma_Reg_1; /* bitsize 32, bitpos 1216 */
+  uint8_t Device_Dependent_Regs[100]:uint32; /* bitsize 800, bitpos 1248 */
+};
+struct _pci_capability_power { /* size 8 id 65 */
+  uint8_t Capability_ID; /* bitsize 8, bitpos 0 */
+  uint8_t Next_Pointer; /* bitsize 8, bitpos 8 */
+  uint16_t Power_PMC; /* bitsize 16, bitpos 16 */
+  uint16_t Power_PMCSR; /* bitsize 16, bitpos 32 */
+  uint8_t Power_PMCSR_BSE; /* bitsize 8, bitpos 48 */
+  uint8_t Power_Data; /* bitsize 8, bitpos 56 */
+};
+struct _pci_capability_agp { /* size 12 id 66 */
+  uint8_t Capability_ID; /* bitsize 8, bitpos 0 */
+  uint8_t Next_Pointer; /* bitsize 8, bitpos 8 */
+  uint8_t Major_Minor_Revision; /* bitsize 8, bitpos 16 */
+  uint8_t Reserved; /* bitsize 8, bitpos 24 */
+  uint32_t AGP_Status; /* bitsize 32, bitpos 32 */
+  uint32_t AGP_Command; /* bitsize 32, bitpos 64 */
+};
+struct _pci_capability_vpd { /* size 8 id 67 */
+  uint8_t Capability_ID; /* bitsize 8, bitpos 0 */
+  uint8_t Next_Pointer; /* bitsize 8, bitpos 8 */
+  uint16_t VPD_Address; /* bitsize 16, bitpos 16 */
+  uint32_t VPD_Data; /* bitsize 32, bitpos 32 */
+};
+struct _pci_capability_slot_numbering { /* size 4 id 68 */
+  uint8_t Capability_ID; /* bitsize 8, bitpos 0 */
+  uint8_t Next_Pointer; /* bitsize 8, bitpos 8 */
+  uint8_t Card_Slot; /* bitsize 8, bitpos 16 */
+  uint8_t Chassis_Number; /* bitsize 8, bitpos 24 */
+};
+struct _pci_capability_msi32 { /* size 12 id 69 */
+  uint8_t Capability_ID; /* bitsize 8, bitpos 0 */
+  uint8_t Next_Pointer; /* bitsize 8, bitpos 8 */
+  uint16_t Message_Control; /* bitsize 16, bitpos 16 */
+  uint32_t Message_Address; /* bitsize 32, bitpos 32 */
+  uint16_t Message_Data; /* bitsize 16, bitpos 64 */
+  uint16_t Filler; /* bitsize 16, bitpos 80 */
+};
+struct _pci_capability_msi64 { /* size 16 id 70 */
+  uint8_t Capability_ID; /* bitsize 8, bitpos 0 */
+  uint8_t Next_Pointer; /* bitsize 8, bitpos 8 */
+  uint16_t Message_Control; /* bitsize 16, bitpos 16 */
+  uint32_t Message_Address; /* bitsize 32, bitpos 32 */
+  uint32_t Message_Address_Upper; /* bitsize 32, bitpos 64 */
+  uint16_t Message_Data; /* bitsize 16, bitpos 96 */
+  uint16_t Filler; /* bitsize 16, bitpos 112 */
+};
+struct _pci_capability_msi32_PVM { /* size 20 id 71 */
+  uint8_t Capability_ID; /* bitsize 8, bitpos 0 */
+  uint8_t Next_Pointer; /* bitsize 8, bitpos 8 */
+  uint16_t Message_Control; /* bitsize 16, bitpos 16 */
+  uint32_t Message_Address; /* bitsize 32, bitpos 32 */
+  uint16_t Message_Data; /* bitsize 16, bitpos 64 */
+  uint16_t Filler; /* bitsize 16, bitpos 80 */
+  uint32_t Mask_Bits; /* bitsize 32, bitpos 96 */
+  uint32_t Pending_Bits; /* bitsize 32, bitpos 128 */
+};
+struct _pci_capability_msi64_PVM { /* size 24 id 72 */
+  uint8_t Capability_ID; /* bitsize 8, bitpos 0 */
+  uint8_t Next_Pointer; /* bitsize 8, bitpos 8 */
+  uint16_t Message_Control; /* bitsize 16, bitpos 16 */
+  uint32_t Message_Address; /* bitsize 32, bitpos 32 */
+  uint32_t Message_Address_Upper; /* bitsize 32, bitpos 64 */
+  uint16_t Message_Data; /* bitsize 16, bitpos 96 */
+  uint16_t Filler; /* bitsize 16, bitpos 112 */
+  uint32_t Mask_Bits; /* bitsize 32, bitpos 128 */
+  uint32_t Pending_Bits; /* bitsize 32, bitpos 160 */
+};
+struct _pci_capability_pcix { /* size 8 id 73 */
+  uint8_t Capability_ID; /* bitsize 8, bitpos 0 */
+  uint8_t Next_Pointer; /* bitsize 8, bitpos 8 */
+  uint16_t PCI_X_Command; /* bitsize 16, bitpos 16 */
+  uint32_t PCI_X_Status; /* bitsize 32, bitpos 32 */
+};
+struct _pci_capability_pcix_bridge { /* size 16 id 74 */
+  uint8_t Capability_ID; /* bitsize 8, bitpos 0 */
+  uint8_t Next_Pointer; /* bitsize 8, bitpos 8 */
+  uint16_t PCI_X_Secondary_Status; /* bitsize 16, bitpos 16 */
+  uint32_t PCI_X_Bridge_Status; /* bitsize 32, bitpos 32 */
+  uint32_t Upstream_Split_Transaction_Control; /* bitsize 32, bitpos 64 */
+  uint32_t Downstream_Split_Transaction_Control; /* bitsize 32, bitpos 96 */
+};
+struct _pci_capability_hot_plug { /* size 8 id 75 */
+  uint8_t Capability_ID; /* bitsize 8, bitpos 0 */
+  uint8_t Next_Pointer; /* bitsize 8, bitpos 8 */
+  uint8_t Dword_Select; /* bitsize 8, bitpos 16 */
+  uint8_t CSP_CIP; /* bitsize 8, bitpos 24 */
+  uint32_t Dword_Data; /* bitsize 32, bitpos 32 */
+};
+struct _pci_capability_pci_express { /* size 36 id 76 */
+  uint8_t Capability_ID; /* bitsize 8, bitpos 0 */
+  uint8_t Next_Pointer; /* bitsize 8, bitpos 8 */
+  uint16_t PCI_Express_Cap_Reg; /* bitsize 16, bitpos 16 */
+  uint32_t Device_Capabilities; /* bitsize 32, bitpos 32 */
+  uint16_t Device_Control; /* bitsize 16, bitpos 64 */
+  uint16_t Device_Status; /* bitsize 16, bitpos 80 */
+  uint32_t Link_Capabilities; /* bitsize 32, bitpos 96 */
+  uint16_t Link_Control; /* bitsize 16, bitpos 128 */
+  uint16_t Link_Status; /* bitsize 16, bitpos 144 */
+  uint32_t Slot_Capabilities; /* bitsize 32, bitpos 160 */
+  uint16_t Slot_Control; /* bitsize 16, bitpos 192 */
+  uint16_t Slot_Status; /* bitsize 16, bitpos 208 */
+  uint16_t Root_Control; /* bitsize 16, bitpos 224 */
+  uint16_t Root_Capabilities; /* bitsize 16, bitpos 240 */
+  uint32_t Root_Status; /* bitsize 32, bitpos 256 */
+};
+struct _pci_capability_msix { /* size 12 id 77 */
+  uint8_t Capability_ID; /* bitsize 8, bitpos 0 */
+  uint8_t Next_Pointer; /* bitsize 8, bitpos 8 */
+  uint16_t Message_Control; /* bitsize 16, bitpos 16 */
+  uint32_t Table_Offset; /* bitsize 32, bitpos 32 */
+  uint32_t PBA_Offset; /* bitsize 32, bitpos 64 */
+};
+struct _pci_msix_table { /* size 16 id 78 */
+  uint32_t Message_Address; /* bitsize 32, bitpos 0 */
+  uint32_t Message_Address_Upper; /* bitsize 32, bitpos 32 */
+  uint32_t Message_Data; /* bitsize 32, bitpos 64 */
+  uint32_t Vector_Control; /* bitsize 32, bitpos 96 */
+};
+struct _pci_ht_sp_capability { /* size 28 id 79 */
+  uint8_t Capability_ID; /* bitsize 8, bitpos 0 */
+  uint8_t Next_Pointer; /* bitsize 8, bitpos 8 */
+  uint16_t Command; /* bitsize 16, bitpos 16 */
+  uint16_t Link_Control0; /* bitsize 16, bitpos 32 */
+  uint16_t Link_Config0; /* bitsize 16, bitpos 48 */
+  uint16_t Link_Control1; /* bitsize 16, bitpos 64 */
+  uint16_t Link_Config1; /* bitsize 16, bitpos 80 */
+  uint8_t Revision_ID; /* bitsize 8, bitpos 96 */
+  uint8_t Link_Freq_Error0; /* bitsize 8, bitpos 104 */
+  uint16_t Link_Freq_Cap0; /* bitsize 16, bitpos 112 */
+  uint8_t Feature; /* bitsize 8, bitpos 128 */
+  uint8_t Link_Freq_Error1; /* bitsize 8, bitpos 136 */
+  uint16_t Link_Freq_Cap1; /* bitsize 16, bitpos 144 */
+  uint16_t Enumeration_Scratch; /* bitsize 16, bitpos 160 */
+  uint16_t Error_Handling; /* bitsize 16, bitpos 176 */
+  uint8_t Mem_Base_Upper; /* bitsize 8, bitpos 192 */
+  uint8_t Mem_Limit_Upper; /* bitsize 8, bitpos 200 */
+  uint8_t Bus_Number; /* bitsize 8, bitpos 208 */
+  uint8_t Reserved; /* bitsize 8, bitpos 216 */
+};
+struct _pci_ht_hs_capability { /* size 24 id 80 */
+  uint8_t Capability_ID; /* bitsize 8, bitpos 0 */
+  uint8_t Next_Pointer; /* bitsize 8, bitpos 8 */
+  uint16_t Command; /* bitsize 16, bitpos 16 */
+  uint16_t Link_Control; /* bitsize 16, bitpos 32 */
+  uint16_t Link_Config; /* bitsize 16, bitpos 48 */
+  uint8_t Revision_ID; /* bitsize 8, bitpos 64 */
+  uint8_t Link_Freq_Error; /* bitsize 8, bitpos 72 */
+  uint16_t Link_Freq_Cap; /* bitsize 16, bitpos 80 */
+  uint16_t Feature; /* bitsize 16, bitpos 96 */
+  uint16_t Reserved; /* bitsize 16, bitpos 112 */
+  uint16_t Enumeration_Scratch; /* bitsize 16, bitpos 128 */
+  uint16_t Error_Handling; /* bitsize 16, bitpos 144 */
+  uint8_t Mem_Base_Upper; /* bitsize 8, bitpos 160 */
+  uint8_t Mem_Limit_Upper; /* bitsize 8, bitpos 168 */
+  uint16_t Reserved2; /* bitsize 16, bitpos 176 */
+};
+struct pci_dev_info { /* size 240 id 2 */
+  uint16_t DeviceId; /* bitsize 16, bitpos 0 */
+  uint16_t VendorId; /* bitsize 16, bitpos 16 */
+  uint16_t SubsystemId; /* bitsize 16, bitpos 32 */
+  uint16_t SubsystemVendorId; /* bitsize 16, bitpos 48 */
+  uint8_t BusNumber; /* bitsize 8, bitpos 64 */
+  uint8_t DevFunc; /* bitsize 8, bitpos 72 */
+  uint8_t Revision; /* bitsize 8, bitpos 80 */
+  uint8_t Rsvd[5]:uint32; /* bitsize 40, bitpos 88 */
+  uint32_t Class; /* bitsize 32, bitpos 128 */
+  uint32_t Irq; /* bitsize 32, bitpos 160 */
+  uint64_t CpuIoTranslation; /* bitsize 64, bitpos 192 */
+  uint64_t CpuMemTranslation; /* bitsize 64, bitpos 256 */
+  uint64_t CpuIsaTranslation; /* bitsize 64, bitpos 320 */
+  uint64_t CpuBmstrTranslation; /* bitsize 64, bitpos 384 */
+  uint64_t PciBaseAddress[6]:uint32; /* bitsize 384, bitpos 448 */
+  uint64_t CpuBaseAddress[6]:uint32; /* bitsize 384, bitpos 832 */
+  uint32_t BaseAddressSize[6]:uint32; /* bitsize 192, bitpos 1216 */
+  uint64_t PciRom; /* bitsize 64, bitpos 1408 */
+  uint64_t CpuRom; /* bitsize 64, bitpos 1472 */
+  uint32_t RomSize; /* bitsize 32, bitpos 1536 */
+  uint32_t Rsvd1; /* bitsize 32, bitpos 1568 */
+  uint64_t BusIoStart; /* bitsize 64, bitpos 1600 */
+  uint64_t BusIoEnd; /* bitsize 64, bitpos 1664 */
+  uint64_t BusMemStart; /* bitsize 64, bitpos 1728 */
+  uint64_t BusMemEnd; /* bitsize 64, bitpos 1792 */
+  uint8_t msi; /* bitsize 8, bitpos 1856 */
+  uint8_t Rsvd2[3]:uint32; /* bitsize 24, bitpos 1864 */
+  uint32_t Rsvd3; /* bitsize 32, bitpos 1888 */
+};
+struct _pci_route_buffer { /* size 6 id 81 */
+  uint16_t BufferSize; /* bitsize 16, bitpos 0 */
+  uint16_t DataBufferOffset; /* bitsize 16, bitpos 16 */
+  uint16_t DataBufferSeg; /* bitsize 16, bitpos 32 */
+};
+typedef struct _pci_route_buffer /* id 81 */ IRQRoutingOptionsBuffer;
+ /usr/qnx650/target/qnx6/usr/include/stddef.h:
+typedef _Intptrt ptrdiff_t;
+ /usr/qnx650/target/qnx6/usr/include/sys/mman.h:
+struct __posix_typed_mem_info64 { /* size 24 id 82 */
+  _Uint64t posix_tmi_length; /* bitsize 64, bitpos 0 */
+  _Uint32t __reserved[4]:uint32; /* bitsize 128, bitpos 64 */
+};
+struct posix_typed_mem_info { /* size 24 id 83 */
+  size_t posix_tmi_length; /* bitsize 32, bitpos 0 */
+  _Uint32t __posix_tmi_length_hi; /* bitsize 32, bitpos 32 */
+  _Uint32t __reserved[4]:uint32; /* bitsize 128, bitpos 64 */
+};
+struct mem_info { /* size 24 id 84 */
+  size_t mi_length; /* bitsize 32, bitpos 0 */
+  _Uint32t mi_length_hi; /* bitsize 32, bitpos 32 */
+  _Uint32t mi_reserved[4]:uint32; /* bitsize 128, bitpos 64 */
+};

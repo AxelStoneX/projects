@@ -1,0 +1,90 @@
+#!/bin/sh
+
+QNX_TARG=/usr/qnx650/target/qnx6
+QNX_INC=-I${QNX_TARG}/usr/include
+
+PROC_DIR=`pwd`
+BIN_DIR=`pwd`/bin
+
+# Fanuk Bus Tools directory w.r.t. WS/RTC + Bus Tools options
+BT_DIR=`pwd`/bt2
+#BT_OPT="-D_QNXNTO_PCI_X86_ -I${BT_DIR}/Include -I${BT_DIR}/bt1553/Source"
+BT_OPT="-D_QNXNTO_PCI_X86_ -I${BT_DIR}/Include -I${BT_DIR}/bt1553/Source"
+
+#echo $BT_OPT
+
+QCC_OPT="-lang-c -Vgcc_ntox86"
+CC_OPT="-D LEND -D __KIT2__"
+
+# Classic "C" compilation, .c extension is supposed
+comp_c()
+{
+ local src_f=$1.c
+ local out_f=${BIN_DIR}/$1.o
+
+ if test -e $out_f;  then
+  rm -f $out_f
+ fi
+
+ gcc -c -gstabs -o $out_f $BT_OPT $src_f
+  
+ echo -n "Compilation  $src_f \t is "
+ if test -e $out_f;  then
+  echo "correct"
+ else
+  echo "failed\n"
+ fi
+}
+
+cd src
+echo "\n ----- /SRC directory -----"
+comp_c dbf_t
+comp_c prog_dispatcher
+comp_c 1553_card_operations
+comp_c 1553_error_protection
+comp_c 1553_transaction_operations
+comp_c func_software
+comp_c thread_api
+
+cd ..
+
+# === Linking =============================
+TARGET_NAME=ex
+TARGET_FILE=../${TARGET_NAME}
+DBG_FILE=../${TARGET_NAME}.dbg
+
+cd bin
+if test -e prog_dispatcher.o -a -e 1553_card_operations.o -a\
+        -e dbf_t.o -a -e func_software.o -a -e thread_api.o -a\
+        -e 1553_error_protection.o -a -e 1553_transaction_operations.o ; then
+ 
+ echo "\nLinking  BIN/( *.o ) -> ${TARGET_NAME}  started"
+
+ if test -e ${TARGET_FILE};  then
+  rm -f ${TARGET_FILE}
+ fi
+
+gcc -g -o ${TARGET_FILE} prog_dispatcher.o 1553_card_operations.o dbf_t.o\
+                         func_software.o thread_api.o 1553_error_protection.o\
+                         1553_transaction_operations.o -lm -lc -lbustools -L.
+
+ echo -n "Linking  BIN/( *.o ) -> ${TARGET_NAME}  is "
+ if test -e ${TARGET_FILE};  then
+  echo "correct"
+
+  if test -e ${DBG_FILE};  then
+   rm -f ${DBG_FILE}
+  fi
+
+ objdump -g ${TARGET_FILE} > ${DBG_FILE} 2>/dev/null
+
+ else
+  echo "failed"
+ fi
+
+else	
+ echo "\nNot all object files are available" 
+fi
+
+cd ..
+

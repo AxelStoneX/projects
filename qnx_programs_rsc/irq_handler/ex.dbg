@@ -1,0 +1,3062 @@
+
+../ex:     file format elf32-i386
+
+First_Program.c:
+typedef int32 int;
+typedef int8 char;
+typedef int32 long int;
+typedef uint32 unsigned int;
+typedef uint32 long unsigned int;
+typedef int64 long long int;
+typedef uint64 long long unsigned int;
+typedef int16 short int;
+typedef uint16 short unsigned int;
+typedef int8 signed char;
+typedef uint8 unsigned char;
+typedef float float;
+typedef double double;
+typedef float96 long double;
+typedef float _Decimal32;
+typedef double _Decimal64;
+typedef float128 _Decimal128;
+typedef void void;
+void catchint (int signo /* 0x8 */, struct _siginfo /* id 1 */ *info /* 0xc */, void *context /* 0x10 */)
+{ /* 0x80491e0 */
+  /* file First_Program.c line 14 addr 0x80491e0 */
+  /* file First_Program.c line 15 addr 0x80491e6 */
+  /* file First_Program.c line 16 addr 0x80491f6 */
+  /* file First_Program.c line 17 addr 0x8049200 */
+} /* 0x8049202 */
+int main (int argc /* 0x0 */, char **argv /* 0x4 */)
+{ /* 0x8049202 */
+  { /* 0x8049202 */
+    struct sigaction /* id 2 */ act /* 0xffffffc8 */;
+    struct _clockperiod /* id 3 */ new /* 0xffffffd8 */;
+    struct _clockperiod /* id 3 */ old /* 0xffffffe0 */;
+    struct timespec /* id 4 */ TS /* 0xffffffe8 */;
+    int rt_cnt /* 0xfffffff4 */;
+    int RS /* 0xfffffff0 */;
+    /* file First_Program.c line 20 addr 0x8049202 */
+    /* file First_Program.c line 21 addr 0x8049213 */
+    /* file First_Program.c line 26 addr 0x804921a */
+    /* file First_Program.c line 27 addr 0x8049221 */
+    /* file First_Program.c line 29 addr 0x8049228 */
+    /* file First_Program.c line 30 addr 0x8049238 */
+    /* file First_Program.c line 31 addr 0x8049248 */
+    /* file First_Program.c line 32 addr 0x8049258 */
+    /* file First_Program.c line 34 addr 0x8049268 */
+    /* file First_Program.c line 35 addr 0x8049278 */
+    /* file First_Program.c line 37 addr 0x8049298 */
+    /* file First_Program.c line 38 addr 0x80492aa */
+    /* file First_Program.c line 39 addr 0x80492be */
+    /* file First_Program.c line 40 addr 0x80492c5 */
+    /* file First_Program.c line 41 addr 0x80492cc */
+    /* file First_Program.c line 43 addr 0x80492e0 */
+    /* file First_Program.c line 44 addr 0x80492f2 */
+    /* file First_Program.c line 45 addr 0x8049304 */
+    /* file First_Program.c line 46 addr 0x8049316 */
+    /* file First_Program.c line 50 addr 0x8049328 */
+    /* file First_Program.c line 51 addr 0x804933a */
+    /* file First_Program.c line 52 addr 0x804934e */
+    /* file First_Program.c line 53 addr 0x8049355 */
+    /* file First_Program.c line 54 addr 0x804935c */
+    /* file First_Program.c line 55 addr 0x804936f */
+    /* file First_Program.c line 58 addr 0x8049385 */
+    /* file First_Program.c line 60 addr 0x8049387 */
+    /* file First_Program.c line 61 addr 0x8049398 */
+    /* file First_Program.c line 62 addr 0x80493ab */
+    /* file First_Program.c line 63 addr 0x80493ae */
+    /* file First_Program.c line 64 addr 0x80493be */
+    /* file First_Program.c line 65 addr 0x80493ce */
+    /* file First_Program.c line 66 addr 0x80493de */
+    /* file First_Program.c line 58 addr 0x80493ee */
+    /* file First_Program.c line 68 addr 0x80493f7 */
+    /* file First_Program.c line 69 addr 0x8049407 */
+    /* file First_Program.c line 70 addr 0x804940c */
+  } /* 0x8049414 */
+} /* 0x8049414 */
+struct %anon5 { /* size 16436 */
+  unsigned char *RCV; /* bitsize 32, bitpos 0 */
+  unsigned char *OUT; /* bitsize 32, bitpos 32 */
+  unsigned char BUF_1[8192]:uint32; /* bitsize 65536, bitpos 64 */
+  unsigned char BUF_2[8192]:uint32; /* bitsize 65536, bitpos 65600 */
+  unsigned char DTL; /* bitsize 8, bitpos 131136 */
+  unsigned char RVS; /* bitsize 8, bitpos 131144 */
+  struct _Filet /* id 6 */ *OF; /* bitsize 32, bitpos 131168 */
+  struct _sync /* id 7 */ mu; /* bitsize 64, bitpos 131200 */
+  unsigned int tm; /* bitsize 32, bitpos 131264 */
+  unsigned int rx; /* bitsize 32, bitpos 131296 */
+  unsigned int err; /* bitsize 32, bitpos 131328 */
+  unsigned int lost; /* bitsize 32, bitpos 131360 */
+  unsigned int lock_err; /* bitsize 32, bitpos 131392 */
+  unsigned int unlock_err; /* bitsize 32, bitpos 131424 */
+  unsigned int trylock_err; /* bitsize 32, bitpos 131456 */
+} DTX /* 0x8058320 */;
+unsigned int stop_cmd /* 0x804c250 */;
+int chid /* 0x805c354 */;
+struct %anon5 DTX_3 /* 0x80502a0 */;
+struct %anon5 DTX_4 /* 0x804c260 */;
+struct %anon5 DTX_5 /* 0x80542e0 */;
+ first_program.h:
+ /usr/qnx650/target/qnx6/usr/include/stdio.h:
+typedef unsigned int size_t;
+typedef char _Sysch_t;
+typedef int off_t;
+typedef long long int off64_t;
+struct _Filet { /* size 80 id 6 */
+  unsigned int _Mode; /* bitsize 32, bitpos 0 */
+  int _Handle; /* bitsize 32, bitpos 32 */
+  unsigned char *_Buf; /* bitsize 32, bitpos 64 */
+  unsigned char *_Bend; /* bitsize 32, bitpos 96 */
+  unsigned char *_Next; /* bitsize 32, bitpos 128 */
+  unsigned char *_Rend; /* bitsize 32, bitpos 160 */
+  unsigned char *_Wend; /* bitsize 32, bitpos 192 */
+  unsigned char *_Rback; /* bitsize 32, bitpos 224 */
+  unsigned int *_WRback; /* bitsize 32, bitpos 256 */
+  unsigned int _WBack[2]:uint32; /* bitsize 64, bitpos 288 */
+  unsigned char *_Rsave; /* bitsize 32, bitpos 352 */
+  unsigned char *_WRend; /* bitsize 32, bitpos 384 */
+  unsigned char *_WWend; /* bitsize 32, bitpos 416 */
+  struct _Mbstatet /* id 8 */ _Wstate; /* bitsize 64, bitpos 448 */
+  struct _Filet /* id 6 */ *_NextFile; /* bitsize 32, bitpos 512 */
+  unsigned char _Back[2]:uint32; /* bitsize 16, bitpos 544 */
+  unsigned char _Cbuf; /* bitsize 8, bitpos 560 */
+  void *_Flock; /* bitsize 32, bitpos 576 */
+  unsigned char _Spare[4]:uint32; /* bitsize 32, bitpos 608 */
+};
+typedef struct _Filet /* id 6 */ _Filet;
+typedef _Filet FILE;
+typedef struct _Fpost /* id 9 */ fpos_t;
+ /usr/qnx650/target/qnx6/usr/include/sys/platform.h:
+typedef unsigned int _Sizet;
+typedef int _Ssizet;
+typedef unsigned int _Wchart;
+struct _Mbstatet { /* size 8 id 8 */
+  _Wchart _Wchar; /* bitsize 32, bitpos 0 */
+  char _State; /* bitsize 8, bitpos 32 */
+  char _Reserved[3]:uint32; /* bitsize 24, bitpos 40 */
+};
+typedef struct _Mbstatet /* id 8 */ _Mbstatet;
+typedef int _Offt;
+typedef long long int _Off64t;
+struct _Fpost { /* size 16 id 9 */
+  _Off64t _Off; /* bitsize 64, bitpos 0 */
+  _Mbstatet _Wstate; /* bitsize 64, bitpos 64 */
+};
+typedef struct _Fpost /* id 9 */ _Fpost;
+typedef signed char _int8;
+typedef short int _int16;
+typedef int _int32;
+typedef long long int _int64;
+typedef int _intptr;
+typedef unsigned char _uint8;
+typedef short unsigned int _uint16;
+typedef unsigned int _uint32;
+typedef long long unsigned int _uint64;
+typedef unsigned int _uintptr;
+typedef long long unsigned int _Paddr64t;
+typedef unsigned int _Paddr32t;
+typedef _Paddr32t _Paddrt;
+ /usr/qnx650/target/qnx6/usr/include/sys/compiler_gnu.h:
+typedef long long int _GCC_ATTR_ALIGN_64t;
+typedef long long unsigned int _GCC_ATTR_ALIGN_u64t;
+typedef _GCC_ATTR_ALIGN_64t _Int64t;
+typedef _GCC_ATTR_ALIGN_u64t _Uint64t;
+typedef unsigned int _GCC_ATTR_ALIGN_u32t;
+typedef int _GCC_ATTR_ALIGN_32t;
+typedef _GCC_ATTR_ALIGN_u32t _Uint32t;
+typedef _GCC_ATTR_ALIGN_32t _Int32t;
+typedef short int _GCC_ATTR_ALIGN_16t;
+typedef short unsigned int _GCC_ATTR_ALIGN_u16t;
+typedef _GCC_ATTR_ALIGN_16t _Int16t;
+typedef _GCC_ATTR_ALIGN_u16t _Uint16t;
+typedef signed char _GCC_ATTR_ALIGN_8t;
+typedef unsigned char _GCC_ATTR_ALIGN_u8t;
+typedef _GCC_ATTR_ALIGN_8t _Int8t;
+typedef _GCC_ATTR_ALIGN_u8t _Uint8t;
+typedef int _Intptrt;
+typedef unsigned int _Uintptrt;
+typedef long long int _Longlong;
+typedef long long unsigned int _ULonglong;
+typedef char *__gnuc_va_list;
+typedef __gnuc_va_list __NTO_va_list;
+ /usr/qnx650/target/qnx6/usr/include/x86/platform.h:
+typedef unsigned int __jmpbufalign;
+ /usr/qnx650/target/qnx6/usr/include/sys/target_nto.h:
+typedef _Int8t _Intleast8t;
+typedef _Uint8t _Uintleast8t;
+typedef _Int8t _Intfast8t;
+typedef _Uint8t _Uintfast8t;
+typedef _Int16t _Intleast16t;
+typedef _Uint16t _Uintleast16t;
+typedef _Int16t _Intfast16t;
+typedef _Uint16t _Uintfast16t;
+typedef _Int32t _Intleast32t;
+typedef _Uint32t _Uintleast32t;
+typedef _Int32t _Intfast32t;
+typedef _Uint32t _Uintfast32t;
+typedef _Int64t _Intleast64t;
+typedef _Uint64t _Uintleast64t;
+typedef _Int64t _Intfast64t;
+typedef _Uint64t _Uintfast64t;
+typedef _Int64t _Intmaxt;
+typedef _Uint64t _Uintmaxt;
+ /usr/qnx650/target/qnx6/usr/include/time.h:
+typedef _Uint32t time_t;
+typedef _Uint32t clock_t;
+typedef int timer_t;
+typedef int clockid_t;
+struct timespec { /* size 8 id 4 */
+  time_t tv_sec; /* bitsize 32, bitpos 0 */
+  long int tv_nsec; /* bitsize 32, bitpos 32 */
+};
+struct itimerspec { /* size 16 id 10 */
+  struct timespec /* id 4 */ it_value; /* bitsize 64, bitpos 0 */
+  struct timespec /* id 4 */ it_interval; /* bitsize 64, bitpos 64 */
+};
+typedef int pid_t;
+struct tm { /* size 44 id 11 */
+  int tm_sec; /* bitsize 32, bitpos 0 */
+  int tm_min; /* bitsize 32, bitpos 32 */
+  int tm_hour; /* bitsize 32, bitpos 64 */
+  int tm_mday; /* bitsize 32, bitpos 96 */
+  int tm_mon; /* bitsize 32, bitpos 128 */
+  int tm_year; /* bitsize 32, bitpos 160 */
+  int tm_wday; /* bitsize 32, bitpos 192 */
+  int tm_yday; /* bitsize 32, bitpos 224 */
+  int tm_isdst; /* bitsize 32, bitpos 256 */
+  long int tm_gmtoff; /* bitsize 32, bitpos 288 */
+  char *tm_zone; /* bitsize 32, bitpos 320 */
+};
+ /usr/qnx650/target/qnx6/usr/include/sys/neutrino.h:
+struct intrspin { /* size 4 id 12 */
+  unsigned int value; /* bitsize 32, bitpos 0 */
+};
+typedef struct intrspin /* id 12 */ intrspin_t;
+struct _msg_info { /* size 48 id 13 */
+  _Uint32t nd; /* bitsize 32, bitpos 0 */
+  _Uint32t srcnd; /* bitsize 32, bitpos 32 */
+  pid_t pid; /* bitsize 32, bitpos 64 */
+  _Int32t tid; /* bitsize 32, bitpos 96 */
+  _Int32t chid; /* bitsize 32, bitpos 128 */
+  _Int32t scoid; /* bitsize 32, bitpos 160 */
+  _Int32t coid; /* bitsize 32, bitpos 192 */
+  _Int32t msglen; /* bitsize 32, bitpos 224 */
+  _Int32t srcmsglen; /* bitsize 32, bitpos 256 */
+  _Int32t dstmsglen; /* bitsize 32, bitpos 288 */
+  _Int16t priority; /* bitsize 16, bitpos 320 */
+  _Int16t flags; /* bitsize 16, bitpos 336 */
+  _Uint32t reserved; /* bitsize 32, bitpos 352 */
+};
+struct _cred_info { /* size 60 id 14 */
+  int ruid; /* bitsize 32, bitpos 0 */
+  int euid; /* bitsize 32, bitpos 32 */
+  int suid; /* bitsize 32, bitpos 64 */
+  int rgid; /* bitsize 32, bitpos 96 */
+  int egid; /* bitsize 32, bitpos 128 */
+  int sgid; /* bitsize 32, bitpos 160 */
+  _Uint32t ngroups; /* bitsize 32, bitpos 192 */
+  int grouplist[8]:uint32; /* bitsize 256, bitpos 224 */
+};
+struct _client_info { /* size 76 id 15 */
+  _Uint32t nd; /* bitsize 32, bitpos 0 */
+  pid_t pid; /* bitsize 32, bitpos 32 */
+  pid_t sid; /* bitsize 32, bitpos 64 */
+  _Uint32t flags; /* bitsize 32, bitpos 96 */
+  struct _cred_info /* id 14 */ cred; /* bitsize 480, bitpos 128 */
+};
+struct _vtid_info { /* size 32 id 16 */
+  _Int32t tid; /* bitsize 32, bitpos 0 */
+  _Int32t coid; /* bitsize 32, bitpos 32 */
+  _Int32t priority; /* bitsize 32, bitpos 64 */
+  _Int32t srcmsglen; /* bitsize 32, bitpos 96 */
+  _Int32t keydata; /* bitsize 32, bitpos 128 */
+  _Int32t srcnd; /* bitsize 32, bitpos 160 */
+  _Int32t dstmsglen; /* bitsize 32, bitpos 192 */
+  _Int32t zero; /* bitsize 32, bitpos 224 */
+};
+struct _timer_info { /* size 72 id 17 */
+  struct _itimer /* id 18 */ itime; /* bitsize 128, bitpos 0 */
+  struct _itimer /* id 18 */ otime; /* bitsize 128, bitpos 128 */
+  _Uint32t flags; /* bitsize 32, bitpos 256 */
+  _Int32t tid; /* bitsize 32, bitpos 288 */
+  _Int32t notify; /* bitsize 32, bitpos 320 */
+  clockid_t clockid; /* bitsize 32, bitpos 352 */
+  _Uint32t overruns; /* bitsize 32, bitpos 384 */
+  struct sigevent /* id 19 */ event; /* bitsize 128, bitpos 416 */
+};
+struct _sighandler_info { /* size 48 id 20 */
+  struct _siginfo /* id 1 */ siginfo; /* bitsize 320, bitpos 0 */
+  void (*handler) (/* unknown */); /* bitsize 32, bitpos 320 */
+  void *context; /* bitsize 32, bitpos 352 */
+};
+struct _sched_info { /* size 64 id 21 */
+  int priority_min; /* bitsize 32, bitpos 0 */
+  int priority_max; /* bitsize 32, bitpos 32 */
+  _Uint64t interval; /* bitsize 64, bitpos 64 */
+  int priority_priv; /* bitsize 32, bitpos 128 */
+  int reserved[11]:uint32; /* bitsize 352, bitpos 160 */
+};
+struct _pulse { /* size 16 id 22 */
+  _Uint16t type; /* bitsize 16, bitpos 0 */
+  _Uint16t subtype; /* bitsize 16, bitpos 16 */
+  _Int8t code; /* bitsize 8, bitpos 32 */
+  _Uint8t zero[3]:uint32; /* bitsize 24, bitpos 40 */
+  union sigval /* id 23 */ value; /* bitsize 32, bitpos 64 */
+  _Int32t scoid; /* bitsize 32, bitpos 96 */
+};
+struct _thread_name { /* size 12 id 24 */
+  int new_name_len; /* bitsize 32, bitpos 0 */
+  int name_buf_len; /* bitsize 32, bitpos 32 */
+  char name_buf[1]:uint32; /* bitsize 8, bitpos 64 */
+};
+struct _thread_runmask { /* size 4 id 25 */
+  int size; /* bitsize 32, bitpos 0 */
+};
+struct _clockperiod { /* size 8 id 3 */
+  long unsigned int nsec; /* bitsize 32, bitpos 0 */
+  long int fract; /* bitsize 32, bitpos 32 */
+};
+ /usr/qnx650/target/qnx6/usr/include/sys/types.h:
+typedef _Uint32t mode_t;
+typedef _Uint32t dev_t;
+typedef _Ssizet ssize_t;
+typedef _Uint32t blkcnt_t;
+typedef _Uint32t blksize_t;
+typedef _Uint32t fsblkcnt_t;
+typedef _Uint32t fsfilcnt_t;
+typedef _Uint32t nlink_t;
+typedef _Uint32t ino_t;
+typedef _Uint64t ino64_t;
+typedef int id_t;
+typedef int uid_t;
+typedef int gid_t;
+typedef _Uint32t useconds_t;
+typedef _Int32t suseconds_t;
+typedef _Int32t pthread_t;
+struct _sync { /* size 8 id 7 */
+  int __count; /* bitsize 32, bitpos 0 */
+  unsigned int __owner; /* bitsize 32, bitpos 32 */
+};
+typedef struct _sync /* id 7 */ sync_t;
+struct _sync_attr { /* size 32 id 26 */
+  int __protocol; /* bitsize 32, bitpos 0 */
+  int __flags; /* bitsize 32, bitpos 32 */
+  int __prioceiling; /* bitsize 32, bitpos 64 */
+  int __clockid; /* bitsize 32, bitpos 96 */
+  int __reserved[4]:uint32; /* bitsize 128, bitpos 128 */
+};
+typedef struct _sync_attr /* id 26 */ sync_attr_t;
+struct __timespec { /* size 8 id 27 */
+  time_t __tv_sec; /* bitsize 32, bitpos 0 */
+  long int __tv_nsec; /* bitsize 32, bitpos 32 */
+};
+struct __sched_param { /* size 40 id 28 */
+  int __sched_priority; /* bitsize 32, bitpos 0 */
+  int __sched_curpriority; /* bitsize 32, bitpos 32 */
+  union %anon29 { /* size 32 */
+    int __reserved[8]:uint32; /* bitsize 256, bitpos 0 */
+    struct %anon30 { /* size 24 */
+      int __ss_low_priority; /* bitsize 32, bitpos 0 */
+      int __ss_max_repl; /* bitsize 32, bitpos 32 */
+      struct __timespec /* id 27 */ __ss_repl_period; /* bitsize 64, bitpos 64 */
+      struct __timespec /* id 27 */ __ss_init_budget; /* bitsize 64, bitpos 128 */
+    } __ss; /* bitsize 192, bitpos 0 */
+  } __ss_un; /* bitsize 256, bitpos 64 */
+};
+struct _thread_attr { /* size 76 id 31 */
+  int __flags; /* bitsize 32, bitpos 0 */
+  _Sizet __stacksize; /* bitsize 32, bitpos 32 */
+  void *__stackaddr; /* bitsize 32, bitpos 64 */
+  void (*__exitfunc) (/* unknown */); /* bitsize 32, bitpos 96 */
+  int __policy; /* bitsize 32, bitpos 128 */
+  struct __sched_param /* id 28 */ __param; /* bitsize 320, bitpos 160 */
+  unsigned int __guardsize; /* bitsize 32, bitpos 480 */
+  unsigned int __prealloc; /* bitsize 32, bitpos 512 */
+  int __spare[2]:uint32; /* bitsize 64, bitpos 544 */
+};
+typedef struct _thread_attr /* id 31 */ pthread_attr_t;
+typedef struct _sync /* id 7 */ pthread_cond_t;
+typedef struct _sync_attr /* id 26 */ pthread_condattr_t;
+typedef int pthread_key_t;
+typedef struct _sync /* id 7 */ pthread_mutex_t;
+typedef struct _sync_attr /* id 26 */ pthread_mutexattr_t;
+struct _pthread_once { /* size 12 id 32 */
+  int __once; /* bitsize 32, bitpos 0 */
+  sync_t __mutex; /* bitsize 64, bitpos 32 */
+};
+typedef struct _pthread_once /* id 32 */ pthread_once_t;
+typedef _Uint32t key_t;
+typedef char *caddr_t;
+typedef _Paddrt paddr_t;
+typedef _Paddr32t paddr32_t;
+typedef _Paddr64t paddr64_t;
+typedef _Int32t daddr_t;
+typedef _Uint16t msg_t;
+struct iovec { /* size 8 id 33 */
+  void *iov_base; /* bitsize 32, bitpos 0 */
+  _Sizet iov_len; /* bitsize 32, bitpos 32 */
+};
+typedef struct iovec /* id 33 */ iov_t;
+struct _clockadjust { /* size 8 id 34 */
+  long unsigned int tick_count; /* bitsize 32, bitpos 0 */
+  long int tick_nsec_inc; /* bitsize 32, bitpos 32 */
+};
+typedef unsigned char uchar_t;
+typedef short unsigned int ushort_t;
+typedef unsigned int uint_t;
+typedef long unsigned int ulong_t;
+typedef unsigned char u_char;
+typedef short unsigned int u_short;
+typedef unsigned int u_int;
+typedef long unsigned int u_long;
+typedef long unsigned int fixpt_t;
+typedef short unsigned int sel_t;
+typedef short unsigned int ushort;
+typedef unsigned int uint;
+typedef long unsigned int ulong;
+struct _itimer { /* size 16 id 18 */
+  _Uint64t nsec; /* bitsize 64, bitpos 0 */
+  _Uint64t interval_nsec; /* bitsize 64, bitpos 64 */
+};
+ /usr/qnx650/target/qnx6/usr/include/signal.h:
+typedef int sig_atomic_t;
+typedef struct %anon35 { /* size 8 */
+  long int __bits[2]:uint32; /* bitsize 64, bitpos 0 */
+} sigset_t;
+typedef struct %anon36 { /* size 12 */
+  void *ss_sp; /* bitsize 32, bitpos 0 */
+  _Sizet ss_size; /* bitsize 32, bitpos 32 */
+  int ss_flags; /* bitsize 32, bitpos 64 */
+} stack_t;
+typedef struct __ucontext_t /* id 0 */ ucontext_t;
+struct sigaction { /* size 16 id 2 */
+  union %anon37 { /* size 4 */
+    void (*_sa_handler) (/* unknown */); /* bitsize 32, bitpos 0 */
+    void (*_sa_sigaction) (/* unknown */); /* bitsize 32, bitpos 0 */
+  } __sa_un; /* bitsize 32, bitpos 0 */
+  int sa_flags; /* bitsize 32, bitpos 32 */
+  sigset_t sa_mask; /* bitsize 64, bitpos 64 */
+};
+struct sigstack { /* size 8 id 38 */
+  int ss_onstack; /* bitsize 32, bitpos 0 */
+  void *ss_sp; /* bitsize 32, bitpos 32 */
+};
+ /usr/qnx650/target/qnx6/usr/include/sys/siginfo.h:
+union sigval { /* size 4 id 23 */
+  int sival_int; /* bitsize 32, bitpos 0 */
+  void *sival_ptr; /* bitsize 32, bitpos 0 */
+};
+struct sigevent { /* size 16 id 19 */
+  int sigev_notify; /* bitsize 32, bitpos 0 */
+  union %anon39 { /* size 4 */
+    int __sigev_signo; /* bitsize 32, bitpos 0 */
+    int __sigev_coid; /* bitsize 32, bitpos 0 */
+    int __sigev_id; /* bitsize 32, bitpos 0 */
+    void (*__sigev_notify_function) (/* unknown */); /* bitsize 32, bitpos 0 */
+  } __sigev_un1; /* bitsize 32, bitpos 32 */
+  union sigval /* id 23 */ sigev_value; /* bitsize 32, bitpos 64 */
+  union %anon40 { /* size 4 */
+    struct %anon41 { /* size 4 */
+      short int __sigev_code; /* bitsize 16, bitpos 0 */
+      short int __sigev_priority; /* bitsize 16, bitpos 16 */
+    } __st; /* bitsize 32, bitpos 0 */
+    pthread_attr_t *__sigev_notify_attributes; /* bitsize 32, bitpos 0 */
+  } __sigev_un2; /* bitsize 32, bitpos 96 */
+};
+struct _siginfo { /* size 40 id 1 */
+  int si_signo; /* bitsize 32, bitpos 0 */
+  int si_code; /* bitsize 32, bitpos 32 */
+  int si_errno; /* bitsize 32, bitpos 64 */
+  union %anon42 { /* size 28 */
+    int __pad[7]:uint32; /* bitsize 224, bitpos 0 */
+    struct %anon43 { /* size 16 */
+      pid_t __pid; /* bitsize 32, bitpos 0 */
+      union %anon44 { /* size 12 */
+        struct %anon45 { /* size 8 */
+          uid_t __uid; /* bitsize 32, bitpos 0 */
+          union sigval /* id 23 */ __value; /* bitsize 32, bitpos 32 */
+        } __kill; /* bitsize 64, bitpos 0 */
+        struct %anon46 { /* size 12 */
+          clock_t __utime; /* bitsize 32, bitpos 0 */
+          int __status; /* bitsize 32, bitpos 32 */
+          clock_t __stime; /* bitsize 32, bitpos 64 */
+        } __chld; /* bitsize 96, bitpos 0 */
+      } __pdata; /* bitsize 96, bitpos 32 */
+    } __proc; /* bitsize 128, bitpos 0 */
+    struct %anon47 { /* size 16 */
+      int __fltno; /* bitsize 32, bitpos 0 */
+      void *__fltip; /* bitsize 32, bitpos 32 */
+      void *__addr; /* bitsize 32, bitpos 64 */
+      int __bdslot; /* bitsize 32, bitpos 96 */
+    } __fault; /* bitsize 128, bitpos 0 */
+  } __data; /* bitsize 224, bitpos 96 */
+};
+typedef struct _siginfo /* id 1 */ siginfo_t;
+ /usr/qnx650/target/qnx6/usr/include/sched.h:
+struct sched_query { /* size 8 id 48 */
+  _Uint32t extsched; /* bitsize 32, bitpos 0 */
+  _Uint32t reserved; /* bitsize 32, bitpos 32 */
+};
+struct sched_param { /* size 40 id 49 */
+  int sched_priority; /* bitsize 32, bitpos 0 */
+  int sched_curpriority; /* bitsize 32, bitpos 32 */
+  union %anon50 { /* size 32 */
+    int __reserved[8]:uint32; /* bitsize 256, bitpos 0 */
+    struct %anon51 { /* size 24 */
+      int __ss_low_priority; /* bitsize 32, bitpos 0 */
+      int __ss_max_repl; /* bitsize 32, bitpos 32 */
+      struct timespec /* id 4 */ __ss_repl_period; /* bitsize 64, bitpos 64 */
+      struct timespec /* id 4 */ __ss_init_budget; /* bitsize 64, bitpos 128 */
+    } __ss; /* bitsize 192, bitpos 0 */
+  } __ss_un; /* bitsize 256, bitpos 64 */
+};
+typedef struct sched_param /* id 49 */ sched_param_t;
+ /usr/qnx650/target/qnx6/usr/include/sys/storage.h:
+struct _thread_local_storage { /* size 64 id 52 */
+  void (*__exitfunc) (/* unknown */); /* bitsize 32, bitpos 0 */
+  void *__arg; /* bitsize 32, bitpos 32 */
+  int *__errptr; /* bitsize 32, bitpos 64 */
+  int __errval; /* bitsize 32, bitpos 96 */
+  unsigned int __flags; /* bitsize 32, bitpos 128 */
+  int __pid; /* bitsize 32, bitpos 160 */
+  int __tid; /* bitsize 32, bitpos 192 */
+  unsigned int __owner; /* bitsize 32, bitpos 224 */
+  void *__stackaddr; /* bitsize 32, bitpos 256 */
+  unsigned int __reserved1; /* bitsize 32, bitpos 288 */
+  unsigned int __numkeys; /* bitsize 32, bitpos 320 */
+  void **__keydata; /* bitsize 32, bitpos 352 */
+  void *__cleanup; /* bitsize 32, bitpos 384 */
+  void *__fpuemu_data; /* bitsize 32, bitpos 416 */
+  void *__reserved3; /* bitsize 32, bitpos 448 */
+  void (*__sigaction) (/* unknown */); /* bitsize 32, bitpos 480 */
+};
+struct _process_local_storage { /* size 40 id 53 */
+  void *(*__getgot) (/* unknown */); /* bitsize 32, bitpos 0 */
+  void (*__mathemulator) (/* unknown */); /* bitsize 32, bitpos 32 */
+  void *__dll_list; /* bitsize 32, bitpos 64 */
+  void *__reserved[6]:uint32; /* bitsize 192, bitpos 96 */
+  void (*__threadwatch) (/* unknown */); /* bitsize 32, bitpos 288 */
+};
+ /usr/qnx650/target/qnx6/usr/include/sys/states.h:
+enum _THREAD_STATE { STATE_DEAD, STATE_RUNNING, STATE_READY, STATE_STOPPED, STATE_SEND, STATE_RECEIVE, STATE_REPLY, STATE_STACK, STATE_WAITTHREAD, STATE_WAITPAGE, STATE_SIGSUSPEND, STATE_SIGWAITINFO, STATE_NANOSLEEP, STATE_MUTEX, STATE_CONDVAR, STATE_JOIN, STATE_INTR, STATE_SEM, STATE_WAITCTX, STATE_NET_SEND, STATE_NET_REPLY, STATE_MAX = 24 };
+ /usr/qnx650/target/qnx6/usr/include/x86/neutrino.h:
+struct __gcc_fool { /* size 400 id 54 */
+  int __fool[100]:uint32; /* bitsize 3200, bitpos 0 */
+};
+ /usr/qnx650/target/qnx6/usr/include/pthread.h:
+struct __cleanup_handler { /* size 12 id 55 */
+  struct __cleanup_handler /* id 55 */ *__next; /* bitsize 32, bitpos 0 */
+  void (*__routine) (/* unknown */); /* bitsize 32, bitpos 32 */
+  void *__save; /* bitsize 32, bitpos 64 */
+};
+typedef struct _sync_attr /* id 26 */ pthread_barrierattr_t;
+typedef struct %anon56 { /* size 24 */
+  unsigned int __barrier; /* bitsize 32, bitpos 0 */
+  unsigned int __count; /* bitsize 32, bitpos 32 */
+  pthread_mutex_t __lock; /* bitsize 64, bitpos 64 */
+  pthread_cond_t __bcond; /* bitsize 64, bitpos 128 */
+} pthread_barrier_t;
+typedef struct _sync_attr /* id 26 */ pthread_rwlockattr_t;
+typedef struct %anon57 { /* size 48 */
+  int __active; /* bitsize 32, bitpos 0 */
+  void *__spare; /* bitsize 32, bitpos 32 */
+  int __blockedwriters; /* bitsize 32, bitpos 64 */
+  int __blockedreaders; /* bitsize 32, bitpos 96 */
+  int __heavy; /* bitsize 32, bitpos 128 */
+  pthread_mutex_t __lock; /* bitsize 64, bitpos 160 */
+  pthread_cond_t __rcond; /* bitsize 64, bitpos 224 */
+  pthread_cond_t __wcond; /* bitsize 64, bitpos 288 */
+  unsigned int __owner; /* bitsize 32, bitpos 352 */
+} pthread_rwlock_t;
+typedef struct _sync /* id 7 */ pthread_spinlock_t;
+typedef struct _sleepon_handle /* id 0 */ sleepon_t;
+ /usr/qnx650/target/qnx6/usr/include/inttypes.h:
+typedef struct %anon58 { /* size 16 */
+  _Intmaxt quot; /* bitsize 64, bitpos 0 */
+  _Intmaxt rem; /* bitsize 64, bitpos 64 */
+} imaxdiv_t;
+struct __byte { /* size 2 id 59 */
+  _Uint8t __lo; /* bitsize 8, bitpos 0 */
+  _Uint8t __hi; /* bitsize 8, bitpos 8 */
+};
+struct __short { /* size 4 id 60 */
+  _Uint16t __lo; /* bitsize 16, bitpos 0 */
+  _Uint16t __hi; /* bitsize 16, bitpos 16 */
+};
+struct __long { /* size 8 id 61 */
+  _Uint32t __lo; /* bitsize 32, bitpos 0 */
+  _Uint32t __hi; /* bitsize 32, bitpos 32 */
+};
+ /usr/qnx650/target/qnx6/usr/include/stdint.h:
+typedef _Int8t int8_t;
+typedef _Uint8t uint8_t;
+typedef _Int16t int16_t;
+typedef _Uint16t uint16_t;
+typedef _Int32t int32_t;
+typedef _Uint32t uint32_t;
+typedef _Int64t int64_t;
+typedef _Uint64t uint64_t;
+typedef _Intptrt intptr_t;
+typedef _Uintptrt uintptr_t;
+typedef _Intleast8t intleast8_t;
+typedef _Uintleast8t uintleast8_t;
+typedef _Intfast8t intfast8_t;
+typedef _Uintfast8t uintfast8_t;
+typedef _Intleast16t intleast16_t;
+typedef _Uintleast16t uintleast16_t;
+typedef _Intfast16t intfast16_t;
+typedef _Uintfast16t uintfast16_t;
+typedef _Intleast32t intleast32_t;
+typedef _Uintleast32t uintleast32_t;
+typedef _Intfast32t intfast32_t;
+typedef _Uintfast32t uintfast32_t;
+typedef _Intleast64t intleast64_t;
+typedef _Uintleast64t uintleast64_t;
+typedef _Intfast64t intfast64_t;
+typedef _Uintfast64t uintfast64_t;
+typedef _Intleast8t int_least8_t;
+typedef _Uintleast8t uint_least8_t;
+typedef _Intfast8t int_fast8_t;
+typedef _Uintfast8t uint_fast8_t;
+typedef _Intleast16t int_least16_t;
+typedef _Uintleast16t uint_least16_t;
+typedef _Intfast16t int_fast16_t;
+typedef _Uintfast16t uint_fast16_t;
+typedef _Intleast32t int_least32_t;
+typedef _Uintleast32t uint_least32_t;
+typedef _Intfast32t int_fast32_t;
+typedef _Uintfast32t uint_fast32_t;
+typedef _Intleast64t int_least64_t;
+typedef _Uintleast64t uint_least64_t;
+typedef _Intfast64t int_fast64_t;
+typedef _Uintfast64t uint_fast64_t;
+typedef _Intmaxt intmax_t;
+typedef _Uintmaxt uintmax_t;
+ /usr/qnx650/target/qnx6/usr/include/stdlib.h:
+typedef _Wchart wchar_t;
+typedef struct %anon62 { /* size 8 */
+  int quot; /* bitsize 32, bitpos 0 */
+  int rem; /* bitsize 32, bitpos 32 */
+} div_t;
+typedef struct %anon62 { /* size 8 */
+  long int quot; /* bitsize 32, bitpos 0 */
+  long int rem; /* bitsize 32, bitpos 32 */
+} ldiv_t;
+typedef struct %anon58 { /* size 16 */
+  _Longlong quot; /* bitsize 64, bitpos 0 */
+  _Longlong rem; /* bitsize 64, bitpos 64 */
+} lldiv_t;
+typedef lldiv_t _Lldiv_t;
+typedef int (_Cmpfun) (/* unknown */);
+ /usr/qnx650/target/qnx6/usr/include/malloc.h:
+enum malloc_opt_cmds { MALLOC_VERIFY, MALLOC_VERIFY_ON, MALLOC_STATS, MALLOC_FREE_CHECK, MALLOC_ARENA_SIZE, MALLOC_MONOTONIC_GROWTH, MALLOC_MEMORY_HOLD, MALLOC_ARENA_CACHE_MAXSZ, MALLOC_ARENA_CACHE_MAXBLK, MALLOC_ARENA_CACHE_FREE_NOW, MALLOC_ERROR_GET_FNPTR, MALLOC_ERROR_SET_FNPTR, MALLOC_LAST };
+struct malloc_stats { /* size 60 id 63 */
+  unsigned int m_small_freemem; /* bitsize 32, bitpos 0 */
+  unsigned int m_freemem; /* bitsize 32, bitpos 32 */
+  unsigned int m_small_overhead; /* bitsize 32, bitpos 64 */
+  unsigned int m_overhead; /* bitsize 32, bitpos 96 */
+  unsigned int m_small_allocmem; /* bitsize 32, bitpos 128 */
+  unsigned int m_allocmem; /* bitsize 32, bitpos 160 */
+  unsigned int m_coreallocs; /* bitsize 32, bitpos 192 */
+  unsigned int m_corefrees; /* bitsize 32, bitpos 224 */
+  unsigned int m_heapsize; /* bitsize 32, bitpos 256 */
+  unsigned int m_frees; /* bitsize 32, bitpos 288 */
+  unsigned int m_allocs; /* bitsize 32, bitpos 320 */
+  unsigned int m_reallocs; /* bitsize 32, bitpos 352 */
+  unsigned int m_small_blocks; /* bitsize 32, bitpos 384 */
+  unsigned int m_blocks; /* bitsize 32, bitpos 416 */
+  unsigned int m_hblocks; /* bitsize 32, bitpos 448 */
+};
+struct mallinfo { /* size 40 id 64 */
+  int arena; /* bitsize 32, bitpos 0 */
+  int ordblks; /* bitsize 32, bitpos 32 */
+  int smblks; /* bitsize 32, bitpos 64 */
+  int hblks; /* bitsize 32, bitpos 96 */
+  int hblkhd; /* bitsize 32, bitpos 128 */
+  int usmblks; /* bitsize 32, bitpos 160 */
+  int fsmblks; /* bitsize 32, bitpos 192 */
+  int uordblks; /* bitsize 32, bitpos 224 */
+  int fordblks; /* bitsize 32, bitpos 256 */
+  int keepcost; /* bitsize 32, bitpos 288 */
+};
+enum mcheck_status { MCHECK_DISABLED = -1, MCHECK_OK, MCHECK_HEAD, MCHECK_TAIL, MCHECK_FREE };
+ /usr/qnx650/target/qnx6/usr/include/sys/wait.h:
+typedef enum { P_ALL, P_PID, P_PGID } idtype_t;
+ dbf_dv.h:
+typedef struct %anon5 DBF_TXT;
+typedef struct %anon65 { /* size 16528 */
+  uint8_t *RCV; /* bitsize 32, bitpos 0 */
+  uint8_t *OUT; /* bitsize 32, bitpos 32 */
+  uint8_t BUF_1[8192]:uint32; /* bitsize 65536, bitpos 64 */
+  uint8_t BUF_2[8192]:uint32; /* bitsize 65536, bitpos 65600 */
+  uint8_t DTL; /* bitsize 8, bitpos 131136 */
+  uint8_t RVS; /* bitsize 8, bitpos 131144 */
+  pthread_mutex_t mu; /* bitsize 64, bitpos 131168 */
+  uint32_t tm; /* bitsize 32, bitpos 131232 */
+  uint32_t rx; /* bitsize 32, bitpos 131264 */
+  uint32_t sum_p; /* bitsize 32, bitpos 131296 */
+  uint32_t lost_p; /* bitsize 32, bitpos 131328 */
+  uint32_t sum_b; /* bitsize 32, bitpos 131360 */
+  uint32_t lost_b; /* bitsize 32, bitpos 131392 */
+  uint32_t sum_fb; /* bitsize 32, bitpos 131424 */
+  uint32_t lock_err; /* bitsize 32, bitpos 131456 */
+  uint32_t unlock_err; /* bitsize 32, bitpos 131488 */
+  uint32_t trylock_err; /* bitsize 32, bitpos 131520 */
+  DBF_TXT *dbT; /* bitsize 32, bitpos 131552 */
+  int fD; /* bitsize 32, bitpos 131584 */
+  char *fN; /* bitsize 32, bitpos 131616 */
+  char fNS[64]:uint32; /* bitsize 512, bitpos 131648 */
+  uint32_t wr_err; /* bitsize 32, bitpos 132160 */
+  int wr_err_code; /* bitsize 32, bitpos 132192 */
+} DBF_BIN;
+ lbm_bs.h:
+typedef uint64_t QWORD;
+typedef uint32_t LWORD;
+typedef uint16_t SWORD;
+typedef uint8_t BYTE;
+typedef int64_t Q_INT;
+typedef int16_t S_INT;
+typedef long unsigned int ULONG;
+ time_counter.h:
+typedef struct %anon66 { /* size 24 */
+  double clock_coefficient; /* bitsize 64, bitpos 0 */
+  uint64_t cycle_counter_1; /* bitsize 64, bitpos 64 */
+  uint64_t cycle_counter_2; /* bitsize 64, bitpos 128 */
+} TMS_t;
+ /usr/qnx650/target/qnx6/usr/include/sys/syspage.h:
+typedef struct %anon67 { /* size 4 */
+  _Uint16t entry_off; /* bitsize 16, bitpos 0 */
+  _Uint16t entry_size; /* bitsize 16, bitpos 16 */
+} syspage_entry_info;
+struct cpupage_entry { /* size 84 id 68 */
+  struct _thread_local_storage /* id 52 */ *tls; /* bitsize 32, bitpos 0 */
+  struct _process_local_storage /* id 53 */ *pls; /* bitsize 32, bitpos 32 */
+  struct syspage_entry /* id 69 */ *syspage; /* bitsize 32, bitpos 64 */
+  long unsigned int cpu; /* bitsize 32, bitpos 96 */
+  long unsigned int state; /* bitsize 32, bitpos 128 */
+  union %anon70 { /* size 32 */
+    struct %anon71 { /* size 32 */
+      long int dummy[8]:uint32; /* bitsize 256, bitpos 0 */
+    } dummy; /* bitsize 256, bitpos 0 */
+  } un; /* bitsize 256, bitpos 160 */
+  long unsigned int spare[8]:uint32; /* bitsize 256, bitpos 416 */
+};
+struct qtime_entry { /* size 96 id 72 */
+  _Uint64t cycles_per_sec; /* bitsize 64, bitpos 0 */
+  _Uint64t nsec_tod_adjust; /* bitsize 64, bitpos 64 */
+  _Uint64t nsec; /* bitsize 64, bitpos 128 */
+  long unsigned int nsec_inc; /* bitsize 32, bitpos 192 */
+  long unsigned int boot_time; /* bitsize 32, bitpos 224 */
+  struct _clockadjust /* id 34 */ adjust; /* bitsize 64, bitpos 256 */
+  long unsigned int timer_rate; /* bitsize 32, bitpos 320 */
+  long int timer_scale; /* bitsize 32, bitpos 352 */
+  long unsigned int timer_load; /* bitsize 32, bitpos 384 */
+  long int intr; /* bitsize 32, bitpos 416 */
+  long unsigned int epoch; /* bitsize 32, bitpos 448 */
+  long unsigned int flags; /* bitsize 32, bitpos 480 */
+  unsigned int rr_interval_mul; /* bitsize 32, bitpos 512 */
+  long unsigned int spare0; /* bitsize 32, bitpos 544 */
+  _Uint64t nsec_stable; /* bitsize 64, bitpos 576 */
+  long unsigned int spare[4]:uint32; /* bitsize 128, bitpos 640 */
+};
+struct debug_callout { /* size 16 id 73 */
+  void (*display_char) (/* unknown */); /* bitsize 32, bitpos 0 */
+  int (*poll_key) (/* unknown */); /* bitsize 32, bitpos 32 */
+  int (*break_detect) (/* unknown */); /* bitsize 32, bitpos 64 */
+  void *spare[1]:uint32; /* bitsize 32, bitpos 96 */
+};
+typedef enum { DEBUG_WATCHDOG_STOP, DEBUG_WATCHDOG_CONTINUE, DEBUG_WATCHDOG_FEED } debug_watchdog_cmd;
+struct callout_entry { /* size 68 id 74 */
+  void (*reboot) (/* unknown */); /* bitsize 32, bitpos 0 */
+  int (*power) (/* unknown */); /* bitsize 32, bitpos 32 */
+  void (*timer_load) (/* unknown */); /* bitsize 32, bitpos 64 */
+  int (*timer_reload) (/* unknown */); /* bitsize 32, bitpos 96 */
+  unsigned int (*timer_value) (/* unknown */); /* bitsize 32, bitpos 128 */
+  struct debug_callout /* id 73 */ debug[2]:uint32; /* bitsize 256, bitpos 160 */
+  void (*debug_watchdog) (/* unknown */); /* bitsize 32, bitpos 416 */
+  void *spare[3]:uint32; /* bitsize 96, bitpos 448 */
+};
+struct callin_entry { /* size 60 id 75 */
+  void *spare0; /* bitsize 32, bitpos 0 */
+  int (*interrupt_mask) (/* unknown */); /* bitsize 32, bitpos 32 */
+  int (*interrupt_unmask) (/* unknown */); /* bitsize 32, bitpos 64 */
+  int (*trace_event) (/* unknown */); /* bitsize 32, bitpos 96 */
+  void *spare[11]:uint32; /* bitsize 352, bitpos 128 */
+};
+struct meminfo_entry { /* size 16 id 76 */
+  _Paddr32t addr; /* bitsize 32, bitpos 0 */
+  _Uint32t size; /* bitsize 32, bitpos 32 */
+  _Uint32t type; /* bitsize 32, bitpos 64 */
+  _Uint32t spare; /* bitsize 32, bitpos 96 */
+};
+struct asinfo_entry { /* size 32 id 77 */
+  _Uint64t start; /* bitsize 64, bitpos 0 */
+  _Uint64t end; /* bitsize 64, bitpos 64 */
+  _Uint16t owner; /* bitsize 16, bitpos 128 */
+  _Uint16t name; /* bitsize 16, bitpos 144 */
+  _Uint16t attr; /* bitsize 16, bitpos 160 */
+  _Uint16t priority; /* bitsize 16, bitpos 176 */
+  int (*alloc_checker) (/* unknown */); /* bitsize 32, bitpos 192 */
+  _Uint32t spare; /* bitsize 32, bitpos 224 */
+};
+struct hwinfo_entry { /* size 4 id 78 */
+  long unsigned int data[1]:uint32; /* bitsize 32, bitpos 0 */
+};
+union kernel_entry { /* size 4 id 79 */
+  struct x86_kernel_entry /* id 80 */ x86; /* bitsize 32, bitpos 0 */
+};
+struct system_private_entry { /* size 100 id 81 */
+  struct cpupage_entry /* id 68 */ *user_cpupageptr; /* bitsize 32, bitpos 0 */
+  struct syspage_entry /* id 69 */ *user_syspageptr; /* bitsize 32, bitpos 32 */
+  struct cpupage_entry /* id 68 */ *kern_cpupageptr; /* bitsize 32, bitpos 64 */
+  struct syspage_entry /* id 69 */ *kern_syspageptr; /* bitsize 32, bitpos 96 */
+  struct kdebug_info /* id 0 */ *kdebug_info; /* bitsize 32, bitpos 128 */
+  struct kdebug_callback /* id 0 */ *kdebug_call; /* bitsize 32, bitpos 160 */
+  (struct %anon82 { /* size 8 */
+    _Paddr32t base; /* bitsize 32, bitpos 0 */
+    _Uint32t entry; /* bitsize 32, bitpos 32 */
+  }) boot_pgm[4]:uint32; /* bitsize 256, bitpos 192 */
+  long unsigned int boot_idx; /* bitsize 32, bitpos 448 */
+  long unsigned int cpupage_spacing; /* bitsize 32, bitpos 480 */
+  long unsigned int private_flags; /* bitsize 32, bitpos 512 */
+  _Uint32t pagesize; /* bitsize 32, bitpos 544 */
+  _Uint32t ramsize; /* bitsize 32, bitpos 576 */
+  struct tracebuf /* id 0 */ *tracebuf; /* bitsize 32, bitpos 608 */
+  _Paddr32t kdump_info; /* bitsize 32, bitpos 640 */
+  _Uint32t spare[3]:uint32; /* bitsize 96, bitpos 672 */
+  union kernel_entry /* id 79 */ kercall; /* bitsize 32, bitpos 768 */
+};
+struct cpuinfo_entry { /* size 32 id 83 */
+  _Uint32t cpu; /* bitsize 32, bitpos 0 */
+  _Uint32t speed; /* bitsize 32, bitpos 32 */
+  _Uint32t flags; /* bitsize 32, bitpos 64 */
+  _Uint32t spare[4]:uint32; /* bitsize 128, bitpos 96 */
+  _Uint16t name; /* bitsize 16, bitpos 224 */
+  _Uint8t ins_cache; /* bitsize 8, bitpos 240 */
+  _Uint8t data_cache; /* bitsize 8, bitpos 248 */
+};
+struct cacheattr_entry { /* size 32 id 84 */
+  _Uint32t next; /* bitsize 32, bitpos 0 */
+  _Uint32t line_size; /* bitsize 32, bitpos 32 */
+  _Uint32t num_lines; /* bitsize 32, bitpos 64 */
+  _Uint32t flags; /* bitsize 32, bitpos 96 */
+  unsigned int (*control) (/* unknown */); /* bitsize 32, bitpos 128 */
+  _Uint16t ways; /* bitsize 16, bitpos 160 */
+  _Uint16t spare0[1]:uint32; /* bitsize 16, bitpos 176 */
+  _Uint32t spare1[2]:uint32; /* bitsize 64, bitpos 192 */
+};
+struct typed_strings_entry { /* size 4 id 85 */
+  char data[4]:uint32; /* bitsize 32, bitpos 0 */
+};
+struct strings_entry { /* size 4 id 86 */
+  char data[4]:uint32; /* bitsize 32, bitpos 0 */
+};
+struct __intrgen_data { /* size 8 id 87 */
+  _Uint16t genflags; /* bitsize 16, bitpos 0 */
+  _Uint16t size; /* bitsize 16, bitpos 16 */
+  void (*rtn) (/* unknown */); /* bitsize 32, bitpos 32 */
+};
+struct intrinfo_entry { /* size 64 id 88 */
+  _Uint32t vector_base; /* bitsize 32, bitpos 0 */
+  _Uint32t num_vectors; /* bitsize 32, bitpos 32 */
+  _Uint32t cascade_vector; /* bitsize 32, bitpos 64 */
+  _Uint32t cpu_intr_base; /* bitsize 32, bitpos 96 */
+  _Uint16t cpu_intr_stride; /* bitsize 16, bitpos 128 */
+  _Uint16t flags; /* bitsize 16, bitpos 144 */
+  struct __intrgen_data /* id 87 */ id; /* bitsize 64, bitpos 160 */
+  struct __intrgen_data /* id 87 */ eoi; /* bitsize 64, bitpos 224 */
+  int (*mask) (/* unknown */); /* bitsize 32, bitpos 288 */
+  int (*unmask) (/* unknown */); /* bitsize 32, bitpos 320 */
+  unsigned int (*config) (/* unknown */); /* bitsize 32, bitpos 352 */
+  _Uint32t spare[4]:uint32; /* bitsize 128, bitpos 384 */
+};
+struct smp_entry { /* size 16 id 89 */
+  void (*send_ipi) (/* unknown */); /* bitsize 32, bitpos 0 */
+  void *start_addr; /* bitsize 32, bitpos 32 */
+  _Uint32t pending; /* bitsize 32, bitpos 64 */
+  _Uint32t cpu; /* bitsize 32, bitpos 96 */
+};
+struct pminfo_entry { /* size 28 id 90 */
+  _Uint32t wakeup_pending; /* bitsize 32, bitpos 0 */
+  _Uint32t wakeup_condition; /* bitsize 32, bitpos 32 */
+  _Uint32t spare[4]:uint32; /* bitsize 128, bitpos 64 */
+  _Uint32t managed_storage[1]:uint32; /* bitsize 32, bitpos 192 */
+};
+enum mdriver_state { MDRIVER_INIT, MDRIVER_STARTUP, MDRIVER_STARTUP_FINI, MDRIVER_KERNEL, MDRIVER_PROCESS, MDRIVER_INTR_ATTACH, MDRIVER_STARTUP_PREPARE };
+struct mdriver_entry { /* size 32 id 91 */
+  _Uint32t intr; /* bitsize 32, bitpos 0 */
+  int (*handler) (/* unknown */); /* bitsize 32, bitpos 32 */
+  void *data; /* bitsize 32, bitpos 64 */
+  _Paddr32t data_paddr; /* bitsize 32, bitpos 96 */
+  _Uint32t data_size; /* bitsize 32, bitpos 128 */
+  _Uint32t name; /* bitsize 32, bitpos 160 */
+  _Uint32t internal; /* bitsize 32, bitpos 192 */
+  _Uint32t spare[1]:uint32; /* bitsize 32, bitpos 224 */
+};
+struct syspage_entry { /* size 156 id 69 */
+  _Uint16t size; /* bitsize 16, bitpos 0 */
+  _Uint16t total_size; /* bitsize 16, bitpos 16 */
+  _Uint16t type; /* bitsize 16, bitpos 32 */
+  _Uint16t num_cpu; /* bitsize 16, bitpos 48 */
+  syspage_entry_info system_private; /* bitsize 32, bitpos 64 */
+  syspage_entry_info asinfo; /* bitsize 32, bitpos 96 */
+  syspage_entry_info meminfo; /* bitsize 32, bitpos 128 */
+  syspage_entry_info hwinfo; /* bitsize 32, bitpos 160 */
+  syspage_entry_info cpuinfo; /* bitsize 32, bitpos 192 */
+  syspage_entry_info cacheattr; /* bitsize 32, bitpos 224 */
+  syspage_entry_info qtime; /* bitsize 32, bitpos 256 */
+  syspage_entry_info callout; /* bitsize 32, bitpos 288 */
+  syspage_entry_info callin; /* bitsize 32, bitpos 320 */
+  syspage_entry_info typed_strings; /* bitsize 32, bitpos 352 */
+  syspage_entry_info strings; /* bitsize 32, bitpos 384 */
+  syspage_entry_info intrinfo; /* bitsize 32, bitpos 416 */
+  syspage_entry_info smp; /* bitsize 32, bitpos 448 */
+  syspage_entry_info pminfo; /* bitsize 32, bitpos 480 */
+  syspage_entry_info mdriver; /* bitsize 32, bitpos 512 */
+  long int spare[2]:uint32; /* bitsize 64, bitpos 544 */
+  union %anon92 { /* size 80 */
+    struct x86_syspage_entry /* id 93 */ x86; /* bitsize 352, bitpos 0 */
+    struct %anon94 { /* size 80 */
+      long int filler[20]:uint32; /* bitsize 640, bitpos 0 */
+    } filler; /* bitsize 640, bitpos 0 */
+  } un; /* bitsize 640, bitpos 608 */
+};
+ /usr/qnx650/target/qnx6/usr/include/x86/syspage.h:
+struct x86_boxinfo_entry { /* size 40 id 95 */
+  _Uint32t hw_flags; /* bitsize 32, bitpos 0 */
+  _Uint32t spare[9]:uint32; /* bitsize 288, bitpos 32 */
+};
+struct x86_diskinfo_entry { /* size 16 id 96 */
+  _Uint16t valid; /* bitsize 16, bitpos 0 */
+  _Uint16t heads; /* bitsize 16, bitpos 16 */
+  _Uint16t cyls; /* bitsize 16, bitpos 32 */
+  _Uint16t sectors; /* bitsize 16, bitpos 48 */
+  _Uint32t nblocks; /* bitsize 32, bitpos 64 */
+  _Uint32t spare; /* bitsize 32, bitpos 96 */
+};
+struct x86_smpinfo_entry { /* size 28 id 97 */
+  void *ap_start_addr; /* bitsize 32, bitpos 0 */
+  unsigned int *lapic_addr; /* bitsize 32, bitpos 32 */
+  long unsigned int spare; /* bitsize 32, bitpos 64 */
+  unsigned char lapicid_to_index[16]:uint32; /* bitsize 128, bitpos 96 */
+};
+struct x86_syspage_entry { /* size 44 id 93 */
+  syspage_entry_info boxinfo; /* bitsize 32, bitpos 0 */
+  syspage_entry_info smpinfo; /* bitsize 32, bitpos 32 */
+  syspage_entry_info diskinfo; /* bitsize 32, bitpos 64 */
+  long unsigned int spare[4]:uint32; /* bitsize 128, bitpos 96 */
+  struct x86_seg_descriptor_entry /* id 0 */ *gdt; /* bitsize 32, bitpos 224 */
+  struct x86_gate_descriptor_entry /* id 0 */ *idt; /* bitsize 32, bitpos 256 */
+  _Paddr32t *pgdir; /* bitsize 32, bitpos 288 */
+  void *real_addr; /* bitsize 32, bitpos 320 */
+};
+struct x86_kernel_entry { /* size 4 id 80 */
+  unsigned char code[4]:uint32; /* bitsize 32, bitpos 0 */
+};
+ time_statistics.h:
+typedef struct %anon98 { /* size 52 */
+  double max_time; /* bitsize 64, bitpos 0 */
+  double min_time; /* bitsize 64, bitpos 64 */
+  double sum_time; /* bitsize 64, bitpos 128 */
+  double sum_sqr_time; /* bitsize 64, bitpos 192 */
+  double average_time; /* bitsize 64, bitpos 256 */
+  double standart_deviation; /* bitsize 64, bitpos 320 */
+  int data_counter; /* bitsize 32, bitpos 384 */
+} STAT_t;
+dbf_t.c:
+typedef int32 int;
+typedef int8 char;
+typedef int32 long int;
+typedef uint32 unsigned int;
+typedef uint32 long unsigned int;
+typedef int64 long long int;
+typedef uint64 long long unsigned int;
+typedef int16 short int;
+typedef uint16 short unsigned int;
+typedef int8 signed char;
+typedef uint8 unsigned char;
+typedef float float;
+typedef double double;
+typedef float96 long double;
+typedef float _Decimal32;
+typedef double _Decimal64;
+typedef float128 _Decimal128;
+typedef void void;
+void TDB_Init (DBF_TXT *dbF /* 0x8 */)
+{ /* 0x8049414 */
+  /* file dbf_t.c line 10 addr 0x8049414 */
+  /* file dbf_t.c line 11 addr 0x804941a */
+  /* file dbf_t.c line 12 addr 0x8049430 */
+  /* file dbf_t.c line 13 addr 0x804944a */
+  /* file dbf_t.c line 14 addr 0x8049464 */
+  /* file dbf_t.c line 15 addr 0x804948b */
+  /* file dbf_t.c line 16 addr 0x8049496 */
+  /* file dbf_t.c line 18 addr 0x80494b9 */
+  /* file dbf_t.c line 19 addr 0x80494c6 */
+} /* 0x80494c8 */
+void TDB_Push (DBF_TXT *dbF /* 0x8 */)
+{ /* 0x80494c8 */
+  /* file dbf_t.c line 23 addr 0x80494c8 */
+  /* file dbf_t.c line 23 addr 0x80494ce */
+} /* 0x80494eb */
+void TDB_Try_Switch (DBF_TXT *dbF /* 0x8 */)
+{ /* 0x80494eb */
+  { /* 0x80494eb */
+    int RSU /* 0xfffffff4 */;
+    int RST /* 0xfffffff0 */;
+    /* file dbf_t.c line 27 addr 0x80494eb */
+    /* file dbf_t.c line 28 addr 0x80494f1 */
+    /* file dbf_t.c line 29 addr 0x8049508 */
+    /* file dbf_t.c line 31 addr 0x8049512 */
+    /* file dbf_t.c line 34 addr 0x804951c */
+    /* file dbf_t.c line 36 addr 0x804952d */
+    /* file dbf_t.c line 37 addr 0x804953a */
+    /* file dbf_t.c line 38 addr 0x8049548 */
+    /* file dbf_t.c line 40 addr 0x8049560 */
+    /* file dbf_t.c line 41 addr 0x804956b */
+    /* file dbf_t.c line 43 addr 0x8049584 */
+    /* file dbf_t.c line 46 addr 0x80495ad */
+    /* file dbf_t.c line 47 addr 0x80495c4 */
+    /* file dbf_t.c line 50 addr 0x80495e1 */
+    /* file dbf_t.c line 29 addr 0x80495f8 */
+    /* file dbf_t.c line 47 addr 0x80495fb */
+    /* file dbf_t.c line 51 addr 0x80495fc */
+  } /* 0x80495fe */
+} /* 0x80495fe */
+void TDB_Show (DBF_TXT *dbF /* 0x8 */)
+{ /* 0x80495fe */
+  { /* 0x80495fe */
+    int RS /* 0xfffffff4 */;
+    FILE *OF /* 0xfffffff0 */;
+    BYTE *OUT /* 0xffffffec */;
+    pthread_mutex_t *pmu /* 0xffffffe8 */;
+    LWORD tm /* 0xffffffe4 */;
+    LWORD nx /* 0xffffffe0 */;
+    LWORD ix /* 0xffffffdc */;
+    /* file dbf_t.c line 55 addr 0x80495fe */
+    /* file dbf_t.c line 55 addr 0x8049604 */
+    /* file dbf_t.c line 56 addr 0x804961e */
+    /* file dbf_t.c line 57 addr 0x8049629 */
+    /* file dbf_t.c line 58 addr 0x8049632 */
+    /* file dbf_t.c line 61 addr 0x804963e */
+    /* file dbf_t.c line 62 addr 0x804964f */
+    /* file dbf_t.c line 64 addr 0x804966f */
+    /* file dbf_t.c line 66 addr 0x804967c */
+    /* file dbf_t.c line 68 addr 0x804967e */
+    /* file dbf_t.c line 69 addr 0x804968d */
+    /* file dbf_t.c line 71 addr 0x80496b0 */
+    /* file dbf_t.c line 66 addr 0x80496b3 */
+    /* file dbf_t.c line 73 addr 0x80496bb */
+    /* file dbf_t.c line 76 addr 0x80496c5 */
+    /* file dbf_t.c line 77 addr 0x80496d6 */
+    /* file dbf_t.c line 78 addr 0x80496f1 */
+  } /* 0x80496f3 */
+} /* 0x80496f3 */
+void TDB_ShowC (DBF_TXT *dbF /* 0x8 */)
+{ /* 0x80496f3 */
+  { /* 0x80496f3 */
+    int RS1 /* 0xfffffff4 */;
+    int RS /* 0xfffffff0 */;
+    FILE *OF /* 0xffffffec */;
+    BYTE *OUT /* 0xffffffe8 */;
+    pthread_mutex_t *pmu /* 0xffffffe4 */;
+    LWORD tm /* 0xffffffe0 */;
+    LWORD nx /* 0xffffffdc */;
+    LWORD ix /* 0xffffffd8 */;
+    /* file dbf_t.c line 82 addr 0x80496f3 */
+    /* file dbf_t.c line 82 addr 0x80496f9 */
+    /* file dbf_t.c line 83 addr 0x8049713 */
+    /* file dbf_t.c line 84 addr 0x804971e */
+    /* file dbf_t.c line 85 addr 0x8049727 */
+    /* file dbf_t.c line 88 addr 0x8049733 */
+    /* file dbf_t.c line 89 addr 0x8049744 */
+    /* file dbf_t.c line 91 addr 0x8049764 */
+    /* file dbf_t.c line 93 addr 0x8049771 */
+    /* file dbf_t.c line 95 addr 0x8049773 */
+    /* file dbf_t.c line 96 addr 0x8049782 */
+    /* file dbf_t.c line 97 addr 0x80497a5 */
+    /* file dbf_t.c line 98 addr 0x80497b4 */
+    /* file dbf_t.c line 100 addr 0x80497cd */
+    /* file dbf_t.c line 93 addr 0x80497d0 */
+    /* file dbf_t.c line 102 addr 0x80497d8 */
+    /* file dbf_t.c line 105 addr 0x80497e2 */
+    /* file dbf_t.c line 106 addr 0x80497f3 */
+    /* file dbf_t.c line 107 addr 0x804980e */
+  } /* 0x8049810 */
+} /* 0x8049810 */
+void TDB_print (DBF_TXT *dbF /* 0x8 */, char *format /* 0xc */)
+{ /* 0x8049810 */
+  { /* 0x8049810 */
+    int NS /* 0xfffffff4 */;
+    char *out /* 0xfffffff0 */;
+    __NTO_va_list val /* 0xffffffe8 */;
+    LWORD rx /* 0xffffffec */;
+    /* file dbf_t.c line 111 addr 0x8049810 */
+    /* file dbf_t.c line 112 addr 0x8049816 */
+    /* file dbf_t.c line 117 addr 0x8049822 */
+    /* file dbf_t.c line 118 addr 0x804982b */
+    /* file dbf_t.c line 122 addr 0x8049836 */
+    /* file dbf_t.c line 123 addr 0x804983c */
+    /* file dbf_t.c line 126 addr 0x8049854 */
+    /* file dbf_t.c line 120 addr 0x804985c */
+    /* file dbf_t.c line 126 addr 0x8049873 */
+    /* file dbf_t.c line 127 addr 0x8049890 */
+    /* file dbf_t.c line 128 addr 0x80498ba */
+  } /* 0x80498bc */
+} /* 0x80498bc */
+void TDB_puts (DBF_TXT *dbF /* 0x8 */, char *mess /* 0xc */)
+{ /* 0x80498bc */
+  { /* 0x80498bc */
+    char *out /* 0xfffffff4 */;
+    int NS /* 0xfffffff0 */;
+    LWORD rx /* 0xffffffec */;
+    /* file dbf_t.c line 132 addr 0x80498bc */
+    /* file dbf_t.c line 133 addr 0x80498c2 */
+    /* file dbf_t.c line 137 addr 0x80498ce */
+    /* file dbf_t.c line 138 addr 0x80498d7 */
+    /* file dbf_t.c line 142 addr 0x80498e2 */
+    /* file dbf_t.c line 143 addr 0x80498fb */
+    /* file dbf_t.c line 140 addr 0x8049903 */
+    /* file dbf_t.c line 143 addr 0x804991a */
+    /* file dbf_t.c line 144 addr 0x8049937 */
+    /* file dbf_t.c line 145 addr 0x8049961 */
+  } /* 0x8049963 */
+} /* 0x8049963 */
+void Show_Hex (char *head /* 0x8 */, SWORD *BUF /* 0xc */, int nw /* 0x10 */)
+{ /* 0x8049963 */
+  { /* 0x8049963 */
+    SWORD nw /* 0xffffffe4 */;
+    SWORD pct /* 0xfffffff6 */;
+    SWORD ll /* 0xfffffff4 */;
+    SWORD ln /* 0xfffffff2 */;
+    SWORD ix /* 0xfffffff0 */;
+    /* file dbf_t.c line 149 addr 0x8049963 */
+    /* file dbf_t.c line 149 addr 0x8049970 */
+    /* file dbf_t.c line 150 addr 0x8049983 */
+    /* file dbf_t.c line 151 addr 0x8049996 */
+    /* file dbf_t.c line 152 addr 0x804999e */
+    /* file dbf_t.c line 153 addr 0x80499cc */
+    /* file dbf_t.c line 151 addr 0x80499f6 */
+    /* file dbf_t.c line 154 addr 0x8049a03 */
+    /* file dbf_t.c line 155 addr 0x8049a10 */
+  } /* 0x8049a12 */
+} /* 0x8049a12 */
+void Show_Hex_DB (DBF_TXT *dbF /* 0x8 */, char *head /* 0xc */, SWORD *BUF /* 0x10 */, int nw /* 0x14 */)
+{ /* 0x8049a12 */
+  { /* 0x8049a12 */
+    SWORD nw /* 0xffffffe4 */;
+    SWORD pct /* 0xfffffff6 */;
+    SWORD ll /* 0xfffffff4 */;
+    SWORD ln /* 0xfffffff2 */;
+    SWORD ix /* 0xfffffff0 */;
+    /* file dbf_t.c line 159 addr 0x8049a12 */
+    /* file dbf_t.c line 159 addr 0x8049a1f */
+    /* file dbf_t.c line 160 addr 0x8049a32 */
+    /* file dbf_t.c line 161 addr 0x8049a48 */
+    /* file dbf_t.c line 162 addr 0x8049a50 */
+    /* file dbf_t.c line 163 addr 0x8049a81 */
+    /* file dbf_t.c line 161 addr 0x8049aae */
+    /* file dbf_t.c line 164 addr 0x8049abb */
+    /* file dbf_t.c line 165 addr 0x8049ace */
+  } /* 0x8049ad0 */
+} /* 0x8049ad0 */
+ /usr/qnx650/target/qnx6/usr/include/errno.h:
+ /usr/qnx650/host/qnx6/x86/usr/lib/gcc/i486-pc-nto-qnx6.5.0/4.4.2/include/stdarg.h:
+ /usr/qnx650/target/qnx6/usr/include/stdarg.h:
+typedef __NTO_va_list va_list;
+ /usr/qnx650/target/qnx6/usr/include/sys/storage.h:
+struct _thread_local_storage { /* size 64 id 52 */
+  void (*__exitfunc) (/* unknown */); /* bitsize 32, bitpos 0 */
+  void *__arg; /* bitsize 32, bitpos 32 */
+  int *__errptr; /* bitsize 32, bitpos 64 */
+  int __errval; /* bitsize 32, bitpos 96 */
+  unsigned int __flags; /* bitsize 32, bitpos 128 */
+  int __pid; /* bitsize 32, bitpos 160 */
+  int __tid; /* bitsize 32, bitpos 192 */
+  unsigned int __owner; /* bitsize 32, bitpos 224 */
+  void *__stackaddr; /* bitsize 32, bitpos 256 */
+  unsigned int __reserved1; /* bitsize 32, bitpos 288 */
+  unsigned int __numkeys; /* bitsize 32, bitpos 320 */
+  void **__keydata; /* bitsize 32, bitpos 352 */
+  void *__cleanup; /* bitsize 32, bitpos 384 */
+  void *__fpuemu_data; /* bitsize 32, bitpos 416 */
+  void *__reserved3; /* bitsize 32, bitpos 448 */
+  void (*__sigaction) (/* unknown */); /* bitsize 32, bitpos 480 */
+};
+struct _process_local_storage { /* size 40 id 53 */
+  void *(*__getgot) (/* unknown */); /* bitsize 32, bitpos 0 */
+  void (*__mathemulator) (/* unknown */); /* bitsize 32, bitpos 32 */
+  void *__dll_list; /* bitsize 32, bitpos 64 */
+  void *__reserved[6]:uint32; /* bitsize 192, bitpos 96 */
+  void (*__threadwatch) (/* unknown */); /* bitsize 32, bitpos 288 */
+};
+ /usr/qnx650/target/qnx6/usr/include/x86/smpxchg.h:
+struct __gcc_fool { /* size 400 id 54 */
+  int __fool[100]:uint32; /* bitsize 3200, bitpos 0 */
+};
+dbf_b.c:
+typedef int32 int;
+typedef int8 char;
+typedef int32 long int;
+typedef uint32 unsigned int;
+typedef uint32 long unsigned int;
+typedef int64 long long int;
+typedef uint64 long long unsigned int;
+typedef int16 short int;
+typedef uint16 short unsigned int;
+typedef int8 signed char;
+typedef uint8 unsigned char;
+typedef float float;
+typedef double double;
+typedef float96 long double;
+typedef float _Decimal32;
+typedef double _Decimal64;
+typedef float128 _Decimal128;
+typedef void void;
+void FDB_Init ((struct %anon65 { /* size 16528 */
+  BYTE *RCV; /* bitsize 32, bitpos 0 */
+  BYTE *OUT; /* bitsize 32, bitpos 32 */
+  BYTE BUF_1[8192]:uint32; /* bitsize 65536, bitpos 64 */
+  BYTE BUF_2[8192]:uint32; /* bitsize 65536, bitpos 65600 */
+  BYTE DTL; /* bitsize 8, bitpos 131136 */
+  BYTE RVS; /* bitsize 8, bitpos 131144 */
+  struct _sync /* id 7 */ mu; /* bitsize 64, bitpos 131168 */
+  LWORD tm; /* bitsize 32, bitpos 131232 */
+  LWORD rx; /* bitsize 32, bitpos 131264 */
+  LWORD sum_p; /* bitsize 32, bitpos 131296 */
+  LWORD lost_p; /* bitsize 32, bitpos 131328 */
+  LWORD sum_b; /* bitsize 32, bitpos 131360 */
+  LWORD lost_b; /* bitsize 32, bitpos 131392 */
+  LWORD sum_fb; /* bitsize 32, bitpos 131424 */
+  LWORD lock_err; /* bitsize 32, bitpos 131456 */
+  LWORD unlock_err; /* bitsize 32, bitpos 131488 */
+  LWORD trylock_err; /* bitsize 32, bitpos 131520 */
+  (struct %anon5 { /* size 16436 */
+    BYTE *RCV; /* bitsize 32, bitpos 0 */
+    BYTE *OUT; /* bitsize 32, bitpos 32 */
+    BYTE BUF_1[8192]:uint32; /* bitsize 65536, bitpos 64 */
+    BYTE BUF_2[8192]:uint32; /* bitsize 65536, bitpos 65600 */
+    BYTE DTL; /* bitsize 8, bitpos 131136 */
+    BYTE RVS; /* bitsize 8, bitpos 131144 */
+    FILE *OF; /* bitsize 32, bitpos 131168 */
+    struct _sync /* id 7 */ mu; /* bitsize 64, bitpos 131200 */
+    LWORD tm; /* bitsize 32, bitpos 131264 */
+    LWORD rx; /* bitsize 32, bitpos 131296 */
+    LWORD err; /* bitsize 32, bitpos 131328 */
+    LWORD lost; /* bitsize 32, bitpos 131360 */
+    LWORD lock_err; /* bitsize 32, bitpos 131392 */
+    LWORD unlock_err; /* bitsize 32, bitpos 131424 */
+    LWORD trylock_err; /* bitsize 32, bitpos 131456 */
+  }) *dbT; /* bitsize 32, bitpos 131552 */
+  int fD; /* bitsize 32, bitpos 131584 */
+  char *fN; /* bitsize 32, bitpos 131616 */
+  char fNS[64]:uint32; /* bitsize 512, bitpos 131648 */
+  LWORD wr_err; /* bitsize 32, bitpos 132160 */
+  int wr_err_code; /* bitsize 32, bitpos 132192 */
+}) *dbF /* 0x8 */, struct %anon5 *p_dbt /* 0xc */)
+{ /* 0x8049ad0 */
+  /* file dbf_b.c line 13 addr 0x8049ad0 */
+  /* file dbf_b.c line 14 addr 0x8049ad6 */
+  /* file dbf_b.c line 15 addr 0x8049aec */
+  /* file dbf_b.c line 16 addr 0x8049b06 */
+  /* file dbf_b.c line 17 addr 0x8049b20 */
+  /* file dbf_b.c line 18 addr 0x8049b47 */
+  /* file dbf_b.c line 19 addr 0x8049b6e */
+  /* file dbf_b.c line 20 addr 0x8049b79 */
+  /* file dbf_b.c line 22 addr 0x8049b9c */
+  /* file dbf_b.c line 23 addr 0x8049bc2 */
+  /* file dbf_b.c line 24 addr 0x8049bdc */
+} /* 0x8049bde */
+int FDB_Open (struct %anon65 *dbF /* 0x8 */, char *fNAME /* 0xc */)
+{ /* 0x8049bde */
+  { /* 0x8049bde */
+    int flags /* 0xfffffff4 */;
+    int RS /* 0xfffffff0 */;
+    _Uint32t MODE /* 0xffffffec */;
+    /* file dbf_b.c line 28 addr 0x8049bde */
+    /* file dbf_b.c line 31 addr 0x8049be4 */
+    /* file dbf_b.c line 33 addr 0x8049c03 */
+    /* file dbf_b.c line 35 addr 0x8049c0a */
+    /* file dbf_b.c line 37 addr 0x8049c11 */
+    /* file dbf_b.c line 38 addr 0x8049c35 */
+    /* file dbf_b.c line 39 addr 0x8049c42 */
+    /* file dbf_b.c line 41 addr 0x8049c63 */
+    /* file dbf_b.c line 42 addr 0x8049c77 */
+  } /* 0x8049c79 */
+} /* 0x8049c79 */
+int FDB_FileName (struct %anon65 *dbF /* 0x8 */, char *fNAME /* 0xc */)
+{ /* 0x8049c79 */
+  { /* 0x8049c79 */
+    int nsz /* 0xfffffff4 */;
+    /* file dbf_b.c line 46 addr 0x8049c79 */
+    /* file dbf_b.c line 46 addr 0x8049c7f */
+    /* file dbf_b.c line 47 addr 0x8049c90 */
+    /* file dbf_b.c line 48 addr 0x8049cad */
+    /* file dbf_b.c line 49 addr 0x8049cbf */
+    /* file dbf_b.c line 50 addr 0x8049cd7 */
+    /* file dbf_b.c line 51 addr 0x8049cdc */
+  } /* 0x8049cde */
+} /* 0x8049cde */
+void FDB_Final (struct %anon65 *dbF /* 0x8 */)
+{ /* 0x8049cde */
+  { /* 0x8049cde */
+    int TERM /* 0xfffffff4 */;
+    int ix /* 0xfffffff0 */;
+    int RS /* 0xffffffec */;
+    /* file dbf_b.c line 55 addr 0x8049cde */
+    /* file dbf_b.c line 55 addr 0x8049ce4 */
+    /* file dbf_b.c line 56 addr 0x8049ceb */
+    /* file dbf_b.c line 60 addr 0x8049cf8 */
+    /* file dbf_b.c line 61 addr 0x8049d1d */
+    /* file dbf_b.c line 62 addr 0x8049d3f */
+    /* file dbf_b.c line 63 addr 0x8049d4f */
+  } /* 0x8049d51 */
+} /* 0x8049d51 */
+void FDB_Push (struct %anon65 *dbF /* 0x8 */)
+{ /* 0x8049d51 */
+  /* file dbf_b.c line 67 addr 0x8049d51 */
+  /* file dbf_b.c line 68 addr 0x8049d57 */
+} /* 0x8049d67 */
+void FDB_Try_Switch (struct %anon65 *dbF /* 0x8 */)
+{ /* 0x8049d67 */
+  { /* 0x8049d67 */
+    int RSU /* 0xfffffff4 */;
+    int RST /* 0xfffffff0 */;
+    /* file dbf_b.c line 72 addr 0x8049d67 */
+    /* file dbf_b.c line 73 addr 0x8049d6d */
+    /* file dbf_b.c line 74 addr 0x8049d84 */
+    /* file dbf_b.c line 76 addr 0x8049d8e */
+    /* file dbf_b.c line 79 addr 0x8049d98 */
+    /* file dbf_b.c line 81 addr 0x8049da9 */
+    /* file dbf_b.c line 82 addr 0x8049db6 */
+    /* file dbf_b.c line 83 addr 0x8049dc4 */
+    /* file dbf_b.c line 85 addr 0x8049ddc */
+    /* file dbf_b.c line 86 addr 0x8049de7 */
+    /* file dbf_b.c line 88 addr 0x8049e00 */
+    /* file dbf_b.c line 91 addr 0x8049e29 */
+    /* file dbf_b.c line 92 addr 0x8049e40 */
+    /* file dbf_b.c line 95 addr 0x8049e5d */
+    /* file dbf_b.c line 74 addr 0x8049e74 */
+    /* file dbf_b.c line 92 addr 0x8049e77 */
+    /* file dbf_b.c line 96 addr 0x8049e78 */
+  } /* 0x8049e7a */
+} /* 0x8049e7a */
+void FDB_Put (struct %anon65 *dbF /* 0x8 */, BYTE *Next /* 0xc */, LWORD nBytes /* 0x10 */)
+{ /* 0x8049e7a */
+  { /* 0x8049e7a */
+    LWORD rx /* 0xfffffff4 */;
+    BYTE *RCV /* 0xfffffff0 */;
+    /* file dbf_b.c line 100 addr 0x8049e7a */
+    /* file dbf_b.c line 101 addr 0x8049e80 */
+    /* file dbf_b.c line 102 addr 0x8049e88 */
+    /* file dbf_b.c line 104 addr 0x8049e94 */
+    /* file dbf_b.c line 105 addr 0x8049ea7 */
+    /* file dbf_b.c line 106 addr 0x8049ec2 */
+    /* file dbf_b.c line 108 addr 0x8049f07 */
+    /* file dbf_b.c line 109 addr 0x8049f33 */
+  } /* 0x8049f35 */
+} /* 0x8049f35 */
+void FDB_Out (struct %anon65 *dbF /* 0x8 */)
+{ /* 0x8049f35 */
+  { /* 0x8049f35 */
+    struct _sync /* id 7 */ *PMU /* 0xfffffff4 */;
+    int RS /* 0xfffffff0 */;
+    /* file dbf_b.c line 113 addr 0x8049f35 */
+    /* file dbf_b.c line 116 addr 0x8049f3b */
+    /* file dbf_b.c line 117 addr 0x8049f46 */
+    /* file dbf_b.c line 118 addr 0x8049f57 */
+    /* file dbf_b.c line 120 addr 0x8049f74 */
+    /* file dbf_b.c line 121 addr 0x8049f81 */
+    /* file dbf_b.c line 123 addr 0x8049f99 */
+    /* file dbf_b.c line 124 addr 0x8049faa */
+    /* file dbf_b.c line 125 addr 0x8049fc5 */
+  } /* 0x8049fc7 */
+} /* 0x8049fc7 */
+void FDB_OutRaw (struct %anon65 *dbF /* 0x8 */)
+{ /* 0x8049fc7 */
+  { /* 0x8049fc7 */
+    LWORD tm /* 0xfffffff4 */;
+    int fD /* 0xfffffff0 */;
+    int RS /* 0xffffffec */;
+    /* file dbf_b.c line 129 addr 0x8049fc7 */
+    /* file dbf_b.c line 129 addr 0x8049fcd */
+    /* file dbf_b.c line 130 addr 0x8049fd9 */
+    /* file dbf_b.c line 132 addr 0x8049fe5 */
+    /* file dbf_b.c line 133 addr 0x8049fee */
+    /* file dbf_b.c line 134 addr 0x804a009 */
+    /* file dbf_b.c line 135 addr 0x804a028 */
+    /* file dbf_b.c line 132 addr 0x804a04f */
+    /* file dbf_b.c line 136 addr 0x804a050 */
+  } /* 0x804a052 */
+} /* 0x804a052 */
+void FDB_Show (struct %anon65 *dbF /* 0x8 */)
+{ /* 0x804a052 */
+  { /* 0x804a052 */
+    struct %anon5 *dbT /* 0xffffffe4 */;
+    /* file dbf_b.c line 140 addr 0x804a052 */
+    /* file dbf_b.c line 140 addr 0x804a05b */
+    /* file dbf_b.c line 141 addr 0x804a067 */
+    /* file dbf_b.c line 142 addr 0x804a06d */
+    /* file dbf_b.c line 144 addr 0x804a07a */
+    /* file dbf_b.c line 141 addr 0x804a0c8 */
+    /* file dbf_b.c line 142 addr 0x804a0cb */
+    /* file dbf_b.c line 146 addr 0x804a0cc */
+  } /* 0x804a0d7 */
+} /* 0x804a0d7 */
+void FDB_FinalShow (struct %anon65 *dbF /* 0x8 */)
+{ /* 0x804a0d7 */
+  /* file dbf_b.c line 150 addr 0x804a0d7 */
+  /* file dbf_b.c line 151 addr 0x804a0e0 */
+  /* file dbf_b.c line 152 addr 0x804a0ed */
+  /* file dbf_b.c line 153 addr 0x804a107 */
+  /* file dbf_b.c line 151 addr 0x804a155 */
+  /* file dbf_b.c line 155 addr 0x804a156 */
+} /* 0x804a161 */
+ /usr/qnx650/target/qnx6/usr/include/sys/types.h:
+typedef _Uint32t mode_t;
+typedef _Uint32t dev_t;
+typedef _Ssizet ssize_t;
+typedef _Uint32t time_t;
+typedef _Uint32t clock_t;
+typedef int pid_t;
+typedef _Uint32t blkcnt_t;
+typedef _Uint32t blksize_t;
+typedef _Uint32t fsblkcnt_t;
+typedef _Uint32t fsfilcnt_t;
+typedef _Uint32t nlink_t;
+typedef _Uint32t ino_t;
+typedef _Uint64t ino64_t;
+typedef int id_t;
+typedef int uid_t;
+typedef int gid_t;
+typedef _Uint32t useconds_t;
+typedef _Int32t suseconds_t;
+typedef int timer_t;
+typedef int clockid_t;
+typedef _Int32t pthread_t;
+struct _sync { /* size 8 id 7 */
+  int __count; /* bitsize 32, bitpos 0 */
+  unsigned int __owner; /* bitsize 32, bitpos 32 */
+};
+typedef struct _sync /* id 7 */ sync_t;
+struct _sync_attr { /* size 32 id 26 */
+  int __protocol; /* bitsize 32, bitpos 0 */
+  int __flags; /* bitsize 32, bitpos 32 */
+  int __prioceiling; /* bitsize 32, bitpos 64 */
+  int __clockid; /* bitsize 32, bitpos 96 */
+  int __reserved[4]:uint32; /* bitsize 128, bitpos 128 */
+};
+typedef struct _sync_attr /* id 26 */ sync_attr_t;
+struct __timespec { /* size 8 id 27 */
+  time_t __tv_sec; /* bitsize 32, bitpos 0 */
+  long int __tv_nsec; /* bitsize 32, bitpos 32 */
+};
+struct __sched_param { /* size 40 id 28 */
+  int __sched_priority; /* bitsize 32, bitpos 0 */
+  int __sched_curpriority; /* bitsize 32, bitpos 32 */
+  union %anon29 { /* size 32 */
+    int __reserved[8]:uint32; /* bitsize 256, bitpos 0 */
+    struct %anon30 { /* size 24 */
+      int __ss_low_priority; /* bitsize 32, bitpos 0 */
+      int __ss_max_repl; /* bitsize 32, bitpos 32 */
+      struct __timespec /* id 27 */ __ss_repl_period; /* bitsize 64, bitpos 64 */
+      struct __timespec /* id 27 */ __ss_init_budget; /* bitsize 64, bitpos 128 */
+    } __ss; /* bitsize 192, bitpos 0 */
+  } __ss_un; /* bitsize 256, bitpos 64 */
+};
+struct _thread_attr { /* size 76 id 31 */
+  int __flags; /* bitsize 32, bitpos 0 */
+  _Sizet __stacksize; /* bitsize 32, bitpos 32 */
+  void *__stackaddr; /* bitsize 32, bitpos 64 */
+  void (*__exitfunc) (/* unknown */); /* bitsize 32, bitpos 96 */
+  int __policy; /* bitsize 32, bitpos 128 */
+  struct __sched_param /* id 28 */ __param; /* bitsize 320, bitpos 160 */
+  unsigned int __guardsize; /* bitsize 32, bitpos 480 */
+  unsigned int __prealloc; /* bitsize 32, bitpos 512 */
+  int __spare[2]:uint32; /* bitsize 64, bitpos 544 */
+};
+typedef struct _thread_attr /* id 31 */ pthread_attr_t;
+typedef struct _sync /* id 7 */ pthread_cond_t;
+typedef struct _sync_attr /* id 26 */ pthread_condattr_t;
+typedef int pthread_key_t;
+typedef struct _sync /* id 7 */ pthread_mutex_t;
+typedef struct _sync_attr /* id 26 */ pthread_mutexattr_t;
+struct _pthread_once { /* size 12 id 32 */
+  int __once; /* bitsize 32, bitpos 0 */
+  sync_t __mutex; /* bitsize 64, bitpos 32 */
+};
+typedef struct _pthread_once /* id 32 */ pthread_once_t;
+typedef _Uint32t key_t;
+typedef char *caddr_t;
+typedef _Paddrt paddr_t;
+typedef _Paddr32t paddr32_t;
+typedef _Paddr64t paddr64_t;
+typedef _Int32t daddr_t;
+typedef _Uint16t msg_t;
+struct iovec { /* size 8 id 33 */
+  void *iov_base; /* bitsize 32, bitpos 0 */
+  _Sizet iov_len; /* bitsize 32, bitpos 32 */
+};
+typedef struct iovec /* id 33 */ iov_t;
+struct _clockadjust { /* size 8 id 34 */
+  long unsigned int tick_count; /* bitsize 32, bitpos 0 */
+  long int tick_nsec_inc; /* bitsize 32, bitpos 32 */
+};
+typedef unsigned char uchar_t;
+typedef short unsigned int ushort_t;
+typedef unsigned int uint_t;
+typedef long unsigned int ulong_t;
+typedef unsigned char u_char;
+typedef short unsigned int u_short;
+typedef unsigned int u_int;
+typedef long unsigned int u_long;
+typedef long unsigned int fixpt_t;
+typedef short unsigned int sel_t;
+typedef short unsigned int ushort;
+typedef unsigned int uint;
+typedef long unsigned int ulong;
+struct _itimer { /* size 16 id 18 */
+  _Uint64t nsec; /* bitsize 64, bitpos 0 */
+  _Uint64t interval_nsec; /* bitsize 64, bitpos 64 */
+};
+ /usr/qnx650/target/qnx6/usr/include/sys/stat.h:
+typedef _Uint64t blkcnt64_t;
+typedef _Uint64t fsblkcnt64_t;
+typedef _Uint64t fsfilcnt64_t;
+struct stat { /* size 72 id 99 */
+  ino_t st_ino; /* bitsize 32, bitpos 0 */
+  ino_t st_ino_hi; /* bitsize 32, bitpos 32 */
+  off_t st_size; /* bitsize 32, bitpos 64 */
+  off_t st_size_hi; /* bitsize 32, bitpos 96 */
+  dev_t st_dev; /* bitsize 32, bitpos 128 */
+  dev_t st_rdev; /* bitsize 32, bitpos 160 */
+  uid_t st_uid; /* bitsize 32, bitpos 192 */
+  gid_t st_gid; /* bitsize 32, bitpos 224 */
+  time_t st_mtime; /* bitsize 32, bitpos 256 */
+  time_t st_atime; /* bitsize 32, bitpos 288 */
+  time_t st_ctime; /* bitsize 32, bitpos 320 */
+  mode_t st_mode; /* bitsize 32, bitpos 352 */
+  nlink_t st_nlink; /* bitsize 32, bitpos 384 */
+  blksize_t st_blocksize; /* bitsize 32, bitpos 416 */
+  _Int32t st_nblocks; /* bitsize 32, bitpos 448 */
+  blksize_t st_blksize; /* bitsize 32, bitpos 480 */
+  blkcnt_t st_blocks; /* bitsize 32, bitpos 512 */
+  blkcnt_t st_blocks_hi; /* bitsize 32, bitpos 544 */
+};
+struct stat64 { /* size 72 id 100 */
+  ino64_t st_ino; /* bitsize 64, bitpos 0 */
+  off64_t st_size; /* bitsize 64, bitpos 64 */
+  dev_t st_dev; /* bitsize 32, bitpos 128 */
+  dev_t st_rdev; /* bitsize 32, bitpos 160 */
+  uid_t st_uid; /* bitsize 32, bitpos 192 */
+  gid_t st_gid; /* bitsize 32, bitpos 224 */
+  time_t st_mtime; /* bitsize 32, bitpos 256 */
+  time_t st_atime; /* bitsize 32, bitpos 288 */
+  time_t st_ctime; /* bitsize 32, bitpos 320 */
+  mode_t st_mode; /* bitsize 32, bitpos 352 */
+  nlink_t st_nlink; /* bitsize 32, bitpos 384 */
+  blksize_t st_blocksize; /* bitsize 32, bitpos 416 */
+  _Int32t st_nblocks; /* bitsize 32, bitpos 448 */
+  blksize_t st_blksize; /* bitsize 32, bitpos 480 */
+  blkcnt64_t st_blocks; /* bitsize 64, bitpos 512 */
+};
+ /usr/qnx650/target/qnx6/usr/include/fcntl.h:
+struct flock { /* size 32 id 101 */
+  _Int16t l_type; /* bitsize 16, bitpos 0 */
+  _Int16t l_whence; /* bitsize 16, bitpos 16 */
+  _Int32t l_zero1; /* bitsize 32, bitpos 32 */
+  off_t l_start; /* bitsize 32, bitpos 64 */
+  off_t l_start_hi; /* bitsize 32, bitpos 96 */
+  off_t l_len; /* bitsize 32, bitpos 128 */
+  off_t l_len_hi; /* bitsize 32, bitpos 160 */
+  pid_t l_pid; /* bitsize 32, bitpos 192 */
+  _Uint32t l_sysid; /* bitsize 32, bitpos 224 */
+};
+typedef struct flock /* id 101 */ flock_t;
+struct flock64 { /* size 32 id 102 */
+  _Int16t l_type; /* bitsize 16, bitpos 0 */
+  _Int16t l_whence; /* bitsize 16, bitpos 16 */
+  _Int32t l_zero1; /* bitsize 32, bitpos 32 */
+  off64_t l_start; /* bitsize 64, bitpos 64 */
+  off64_t l_len; /* bitsize 64, bitpos 128 */
+  pid_t l_pid; /* bitsize 32, bitpos 192 */
+  _Uint32t l_sysid; /* bitsize 32, bitpos 224 */
+};
+typedef struct flock64 /* id 102 */ flock64_t;
+ dbf_dv.h:
+typedef struct %anon5 DBF_TXT;
+typedef struct %anon65 DBF_BIN;
+ /usr/qnx650/target/qnx6/usr/include/pthread.h:
+struct __cleanup_handler { /* size 12 id 55 */
+  struct __cleanup_handler /* id 55 */ *__next; /* bitsize 32, bitpos 0 */
+  void (*__routine) (/* unknown */); /* bitsize 32, bitpos 32 */
+  void *__save; /* bitsize 32, bitpos 64 */
+};
+typedef struct _sync_attr /* id 26 */ pthread_barrierattr_t;
+typedef struct %anon56 { /* size 24 */
+  unsigned int __barrier; /* bitsize 32, bitpos 0 */
+  unsigned int __count; /* bitsize 32, bitpos 32 */
+  pthread_mutex_t __lock; /* bitsize 64, bitpos 64 */
+  pthread_cond_t __bcond; /* bitsize 64, bitpos 128 */
+} pthread_barrier_t;
+typedef struct _sync_attr /* id 26 */ pthread_rwlockattr_t;
+typedef struct %anon57 { /* size 48 */
+  int __active; /* bitsize 32, bitpos 0 */
+  void *__spare; /* bitsize 32, bitpos 32 */
+  int __blockedwriters; /* bitsize 32, bitpos 64 */
+  int __blockedreaders; /* bitsize 32, bitpos 96 */
+  int __heavy; /* bitsize 32, bitpos 128 */
+  pthread_mutex_t __lock; /* bitsize 64, bitpos 160 */
+  pthread_cond_t __rcond; /* bitsize 64, bitpos 224 */
+  pthread_cond_t __wcond; /* bitsize 64, bitpos 288 */
+  unsigned int __owner; /* bitsize 32, bitpos 352 */
+} pthread_rwlock_t;
+typedef struct _sync /* id 7 */ pthread_spinlock_t;
+typedef struct _sleepon_handle /* id 0 */ sleepon_t;
+ /usr/qnx650/target/qnx6/usr/include/time.h:
+struct timespec { /* size 8 id 4 */
+  time_t tv_sec; /* bitsize 32, bitpos 0 */
+  long int tv_nsec; /* bitsize 32, bitpos 32 */
+};
+struct itimerspec { /* size 16 id 10 */
+  struct timespec /* id 4 */ it_value; /* bitsize 64, bitpos 0 */
+  struct timespec /* id 4 */ it_interval; /* bitsize 64, bitpos 64 */
+};
+struct tm { /* size 44 id 11 */
+  int tm_sec; /* bitsize 32, bitpos 0 */
+  int tm_min; /* bitsize 32, bitpos 32 */
+  int tm_hour; /* bitsize 32, bitpos 64 */
+  int tm_mday; /* bitsize 32, bitpos 96 */
+  int tm_mon; /* bitsize 32, bitpos 128 */
+  int tm_year; /* bitsize 32, bitpos 160 */
+  int tm_wday; /* bitsize 32, bitpos 192 */
+  int tm_yday; /* bitsize 32, bitpos 224 */
+  int tm_isdst; /* bitsize 32, bitpos 256 */
+  long int tm_gmtoff; /* bitsize 32, bitpos 288 */
+  char *tm_zone; /* bitsize 32, bitpos 320 */
+};
+ /usr/qnx650/target/qnx6/usr/include/sched.h:
+struct sched_query { /* size 8 id 48 */
+  _Uint32t extsched; /* bitsize 32, bitpos 0 */
+  _Uint32t reserved; /* bitsize 32, bitpos 32 */
+};
+struct sched_param { /* size 40 id 49 */
+  int sched_priority; /* bitsize 32, bitpos 0 */
+  int sched_curpriority; /* bitsize 32, bitpos 32 */
+  union %anon50 { /* size 32 */
+    int __reserved[8]:uint32; /* bitsize 256, bitpos 0 */
+    struct %anon51 { /* size 24 */
+      int __ss_low_priority; /* bitsize 32, bitpos 0 */
+      int __ss_max_repl; /* bitsize 32, bitpos 32 */
+      struct timespec /* id 4 */ __ss_repl_period; /* bitsize 64, bitpos 64 */
+      struct timespec /* id 4 */ __ss_init_budget; /* bitsize 64, bitpos 128 */
+    } __ss; /* bitsize 192, bitpos 0 */
+  } __ss_un; /* bitsize 256, bitpos 64 */
+};
+typedef struct sched_param /* id 49 */ sched_param_t;
+ /usr/qnx650/target/qnx6/usr/include/sys/storage.h:
+struct _thread_local_storage { /* size 64 id 52 */
+  void (*__exitfunc) (/* unknown */); /* bitsize 32, bitpos 0 */
+  void *__arg; /* bitsize 32, bitpos 32 */
+  int *__errptr; /* bitsize 32, bitpos 64 */
+  int __errval; /* bitsize 32, bitpos 96 */
+  unsigned int __flags; /* bitsize 32, bitpos 128 */
+  int __pid; /* bitsize 32, bitpos 160 */
+  int __tid; /* bitsize 32, bitpos 192 */
+  unsigned int __owner; /* bitsize 32, bitpos 224 */
+  void *__stackaddr; /* bitsize 32, bitpos 256 */
+  unsigned int __reserved1; /* bitsize 32, bitpos 288 */
+  unsigned int __numkeys; /* bitsize 32, bitpos 320 */
+  void **__keydata; /* bitsize 32, bitpos 352 */
+  void *__cleanup; /* bitsize 32, bitpos 384 */
+  void *__fpuemu_data; /* bitsize 32, bitpos 416 */
+  void *__reserved3; /* bitsize 32, bitpos 448 */
+  void (*__sigaction) (/* unknown */); /* bitsize 32, bitpos 480 */
+};
+struct _process_local_storage { /* size 40 id 53 */
+  void *(*__getgot) (/* unknown */); /* bitsize 32, bitpos 0 */
+  void (*__mathemulator) (/* unknown */); /* bitsize 32, bitpos 32 */
+  void *__dll_list; /* bitsize 32, bitpos 64 */
+  void *__reserved[6]:uint32; /* bitsize 192, bitpos 96 */
+  void (*__threadwatch) (/* unknown */); /* bitsize 32, bitpos 288 */
+};
+ /usr/qnx650/target/qnx6/usr/include/sys/siginfo.h:
+union sigval { /* size 4 id 23 */
+  int sival_int; /* bitsize 32, bitpos 0 */
+  void *sival_ptr; /* bitsize 32, bitpos 0 */
+};
+struct sigevent { /* size 16 id 19 */
+  int sigev_notify; /* bitsize 32, bitpos 0 */
+  union %anon39 { /* size 4 */
+    int __sigev_signo; /* bitsize 32, bitpos 0 */
+    int __sigev_coid; /* bitsize 32, bitpos 0 */
+    int __sigev_id; /* bitsize 32, bitpos 0 */
+    void (*__sigev_notify_function) (/* unknown */); /* bitsize 32, bitpos 0 */
+  } __sigev_un1; /* bitsize 32, bitpos 32 */
+  union sigval /* id 23 */ sigev_value; /* bitsize 32, bitpos 64 */
+  union %anon40 { /* size 4 */
+    struct %anon41 { /* size 4 */
+      short int __sigev_code; /* bitsize 16, bitpos 0 */
+      short int __sigev_priority; /* bitsize 16, bitpos 16 */
+    } __st; /* bitsize 32, bitpos 0 */
+    pthread_attr_t *__sigev_notify_attributes; /* bitsize 32, bitpos 0 */
+  } __sigev_un2; /* bitsize 32, bitpos 96 */
+};
+struct _siginfo { /* size 40 id 1 */
+  int si_signo; /* bitsize 32, bitpos 0 */
+  int si_code; /* bitsize 32, bitpos 32 */
+  int si_errno; /* bitsize 32, bitpos 64 */
+  union %anon42 { /* size 28 */
+    int __pad[7]:uint32; /* bitsize 224, bitpos 0 */
+    struct %anon43 { /* size 16 */
+      pid_t __pid; /* bitsize 32, bitpos 0 */
+      union %anon44 { /* size 12 */
+        struct %anon45 { /* size 8 */
+          uid_t __uid; /* bitsize 32, bitpos 0 */
+          union sigval /* id 23 */ __value; /* bitsize 32, bitpos 32 */
+        } __kill; /* bitsize 64, bitpos 0 */
+        struct %anon46 { /* size 12 */
+          clock_t __utime; /* bitsize 32, bitpos 0 */
+          int __status; /* bitsize 32, bitpos 32 */
+          clock_t __stime; /* bitsize 32, bitpos 64 */
+        } __chld; /* bitsize 96, bitpos 0 */
+      } __pdata; /* bitsize 96, bitpos 32 */
+    } __proc; /* bitsize 128, bitpos 0 */
+    struct %anon47 { /* size 16 */
+      int __fltno; /* bitsize 32, bitpos 0 */
+      void *__fltip; /* bitsize 32, bitpos 32 */
+      void *__addr; /* bitsize 32, bitpos 64 */
+      int __bdslot; /* bitsize 32, bitpos 96 */
+    } __fault; /* bitsize 128, bitpos 0 */
+  } __data; /* bitsize 224, bitpos 96 */
+};
+typedef struct _siginfo /* id 1 */ siginfo_t;
+time_counter.c:
+typedef int32 int;
+typedef int8 char;
+typedef int32 long int;
+typedef uint32 unsigned int;
+typedef uint32 long unsigned int;
+typedef int64 long long int;
+typedef uint64 long long unsigned int;
+typedef int16 short int;
+typedef uint16 short unsigned int;
+typedef int8 signed char;
+typedef uint8 unsigned char;
+typedef float float;
+typedef double double;
+typedef float96 long double;
+typedef float _Decimal32;
+typedef double _Decimal64;
+typedef float128 _Decimal128;
+typedef void void;
+void TimeCounterInit (TMS_t *TM /* 0x8 */)
+{ /* 0x804a164 */
+  /* file time_counter.c line 4 addr 0x804a164 */
+  /* file time_counter.c line 5 addr 0x804a16a */
+  /* file time_counter.c line 6 addr 0x804a1ae */
+  /* file time_counter.c line 7 addr 0x804a1bf */
+  /* file time_counter.c line 8 addr 0x804a1d0 */
+} /* 0x804a1d2 */
+void StartTimeCount (TMS_t *TM /* 0x8 */)
+{ /* 0x804a1d2 */
+  /* file time_counter.c line 11 addr 0x804a1d2 */
+  { /* 0x804a1d7 */
+    register _Uint64t __cycles /* 0x3 */;
+    /* file time_counter.c line 12 addr 0x804a1d7 */
+  } /* 0x804a1e1 */
+  /* file time_counter.c line 13 addr 0x804a1ea */
+} /* 0x804a1ee */
+double GetTimeCount (TMS_t *TM /* 0x8 */)
+{ /* 0x804a1ee */
+  { /* 0x804a1ee */
+    double result /* 0xfffffff0 */;
+    /* file time_counter.c line 16 addr 0x804a1ee */
+    { /* 0x804a1f6 */
+      register _Uint64t __cycles /* 0x3 */;
+      /* file time_counter.c line 18 addr 0x804a1f6 */
+    } /* 0x804a200 */
+    /* file time_counter.c line 19 addr 0x804a209 */
+    /* file time_counter.c line 20 addr 0x804a237 */
+    /* file time_counter.c line 21 addr 0x804a244 */
+    /* file time_counter.c line 22 addr 0x804a253 */
+  } /* 0x804a25a */
+} /* 0x804a25a */
+ /usr/qnx650/target/qnx6/usr/include/sys/syspage.h:
+struct _clockadjust { /* size 8 id 34 */
+  long unsigned int tick_count; /* bitsize 32, bitpos 0 */
+  long int tick_nsec_inc; /* bitsize 32, bitpos 32 */
+};
+typedef struct %anon67 { /* size 4 */
+  _Uint16t entry_off; /* bitsize 16, bitpos 0 */
+  _Uint16t entry_size; /* bitsize 16, bitpos 16 */
+} syspage_entry_info;
+struct cpupage_entry { /* size 84 id 68 */
+  struct _thread_local_storage /* id 52 */ *tls; /* bitsize 32, bitpos 0 */
+  struct _process_local_storage /* id 53 */ *pls; /* bitsize 32, bitpos 32 */
+  struct syspage_entry /* id 69 */ *syspage; /* bitsize 32, bitpos 64 */
+  long unsigned int cpu; /* bitsize 32, bitpos 96 */
+  long unsigned int state; /* bitsize 32, bitpos 128 */
+  union %anon70 { /* size 32 */
+    struct %anon71 { /* size 32 */
+      long int dummy[8]:uint32; /* bitsize 256, bitpos 0 */
+    } dummy; /* bitsize 256, bitpos 0 */
+  } un; /* bitsize 256, bitpos 160 */
+  long unsigned int spare[8]:uint32; /* bitsize 256, bitpos 416 */
+};
+struct qtime_entry { /* size 96 id 72 */
+  _Uint64t cycles_per_sec; /* bitsize 64, bitpos 0 */
+  _Uint64t nsec_tod_adjust; /* bitsize 64, bitpos 64 */
+  _Uint64t nsec; /* bitsize 64, bitpos 128 */
+  long unsigned int nsec_inc; /* bitsize 32, bitpos 192 */
+  long unsigned int boot_time; /* bitsize 32, bitpos 224 */
+  struct _clockadjust /* id 34 */ adjust; /* bitsize 64, bitpos 256 */
+  long unsigned int timer_rate; /* bitsize 32, bitpos 320 */
+  long int timer_scale; /* bitsize 32, bitpos 352 */
+  long unsigned int timer_load; /* bitsize 32, bitpos 384 */
+  long int intr; /* bitsize 32, bitpos 416 */
+  long unsigned int epoch; /* bitsize 32, bitpos 448 */
+  long unsigned int flags; /* bitsize 32, bitpos 480 */
+  unsigned int rr_interval_mul; /* bitsize 32, bitpos 512 */
+  long unsigned int spare0; /* bitsize 32, bitpos 544 */
+  _Uint64t nsec_stable; /* bitsize 64, bitpos 576 */
+  long unsigned int spare[4]:uint32; /* bitsize 128, bitpos 640 */
+};
+struct debug_callout { /* size 16 id 73 */
+  void (*display_char) (/* unknown */); /* bitsize 32, bitpos 0 */
+  int (*poll_key) (/* unknown */); /* bitsize 32, bitpos 32 */
+  int (*break_detect) (/* unknown */); /* bitsize 32, bitpos 64 */
+  void *spare[1]:uint32; /* bitsize 32, bitpos 96 */
+};
+typedef enum { DEBUG_WATCHDOG_STOP, DEBUG_WATCHDOG_CONTINUE, DEBUG_WATCHDOG_FEED } debug_watchdog_cmd;
+struct callout_entry { /* size 68 id 74 */
+  void (*reboot) (/* unknown */); /* bitsize 32, bitpos 0 */
+  int (*power) (/* unknown */); /* bitsize 32, bitpos 32 */
+  void (*timer_load) (/* unknown */); /* bitsize 32, bitpos 64 */
+  int (*timer_reload) (/* unknown */); /* bitsize 32, bitpos 96 */
+  unsigned int (*timer_value) (/* unknown */); /* bitsize 32, bitpos 128 */
+  struct debug_callout /* id 73 */ debug[2]:uint32; /* bitsize 256, bitpos 160 */
+  void (*debug_watchdog) (/* unknown */); /* bitsize 32, bitpos 416 */
+  void *spare[3]:uint32; /* bitsize 96, bitpos 448 */
+};
+struct callin_entry { /* size 60 id 75 */
+  void *spare0; /* bitsize 32, bitpos 0 */
+  int (*interrupt_mask) (/* unknown */); /* bitsize 32, bitpos 32 */
+  int (*interrupt_unmask) (/* unknown */); /* bitsize 32, bitpos 64 */
+  int (*trace_event) (/* unknown */); /* bitsize 32, bitpos 96 */
+  void *spare[11]:uint32; /* bitsize 352, bitpos 128 */
+};
+struct meminfo_entry { /* size 16 id 76 */
+  _Paddr32t addr; /* bitsize 32, bitpos 0 */
+  _Uint32t size; /* bitsize 32, bitpos 32 */
+  _Uint32t type; /* bitsize 32, bitpos 64 */
+  _Uint32t spare; /* bitsize 32, bitpos 96 */
+};
+struct asinfo_entry { /* size 32 id 77 */
+  _Uint64t start; /* bitsize 64, bitpos 0 */
+  _Uint64t end; /* bitsize 64, bitpos 64 */
+  _Uint16t owner; /* bitsize 16, bitpos 128 */
+  _Uint16t name; /* bitsize 16, bitpos 144 */
+  _Uint16t attr; /* bitsize 16, bitpos 160 */
+  _Uint16t priority; /* bitsize 16, bitpos 176 */
+  int (*alloc_checker) (/* unknown */); /* bitsize 32, bitpos 192 */
+  _Uint32t spare; /* bitsize 32, bitpos 224 */
+};
+struct hwinfo_entry { /* size 4 id 78 */
+  long unsigned int data[1]:uint32; /* bitsize 32, bitpos 0 */
+};
+union kernel_entry { /* size 4 id 79 */
+  struct x86_kernel_entry /* id 80 */ x86; /* bitsize 32, bitpos 0 */
+};
+struct system_private_entry { /* size 100 id 81 */
+  struct cpupage_entry /* id 68 */ *user_cpupageptr; /* bitsize 32, bitpos 0 */
+  struct syspage_entry /* id 69 */ *user_syspageptr; /* bitsize 32, bitpos 32 */
+  struct cpupage_entry /* id 68 */ *kern_cpupageptr; /* bitsize 32, bitpos 64 */
+  struct syspage_entry /* id 69 */ *kern_syspageptr; /* bitsize 32, bitpos 96 */
+  struct kdebug_info /* id 0 */ *kdebug_info; /* bitsize 32, bitpos 128 */
+  struct kdebug_callback /* id 0 */ *kdebug_call; /* bitsize 32, bitpos 160 */
+  (struct %anon82 { /* size 8 */
+    _Paddr32t base; /* bitsize 32, bitpos 0 */
+    _Uint32t entry; /* bitsize 32, bitpos 32 */
+  }) boot_pgm[4]:uint32; /* bitsize 256, bitpos 192 */
+  long unsigned int boot_idx; /* bitsize 32, bitpos 448 */
+  long unsigned int cpupage_spacing; /* bitsize 32, bitpos 480 */
+  long unsigned int private_flags; /* bitsize 32, bitpos 512 */
+  _Uint32t pagesize; /* bitsize 32, bitpos 544 */
+  _Uint32t ramsize; /* bitsize 32, bitpos 576 */
+  struct tracebuf /* id 0 */ *tracebuf; /* bitsize 32, bitpos 608 */
+  _Paddr32t kdump_info; /* bitsize 32, bitpos 640 */
+  _Uint32t spare[3]:uint32; /* bitsize 96, bitpos 672 */
+  union kernel_entry /* id 79 */ kercall; /* bitsize 32, bitpos 768 */
+};
+struct cpuinfo_entry { /* size 32 id 83 */
+  _Uint32t cpu; /* bitsize 32, bitpos 0 */
+  _Uint32t speed; /* bitsize 32, bitpos 32 */
+  _Uint32t flags; /* bitsize 32, bitpos 64 */
+  _Uint32t spare[4]:uint32; /* bitsize 128, bitpos 96 */
+  _Uint16t name; /* bitsize 16, bitpos 224 */
+  _Uint8t ins_cache; /* bitsize 8, bitpos 240 */
+  _Uint8t data_cache; /* bitsize 8, bitpos 248 */
+};
+struct cacheattr_entry { /* size 32 id 84 */
+  _Uint32t next; /* bitsize 32, bitpos 0 */
+  _Uint32t line_size; /* bitsize 32, bitpos 32 */
+  _Uint32t num_lines; /* bitsize 32, bitpos 64 */
+  _Uint32t flags; /* bitsize 32, bitpos 96 */
+  unsigned int (*control) (/* unknown */); /* bitsize 32, bitpos 128 */
+  _Uint16t ways; /* bitsize 16, bitpos 160 */
+  _Uint16t spare0[1]:uint32; /* bitsize 16, bitpos 176 */
+  _Uint32t spare1[2]:uint32; /* bitsize 64, bitpos 192 */
+};
+struct typed_strings_entry { /* size 4 id 85 */
+  char data[4]:uint32; /* bitsize 32, bitpos 0 */
+};
+struct strings_entry { /* size 4 id 86 */
+  char data[4]:uint32; /* bitsize 32, bitpos 0 */
+};
+struct __intrgen_data { /* size 8 id 87 */
+  _Uint16t genflags; /* bitsize 16, bitpos 0 */
+  _Uint16t size; /* bitsize 16, bitpos 16 */
+  void (*rtn) (/* unknown */); /* bitsize 32, bitpos 32 */
+};
+struct intrinfo_entry { /* size 64 id 88 */
+  _Uint32t vector_base; /* bitsize 32, bitpos 0 */
+  _Uint32t num_vectors; /* bitsize 32, bitpos 32 */
+  _Uint32t cascade_vector; /* bitsize 32, bitpos 64 */
+  _Uint32t cpu_intr_base; /* bitsize 32, bitpos 96 */
+  _Uint16t cpu_intr_stride; /* bitsize 16, bitpos 128 */
+  _Uint16t flags; /* bitsize 16, bitpos 144 */
+  struct __intrgen_data /* id 87 */ id; /* bitsize 64, bitpos 160 */
+  struct __intrgen_data /* id 87 */ eoi; /* bitsize 64, bitpos 224 */
+  int (*mask) (/* unknown */); /* bitsize 32, bitpos 288 */
+  int (*unmask) (/* unknown */); /* bitsize 32, bitpos 320 */
+  unsigned int (*config) (/* unknown */); /* bitsize 32, bitpos 352 */
+  _Uint32t spare[4]:uint32; /* bitsize 128, bitpos 384 */
+};
+struct smp_entry { /* size 16 id 89 */
+  void (*send_ipi) (/* unknown */); /* bitsize 32, bitpos 0 */
+  void *start_addr; /* bitsize 32, bitpos 32 */
+  _Uint32t pending; /* bitsize 32, bitpos 64 */
+  _Uint32t cpu; /* bitsize 32, bitpos 96 */
+};
+struct pminfo_entry { /* size 28 id 90 */
+  _Uint32t wakeup_pending; /* bitsize 32, bitpos 0 */
+  _Uint32t wakeup_condition; /* bitsize 32, bitpos 32 */
+  _Uint32t spare[4]:uint32; /* bitsize 128, bitpos 64 */
+  _Uint32t managed_storage[1]:uint32; /* bitsize 32, bitpos 192 */
+};
+enum mdriver_state { MDRIVER_INIT, MDRIVER_STARTUP, MDRIVER_STARTUP_FINI, MDRIVER_KERNEL, MDRIVER_PROCESS, MDRIVER_INTR_ATTACH, MDRIVER_STARTUP_PREPARE };
+struct mdriver_entry { /* size 32 id 91 */
+  _Uint32t intr; /* bitsize 32, bitpos 0 */
+  int (*handler) (/* unknown */); /* bitsize 32, bitpos 32 */
+  void *data; /* bitsize 32, bitpos 64 */
+  _Paddr32t data_paddr; /* bitsize 32, bitpos 96 */
+  _Uint32t data_size; /* bitsize 32, bitpos 128 */
+  _Uint32t name; /* bitsize 32, bitpos 160 */
+  _Uint32t internal; /* bitsize 32, bitpos 192 */
+  _Uint32t spare[1]:uint32; /* bitsize 32, bitpos 224 */
+};
+struct syspage_entry { /* size 156 id 69 */
+  _Uint16t size; /* bitsize 16, bitpos 0 */
+  _Uint16t total_size; /* bitsize 16, bitpos 16 */
+  _Uint16t type; /* bitsize 16, bitpos 32 */
+  _Uint16t num_cpu; /* bitsize 16, bitpos 48 */
+  syspage_entry_info system_private; /* bitsize 32, bitpos 64 */
+  syspage_entry_info asinfo; /* bitsize 32, bitpos 96 */
+  syspage_entry_info meminfo; /* bitsize 32, bitpos 128 */
+  syspage_entry_info hwinfo; /* bitsize 32, bitpos 160 */
+  syspage_entry_info cpuinfo; /* bitsize 32, bitpos 192 */
+  syspage_entry_info cacheattr; /* bitsize 32, bitpos 224 */
+  syspage_entry_info qtime; /* bitsize 32, bitpos 256 */
+  syspage_entry_info callout; /* bitsize 32, bitpos 288 */
+  syspage_entry_info callin; /* bitsize 32, bitpos 320 */
+  syspage_entry_info typed_strings; /* bitsize 32, bitpos 352 */
+  syspage_entry_info strings; /* bitsize 32, bitpos 384 */
+  syspage_entry_info intrinfo; /* bitsize 32, bitpos 416 */
+  syspage_entry_info smp; /* bitsize 32, bitpos 448 */
+  syspage_entry_info pminfo; /* bitsize 32, bitpos 480 */
+  syspage_entry_info mdriver; /* bitsize 32, bitpos 512 */
+  long int spare[2]:uint32; /* bitsize 64, bitpos 544 */
+  union %anon92 { /* size 80 */
+    struct x86_syspage_entry /* id 93 */ x86; /* bitsize 352, bitpos 0 */
+    struct %anon94 { /* size 80 */
+      long int filler[20]:uint32; /* bitsize 640, bitpos 0 */
+    } filler; /* bitsize 640, bitpos 0 */
+  } un; /* bitsize 640, bitpos 608 */
+};
+ /usr/qnx650/target/qnx6/usr/include/x86/syspage.h:
+struct x86_boxinfo_entry { /* size 40 id 95 */
+  _Uint32t hw_flags; /* bitsize 32, bitpos 0 */
+  _Uint32t spare[9]:uint32; /* bitsize 288, bitpos 32 */
+};
+struct x86_diskinfo_entry { /* size 16 id 96 */
+  _Uint16t valid; /* bitsize 16, bitpos 0 */
+  _Uint16t heads; /* bitsize 16, bitpos 16 */
+  _Uint16t cyls; /* bitsize 16, bitpos 32 */
+  _Uint16t sectors; /* bitsize 16, bitpos 48 */
+  _Uint32t nblocks; /* bitsize 32, bitpos 64 */
+  _Uint32t spare; /* bitsize 32, bitpos 96 */
+};
+struct x86_smpinfo_entry { /* size 28 id 97 */
+  void *ap_start_addr; /* bitsize 32, bitpos 0 */
+  unsigned int *lapic_addr; /* bitsize 32, bitpos 32 */
+  long unsigned int spare; /* bitsize 32, bitpos 64 */
+  unsigned char lapicid_to_index[16]:uint32; /* bitsize 128, bitpos 96 */
+};
+struct x86_syspage_entry { /* size 44 id 93 */
+  syspage_entry_info boxinfo; /* bitsize 32, bitpos 0 */
+  syspage_entry_info smpinfo; /* bitsize 32, bitpos 32 */
+  syspage_entry_info diskinfo; /* bitsize 32, bitpos 64 */
+  long unsigned int spare[4]:uint32; /* bitsize 128, bitpos 96 */
+  struct x86_seg_descriptor_entry /* id 0 */ *gdt; /* bitsize 32, bitpos 224 */
+  struct x86_gate_descriptor_entry /* id 0 */ *idt; /* bitsize 32, bitpos 256 */
+  _Paddr32t *pgdir; /* bitsize 32, bitpos 288 */
+  void *real_addr; /* bitsize 32, bitpos 320 */
+};
+struct x86_kernel_entry { /* size 4 id 80 */
+  unsigned char code[4]:uint32; /* bitsize 32, bitpos 0 */
+};
+ /usr/qnx650/target/qnx6/usr/include/sys/neutrino.h:
+struct intrspin { /* size 4 id 12 */
+  unsigned int value; /* bitsize 32, bitpos 0 */
+};
+typedef struct intrspin /* id 12 */ intrspin_t;
+struct _msg_info { /* size 48 id 13 */
+  _Uint32t nd; /* bitsize 32, bitpos 0 */
+  _Uint32t srcnd; /* bitsize 32, bitpos 32 */
+  int pid; /* bitsize 32, bitpos 64 */
+  _Int32t tid; /* bitsize 32, bitpos 96 */
+  _Int32t chid; /* bitsize 32, bitpos 128 */
+  _Int32t scoid; /* bitsize 32, bitpos 160 */
+  _Int32t coid; /* bitsize 32, bitpos 192 */
+  _Int32t msglen; /* bitsize 32, bitpos 224 */
+  _Int32t srcmsglen; /* bitsize 32, bitpos 256 */
+  _Int32t dstmsglen; /* bitsize 32, bitpos 288 */
+  _Int16t priority; /* bitsize 16, bitpos 320 */
+  _Int16t flags; /* bitsize 16, bitpos 336 */
+  _Uint32t reserved; /* bitsize 32, bitpos 352 */
+};
+struct _cred_info { /* size 60 id 14 */
+  int ruid; /* bitsize 32, bitpos 0 */
+  int euid; /* bitsize 32, bitpos 32 */
+  int suid; /* bitsize 32, bitpos 64 */
+  int rgid; /* bitsize 32, bitpos 96 */
+  int egid; /* bitsize 32, bitpos 128 */
+  int sgid; /* bitsize 32, bitpos 160 */
+  _Uint32t ngroups; /* bitsize 32, bitpos 192 */
+  int grouplist[8]:uint32; /* bitsize 256, bitpos 224 */
+};
+struct _client_info { /* size 76 id 15 */
+  _Uint32t nd; /* bitsize 32, bitpos 0 */
+  int pid; /* bitsize 32, bitpos 32 */
+  int sid; /* bitsize 32, bitpos 64 */
+  _Uint32t flags; /* bitsize 32, bitpos 96 */
+  struct _cred_info /* id 14 */ cred; /* bitsize 480, bitpos 128 */
+};
+struct _vtid_info { /* size 32 id 16 */
+  _Int32t tid; /* bitsize 32, bitpos 0 */
+  _Int32t coid; /* bitsize 32, bitpos 32 */
+  _Int32t priority; /* bitsize 32, bitpos 64 */
+  _Int32t srcmsglen; /* bitsize 32, bitpos 96 */
+  _Int32t keydata; /* bitsize 32, bitpos 128 */
+  _Int32t srcnd; /* bitsize 32, bitpos 160 */
+  _Int32t dstmsglen; /* bitsize 32, bitpos 192 */
+  _Int32t zero; /* bitsize 32, bitpos 224 */
+};
+struct _timer_info { /* size 72 id 17 */
+  struct _itimer /* id 18 */ itime; /* bitsize 128, bitpos 0 */
+  struct _itimer /* id 18 */ otime; /* bitsize 128, bitpos 128 */
+  _Uint32t flags; /* bitsize 32, bitpos 256 */
+  _Int32t tid; /* bitsize 32, bitpos 288 */
+  _Int32t notify; /* bitsize 32, bitpos 320 */
+  int clockid; /* bitsize 32, bitpos 352 */
+  _Uint32t overruns; /* bitsize 32, bitpos 384 */
+  struct sigevent /* id 19 */ event; /* bitsize 128, bitpos 416 */
+};
+struct _sighandler_info { /* size 48 id 20 */
+  struct _siginfo /* id 1 */ siginfo; /* bitsize 320, bitpos 0 */
+  void (*handler) (/* unknown */); /* bitsize 32, bitpos 320 */
+  void *context; /* bitsize 32, bitpos 352 */
+};
+struct _sched_info { /* size 64 id 21 */
+  int priority_min; /* bitsize 32, bitpos 0 */
+  int priority_max; /* bitsize 32, bitpos 32 */
+  _Uint64t interval; /* bitsize 64, bitpos 64 */
+  int priority_priv; /* bitsize 32, bitpos 128 */
+  int reserved[11]:uint32; /* bitsize 352, bitpos 160 */
+};
+struct _pulse { /* size 16 id 22 */
+  _Uint16t type; /* bitsize 16, bitpos 0 */
+  _Uint16t subtype; /* bitsize 16, bitpos 16 */
+  _Int8t code; /* bitsize 8, bitpos 32 */
+  _Uint8t zero[3]:uint32; /* bitsize 24, bitpos 40 */
+  union sigval /* id 23 */ value; /* bitsize 32, bitpos 64 */
+  _Int32t scoid; /* bitsize 32, bitpos 96 */
+};
+struct _thread_name { /* size 12 id 24 */
+  int new_name_len; /* bitsize 32, bitpos 0 */
+  int name_buf_len; /* bitsize 32, bitpos 32 */
+  char name_buf[1]:uint32; /* bitsize 8, bitpos 64 */
+};
+struct _thread_runmask { /* size 4 id 25 */
+  int size; /* bitsize 32, bitpos 0 */
+};
+struct _clockperiod { /* size 8 id 3 */
+  long unsigned int nsec; /* bitsize 32, bitpos 0 */
+  long int fract; /* bitsize 32, bitpos 32 */
+};
+ /usr/qnx650/target/qnx6/usr/include/sys/types.h:
+typedef _Uint32t mode_t;
+typedef _Uint32t dev_t;
+typedef _Ssizet ssize_t;
+typedef _Sizet size_t;
+typedef _Uint32t time_t;
+typedef _Uint32t clock_t;
+typedef int pid_t;
+typedef _Uint32t blkcnt_t;
+typedef _Uint32t blksize_t;
+typedef _Uint32t fsblkcnt_t;
+typedef _Uint32t fsfilcnt_t;
+typedef _Uint32t nlink_t;
+typedef _Offt off_t;
+typedef _Off64t off64_t;
+typedef _Uint32t ino_t;
+typedef _Uint64t ino64_t;
+typedef int id_t;
+typedef int uid_t;
+typedef int gid_t;
+typedef _Uint32t useconds_t;
+typedef _Int32t suseconds_t;
+typedef int timer_t;
+typedef int clockid_t;
+typedef _Int32t pthread_t;
+struct _sync { /* size 8 id 7 */
+  int __count; /* bitsize 32, bitpos 0 */
+  unsigned int __owner; /* bitsize 32, bitpos 32 */
+};
+typedef struct _sync /* id 7 */ sync_t;
+struct _sync_attr { /* size 32 id 26 */
+  int __protocol; /* bitsize 32, bitpos 0 */
+  int __flags; /* bitsize 32, bitpos 32 */
+  int __prioceiling; /* bitsize 32, bitpos 64 */
+  int __clockid; /* bitsize 32, bitpos 96 */
+  int __reserved[4]:uint32; /* bitsize 128, bitpos 128 */
+};
+typedef struct _sync_attr /* id 26 */ sync_attr_t;
+struct __timespec { /* size 8 id 27 */
+  time_t __tv_sec; /* bitsize 32, bitpos 0 */
+  long int __tv_nsec; /* bitsize 32, bitpos 32 */
+};
+struct __sched_param { /* size 40 id 28 */
+  int __sched_priority; /* bitsize 32, bitpos 0 */
+  int __sched_curpriority; /* bitsize 32, bitpos 32 */
+  union %anon29 { /* size 32 */
+    int __reserved[8]:uint32; /* bitsize 256, bitpos 0 */
+    struct %anon30 { /* size 24 */
+      int __ss_low_priority; /* bitsize 32, bitpos 0 */
+      int __ss_max_repl; /* bitsize 32, bitpos 32 */
+      struct __timespec /* id 27 */ __ss_repl_period; /* bitsize 64, bitpos 64 */
+      struct __timespec /* id 27 */ __ss_init_budget; /* bitsize 64, bitpos 128 */
+    } __ss; /* bitsize 192, bitpos 0 */
+  } __ss_un; /* bitsize 256, bitpos 64 */
+};
+struct _thread_attr { /* size 76 id 31 */
+  int __flags; /* bitsize 32, bitpos 0 */
+  _Sizet __stacksize; /* bitsize 32, bitpos 32 */
+  void *__stackaddr; /* bitsize 32, bitpos 64 */
+  void (*__exitfunc) (/* unknown */); /* bitsize 32, bitpos 96 */
+  int __policy; /* bitsize 32, bitpos 128 */
+  struct __sched_param /* id 28 */ __param; /* bitsize 320, bitpos 160 */
+  unsigned int __guardsize; /* bitsize 32, bitpos 480 */
+  unsigned int __prealloc; /* bitsize 32, bitpos 512 */
+  int __spare[2]:uint32; /* bitsize 64, bitpos 544 */
+};
+typedef struct _thread_attr /* id 31 */ pthread_attr_t;
+typedef struct _sync /* id 7 */ pthread_cond_t;
+typedef struct _sync_attr /* id 26 */ pthread_condattr_t;
+typedef int pthread_key_t;
+typedef struct _sync /* id 7 */ pthread_mutex_t;
+typedef struct _sync_attr /* id 26 */ pthread_mutexattr_t;
+struct _pthread_once { /* size 12 id 32 */
+  int __once; /* bitsize 32, bitpos 0 */
+  sync_t __mutex; /* bitsize 64, bitpos 32 */
+};
+typedef struct _pthread_once /* id 32 */ pthread_once_t;
+typedef _Uint32t key_t;
+typedef char *caddr_t;
+typedef _Paddrt paddr_t;
+typedef _Paddr32t paddr32_t;
+typedef _Paddr64t paddr64_t;
+typedef _Int32t daddr_t;
+typedef _Uint16t msg_t;
+struct iovec { /* size 8 id 33 */
+  void *iov_base; /* bitsize 32, bitpos 0 */
+  _Sizet iov_len; /* bitsize 32, bitpos 32 */
+};
+typedef struct iovec /* id 33 */ iov_t;
+typedef unsigned char uchar_t;
+typedef short unsigned int ushort_t;
+typedef unsigned int uint_t;
+typedef long unsigned int ulong_t;
+typedef unsigned char u_char;
+typedef short unsigned int u_short;
+typedef unsigned int u_int;
+typedef long unsigned int u_long;
+typedef long unsigned int fixpt_t;
+typedef short unsigned int sel_t;
+typedef short unsigned int ushort;
+typedef unsigned int uint;
+typedef long unsigned int ulong;
+struct _itimer { /* size 16 id 18 */
+  _Uint64t nsec; /* bitsize 64, bitpos 0 */
+  _Uint64t interval_nsec; /* bitsize 64, bitpos 64 */
+};
+ /usr/qnx650/target/qnx6/usr/include/signal.h:
+typedef int sig_atomic_t;
+typedef struct %anon35 { /* size 8 */
+  long int __bits[2]:uint32; /* bitsize 64, bitpos 0 */
+} sigset_t;
+typedef struct %anon36 { /* size 12 */
+  void *ss_sp; /* bitsize 32, bitpos 0 */
+  _Sizet ss_size; /* bitsize 32, bitpos 32 */
+  int ss_flags; /* bitsize 32, bitpos 64 */
+} stack_t;
+typedef struct __ucontext_t /* id 0 */ ucontext_t;
+struct sigaction { /* size 16 id 2 */
+  union %anon37 { /* size 4 */
+    void (*_sa_handler) (/* unknown */); /* bitsize 32, bitpos 0 */
+    void (*_sa_sigaction) (/* unknown */); /* bitsize 32, bitpos 0 */
+  } __sa_un; /* bitsize 32, bitpos 0 */
+  int sa_flags; /* bitsize 32, bitpos 32 */
+  sigset_t sa_mask; /* bitsize 64, bitpos 64 */
+};
+struct sigstack { /* size 8 id 38 */
+  int ss_onstack; /* bitsize 32, bitpos 0 */
+  void *ss_sp; /* bitsize 32, bitpos 32 */
+};
+ /usr/qnx650/target/qnx6/usr/include/sys/siginfo.h:
+union sigval { /* size 4 id 23 */
+  int sival_int; /* bitsize 32, bitpos 0 */
+  void *sival_ptr; /* bitsize 32, bitpos 0 */
+};
+struct sigevent { /* size 16 id 19 */
+  int sigev_notify; /* bitsize 32, bitpos 0 */
+  union %anon39 { /* size 4 */
+    int __sigev_signo; /* bitsize 32, bitpos 0 */
+    int __sigev_coid; /* bitsize 32, bitpos 0 */
+    int __sigev_id; /* bitsize 32, bitpos 0 */
+    void (*__sigev_notify_function) (/* unknown */); /* bitsize 32, bitpos 0 */
+  } __sigev_un1; /* bitsize 32, bitpos 32 */
+  union sigval /* id 23 */ sigev_value; /* bitsize 32, bitpos 64 */
+  union %anon40 { /* size 4 */
+    struct %anon41 { /* size 4 */
+      short int __sigev_code; /* bitsize 16, bitpos 0 */
+      short int __sigev_priority; /* bitsize 16, bitpos 16 */
+    } __st; /* bitsize 32, bitpos 0 */
+    pthread_attr_t *__sigev_notify_attributes; /* bitsize 32, bitpos 0 */
+  } __sigev_un2; /* bitsize 32, bitpos 96 */
+};
+struct _siginfo { /* size 40 id 1 */
+  int si_signo; /* bitsize 32, bitpos 0 */
+  int si_code; /* bitsize 32, bitpos 32 */
+  int si_errno; /* bitsize 32, bitpos 64 */
+  union %anon42 { /* size 28 */
+    int __pad[7]:uint32; /* bitsize 224, bitpos 0 */
+    struct %anon43 { /* size 16 */
+      pid_t __pid; /* bitsize 32, bitpos 0 */
+      union %anon44 { /* size 12 */
+        struct %anon45 { /* size 8 */
+          uid_t __uid; /* bitsize 32, bitpos 0 */
+          union sigval /* id 23 */ __value; /* bitsize 32, bitpos 32 */
+        } __kill; /* bitsize 64, bitpos 0 */
+        struct %anon46 { /* size 12 */
+          clock_t __utime; /* bitsize 32, bitpos 0 */
+          int __status; /* bitsize 32, bitpos 32 */
+          clock_t __stime; /* bitsize 32, bitpos 64 */
+        } __chld; /* bitsize 96, bitpos 0 */
+      } __pdata; /* bitsize 96, bitpos 32 */
+    } __proc; /* bitsize 128, bitpos 0 */
+    struct %anon47 { /* size 16 */
+      int __fltno; /* bitsize 32, bitpos 0 */
+      void *__fltip; /* bitsize 32, bitpos 32 */
+      void *__addr; /* bitsize 32, bitpos 64 */
+      int __bdslot; /* bitsize 32, bitpos 96 */
+    } __fault; /* bitsize 128, bitpos 0 */
+  } __data; /* bitsize 224, bitpos 96 */
+};
+typedef struct _siginfo /* id 1 */ siginfo_t;
+ /usr/qnx650/target/qnx6/usr/include/sched.h:
+struct sched_query { /* size 8 id 48 */
+  _Uint32t extsched; /* bitsize 32, bitpos 0 */
+  _Uint32t reserved; /* bitsize 32, bitpos 32 */
+};
+struct sched_param { /* size 40 id 49 */
+  int sched_priority; /* bitsize 32, bitpos 0 */
+  int sched_curpriority; /* bitsize 32, bitpos 32 */
+  union %anon50 { /* size 32 */
+    int __reserved[8]:uint32; /* bitsize 256, bitpos 0 */
+    struct %anon51 { /* size 24 */
+      int __ss_low_priority; /* bitsize 32, bitpos 0 */
+      int __ss_max_repl; /* bitsize 32, bitpos 32 */
+      struct timespec /* id 4 */ __ss_repl_period; /* bitsize 64, bitpos 64 */
+      struct timespec /* id 4 */ __ss_init_budget; /* bitsize 64, bitpos 128 */
+    } __ss; /* bitsize 192, bitpos 0 */
+  } __ss_un; /* bitsize 256, bitpos 64 */
+};
+typedef struct sched_param /* id 49 */ sched_param_t;
+ /usr/qnx650/target/qnx6/usr/include/time.h:
+struct timespec { /* size 8 id 4 */
+  time_t tv_sec; /* bitsize 32, bitpos 0 */
+  long int tv_nsec; /* bitsize 32, bitpos 32 */
+};
+struct itimerspec { /* size 16 id 10 */
+  struct timespec /* id 4 */ it_value; /* bitsize 64, bitpos 0 */
+  struct timespec /* id 4 */ it_interval; /* bitsize 64, bitpos 64 */
+};
+struct tm { /* size 44 id 11 */
+  int tm_sec; /* bitsize 32, bitpos 0 */
+  int tm_min; /* bitsize 32, bitpos 32 */
+  int tm_hour; /* bitsize 32, bitpos 64 */
+  int tm_mday; /* bitsize 32, bitpos 96 */
+  int tm_mon; /* bitsize 32, bitpos 128 */
+  int tm_year; /* bitsize 32, bitpos 160 */
+  int tm_wday; /* bitsize 32, bitpos 192 */
+  int tm_yday; /* bitsize 32, bitpos 224 */
+  int tm_isdst; /* bitsize 32, bitpos 256 */
+  long int tm_gmtoff; /* bitsize 32, bitpos 288 */
+  char *tm_zone; /* bitsize 32, bitpos 320 */
+};
+ /usr/qnx650/target/qnx6/usr/include/sys/storage.h:
+struct _thread_local_storage { /* size 64 id 52 */
+  void (*__exitfunc) (/* unknown */); /* bitsize 32, bitpos 0 */
+  void *__arg; /* bitsize 32, bitpos 32 */
+  int *__errptr; /* bitsize 32, bitpos 64 */
+  int __errval; /* bitsize 32, bitpos 96 */
+  unsigned int __flags; /* bitsize 32, bitpos 128 */
+  int __pid; /* bitsize 32, bitpos 160 */
+  int __tid; /* bitsize 32, bitpos 192 */
+  unsigned int __owner; /* bitsize 32, bitpos 224 */
+  void *__stackaddr; /* bitsize 32, bitpos 256 */
+  unsigned int __reserved1; /* bitsize 32, bitpos 288 */
+  unsigned int __numkeys; /* bitsize 32, bitpos 320 */
+  void **__keydata; /* bitsize 32, bitpos 352 */
+  void *__cleanup; /* bitsize 32, bitpos 384 */
+  void *__fpuemu_data; /* bitsize 32, bitpos 416 */
+  void *__reserved3; /* bitsize 32, bitpos 448 */
+  void (*__sigaction) (/* unknown */); /* bitsize 32, bitpos 480 */
+};
+struct _process_local_storage { /* size 40 id 53 */
+  void *(*__getgot) (/* unknown */); /* bitsize 32, bitpos 0 */
+  void (*__mathemulator) (/* unknown */); /* bitsize 32, bitpos 32 */
+  void *__dll_list; /* bitsize 32, bitpos 64 */
+  void *__reserved[6]:uint32; /* bitsize 192, bitpos 96 */
+  void (*__threadwatch) (/* unknown */); /* bitsize 32, bitpos 288 */
+};
+time_statistics.c:
+typedef int32 int;
+typedef int8 char;
+typedef int32 long int;
+typedef uint32 unsigned int;
+typedef uint32 long unsigned int;
+typedef int64 long long int;
+typedef uint64 long long unsigned int;
+typedef int16 short int;
+typedef uint16 short unsigned int;
+typedef int8 signed char;
+typedef uint8 unsigned char;
+typedef float float;
+typedef double double;
+typedef float96 long double;
+typedef float _Decimal32;
+typedef double _Decimal64;
+typedef float128 _Decimal128;
+typedef void void;
+void TimeStatisticsInit (STAT_t *ST /* 0x8 */)
+{ /* 0x804a25c */
+  /* file time_statistics.c line 9 addr 0x804a25c */
+  /* file time_statistics.c line 10 addr 0x804a262 */
+  /* file time_statistics.c line 11 addr 0x804a274 */
+} /* 0x804a276 */
+void TimeStatisticsGet (STAT_t *ST /* 0x8 */, double measurment /* 0xc */)
+{ /* 0x804a276 */
+  double measurment /* 0xfffffff0 */;
+  /* file time_statistics.c line 14 addr 0x804a276 */
+  /* file time_statistics.c line 15 addr 0x804a288 */
+  /* file time_statistics.c line 16 addr 0x804a292 */
+  /* file time_statistics.c line 17 addr 0x804a2a1 */
+  /* file time_statistics.c line 18 addr 0x804a2b0 */
+  /* file time_statistics.c line 19 addr 0x804a2c6 */
+  /* file time_statistics.c line 20 addr 0x804a2d4 */
+  /* file time_statistics.c line 21 addr 0x804a2ed */
+  /* file time_statistics.c line 22 addr 0x804a2fc */
+  /* file time_statistics.c line 23 addr 0x804a30b */
+  /* file time_statistics.c line 24 addr 0x804a31f */
+  /* file time_statistics.c line 25 addr 0x804a339 */
+  /* file time_statistics.c line 26 addr 0x804a397 */
+} /* 0x804a399 */
+ /usr/qnx650/target/qnx6/usr/include/sys/neutrino.h:
+struct intrspin { /* size 4 id 12 */
+  unsigned int value; /* bitsize 32, bitpos 0 */
+};
+typedef struct intrspin /* id 12 */ intrspin_t;
+struct _msg_info { /* size 48 id 13 */
+  _Uint32t nd; /* bitsize 32, bitpos 0 */
+  _Uint32t srcnd; /* bitsize 32, bitpos 32 */
+  int pid; /* bitsize 32, bitpos 64 */
+  _Int32t tid; /* bitsize 32, bitpos 96 */
+  _Int32t chid; /* bitsize 32, bitpos 128 */
+  _Int32t scoid; /* bitsize 32, bitpos 160 */
+  _Int32t coid; /* bitsize 32, bitpos 192 */
+  _Int32t msglen; /* bitsize 32, bitpos 224 */
+  _Int32t srcmsglen; /* bitsize 32, bitpos 256 */
+  _Int32t dstmsglen; /* bitsize 32, bitpos 288 */
+  _Int16t priority; /* bitsize 16, bitpos 320 */
+  _Int16t flags; /* bitsize 16, bitpos 336 */
+  _Uint32t reserved; /* bitsize 32, bitpos 352 */
+};
+struct _cred_info { /* size 60 id 14 */
+  int ruid; /* bitsize 32, bitpos 0 */
+  int euid; /* bitsize 32, bitpos 32 */
+  int suid; /* bitsize 32, bitpos 64 */
+  int rgid; /* bitsize 32, bitpos 96 */
+  int egid; /* bitsize 32, bitpos 128 */
+  int sgid; /* bitsize 32, bitpos 160 */
+  _Uint32t ngroups; /* bitsize 32, bitpos 192 */
+  int grouplist[8]:uint32; /* bitsize 256, bitpos 224 */
+};
+struct _client_info { /* size 76 id 15 */
+  _Uint32t nd; /* bitsize 32, bitpos 0 */
+  int pid; /* bitsize 32, bitpos 32 */
+  int sid; /* bitsize 32, bitpos 64 */
+  _Uint32t flags; /* bitsize 32, bitpos 96 */
+  struct _cred_info /* id 14 */ cred; /* bitsize 480, bitpos 128 */
+};
+struct _vtid_info { /* size 32 id 16 */
+  _Int32t tid; /* bitsize 32, bitpos 0 */
+  _Int32t coid; /* bitsize 32, bitpos 32 */
+  _Int32t priority; /* bitsize 32, bitpos 64 */
+  _Int32t srcmsglen; /* bitsize 32, bitpos 96 */
+  _Int32t keydata; /* bitsize 32, bitpos 128 */
+  _Int32t srcnd; /* bitsize 32, bitpos 160 */
+  _Int32t dstmsglen; /* bitsize 32, bitpos 192 */
+  _Int32t zero; /* bitsize 32, bitpos 224 */
+};
+struct _timer_info { /* size 72 id 17 */
+  struct _itimer /* id 18 */ itime; /* bitsize 128, bitpos 0 */
+  struct _itimer /* id 18 */ otime; /* bitsize 128, bitpos 128 */
+  _Uint32t flags; /* bitsize 32, bitpos 256 */
+  _Int32t tid; /* bitsize 32, bitpos 288 */
+  _Int32t notify; /* bitsize 32, bitpos 320 */
+  int clockid; /* bitsize 32, bitpos 352 */
+  _Uint32t overruns; /* bitsize 32, bitpos 384 */
+  struct sigevent /* id 19 */ event; /* bitsize 128, bitpos 416 */
+};
+struct _sighandler_info { /* size 48 id 20 */
+  struct _siginfo /* id 1 */ siginfo; /* bitsize 320, bitpos 0 */
+  void (*handler) (/* unknown */); /* bitsize 32, bitpos 320 */
+  void *context; /* bitsize 32, bitpos 352 */
+};
+struct _sched_info { /* size 64 id 21 */
+  int priority_min; /* bitsize 32, bitpos 0 */
+  int priority_max; /* bitsize 32, bitpos 32 */
+  _Uint64t interval; /* bitsize 64, bitpos 64 */
+  int priority_priv; /* bitsize 32, bitpos 128 */
+  int reserved[11]:uint32; /* bitsize 352, bitpos 160 */
+};
+struct _pulse { /* size 16 id 22 */
+  _Uint16t type; /* bitsize 16, bitpos 0 */
+  _Uint16t subtype; /* bitsize 16, bitpos 16 */
+  _Int8t code; /* bitsize 8, bitpos 32 */
+  _Uint8t zero[3]:uint32; /* bitsize 24, bitpos 40 */
+  union sigval /* id 23 */ value; /* bitsize 32, bitpos 64 */
+  _Int32t scoid; /* bitsize 32, bitpos 96 */
+};
+struct _thread_name { /* size 12 id 24 */
+  int new_name_len; /* bitsize 32, bitpos 0 */
+  int name_buf_len; /* bitsize 32, bitpos 32 */
+  char name_buf[1]:uint32; /* bitsize 8, bitpos 64 */
+};
+struct _thread_runmask { /* size 4 id 25 */
+  int size; /* bitsize 32, bitpos 0 */
+};
+struct _clockperiod { /* size 8 id 3 */
+  long unsigned int nsec; /* bitsize 32, bitpos 0 */
+  long int fract; /* bitsize 32, bitpos 32 */
+};
+ /usr/qnx650/target/qnx6/usr/include/sys/types.h:
+typedef _Uint32t mode_t;
+typedef _Uint32t dev_t;
+typedef _Ssizet ssize_t;
+typedef _Sizet size_t;
+typedef _Uint32t time_t;
+typedef _Uint32t clock_t;
+typedef int pid_t;
+typedef _Uint32t blkcnt_t;
+typedef _Uint32t blksize_t;
+typedef _Uint32t fsblkcnt_t;
+typedef _Uint32t fsfilcnt_t;
+typedef _Uint32t nlink_t;
+typedef _Offt off_t;
+typedef _Off64t off64_t;
+typedef _Uint32t ino_t;
+typedef _Uint64t ino64_t;
+typedef int id_t;
+typedef int uid_t;
+typedef int gid_t;
+typedef _Uint32t useconds_t;
+typedef _Int32t suseconds_t;
+typedef int timer_t;
+typedef int clockid_t;
+typedef _Int32t pthread_t;
+struct _sync { /* size 8 id 7 */
+  int __count; /* bitsize 32, bitpos 0 */
+  unsigned int __owner; /* bitsize 32, bitpos 32 */
+};
+typedef struct _sync /* id 7 */ sync_t;
+struct _sync_attr { /* size 32 id 26 */
+  int __protocol; /* bitsize 32, bitpos 0 */
+  int __flags; /* bitsize 32, bitpos 32 */
+  int __prioceiling; /* bitsize 32, bitpos 64 */
+  int __clockid; /* bitsize 32, bitpos 96 */
+  int __reserved[4]:uint32; /* bitsize 128, bitpos 128 */
+};
+typedef struct _sync_attr /* id 26 */ sync_attr_t;
+struct __timespec { /* size 8 id 27 */
+  time_t __tv_sec; /* bitsize 32, bitpos 0 */
+  long int __tv_nsec; /* bitsize 32, bitpos 32 */
+};
+struct __sched_param { /* size 40 id 28 */
+  int __sched_priority; /* bitsize 32, bitpos 0 */
+  int __sched_curpriority; /* bitsize 32, bitpos 32 */
+  union %anon29 { /* size 32 */
+    int __reserved[8]:uint32; /* bitsize 256, bitpos 0 */
+    struct %anon30 { /* size 24 */
+      int __ss_low_priority; /* bitsize 32, bitpos 0 */
+      int __ss_max_repl; /* bitsize 32, bitpos 32 */
+      struct __timespec /* id 27 */ __ss_repl_period; /* bitsize 64, bitpos 64 */
+      struct __timespec /* id 27 */ __ss_init_budget; /* bitsize 64, bitpos 128 */
+    } __ss; /* bitsize 192, bitpos 0 */
+  } __ss_un; /* bitsize 256, bitpos 64 */
+};
+struct _thread_attr { /* size 76 id 31 */
+  int __flags; /* bitsize 32, bitpos 0 */
+  _Sizet __stacksize; /* bitsize 32, bitpos 32 */
+  void *__stackaddr; /* bitsize 32, bitpos 64 */
+  void (*__exitfunc) (/* unknown */); /* bitsize 32, bitpos 96 */
+  int __policy; /* bitsize 32, bitpos 128 */
+  struct __sched_param /* id 28 */ __param; /* bitsize 320, bitpos 160 */
+  unsigned int __guardsize; /* bitsize 32, bitpos 480 */
+  unsigned int __prealloc; /* bitsize 32, bitpos 512 */
+  int __spare[2]:uint32; /* bitsize 64, bitpos 544 */
+};
+typedef struct _thread_attr /* id 31 */ pthread_attr_t;
+typedef struct _sync /* id 7 */ pthread_cond_t;
+typedef struct _sync_attr /* id 26 */ pthread_condattr_t;
+typedef int pthread_key_t;
+typedef struct _sync /* id 7 */ pthread_mutex_t;
+typedef struct _sync_attr /* id 26 */ pthread_mutexattr_t;
+struct _pthread_once { /* size 12 id 32 */
+  int __once; /* bitsize 32, bitpos 0 */
+  sync_t __mutex; /* bitsize 64, bitpos 32 */
+};
+typedef struct _pthread_once /* id 32 */ pthread_once_t;
+typedef _Uint32t key_t;
+typedef char *caddr_t;
+typedef _Paddrt paddr_t;
+typedef _Paddr32t paddr32_t;
+typedef _Paddr64t paddr64_t;
+typedef _Int32t daddr_t;
+typedef _Uint16t msg_t;
+struct iovec { /* size 8 id 33 */
+  void *iov_base; /* bitsize 32, bitpos 0 */
+  _Sizet iov_len; /* bitsize 32, bitpos 32 */
+};
+typedef struct iovec /* id 33 */ iov_t;
+struct _clockadjust { /* size 8 id 34 */
+  long unsigned int tick_count; /* bitsize 32, bitpos 0 */
+  long int tick_nsec_inc; /* bitsize 32, bitpos 32 */
+};
+typedef unsigned char uchar_t;
+typedef short unsigned int ushort_t;
+typedef unsigned int uint_t;
+typedef long unsigned int ulong_t;
+typedef unsigned char u_char;
+typedef short unsigned int u_short;
+typedef unsigned int u_int;
+typedef long unsigned int u_long;
+typedef long unsigned int fixpt_t;
+typedef short unsigned int sel_t;
+typedef short unsigned int ushort;
+typedef unsigned int uint;
+typedef long unsigned int ulong;
+struct _itimer { /* size 16 id 18 */
+  _Uint64t nsec; /* bitsize 64, bitpos 0 */
+  _Uint64t interval_nsec; /* bitsize 64, bitpos 64 */
+};
+ /usr/qnx650/target/qnx6/usr/include/signal.h:
+typedef int sig_atomic_t;
+typedef struct %anon35 { /* size 8 */
+  long int __bits[2]:uint32; /* bitsize 64, bitpos 0 */
+} sigset_t;
+typedef struct %anon36 { /* size 12 */
+  void *ss_sp; /* bitsize 32, bitpos 0 */
+  _Sizet ss_size; /* bitsize 32, bitpos 32 */
+  int ss_flags; /* bitsize 32, bitpos 64 */
+} stack_t;
+typedef struct __ucontext_t /* id 0 */ ucontext_t;
+struct sigaction { /* size 16 id 2 */
+  union %anon37 { /* size 4 */
+    void (*_sa_handler) (/* unknown */); /* bitsize 32, bitpos 0 */
+    void (*_sa_sigaction) (/* unknown */); /* bitsize 32, bitpos 0 */
+  } __sa_un; /* bitsize 32, bitpos 0 */
+  int sa_flags; /* bitsize 32, bitpos 32 */
+  sigset_t sa_mask; /* bitsize 64, bitpos 64 */
+};
+struct sigstack { /* size 8 id 38 */
+  int ss_onstack; /* bitsize 32, bitpos 0 */
+  void *ss_sp; /* bitsize 32, bitpos 32 */
+};
+ /usr/qnx650/target/qnx6/usr/include/sys/siginfo.h:
+union sigval { /* size 4 id 23 */
+  int sival_int; /* bitsize 32, bitpos 0 */
+  void *sival_ptr; /* bitsize 32, bitpos 0 */
+};
+struct sigevent { /* size 16 id 19 */
+  int sigev_notify; /* bitsize 32, bitpos 0 */
+  union %anon39 { /* size 4 */
+    int __sigev_signo; /* bitsize 32, bitpos 0 */
+    int __sigev_coid; /* bitsize 32, bitpos 0 */
+    int __sigev_id; /* bitsize 32, bitpos 0 */
+    void (*__sigev_notify_function) (/* unknown */); /* bitsize 32, bitpos 0 */
+  } __sigev_un1; /* bitsize 32, bitpos 32 */
+  union sigval /* id 23 */ sigev_value; /* bitsize 32, bitpos 64 */
+  union %anon40 { /* size 4 */
+    struct %anon41 { /* size 4 */
+      short int __sigev_code; /* bitsize 16, bitpos 0 */
+      short int __sigev_priority; /* bitsize 16, bitpos 16 */
+    } __st; /* bitsize 32, bitpos 0 */
+    pthread_attr_t *__sigev_notify_attributes; /* bitsize 32, bitpos 0 */
+  } __sigev_un2; /* bitsize 32, bitpos 96 */
+};
+struct _siginfo { /* size 40 id 1 */
+  int si_signo; /* bitsize 32, bitpos 0 */
+  int si_code; /* bitsize 32, bitpos 32 */
+  int si_errno; /* bitsize 32, bitpos 64 */
+  union %anon42 { /* size 28 */
+    int __pad[7]:uint32; /* bitsize 224, bitpos 0 */
+    struct %anon43 { /* size 16 */
+      pid_t __pid; /* bitsize 32, bitpos 0 */
+      union %anon44 { /* size 12 */
+        struct %anon45 { /* size 8 */
+          uid_t __uid; /* bitsize 32, bitpos 0 */
+          union sigval /* id 23 */ __value; /* bitsize 32, bitpos 32 */
+        } __kill; /* bitsize 64, bitpos 0 */
+        struct %anon46 { /* size 12 */
+          clock_t __utime; /* bitsize 32, bitpos 0 */
+          int __status; /* bitsize 32, bitpos 32 */
+          clock_t __stime; /* bitsize 32, bitpos 64 */
+        } __chld; /* bitsize 96, bitpos 0 */
+      } __pdata; /* bitsize 96, bitpos 32 */
+    } __proc; /* bitsize 128, bitpos 0 */
+    struct %anon47 { /* size 16 */
+      int __fltno; /* bitsize 32, bitpos 0 */
+      void *__fltip; /* bitsize 32, bitpos 32 */
+      void *__addr; /* bitsize 32, bitpos 64 */
+      int __bdslot; /* bitsize 32, bitpos 96 */
+    } __fault; /* bitsize 128, bitpos 0 */
+  } __data; /* bitsize 224, bitpos 96 */
+};
+typedef struct _siginfo /* id 1 */ siginfo_t;
+ /usr/qnx650/target/qnx6/usr/include/sys/storage.h:
+struct _thread_local_storage { /* size 64 id 52 */
+  void (*__exitfunc) (/* unknown */); /* bitsize 32, bitpos 0 */
+  void *__arg; /* bitsize 32, bitpos 32 */
+  int *__errptr; /* bitsize 32, bitpos 64 */
+  int __errval; /* bitsize 32, bitpos 96 */
+  unsigned int __flags; /* bitsize 32, bitpos 128 */
+  int __pid; /* bitsize 32, bitpos 160 */
+  int __tid; /* bitsize 32, bitpos 192 */
+  unsigned int __owner; /* bitsize 32, bitpos 224 */
+  void *__stackaddr; /* bitsize 32, bitpos 256 */
+  unsigned int __reserved1; /* bitsize 32, bitpos 288 */
+  unsigned int __numkeys; /* bitsize 32, bitpos 320 */
+  void **__keydata; /* bitsize 32, bitpos 352 */
+  void *__cleanup; /* bitsize 32, bitpos 384 */
+  void *__fpuemu_data; /* bitsize 32, bitpos 416 */
+  void *__reserved3; /* bitsize 32, bitpos 448 */
+  void (*__sigaction) (/* unknown */); /* bitsize 32, bitpos 480 */
+};
+struct _process_local_storage { /* size 40 id 53 */
+  void *(*__getgot) (/* unknown */); /* bitsize 32, bitpos 0 */
+  void (*__mathemulator) (/* unknown */); /* bitsize 32, bitpos 32 */
+  void *__dll_list; /* bitsize 32, bitpos 64 */
+  void *__reserved[6]:uint32; /* bitsize 192, bitpos 96 */
+  void (*__threadwatch) (/* unknown */); /* bitsize 32, bitpos 288 */
+};
+ /usr/qnx650/target/qnx6/usr/include/math.h:
+typedef float float_t;
+typedef double double_t;
+ /usr/qnx650/target/qnx6/usr/include/ymath.h:
+typedef union %anon103 { /* size 16 */
+  short unsigned int _Word[8]:uint32; /* bitsize 128, bitpos 0 */
+  float _Float; /* bitsize 32, bitpos 0 */
+  double _Double; /* bitsize 64, bitpos 0 */
+  long double _Long_double; /* bitsize 96, bitpos 0 */
+} _Dconst;
+thread_api.c:
+typedef int32 int;
+typedef int8 char;
+typedef int32 long int;
+typedef uint32 unsigned int;
+typedef uint32 long unsigned int;
+typedef int64 long long int;
+typedef uint64 long long unsigned int;
+typedef int16 short int;
+typedef uint16 short unsigned int;
+typedef int8 signed char;
+typedef uint8 unsigned char;
+typedef float float;
+typedef double double;
+typedef float96 long double;
+typedef float _Decimal32;
+typedef double _Decimal64;
+typedef float128 _Decimal128;
+typedef void void;
+int thread_create (void *(*start_routine) (/* unknown */) /* 0x8 */, int priority /* 0xc */)
+{ /* 0x804a39c */
+  { /* 0x804a39c */
+    struct sched_param /* id 49 */ SPR /* 0xffffff84 */;
+    pthread_attr_t attr /* 0xffffffac */;
+    /* file thread_api.c line 4 addr 0x804a39c */
+    /* file thread_api.c line 8 addr 0x804a3a5 */
+    /* file thread_api.c line 9 addr 0x804a3b4 */
+    /* file thread_api.c line 10 addr 0x804a3c5 */
+    /* file thread_api.c line 11 addr 0x804a3d6 */
+    /* file thread_api.c line 12 addr 0x804a3dc */
+    /* file thread_api.c line 14 addr 0x804a3ef */
+    /* file thread_api.c line 15 addr 0x804a402 */
+    /* file thread_api.c line 16 addr 0x804a407 */
+  } /* 0x804a409 */
+} /* 0x804a409 */
+ thread_api.h:
+ /usr/qnx650/target/qnx6/usr/include/pthread.h:
+struct __cleanup_handler { /* size 12 id 55 */
+  struct __cleanup_handler /* id 55 */ *__next; /* bitsize 32, bitpos 0 */
+  void (*__routine) (/* unknown */); /* bitsize 32, bitpos 32 */
+  void *__save; /* bitsize 32, bitpos 64 */
+};
+typedef struct _sync_attr /* id 26 */ pthread_barrierattr_t;
+typedef struct %anon56 { /* size 24 */
+  unsigned int __barrier; /* bitsize 32, bitpos 0 */
+  unsigned int __count; /* bitsize 32, bitpos 32 */
+  pthread_mutex_t __lock; /* bitsize 64, bitpos 64 */
+  pthread_cond_t __bcond; /* bitsize 64, bitpos 128 */
+} pthread_barrier_t;
+typedef struct _sync_attr /* id 26 */ pthread_rwlockattr_t;
+typedef struct %anon57 { /* size 48 */
+  int __active; /* bitsize 32, bitpos 0 */
+  void *__spare; /* bitsize 32, bitpos 32 */
+  int __blockedwriters; /* bitsize 32, bitpos 64 */
+  int __blockedreaders; /* bitsize 32, bitpos 96 */
+  int __heavy; /* bitsize 32, bitpos 128 */
+  pthread_mutex_t __lock; /* bitsize 64, bitpos 160 */
+  pthread_cond_t __rcond; /* bitsize 64, bitpos 224 */
+  pthread_cond_t __wcond; /* bitsize 64, bitpos 288 */
+  unsigned int __owner; /* bitsize 32, bitpos 352 */
+} pthread_rwlock_t;
+typedef struct _sync /* id 7 */ pthread_spinlock_t;
+typedef struct _sleepon_handle /* id 0 */ sleepon_t;
+third_thread.c:
+typedef int32 int;
+typedef int8 char;
+typedef int32 long int;
+typedef uint32 unsigned int;
+typedef uint32 long unsigned int;
+typedef int64 long long int;
+typedef uint64 long long unsigned int;
+typedef int16 short int;
+typedef uint16 short unsigned int;
+typedef int8 signed char;
+typedef uint8 unsigned char;
+typedef float float;
+typedef double double;
+typedef float96 long double;
+typedef float _Decimal32;
+typedef double _Decimal64;
+typedef float128 _Decimal128;
+typedef void void;
+int channel_create ()
+{ /* 0x804a40c */
+  /* file third_thread.c line 7 addr 0x804a40c */
+  /* file third_thread.c line 8 addr 0x804a412 */
+  /* file third_thread.c line 9 addr 0x804a424 */
+  /* file third_thread.c line 10 addr 0x804a42d */
+  /* file third_thread.c line 11 addr 0x804a43d */
+  /* file third_thread.c line 12 addr 0x804a444 */
+  /* file third_thread.c line 13 addr 0x804a46b */
+  /* file third_thread.c line 14 addr 0x804a47b */
+  /* file third_thread.c line 15 addr 0x804a482 */
+  /* file third_thread.c line 16 addr 0x804a487 */
+} /* 0x804a489 */
+void *third_thread (void *arg /* 0x8 */)
+{ /* 0x804a489 */
+  { /* 0x804a489 */
+    struct sigaction /* id 2 */ act /* 0xfffffee4 */;
+    int pls_cnt /* 0xfffffff4 */;
+    void *pulse_buf[64]:uint32 /* 0xfffffef4 */;
+    /* file third_thread.c line 19 addr 0x804a489 */
+    /* file third_thread.c line 21 addr 0x804a492 */
+    /* file third_thread.c line 23 addr 0x804a499 */
+    /* file third_thread.c line 24 addr 0x804a4a2 */
+    /* file third_thread.c line 27 addr 0x804a4bc */
+    /* file third_thread.c line 28 addr 0x804a4d1 */
+    /* file third_thread.c line 29 addr 0x804a4e8 */
+    /* file third_thread.c line 30 addr 0x804a4f2 */
+    /* file third_thread.c line 31 addr 0x804a4fc */
+    /* file third_thread.c line 32 addr 0x804a512 */
+    /* file third_thread.c line 34 addr 0x804a52b */
+    /* file third_thread.c line 37 addr 0x804a52d */
+    /* file third_thread.c line 39 addr 0x804a549 */
+    /* file third_thread.c line 40 addr 0x804a54c */
+    /* file third_thread.c line 41 addr 0x804a564 */
+    /* file third_thread.c line 34 addr 0x804a574 */
+    /* file third_thread.c line 43 addr 0x804a57d */
+    /* file third_thread.c line 45 addr 0x804a58d */
+  } /* 0x804a58f */
+} /* 0x804a58f */
+int conid /* 0x805c358 */;
+DBF_TXT DTX_3 /* 0x80502a0 */;
+ third_thread.h:
+second_thread.c:
+typedef int32 int;
+typedef int8 char;
+typedef int32 long int;
+typedef uint32 unsigned int;
+typedef uint32 long unsigned int;
+typedef int64 long long int;
+typedef uint64 long long unsigned int;
+typedef int16 short int;
+typedef uint16 short unsigned int;
+typedef int8 signed char;
+typedef uint8 unsigned char;
+typedef float float;
+typedef double double;
+typedef float96 long double;
+typedef float _Decimal32;
+typedef double _Decimal64;
+typedef float128 _Decimal128;
+typedef void void;
+struct sigevent /* id 19 */ *IntHandler (void *arg /* 0x8 */, int id /* 0xc */)
+{ /* 0x804a590 */
+  { /* 0x804a590 */
+    struct sigevent /* id 19 */ *event /* 0xfffffffc */;
+    /* file second_thread.c line 15 addr 0x804a590 */
+    /* file second_thread.c line 16 addr 0x804a596 */
+    /* file second_thread.c line 17 addr 0x804a59c */
+    /* file second_thread.c line 18 addr 0x804a5a7 */
+    /* file second_thread.c line 20 addr 0x804a5b3 */
+    /* file second_thread.c line 21 addr 0x804a5bd */
+    /* file second_thread.c line 24 addr 0x804a5c2 */
+    /* file second_thread.c line 25 addr 0x804a5c7 */
+  } /* 0x804a5c9 */
+} /* 0x804a5c9 */
+void *second_thread (void *arg /* 0x8 */)
+{ /* 0x804a5c9 */
+  { /* 0x804a5c9 */
+    struct sigaction /* id 2 */ act /* 0xffffffc4 */;
+    int counter_2 /* 0xfffffff4 */;
+    struct timespec /* id 4 */ td /* 0xffffffd4 */;
+    double ex_time /* 0xffffffe8 */;
+    int counter /* 0xffffffe4 */;
+    int RS /* 0xffffffe0 */;
+    int int_id /* 0xffffffdc */;
+    /* file second_thread.c line 29 addr 0x804a5c9 */
+    /* file second_thread.c line 32 addr 0x804a5d0 */
+    /* file second_thread.c line 33 addr 0x804a5d7 */
+    /* file second_thread.c line 38 addr 0x804a5e7 */
+    /* file second_thread.c line 40 addr 0x804a5f1 */
+    /* file second_thread.c line 41 addr 0x804a603 */
+    /* file second_thread.c line 43 addr 0x804a623 */
+    /* file second_thread.c line 44 addr 0x804a641 */
+    /* file second_thread.c line 45 addr 0x804a647 */
+    /* file second_thread.c line 46 addr 0x804a65d */
+    /* file second_thread.c line 48 addr 0x804a674 */
+    /* file second_thread.c line 49 addr 0x804a684 */
+    /* file second_thread.c line 53 addr 0x804a694 */
+    /* file second_thread.c line 54 addr 0x804a6a6 */
+    /* file second_thread.c line 55 addr 0x804a6ba */
+    /* file second_thread.c line 56 addr 0x804a6c1 */
+    /* file second_thread.c line 57 addr 0x804a6c8 */
+    /* file second_thread.c line 58 addr 0x804a6db */
+    /* file second_thread.c line 61 addr 0x804a6f1 */
+    /* file second_thread.c line 64 addr 0x804a6f6 */
+    /* file second_thread.c line 65 addr 0x804a705 */
+    /* file second_thread.c line 66 addr 0x804a715 */
+    /* file second_thread.c line 67 addr 0x804a727 */
+    /* file second_thread.c line 68 addr 0x804a747 */
+    /* file second_thread.c line 69 addr 0x804a75a */
+    /* file second_thread.c line 71 addr 0x804a770 */
+    /* file second_thread.c line 72 addr 0x804a788 */
+    /* file second_thread.c line 73 addr 0x804a7a0 */
+    /* file second_thread.c line 74 addr 0x804a7d0 */
+    /* file second_thread.c line 75 addr 0x804a7d3 */
+    /* file second_thread.c line 76 addr 0x804a7d9 */
+    /* file second_thread.c line 77 addr 0x804a7fe */
+    /* file second_thread.c line 78 addr 0x804a80e */
+    /* file second_thread.c line 80 addr 0x804a814 */
+    /* file second_thread.c line 81 addr 0x804a82a */
+    /* file second_thread.c line 61 addr 0x804a83e */
+    /* file second_thread.c line 84 addr 0x804a84b */
+    /* file second_thread.c line 86 addr 0x804a85b */
+  } /* 0x804a860 */
+} /* 0x804a860 */
+int chid /* 0x805c354 */;
+int conid /* 0x805c358 */;
+LWORD rtc_ct /* 0x804c254 */;
+TMS_t MSR /* 0x805c398 */;
+STAT_t ST /* 0x805c360 */;
+struct sigevent /* id 19 */ event /* 0x805c3b0 */;
+ second_thread.h:
+forth_thread.c:
+typedef int32 int;
+typedef int8 char;
+typedef int32 long int;
+typedef uint32 unsigned int;
+typedef uint32 long unsigned int;
+typedef int64 long long int;
+typedef uint64 long long unsigned int;
+typedef int16 short int;
+typedef uint16 short unsigned int;
+typedef int8 signed char;
+typedef uint8 unsigned char;
+typedef float float;
+typedef double double;
+typedef float96 long double;
+typedef float _Decimal32;
+typedef double _Decimal64;
+typedef float128 _Decimal128;
+typedef void void;
+void setupSignalAndTimer ()
+{ /* 0x804a860 */
+  { /* 0x804a860 */
+    int coid /* 0xfffffff4 */;
+    struct itimerspec /* id 10 */ timer /* 0xffffffd0 */;
+    struct sigevent /* id 19 */ event /* 0xffffffe0 */;
+    timer_t timerid /* 0xfffffff0 */;
+    /* file forth_thread.c line 6 addr 0x804a860 */
+    /* file forth_thread.c line 12 addr 0x804a866 */
+    /* file forth_thread.c line 13 addr 0x804a882 */
+    /* file forth_thread.c line 14 addr 0x804a888 */
+    /* file forth_thread.c line 15 addr 0x804a89e */
+    /* file forth_thread.c line 16 addr 0x804a8ab */
+    /* file forth_thread.c line 18 addr 0x804a8b5 */
+    /* file forth_thread.c line 19 addr 0x804a8c2 */
+    /* file forth_thread.c line 20 addr 0x804a8dc */
+    /* file forth_thread.c line 21 addr 0x804a8f2 */
+    /* file forth_thread.c line 22 addr 0x804a8ff */
+    /* file forth_thread.c line 25 addr 0x804a909 */
+    /* file forth_thread.c line 26 addr 0x804a910 */
+    /* file forth_thread.c line 27 addr 0x804a917 */
+    /* file forth_thread.c line 28 addr 0x804a91e */
+    /* file forth_thread.c line 30 addr 0x804a925 */
+    /* file forth_thread.c line 31 addr 0x804a939 */
+  } /* 0x804a93b */
+} /* 0x804a93b */
+void *forth_thread (void *arg /* 0x8 */)
+{ /* 0x804a93b */
+  { /* 0x804a93b */
+    int counter /* 0xfffffff4 */;
+    /* file forth_thread.c line 34 addr 0x804a93b */
+    /* file forth_thread.c line 35 addr 0x804a941 */
+    /* file forth_thread.c line 36 addr 0x804a948 */
+    /* file forth_thread.c line 44 addr 0x804a94d */
+    /* file forth_thread.c line 45 addr 0x804a952 */
+  } /* 0x804a954 */
+} /* 0x804a954 */
+DBF_TXT DTX_4 /* 0x804c260 */;
+ forth_thread.h:
+fifth_thread.c:
+typedef int32 int;
+typedef int8 char;
+typedef int32 long int;
+typedef uint32 unsigned int;
+typedef uint32 long unsigned int;
+typedef int64 long long int;
+typedef uint64 long long unsigned int;
+typedef int16 short int;
+typedef uint16 short unsigned int;
+typedef int8 signed char;
+typedef uint8 unsigned char;
+typedef float float;
+typedef double double;
+typedef float96 long double;
+typedef float _Decimal32;
+typedef double _Decimal64;
+typedef float128 _Decimal128;
+typedef void void;
+void setupPulseAndTimer ()
+{ /* 0x804a954 */
+  { /* 0x804a954 */
+    int coid /* 0xfffffff4 */;
+    struct itimerspec /* id 10 */ timer /* 0xffffffd0 */;
+    struct sigevent /* id 19 */ event /* 0xffffffe0 */;
+    timer_t timerid /* 0xfffffff0 */;
+    /* file fifth_thread.c line 6 addr 0x804a954 */
+    /* file fifth_thread.c line 12 addr 0x804a95a */
+    /* file fifth_thread.c line 13 addr 0x804a976 */
+    /* file fifth_thread.c line 15 addr 0x804a97c */
+    /* file fifth_thread.c line 16 addr 0x804a992 */
+    /* file fifth_thread.c line 17 addr 0x804a99f */
+    /* file fifth_thread.c line 19 addr 0x804a9a9 */
+    /* file fifth_thread.c line 20 addr 0x804a9c9 */
+    /* file fifth_thread.c line 22 addr 0x804a9e3 */
+    /* file fifth_thread.c line 23 addr 0x804a9f9 */
+    /* file fifth_thread.c line 24 addr 0x804aa06 */
+    /* file fifth_thread.c line 27 addr 0x804aa10 */
+    /* file fifth_thread.c line 28 addr 0x804aa17 */
+    /* file fifth_thread.c line 29 addr 0x804aa1e */
+    /* file fifth_thread.c line 30 addr 0x804aa25 */
+    /* file fifth_thread.c line 32 addr 0x804aa2c */
+    /* file fifth_thread.c line 33 addr 0x804aa40 */
+  } /* 0x804aa42 */
+} /* 0x804aa42 */
+void *fifth_thread (void *arg /* 0x8 */)
+{ /* 0x804aa42 */
+  { /* 0x804aa42 */
+    int counter /* 0xfffffff4 */;
+    int msg[15]:uint32 /* 0xffffffb4 */;
+    int chid /* 0xfffffff0 */;
+    /* file fifth_thread.c line 36 addr 0x804aa42 */
+    /* file fifth_thread.c line 39 addr 0x804aa48 */
+    /* file fifth_thread.c line 40 addr 0x804aa4f */
+    /* file fifth_thread.c line 41 addr 0x804aa65 */
+    /* file fifth_thread.c line 42 addr 0x804aa7b */
+    /* file fifth_thread.c line 43 addr 0x804aa88 */
+    /* file fifth_thread.c line 45 addr 0x804aa92 */
+    /* file fifth_thread.c line 46 addr 0x804aa97 */
+    /* file fifth_thread.c line 48 addr 0x804aa99 */
+    /* file fifth_thread.c line 49 addr 0x804aaac */
+    /* file fifth_thread.c line 50 addr 0x804aaaf */
+    /* file fifth_thread.c line 51 addr 0x804aac7 */
+    /* file fifth_thread.c line 46 addr 0x804aad7 */
+    /* file fifth_thread.c line 53 addr 0x804aae0 */
+    /* file fifth_thread.c line 54 addr 0x804aae5 */
+  } /* 0x804aae7 */
+} /* 0x804aae7 */
+DBF_TXT DTX_5 /* 0x80542e0 */;
+struct tracebuf { /* id 0 */
+};
+struct kdebug_callback { /* id 0 */
+};
+struct kdebug_info { /* id 0 */
+};
+struct x86_gate_descriptor_entry { /* id 0 */
+};
+struct x86_seg_descriptor_entry { /* id 0 */
+};
+struct _sleepon_handle { /* id 0 */
+};
+struct __ucontext_t { /* id 0 */
+};
+ fifth_thread.h:

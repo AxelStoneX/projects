@@ -1,0 +1,16 @@
+CC = qcc -Vgcc_ntox86
+CFLAGS = -D_QNXNTO_PCI_X86_ -I../../Include -L/usr/lib
+LIBS = -lbusapi
+
+OBJS = tst_bc.o
+TARGET = tstbc 
+SRC = tst_bc.c
+
+all: $(TARGET) clean
+
+$(TARGET) : $(OBJS)
+	$(CC) -o $(TARGET) $(OBJS) $(CFLAGS) $(LIBS)
+
+clean:
+	rm -f *.o *~ core
+

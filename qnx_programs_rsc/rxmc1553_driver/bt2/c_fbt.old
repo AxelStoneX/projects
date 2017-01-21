@@ -1,0 +1,112 @@
+#!/bin/sh
+
+QX_HOST=/usr/qnx641/host/qnx6/x86
+QX_TARG=/usr/qnx641/target/qnx6
+ 
+PROC_DIR=`pwd`
+BIN_DIR=`pwd`/BIN
+
+EXP_DIR=`pwd`
+#cd $PROC_DIR
+
+echo PROC_DIR =$PROC_DIR
+echo BIN_DIR  =$BIN_DIR
+
+CC_DEF=-D__X86__
+QX_INC=-I${QX_TARG}/usr/include
+
+CPP_OPT="-lang-c++ -Vgcc_ntox86_cpp"
+CC_OPT="-lang-c -Vgcc_ntox86"
+BT_OPT="-D_QNXNTO_PCI_X86_ -I${PROC_DIR}/Include -I${PROC_DIR}/bt1553/Source"
+
+#BT_OPT -g2 
+echo CC_INC = $CC_INC
+echo BT_OPT = $BT_OPT
+
+#=====================================================================
+comp_c()
+{
+ local src_f=$1.c
+ local out_f=${BIN_DIR}/$1.o
+ 
+ # echo "\nCompilation  $src_f -> $out_f  started"
+
+ if test -e $out_f;  then
+  rm -f $out_f
+ fi
+ 
+  qcc -c -g -o $out_f $QX_INC $BT_OPT $CC_OPT $src_f
+# gcc -c -g -o $out_f $src_f
+
+ echo -n "Compilation  $src_f	is "
+ if test -e $out_f;  then
+  echo "correct"
+ else
+  echo "failed"
+ fi
+} # comp_c()
+
+cd bt1553/Source
+echo "\n ----- bt1553/Source directory -----"
+comp_c bc
+comp_c bit
+comp_c bm
+comp_c rt
+comp_c ei
+comp_c hwsetup
+comp_c btdrv
+comp_c init
+comp_c QNXBoardSetup
+comp_c discrete
+comp_c time
+comp_c CEI_POSIX_INTERRUPT_FUNCTIONS
+comp_c dumpmem
+comp_c notify
+comp_c qnx_irq_setup_t1
+
+cd ../../Common
+echo "\n ----- bt1553/Source directory -----"
+comp_c mem_qnx
+
+#--- Object arhive creation ----------------------
+cd ../BIN
+LIB_NM="libbustools.a"
+LIB_BT="../${LIB_NM}"
+LIB_DST="../../WS/BIN"
+
+#echo $LIB_NM
+#echo $LIB_BT
+
+if test -e bc.o -a -e bit.o -a -e bm.o -a -e rt.o -a -e ei.o -a\
+        -e hwsetup.o  -a  -e btdrv.o  -a  -e init.o  -a\
+        -e QNXBoardSetup.o  -a  -e discrete.o  -a  -e time.o -a\
+        -e CEI_POSIX_INTERRUPT_FUNCTIONS.o  -a  -e dumpmem.o -a\
+        -e notify.o  -a  -e qnx_irq_setup_t1.o  -a  -e mem_qnx.o; then
+
+ echo "\nArhive $LIB_NM is built"
+
+ if test -e $LIB_BT;  then
+  rm -f $LIB_BT
+ fi
+
+ ar -rc $LIB_BT bc.o  bit.o bm.o rt.o ei.o hwsetup.o btdrv.o\
+        init.o QNXBoardSetup.o discrete.o time.o\
+        CEI_POSIX_INTERRUPT_FUNCTIONS.o dumpmem.o notify.o qnx_irq_setup_t1.o mem_qnx.o
+ 
+ echo -n "Arhivation  BIN/( bc.o  bit.o bm.o ... ) -> $LIB_NM  is "
+ 
+if test -e $LIB_BT;  then
+  echo "correct"
+  cp $LIB_BT $LIB_DST
+  echo File $LIB_NM is copied to $LIB_DST
+  
+ else
+  echo "failed"
+ fi
+
+else
+ echo "\nCompilation errors detected" 
+fi
+
+cd ..
+# --- End linking -----
