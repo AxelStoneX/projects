@@ -1,0 +1,75 @@
+# v1.05
+
+#*=============================================================================*
+#* FILE:                Configuration file makefile
+#*=============================================================================*
+#
+# COPYRIGHT (C) 2006 - 2011 BY
+#          GE INTELLIGENT PLATFORMS, INC., GOLETA, CALIFORNIA
+#          ALL RIGHTS RESERVED.
+#
+#          THIS SOFTWARE IS FURNISHED UNDER A LICENSE AND MAY BE USED AND
+#          COPIED ONLY IN ACCORDANCE WITH THE TERMS OF SUCH LICENSE AND WITH
+#          THE INCLUSION OF THE ABOVE COPYRIGHT NOTICE.  THIS SOFTWARE OR ANY
+#          OTHER COPIES THEREOF MAY NOT BE PROVIDED OR OTHERWISE MADE
+#          AVAILABLE TO ANY OTHER PERSON.  NO TITLE TO AND OWNERSHIP OF THE
+#          SOFTWARE IS HEREBY TRANSFERRED.
+#
+#          THE INFORMATION IN THIS SOFTWARE IS SUBJECT TO CHANGE WITHOUT
+#          NOTICE AND SHOULD NOT BE CONSTRUED AS A COMMITMENT BY GE 
+#          INTELLIGENT PLATFORMS.
+#
+#=============================================================================*
+#
+# Makefile options
+#  Required:
+#   KERNEL=26 - if using a Linux kernel 2.6.x
+#   KERNEL=30 - if using a Linux kernel 3.0.x
+#  Optional:
+#   ARCH= - specify the architecture of the target system
+#   32BIT=1 - compile for 32-bit emulation in a 64-bit system
+#   CROSS_COMPILE - specify the toolchain for the target system
+#   NO_INSTALL=1 - does not move the library to the /usr/lib(64) directory
+#
+#==============================================================================*
+
+
+CC     = ${CROSS_COMPILE}gcc
+CFLAGS = -g -Wall 
+TARGET = build_conf
+SRC    = ${TARGET}.c
+
+ifeq (${KERNEL}, 26)
+ CFLAGS += -DKERNEL_26
+endif
+ifeq (${KERNEL}, 30)
+ CFLAGS += -DKERNEL_30
+endif
+
+ifeq (${ARCH}, x86_64)
+ ifeq (${32BIT}, 1)
+  CFLAGS += -D_32BIT -m32
+ else
+  CFLAGS += -m64 -mno-red-zone
+ endif
+endif
+ifeq (${ARCH}, ppc)
+ CFLAGS += -DSWAP
+endif
+ifeq (${ARCH}, ppc64)
+ CFLAGS += -DSWAP
+ ifeq (${32BIT}, 1)
+  CFLAGS += -D_32BIT -m32
+ else
+  CFLAGS += -m64
+ endif
+endif
+
+
+all : comp clean
+
+comp:
+	${CC} ${CFLAGS} -o ${TARGET} ${SRC}
+
+clean:
+	rm -f *.o *~ core

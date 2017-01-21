@@ -1,0 +1,3088 @@
+
+../ex:     file format elf64-x86-64
+
+1553_card_control.c:
+typedef int32 int;
+typedef int8 char;
+typedef uint32 long int;
+typedef uint32 unsigned int;
+typedef uint32 long unsigned int;
+typedef uint32 __int128;
+typedef uint32 __int128 unsigned;
+typedef uint32 long long int;
+typedef uint64 long long unsigned int;
+typedef int16 short int;
+typedef uint16 short unsigned int;
+typedef int8 signed char;
+typedef uint8 unsigned char;
+typedef float float;
+typedef double double;
+typedef float128 long double;
+typedef float _Decimal32;
+typedef double _Decimal64;
+typedef float128 _Decimal128;
+typedef void void;
+int init_all_cards ()
+{ /* 0x40144d */
+  { /* 0x40144d */
+    unsigned int mode /* 0xffffffe8 */;
+    int dev_counter /* 0xffffffe4 */;
+    int dev[2]:uint32 /* 0xfffffff0 */;
+    int i /* 0xffffffe0 */;
+    int status /* 0xffffffec */;
+    /* file 1553_card_control.c line 8 addr 0x40144d */
+    /* file 1553_card_control.c line 12 addr 0x401455 */
+    /* file 1553_card_control.c line 14 addr 0x40145c */
+    /* file 1553_card_control.c line 16 addr 0x401463 */
+    /* file 1553_card_control.c line 17 addr 0x40146d */
+    /* file 1553_card_control.c line 19 addr 0x401476 */
+    /* file 1553_card_control.c line 20 addr 0x401492 */
+    /* file 1553_card_control.c line 21 addr 0x40149f */
+    /* file 1553_card_control.c line 22 addr 0x4014bc */
+    /* file 1553_card_control.c line 23 addr 0x4014c0 */
+    /* file 1553_card_control.c line 24 addr 0x4014cd */
+    /* file 1553_card_control.c line 17 addr 0x4014e1 */
+    /* file 1553_card_control.c line 17 addr 0x4014e5 */
+    /* file 1553_card_control.c line 27 addr 0x4014eb */
+    /* file 1553_card_control.c line 28 addr 0x4014f1 */
+    /* file 1553_card_control.c line 29 addr 0x401500 */
+    /* file 1553_card_control.c line 30 addr 0x40150a */
+    /* file 1553_card_control.c line 32 addr 0x401514 */
+    /* file 1553_card_control.c line 33 addr 0x401528 */
+    /* file 1553_card_control.c line 35 addr 0x40153c */
+    /* file 1553_card_control.c line 36 addr 0x401556 */
+    /* file 1553_card_control.c line 37 addr 0x40155c */
+    /* file 1553_card_control.c line 38 addr 0x401566 */
+    /* file 1553_card_control.c line 40 addr 0x40156d */
+    /* file 1553_card_control.c line 41 addr 0x401587 */
+    /* file 1553_card_control.c line 42 addr 0x40158d */
+    /* file 1553_card_control.c line 43 addr 0x401597 */
+    /* file 1553_card_control.c line 45 addr 0x40159e */
+    /* file 1553_card_control.c line 46 addr 0x4015a3 */
+  } /* 0x4015a5 */
+} /* 0x4015a5 */
+int init_single_card (unsigned int bus_number /* 0xffffffec */, unsigned int mode /* 0xffffffe8 */, int dev /* 0xffffffe4 */, unsigned int channel /* 0xffffffe0 */)
+{ /* 0x4015a5 */
+  { /* 0x4015a5 */
+    int status /* 0xfffffffc */;
+    unsigned int card_number /* 0xfffffff8 */;
+    /* file 1553_card_control.c line 50 addr 0x4015a5 */
+    /* file 1553_card_control.c line 54 addr 0x4015b9 */
+    /* file 1553_card_control.c line 55 addr 0x4015ce */
+    /* file 1553_card_control.c line 56 addr 0x4015d4 */
+    /* file 1553_card_control.c line 57 addr 0x4015e3 */
+    /* file 1553_card_control.c line 58 addr 0x4015ed */
+    /* file 1553_card_control.c line 60 addr 0x401607 */
+    /* file 1553_card_control.c line 62 addr 0x401611 */
+    /* file 1553_card_control.c line 63 addr 0x401617 */
+    /* file 1553_card_control.c line 64 addr 0x401621 */
+    /* file 1553_card_control.c line 65 addr 0x40162b */
+    /* file 1553_card_control.c line 66 addr 0x401631 */
+    /* file 1553_card_control.c line 67 addr 0x40163b */
+    /* file 1553_card_control.c line 68 addr 0x401645 */
+    /* file 1553_card_control.c line 69 addr 0x40164b */
+    /* file 1553_card_control.c line 70 addr 0x401655 */
+    /* file 1553_card_control.c line 72 addr 0x40165f */
+    /* file 1553_card_control.c line 73 addr 0x401677 */
+    /* file 1553_card_control.c line 74 addr 0x40167d */
+    /* file 1553_card_control.c line 75 addr 0x40168c */
+    /* file 1553_card_control.c line 76 addr 0x401696 */
+    /* file 1553_card_control.c line 78 addr 0x4016a0 */
+    /* file 1553_card_control.c line 79 addr 0x4016a8 */
+    /* file 1553_card_control.c line 80 addr 0x4016b7 */
+    /* file 1553_card_control.c line 81 addr 0x4016c1 */
+    /* file 1553_card_control.c line 83 addr 0x4016cb */
+    /* file 1553_card_control.c line 86 addr 0x4016e5 */
+    /* file 1553_card_control.c line 88 addr 0x4016fb */
+    /* file 1553_card_control.c line 89 addr 0x401712 */
+    /* file 1553_card_control.c line 90 addr 0x401718 */
+    /* file 1553_card_control.c line 91 addr 0x401722 */
+    /* file 1553_card_control.c line 93 addr 0x40172c */
+    /* file 1553_card_control.c line 94 addr 0x40173e */
+    /* file 1553_card_control.c line 95 addr 0x401744 */
+    /* file 1553_card_control.c line 96 addr 0x40174e */
+    /* file 1553_card_control.c line 98 addr 0x401758 */
+    /* file 1553_card_control.c line 99 addr 0x40176a */
+    /* file 1553_card_control.c line 100 addr 0x401770 */
+    /* file 1553_card_control.c line 101 addr 0x40177a */
+    /* file 1553_card_control.c line 103 addr 0x401781 */
+    /* file 1553_card_control.c line 104 addr 0x401793 */
+    /* file 1553_card_control.c line 105 addr 0x401799 */
+    /* file 1553_card_control.c line 106 addr 0x4017a3 */
+    /* file 1553_card_control.c line 108 addr 0x4017aa */
+    /* file 1553_card_control.c line 109 addr 0x4017bc */
+    /* file 1553_card_control.c line 110 addr 0x4017c2 */
+    /* file 1553_card_control.c line 111 addr 0x4017cc */
+    /* file 1553_card_control.c line 113 addr 0x4017d3 */
+    /* file 1553_card_control.c line 115 addr 0x4017d8 */
+  } /* 0x4017da */
+} /* 0x4017da */
+int register_single_card (unsigned int bus_number /* 0xfffffffc */, unsigned int card_number /* 0xfffffff8 */, int dev /* 0xfffffff4 */, unsigned int channel /* 0xfffffff0 */)
+{ /* 0x4017da */
+  /* file 1553_card_control.c line 119 addr 0x4017da */
+  /* file 1553_card_control.c line 120 addr 0x4017ea */
+  /* file 1553_card_control.c line 121 addr 0x4017f7 */
+  /* file 1553_card_control.c line 122 addr 0x40180a */
+  /* file 1553_card_control.c line 123 addr 0x40181e */
+  /* file 1553_card_control.c line 124 addr 0x401832 */
+  /* file 1553_card_control.c line 125 addr 0x401846 */
+  /* file 1553_card_control.c line 126 addr 0x40184b */
+} /* 0x40184d */
+int start_all_rt ()
+{ /* 0x40184d */
+  { /* 0x40184d */
+    unsigned int card_number /* 0xfffffff8 */;
+    int ix /* 0xfffffff4 */;
+    int status /* 0xfffffffc */;
+    /* file 1553_card_control.c line 130 addr 0x40184d */
+    /* file 1553_card_control.c line 133 addr 0x401855 */
+    /* file 1553_card_control.c line 134 addr 0x40185e */
+    /* file 1553_card_control.c line 135 addr 0x40186d */
+    /* file 1553_card_control.c line 136 addr 0x401873 */
+    /* file 1553_card_control.c line 137 addr 0x401885 */
+    /* file 1553_card_control.c line 138 addr 0x40188b */
+    /* file 1553_card_control.c line 139 addr 0x401895 */
+    /* file 1553_card_control.c line 141 addr 0x4018b5 */
+    /* file 1553_card_control.c line 142 addr 0x4018bc */
+    /* file 1553_card_control.c line 133 addr 0x4018d0 */
+    /* file 1553_card_control.c line 133 addr 0x4018d4 */
+    /* file 1553_card_control.c line 145 addr 0x4018da */
+    /* file 1553_card_control.c line 146 addr 0x4018df */
+  } /* 0x4018e1 */
+} /* 0x4018e1 */
+int stop_all_rt ()
+{ /* 0x4018e1 */
+  { /* 0x4018e1 */
+    unsigned int card_number /* 0xfffffff8 */;
+    int ix /* 0xfffffff4 */;
+    int status /* 0xfffffffc */;
+    /* file 1553_card_control.c line 150 addr 0x4018e1 */
+    /* file 1553_card_control.c line 153 addr 0x4018e9 */
+    /* file 1553_card_control.c line 154 addr 0x4018f2 */
+    /* file 1553_card_control.c line 155 addr 0x401901 */
+    /* file 1553_card_control.c line 156 addr 0x401907 */
+    /* file 1553_card_control.c line 157 addr 0x401919 */
+    /* file 1553_card_control.c line 158 addr 0x40191f */
+    /* file 1553_card_control.c line 159 addr 0x401929 */
+    /* file 1553_card_control.c line 161 addr 0x401949 */
+    /* file 1553_card_control.c line 162 addr 0x401950 */
+    /* file 1553_card_control.c line 153 addr 0x401964 */
+    /* file 1553_card_control.c line 153 addr 0x401968 */
+    /* file 1553_card_control.c line 165 addr 0x40196e */
+    /* file 1553_card_control.c line 166 addr 0x401973 */
+  } /* 0x401975 */
+} /* 0x401975 */
+void close_all_cards ()
+{ /* 0x401975 */
+  { /* 0x401975 */
+    unsigned int card_number /* 0xfffffff8 */;
+    int ix /* 0xfffffff4 */;
+    int status /* 0xfffffffc */;
+    /* file 1553_card_control.c line 170 addr 0x401975 */
+    /* file 1553_card_control.c line 173 addr 0x40197d */
+    /* file 1553_card_control.c line 174 addr 0x401986 */
+    /* file 1553_card_control.c line 175 addr 0x401995 */
+    /* file 1553_card_control.c line 176 addr 0x40199b */
+    /* file 1553_card_control.c line 177 addr 0x4019ad */
+    /* file 1553_card_control.c line 178 addr 0x4019ba */
+    /* file 1553_card_control.c line 173 addr 0x4019ce */
+    /* file 1553_card_control.c line 173 addr 0x4019d2 */
+    /* file 1553_card_control.c line 181 addr 0x4019d8 */
+  } /* 0x4019da */
+} /* 0x4019da */
+union %anon1 { /* size 48 */
+  struct %anon2 { /* size 48 */
+    int __lock; /* bitsize 32, bitpos 0 */
+    unsigned int __futex; /* bitsize 32, bitpos 32 */
+    long long unsigned int __total_seq; /* bitsize 64, bitpos 64 */
+    long long unsigned int __wakeup_seq; /* bitsize 64, bitpos 128 */
+    long long unsigned int __woken_seq; /* bitsize 64, bitpos 192 */
+    void *__mutex; /* bitsize 64, bitpos 256 */
+    unsigned int __nwaiters; /* bitsize 32, bitpos 320 */
+    unsigned int __broadcast_seq; /* bitsize 32, bitpos 352 */
+  } __data; /* bitsize 384, bitpos 0 */
+  char __size[48]:uint32; /* bitsize 384, bitpos 0 */
+  long long int __align; /* bitsize 64, bitpos 0 */
+} thread_flag_cv /* 0x608260 */;
+union %anon3 { /* size 40 */
+  struct __pthread_mutex_s /* id 4 */ __data; /* bitsize 320, bitpos 0 */
+  char __size[40]:uint32; /* bitsize 320, bitpos 0 */
+  long int __align; /* bitsize 64, bitpos 0 */
+} thread_flag_mutex /* 0x6082e0 */;
+int thread_flag /* 0x608258 */;
+unsigned int stop_cmd /* 0x6081b0 */;
+unsigned int bus_to_card_number[30]:uint32 /* 0x6081e0 */;
+(struct %anon5 { /* size 16 */
+  int dev; /* bitsize 32, bitpos 0 */
+  unsigned int bus_number; /* bitsize 32, bitpos 32 */
+  unsigned int channel; /* bitsize 32, bitpos 64 */
+  unsigned int init; /* bitsize 32, bitpos 96 */
+}) bus_ent[4]:uint32 /* 0x6082a0 */;
+ 1553_interface.h:
+typedef struct %anon6 { /* size 40 */
+  unsigned int bus_number; /* bitsize 32, bitpos 0 */
+  unsigned int card_number; /* bitsize 32, bitpos 32 */
+  unsigned int remote_terminal; /* bitsize 32, bitpos 64 */
+  unsigned int sub_address; /* bitsize 32, bitpos 96 */
+  unsigned int transaction_direction; /* bitsize 32, bitpos 128 */
+  unsigned int slots_number; /* bitsize 32, bitpos 160 */
+  unsigned int word_count; /* bitsize 32, bitpos 192 */
+  unsigned int last_sub_address; /* bitsize 32, bitpos 224 */
+  unsigned int ring_size; /* bitsize 32, bitpos 256 */
+  unsigned int init; /* bitsize 32, bitpos 288 */
+} BUS_PACKAGE;
+typedef struct %anon5 BUS_ENTRY;
+typedef struct %anon7 { /* size 16 */
+  unsigned int init; /* bitsize 32, bitpos 0 */
+  unsigned int CardN; /* bitsize 32, bitpos 32 */
+  struct api_int_fifo /* id 8 */ *PIF; /* bitsize 64, bitpos 64 */
+} MessPL;
+typedef struct BT_FIFO /* id 9 */ MESS_FIFO;
+typedef void (*p_void_func) (/* unknown */);
+typedef int (*P_AIF_FUNC) (/* unknown */);
+ /usr/lib/gcc/x86_64-linux-gnu/4.8/include/stdint.h:
+ /usr/include/stdint.h:
+typedef signed char int8_t;
+typedef short int int16_t;
+typedef int int32_t;
+typedef long int int64_t;
+typedef unsigned char uint8_t;
+typedef short unsigned int uint16_t;
+typedef unsigned int uint32_t;
+typedef long unsigned int uint64_t;
+typedef signed char int_least8_t;
+typedef short int int_least16_t;
+typedef int int_least32_t;
+typedef long int int_least64_t;
+typedef unsigned char uint_least8_t;
+typedef short unsigned int uint_least16_t;
+typedef unsigned int uint_least32_t;
+typedef long unsigned int uint_least64_t;
+typedef signed char int_fast8_t;
+typedef long int int_fast16_t;
+typedef long int int_fast32_t;
+typedef long int int_fast64_t;
+typedef unsigned char uint_fast8_t;
+typedef long unsigned int uint_fast16_t;
+typedef long unsigned int uint_fast32_t;
+typedef long unsigned int uint_fast64_t;
+typedef long int intptr_t;
+typedef long unsigned int uintptr_t;
+typedef long int intmax_t;
+typedef long unsigned int uintmax_t;
+ /usr/include/x86_64-linux-gnu/sys/types.h:
+typedef unsigned char u_char;
+typedef short unsigned int u_short;
+typedef unsigned int u_int;
+typedef long unsigned int u_long;
+typedef long int quad_t;
+typedef long unsigned int u_quad_t;
+typedef struct %anon10 { /* size 8 */
+  int __val[2]:uint32; /* bitsize 64, bitpos 0 */
+} fsid_t;
+typedef long int loff_t;
+typedef long unsigned int ino_t;
+typedef long unsigned int dev_t;
+typedef unsigned int gid_t;
+typedef unsigned int mode_t;
+typedef long unsigned int nlink_t;
+typedef unsigned int uid_t;
+typedef long int off_t;
+typedef int pid_t;
+typedef unsigned int id_t;
+typedef long int ssize_t;
+typedef int daddr_t;
+typedef char *caddr_t;
+typedef int key_t;
+typedef long unsigned int ulong;
+typedef short unsigned int ushort;
+typedef unsigned int uint;
+typedef unsigned char u_int8_t;
+typedef short unsigned int u_int16_t;
+typedef unsigned int u_int32_t;
+typedef long unsigned int u_int64_t;
+typedef long int register_t;
+typedef long int blksize_t;
+typedef long int blkcnt_t;
+typedef long unsigned int fsblkcnt_t;
+typedef long unsigned int fsfilcnt_t;
+ /usr/include/x86_64-linux-gnu/bits/types.h:
+typedef unsigned char __u_char;
+typedef short unsigned int __u_short;
+typedef unsigned int __u_int;
+typedef long unsigned int __u_long;
+typedef signed char __int8_t;
+typedef unsigned char __uint8_t;
+typedef short int __int16_t;
+typedef short unsigned int __uint16_t;
+typedef int __int32_t;
+typedef unsigned int __uint32_t;
+typedef long int __int64_t;
+typedef long unsigned int __uint64_t;
+typedef long int __quad_t;
+typedef long unsigned int __u_quad_t;
+typedef long unsigned int __dev_t;
+typedef unsigned int __uid_t;
+typedef unsigned int __gid_t;
+typedef long unsigned int __ino_t;
+typedef long unsigned int __ino64_t;
+typedef unsigned int __mode_t;
+typedef long unsigned int __nlink_t;
+typedef long int __off_t;
+typedef long int __off64_t;
+typedef int __pid_t;
+typedef struct %anon10 __fsid_t;
+typedef long int __clock_t;
+typedef long unsigned int __rlim_t;
+typedef long unsigned int __rlim64_t;
+typedef unsigned int __id_t;
+typedef long int __time_t;
+typedef unsigned int __useconds_t;
+typedef long int __suseconds_t;
+typedef int __daddr_t;
+typedef int __key_t;
+typedef int __clockid_t;
+typedef void *__timer_t;
+typedef long int __blksize_t;
+typedef long int __blkcnt_t;
+typedef long int __blkcnt64_t;
+typedef long unsigned int __fsblkcnt_t;
+typedef long unsigned int __fsblkcnt64_t;
+typedef long unsigned int __fsfilcnt_t;
+typedef long unsigned int __fsfilcnt64_t;
+typedef long int __fsword_t;
+typedef long int __ssize_t;
+typedef long int __syscall_slong_t;
+typedef long unsigned int __syscall_ulong_t;
+typedef __off64_t __loff_t;
+typedef __quad_t *__qaddr_t;
+typedef char *__caddr_t;
+typedef long int __intptr_t;
+typedef unsigned int __socklen_t;
+ /usr/include/time.h:
+typedef __clock_t clock_t;
+typedef __time_t time_t;
+typedef __clockid_t clockid_t;
+typedef __timer_t timer_t;
+struct timespec { /* size 16 id 11 */
+  __time_t tv_sec; /* bitsize 64, bitpos 0 */
+  __syscall_slong_t tv_nsec; /* bitsize 64, bitpos 64 */
+};
+struct tm { /* size 56 id 12 */
+  int tm_sec; /* bitsize 32, bitpos 0 */
+  int tm_min; /* bitsize 32, bitpos 32 */
+  int tm_hour; /* bitsize 32, bitpos 64 */
+  int tm_mday; /* bitsize 32, bitpos 96 */
+  int tm_mon; /* bitsize 32, bitpos 128 */
+  int tm_year; /* bitsize 32, bitpos 160 */
+  int tm_wday; /* bitsize 32, bitpos 192 */
+  int tm_yday; /* bitsize 32, bitpos 224 */
+  int tm_isdst; /* bitsize 32, bitpos 256 */
+  long int tm_gmtoff; /* bitsize 64, bitpos 320 */
+  char *tm_zone; /* bitsize 64, bitpos 384 */
+};
+struct itimerspec { /* size 32 id 13 */
+  struct timespec /* id 11 */ it_interval; /* bitsize 128, bitpos 0 */
+  struct timespec /* id 11 */ it_value; /* bitsize 128, bitpos 128 */
+};
+ /usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h:
+typedef long unsigned int size_t;
+ /usr/include/x86_64-linux-gnu/sys/select.h:
+typedef struct %anon14 { /* size 128 */
+  long unsigned int __val[16]:uint32; /* bitsize 1024, bitpos 0 */
+} sigset_t;
+typedef __suseconds_t suseconds_t;
+typedef long int __fd_mask;
+typedef struct %anon15 { /* size 128 */
+  __fd_mask __fds_bits[16]:uint32; /* bitsize 1024, bitpos 0 */
+} fd_set;
+typedef __fd_mask fd_mask;
+ /usr/include/x86_64-linux-gnu/bits/sigset.h:
+typedef int __sig_atomic_t;
+typedef struct %anon14 __sigset_t;
+ /usr/include/x86_64-linux-gnu/bits/time.h:
+struct timeval { /* size 16 id 16 */
+  __time_t tv_sec; /* bitsize 64, bitpos 0 */
+  __suseconds_t tv_usec; /* bitsize 64, bitpos 64 */
+};
+ /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
+typedef long unsigned int pthread_t;
+union pthread_attr_t { /* size 56 id 17 */
+  char __size[56]:uint32; /* bitsize 448, bitpos 0 */
+  long int __align; /* bitsize 64, bitpos 0 */
+};
+typedef union pthread_attr_t /* id 17 */ pthread_attr_t;
+struct __pthread_internal_list { /* size 16 id 18 */
+  struct __pthread_internal_list /* id 18 */ *__prev; /* bitsize 64, bitpos 0 */
+  struct __pthread_internal_list /* id 18 */ *__next; /* bitsize 64, bitpos 64 */
+};
+typedef struct __pthread_internal_list /* id 18 */ __pthread_list_t;
+struct __pthread_mutex_s { /* size 40 id 4 */
+  int __lock; /* bitsize 32, bitpos 0 */
+  unsigned int __count; /* bitsize 32, bitpos 32 */
+  int __owner; /* bitsize 32, bitpos 64 */
+  unsigned int __nusers; /* bitsize 32, bitpos 96 */
+  int __kind; /* bitsize 32, bitpos 128 */
+  short int __spins; /* bitsize 16, bitpos 160 */
+  short int __elision; /* bitsize 16, bitpos 176 */
+  __pthread_list_t __list; /* bitsize 128, bitpos 192 */
+};
+typedef union %anon3 pthread_mutex_t;
+typedef union %anon19 { /* size 4 */
+  char __size[4]:uint32; /* bitsize 32, bitpos 0 */
+  int __align; /* bitsize 32, bitpos 0 */
+} pthread_mutexattr_t;
+typedef union %anon1 pthread_cond_t;
+typedef union %anon19 { /* size 4 */
+  char __size[4]:uint32; /* bitsize 32, bitpos 0 */
+  int __align; /* bitsize 32, bitpos 0 */
+} pthread_condattr_t;
+typedef unsigned int pthread_key_t;
+typedef int pthread_once_t;
+typedef union %anon20 { /* size 56 */
+  struct %anon21 { /* size 56 */
+    int __lock; /* bitsize 32, bitpos 0 */
+    unsigned int __nr_readers; /* bitsize 32, bitpos 32 */
+    unsigned int __readers_wakeup; /* bitsize 32, bitpos 64 */
+    unsigned int __writer_wakeup; /* bitsize 32, bitpos 96 */
+    unsigned int __nr_readers_queued; /* bitsize 32, bitpos 128 */
+    unsigned int __nr_writers_queued; /* bitsize 32, bitpos 160 */
+    int __writer; /* bitsize 32, bitpos 192 */
+    int __shared; /* bitsize 32, bitpos 224 */
+    long unsigned int __pad1; /* bitsize 64, bitpos 256 */
+    long unsigned int __pad2; /* bitsize 64, bitpos 320 */
+    unsigned int __flags; /* bitsize 32, bitpos 384 */
+  } __data; /* bitsize 448, bitpos 0 */
+  char __size[56]:uint32; /* bitsize 448, bitpos 0 */
+  long int __align; /* bitsize 64, bitpos 0 */
+} pthread_rwlock_t;
+typedef union %anon22 { /* size 8 */
+  char __size[8]:uint32; /* bitsize 64, bitpos 0 */
+  long int __align; /* bitsize 64, bitpos 0 */
+} pthread_rwlockattr_t;
+typedef int pthread_spinlock_t;
+typedef union %anon23 { /* size 32 */
+  char __size[32]:uint32; /* bitsize 256, bitpos 0 */
+  long int __align; /* bitsize 64, bitpos 0 */
+} pthread_barrier_t;
+typedef union %anon19 { /* size 4 */
+  char __size[4]:uint32; /* bitsize 32, bitpos 0 */
+  int __align; /* bitsize 32, bitpos 0 */
+} pthread_barrierattr_t;
+ /usr/include/stdio.h:
+typedef struct _IO_FILE /* id 24 */ FILE;
+typedef struct _IO_FILE /* id 24 */ __FILE;
+typedef struct __va_list_tag /* id 0 */ va_list[1]:uint32;
+typedef struct %anon25 { /* size 16 */
+  __off_t __pos; /* bitsize 64, bitpos 0 */
+  struct %anon26 { /* size 8 */
+    int __count; /* bitsize 32, bitpos 0 */
+    union %anon27 { /* size 4 */
+      unsigned int __wch; /* bitsize 32, bitpos 0 */
+      char __wchb[4]:uint32; /* bitsize 32, bitpos 0 */
+    } __value; /* bitsize 32, bitpos 32 */
+  } __state; /* bitsize 64, bitpos 64 */
+} fpos_t;
+ /usr/include/libio.h:
+typedef void _IO_lock_t;
+struct _IO_marker { /* size 24 id 28 */
+  struct _IO_marker /* id 28 */ *_next; /* bitsize 64, bitpos 0 */
+  struct _IO_FILE /* id 24 */ *_sbuf; /* bitsize 64, bitpos 64 */
+  int _pos; /* bitsize 32, bitpos 128 */
+};
+enum __codecvt_result { __codecvt_ok, __codecvt_partial, __codecvt_error, __codecvt_noconv };
+struct _IO_FILE { /* size 216 id 24 */
+  int _flags; /* bitsize 32, bitpos 0 */
+  char *_IO_read_ptr; /* bitsize 64, bitpos 64 */
+  char *_IO_read_end; /* bitsize 64, bitpos 128 */
+  char *_IO_read_base; /* bitsize 64, bitpos 192 */
+  char *_IO_write_base; /* bitsize 64, bitpos 256 */
+  char *_IO_write_ptr; /* bitsize 64, bitpos 320 */
+  char *_IO_write_end; /* bitsize 64, bitpos 384 */
+  char *_IO_buf_base; /* bitsize 64, bitpos 448 */
+  char *_IO_buf_end; /* bitsize 64, bitpos 512 */
+  char *_IO_save_base; /* bitsize 64, bitpos 576 */
+  char *_IO_backup_base; /* bitsize 64, bitpos 640 */
+  char *_IO_save_end; /* bitsize 64, bitpos 704 */
+  struct _IO_marker /* id 28 */ *_markers; /* bitsize 64, bitpos 768 */
+  struct _IO_FILE /* id 24 */ *_chain; /* bitsize 64, bitpos 832 */
+  int _fileno; /* bitsize 32, bitpos 896 */
+  int _flags2; /* bitsize 32, bitpos 928 */
+  __off_t _old_offset; /* bitsize 64, bitpos 960 */
+  short unsigned int _cur_column; /* bitsize 16, bitpos 1024 */
+  signed char _vtable_offset; /* bitsize 8, bitpos 1040 */
+  char _shortbuf[1]:uint32; /* bitsize 8, bitpos 1048 */
+  _IO_lock_t *_lock; /* bitsize 64, bitpos 1088 */
+  __off64_t _offset; /* bitsize 64, bitpos 1152 */
+  void *__pad1; /* bitsize 64, bitpos 1216 */
+  void *__pad2; /* bitsize 64, bitpos 1280 */
+  void *__pad3; /* bitsize 64, bitpos 1344 */
+  void *__pad4; /* bitsize 64, bitpos 1408 */
+  size_t __pad5; /* bitsize 64, bitpos 1472 */
+  int _mode; /* bitsize 32, bitpos 1536 */
+  char _unused2[20]:uint32; /* bitsize 160, bitpos 1568 */
+};
+typedef struct _IO_FILE /* id 24 */ _IO_FILE;
+typedef __ssize_t (__io_read_fn) (/* unknown */);
+typedef __ssize_t (__io_write_fn) (/* unknown */);
+typedef int (__io_seek_fn) (/* unknown */);
+typedef int (__io_close_fn) (/* unknown */);
+ /usr/include/_G_config.h:
+typedef struct %anon25 _G_fpos_t;
+typedef struct %anon25 { /* size 16 */
+  __off64_t __pos; /* bitsize 64, bitpos 0 */
+  struct %anon26 __state; /* bitsize 64, bitpos 64 */
+} _G_fpos64_t;
+ /usr/include/wchar.h:
+typedef struct %anon26 __mbstate_t;
+ /usr/lib/gcc/x86_64-linux-gnu/4.8/include/stdarg.h:
+typedef struct __va_list_tag /* id 0 */ __gnuc_va_list[1]:uint32;
+ //home/axel/workspace/projects/linux_drivers_rsc/rxmc1553_board_driver/Condor_Engineering/MIL-STD-1553/bt1553/Include/busapi.h:
+typedef unsigned int BT_U32BIT;
+typedef short unsigned int BT_U16BIT;
+typedef unsigned char BT_U8BIT;
+typedef unsigned int BT_UINT;
+typedef int BT_INT;
+typedef long unsigned int BT_U64BIT;
+typedef void BT_VOID;
+struct data_convert { /* size 52 id 29 */
+  BT_U16BIT wDatatype; /* bitsize 16, bitpos 0 */
+  BT_U16BIT wDecimals; /* bitsize 16, bitpos 16 */
+  float fFactor; /* bitsize 32, bitpos 32 */
+  BT_U16BIT wFactortype; /* bitsize 16, bitpos 64 */
+  float fOffset; /* bitsize 32, bitpos 80 */
+  BT_U16BIT wTranslateItems; /* bitsize 16, bitpos 112 */
+  BT_U16BIT *uiTranslateRaw; /* bitsize 64, bitpos 128 */
+  float *fTranslateDis; /* bitsize 64, bitpos 192 */
+  void *value; /* bitsize 64, bitpos 256 */
+  BT_INT status; /* bitsize 32, bitpos 320 */
+  char *string; /* bitsize 64, bitpos 352 */
+};
+typedef struct data_convert /* id 29 */ DATA_CONVERT;
+struct devicelist { /* size 4228 id 30 */
+  BT_INT num_devices; /* bitsize 32, bitpos 0 */
+  BT_UINT device_name[16]:uint32; /* bitsize 512, bitpos 32 */
+  BT_INT device_num[16]:uint32; /* bitsize 512, bitpos 544 */
+  char name[16][256]:uint32:uint32; /* bitsize 32768, bitpos 1056 */
+};
+typedef struct devicelist /* id 30 */ DeviceList;
+struct bt1553_command { /* size 2 id 31 */
+  BT_U16BIT wcount; /* bitsize 5, bitpos 0 */
+  BT_U16BIT subaddr; /* bitsize 5, bitpos 5 */
+  BT_U16BIT tran_rec; /* bitsize 1, bitpos 10 */
+  BT_U16BIT rtaddr; /* bitsize 5, bitpos 11 */
+};
+typedef struct bt1553_command /* id 31 */ BT1553_COMMAND;
+struct bt1553_status { /* size 2 id 32 */
+  BT_U16BIT tf; /* bitsize 1, bitpos 0 */
+  BT_U16BIT dba; /* bitsize 1, bitpos 1 */
+  BT_U16BIT sf; /* bitsize 1, bitpos 2 */
+  BT_U16BIT busy; /* bitsize 1, bitpos 3 */
+  BT_U16BIT bcr; /* bitsize 1, bitpos 4 */
+  BT_U16BIT res; /* bitsize 3, bitpos 5 */
+  BT_U16BIT sr; /* bitsize 1, bitpos 8 */
+  BT_U16BIT inst; /* bitsize 1, bitpos 9 */
+  BT_U16BIT me; /* bitsize 1, bitpos 10 */
+  BT_U16BIT rtaddr; /* bitsize 5, bitpos 11 */
+};
+typedef struct bt1553_status /* id 32 */ BT1553_STATUS;
+struct bt1553_hw_bmresponse { /* size 2 id 33 */
+  BT_U16BIT time; /* bitsize 6, bitpos 0 */
+  BT_U16BIT unused; /* bitsize 10, bitpos 6 */
+};
+typedef struct bt1553_hw_bmresponse /* id 33 */ BT1553_HW_BMRESPONSE;
+struct bt1553_v5time { /* size 6 id 34 */
+  BT_U32BIT microseconds; /* bitsize 32, bitpos 0 */
+  BT_U16BIT topuseconds; /* bitsize 16, bitpos 32 */
+};
+typedef struct bt1553_v5time /* id 34 */ BT1553_V5TIME;
+struct bt1553_time { /* size 8 id 35 */
+  BT_U32BIT microseconds; /* bitsize 32, bitpos 0 */
+  BT_U32BIT topuseconds; /* bitsize 32, bitpos 32 */
+};
+typedef struct bt1553_time /* id 35 */ BT1553_TIME;
+struct bt1553_time64 { /* size 8 id 36 */
+  BT_U32BIT nanoseconds; /* bitsize 32, bitpos 0 */
+  BT_U32BIT topnseconds; /* bitsize 32, bitpos 32 */
+};
+typedef struct bt1553_time64 /* id 36 */ BT1553_TIME64;
+struct device_info { /* size 32 id 37 */
+  int busType; /* bitsize 32, bitpos 0 */
+  int nchan; /* bitsize 32, bitpos 32 */
+  int irig; /* bitsize 32, bitpos 64 */
+  int mode; /* bitsize 32, bitpos 96 */
+  int memSections; /* bitsize 32, bitpos 128 */
+  unsigned int VendorID; /* bitsize 32, bitpos 160 */
+  unsigned int DeviceID; /* bitsize 32, bitpos 192 */
+  unsigned int CSCReg; /* bitsize 32, bitpos 224 */
+};
+typedef struct device_info /* id 37 */ DEVICE_INFO;
+struct channel_status { /* size 4 id 38 */
+  BT_U32BIT mf_ovfl; /* bitsize 1, bitpos 0 */
+  BT_U32BIT wcs_pulse; /* bitsize 1, bitpos 1 */
+  BT_U32BIT interr; /* bitsize 1, bitpos 2 */
+  BT_U32BIT addr_err; /* bitsize 1, bitpos 3 */
+  BT_U32BIT byte_cnt_err; /* bitsize 1, bitpos 4 */
+  BT_U32BIT err_reserve; /* bitsize 3, bitpos 5 */
+  BT_U32BIT bc_run; /* bitsize 1, bitpos 8 */
+  BT_U32BIT rt_run; /* bitsize 1, bitpos 9 */
+  BT_U32BIT bm_run; /* bitsize 1, bitpos 10 */
+  BT_U32BIT reserve_run; /* bitsize 1, bitpos 11 */
+  BT_U32BIT int_mode; /* bitsize 4, bitpos 12 */
+  BT_U32BIT mc_17; /* bitsize 1, bitpos 16 */
+  BT_U32BIT run_mode; /* bitsize 1, bitpos 17 */
+  BT_U32BIT extbus; /* bitsize 1, bitpos 18 */
+  BT_U32BIT coupling; /* bitsize 1, bitpos 19 */
+  BT_U32BIT SA_31; /* bitsize 1, bitpos 20 */
+  BT_U32BIT broadcast; /* bitsize 1, bitpos 21 */
+  BT_U32BIT irig_on; /* bitsize 1, bitpos 22 */
+  BT_U32BIT int_fifo_count; /* bitsize 6, bitpos 23 */
+  BT_U32BIT err_info; /* bitsize 3, bitpos 29 */
+};
+typedef struct channel_status /* id 38 */ API_CHANNEL_STATUS;
+struct api_bc_mbuf { /* size 206 id 39 */
+  BT_U16BIT messno; /* bitsize 16, bitpos 0 */
+  BT_U16BIT control; /* bitsize 16, bitpos 16 */
+  BT_U16BIT messno_next; /* bitsize 16, bitpos 32 */
+  BT_U16BIT messno_prev; /* bitsize 16, bitpos 48 */
+  BT1553_COMMAND mess_command1; /* bitsize 16, bitpos 64 */
+  BT1553_COMMAND mess_command2; /* bitsize 16, bitpos 80 */
+  BT_U16BIT errorid; /* bitsize 16, bitpos 96 */
+  BT_U16BIT gap_time; /* bitsize 16, bitpos 112 */
+  BT1553_STATUS mess_status1; /* bitsize 16, bitpos 128 */
+  BT1553_STATUS mess_status2; /* bitsize 16, bitpos 144 */
+  BT_U32BIT status; /* bitsize 32, bitpos 160 */
+  BT_U16BIT data[2][34]:uint32:uint32; /* bitsize 1088, bitpos 192 */
+  BT_U32BIT data_value; /* bitsize 32, bitpos 1280 */
+  BT_U32BIT data_mask; /* bitsize 32, bitpos 1312 */
+  BT_U16BIT address; /* bitsize 16, bitpos 1344 */
+  BT_U16BIT messno_branch; /* bitsize 16, bitpos 1360 */
+  BT_U16BIT messno_compare; /* bitsize 16, bitpos 1376 */
+  BT_U16BIT start_frame; /* bitsize 16, bitpos 1392 */
+  BT_U32BIT test_address; /* bitsize 32, bitpos 1408 */
+  BT_U32BIT cond_count_val; /* bitsize 32, bitpos 1440 */
+  BT_U32BIT cond_counter; /* bitsize 32, bitpos 1472 */
+  BT_U16BIT data_buf_num1; /* bitsize 16, bitpos 1504 */
+  BT_U16BIT data_buf_num2; /* bitsize 16, bitpos 1520 */
+  BT1553_TIME time_tag; /* bitsize 64, bitpos 1536 */
+  BT_U16BIT rep_rate; /* bitsize 16, bitpos 1600 */
+  BT_U32BIT long_gap; /* bitsize 32, bitpos 1616 */
+};
+typedef struct api_bc_mbuf /* id 39 */ API_BC_MBUF;
+union mode { /* size 4 id 40 */
+  BT_U32BIT wcount; /* bitsize 32, bitpos 0 */
+  BT_U32BIT modecode; /* bitsize 32, bitpos 0 */
+};
+struct api_bm_cbuf { /* size 6 id 41 */
+  union mode /* id 40 */ t; /* bitsize 32, bitpos 0 */
+  BT_U16BIT pass_count; /* bitsize 16, bitpos 32 */
+};
+typedef struct api_bm_cbuf /* id 41 */ API_BM_CBUF;
+struct bt1553_bmresponse { /* size 1 id 42 */
+  unsigned char time; /* bitsize 8, bitpos 0 */
+};
+typedef struct bt1553_bmresponse /* id 42 */ BT1553_BMRESPONSE;
+struct api_bm_mbuf { /* size 162 id 43 */
+  BT_U32BIT messno; /* bitsize 32, bitpos 0 */
+  BT_U32BIT int_status; /* bitsize 32, bitpos 32 */
+  BT1553_TIME time; /* bitsize 64, bitpos 64 */
+  BT1553_COMMAND command1; /* bitsize 16, bitpos 128 */
+  BT_U16BIT status_c1; /* bitsize 16, bitpos 144 */
+  BT1553_COMMAND command2; /* bitsize 16, bitpos 160 */
+  BT_U16BIT status_c2; /* bitsize 16, bitpos 176 */
+  BT1553_BMRESPONSE response1; /* bitsize 8, bitpos 192 */
+  BT1553_BMRESPONSE response2; /* bitsize 8, bitpos 200 */
+  BT1553_STATUS status1; /* bitsize 16, bitpos 208 */
+  BT_U16BIT status_s1; /* bitsize 16, bitpos 224 */
+  BT1553_STATUS status2; /* bitsize 16, bitpos 240 */
+  BT_U16BIT status_s2; /* bitsize 16, bitpos 256 */
+  BT_U16BIT value[32]:uint32; /* bitsize 512, bitpos 272 */
+  BT_U16BIT status[32]:uint32; /* bitsize 512, bitpos 784 */
+};
+typedef struct api_bm_mbuf /* id 43 */ API_BM_MBUF;
+struct api_bm_tbuf { /* size 90 id 44 */
+  BT_U16BIT trig_ext; /* bitsize 16, bitpos 0 */
+  BT_U16BIT trig_err; /* bitsize 16, bitpos 16 */
+  BT_U16BIT trig_ext_output; /* bitsize 16, bitpos 32 */
+  BT_U16BIT control1; /* bitsize 16, bitpos 48 */
+  BT_U16BIT control2; /* bitsize 16, bitpos 64 */
+  (struct %anon45 { /* size 10 */
+    BT_U16BIT type; /* bitsize 16, bitpos 0 */
+    BT_U16BIT mask; /* bitsize 16, bitpos 16 */
+    BT_U16BIT value; /* bitsize 16, bitpos 32 */
+    BT_U16BIT word; /* bitsize 16, bitpos 48 */
+    BT_U16BIT count; /* bitsize 16, bitpos 64 */
+  }) capture[4]:uint32; /* bitsize 320, bitpos 80 */
+  (struct %anon45 { /* size 10 */
+    BT_U16BIT type; /* bitsize 16, bitpos 0 */
+    BT_U16BIT mask; /* bitsize 16, bitpos 16 */
+    BT_U16BIT value; /* bitsize 16, bitpos 32 */
+    BT_U16BIT word; /* bitsize 16, bitpos 48 */
+    BT_U16BIT count; /* bitsize 16, bitpos 64 */
+  }) stop[4]:uint32; /* bitsize 320, bitpos 400 */
+};
+typedef struct api_bm_tbuf /* id 44 */ API_BM_TBUF;
+struct bt1553_intmode { /* size 2 id 46 */
+  BT_U16BIT iack; /* bitsize 1, bitpos 0 */
+  BT_U16BIT timer; /* bitsize 1, bitpos 1 */
+  BT_U16BIT rt; /* bitsize 1, bitpos 2 */
+  BT_U16BIT bm; /* bitsize 1, bitpos 3 */
+  BT_U16BIT bc; /* bitsize 1, bitpos 4 */
+  BT_U16BIT bmtrig; /* bitsize 1, bitpos 5 */
+  BT_U16BIT ext_trig; /* bitsize 1, bitpos 6 */
+  BT_U16BIT bm_swap; /* bitsize 1, bitpos 7 */
+  BT_U16BIT bc_ctl; /* bitsize 1, bitpos 8 */
+  BT_U16BIT unused; /* bitsize 7, bitpos 9 */
+};
+typedef struct bt1553_intmode /* id 46 */ BT1553_INTMODE;
+struct iq_mblock_v6 { /* size 8 id 47 */
+  BT_U32BIT mode; /* bitsize 32, bitpos 0 */
+  BT_U32BIT msg_ptr; /* bitsize 32, bitpos 32 */
+};
+typedef struct iq_mblock_v6 /* id 47 */ IQ_MBLOCK_V6;
+struct iq_mblock { /* size 6 id 48 */
+  union %anon49 { /* size 2 */
+    BT_U16BIT modeword; /* bitsize 16, bitpos 0 */
+    BT1553_INTMODE mode; /* bitsize 16, bitpos 0 */
+  } t; /* bitsize 16, bitpos 0 */
+  BT_U16BIT msg_ptr; /* bitsize 16, bitpos 16 */
+  BT_U16BIT nxt_int; /* bitsize 16, bitpos 32 */
+};
+typedef struct iq_mblock /* id 48 */ IQ_MBLOCK;
+struct api_eibuf { /* size 68 id 50 */
+  BT_U16BIT buftype; /* bitsize 16, bitpos 0 */
+  (struct %anon51 { /* size 2 */
+    BT_U8BIT etype; /* bitsize 8, bitpos 0 */
+    BT_U8BIT edata; /* bitsize 8, bitpos 8 */
+  }) error[33]:uint32; /* bitsize 528, bitpos 16 */
+};
+typedef struct api_eibuf /* id 50 */ API_EIBUF;
+struct api_enh_eibuf { /* size 200 id 52 */
+  BT_U16BIT buftype; /* bitsize 16, bitpos 0 */
+  (struct %anon53 { /* size 6 */
+    BT_U8BIT etype; /* bitsize 8, bitpos 0 */
+    BT_UINT edata; /* bitsize 32, bitpos 16 */
+  }) error[33]:uint32; /* bitsize 1584, bitpos 16 */
+};
+typedef struct api_enh_eibuf /* id 52 */ API_ENH_EIBUF;
+struct api_rt_abuf { /* size 12 id 54 */
+  BT_U16BIT enable_a; /* bitsize 16, bitpos 0 */
+  BT_U16BIT enable_b; /* bitsize 16, bitpos 16 */
+  BT_U16BIT inhibit_term_flag; /* bitsize 16, bitpos 32 */
+  BT_U16BIT status; /* bitsize 16, bitpos 48 */
+  BT_U16BIT command; /* bitsize 16, bitpos 64 */
+  BT_U16BIT bit_word; /* bitsize 16, bitpos 80 */
+};
+typedef struct api_rt_abuf /* id 54 */ API_RT_ABUF;
+struct api_rt_cbuf { /* size 4 id 55 */
+  BT_U32BIT legal_wordcount; /* bitsize 32, bitpos 0 */
+};
+typedef struct api_rt_cbuf /* id 55 */ API_RT_CBUF;
+struct api_rt_cbufbroad { /* size 128 id 56 */
+  BT_U32BIT legal_wordcount[31]:uint32; /* bitsize 992, bitpos 0 */
+  BT_U32BIT mbuf_count; /* bitsize 32, bitpos 992 */
+};
+typedef struct api_rt_cbufbroad /* id 56 */ API_RT_CBUFBROAD;
+struct api_rt_mbuf_read { /* size 88 id 57 */
+  BT_U32BIT status; /* bitsize 32, bitpos 0 */
+  BT_U32BIT reserved; /* bitsize 32, bitpos 32 */
+  BT1553_TIME time; /* bitsize 64, bitpos 64 */
+  BT1553_COMMAND mess_command; /* bitsize 16, bitpos 128 */
+  BT1553_STATUS mess_status; /* bitsize 16, bitpos 144 */
+  BT_U16BIT mess_data[32]:uint32; /* bitsize 512, bitpos 160 */
+  BT_U32BIT spare; /* bitsize 32, bitpos 672 */
+};
+typedef struct api_rt_mbuf_read /* id 57 */ API_RT_MBUF_READ;
+struct api_rt_mbuf_write { /* size 72 id 58 */
+  BT_U32BIT enable; /* bitsize 32, bitpos 0 */
+  BT_U32BIT error_inj_id; /* bitsize 32, bitpos 32 */
+  BT_U16BIT mess_data[32]:uint32; /* bitsize 512, bitpos 64 */
+};
+typedef struct api_rt_mbuf_write /* id 58 */ API_RT_MBUF_WRITE;
+struct api_playback_status { /* size 14 id 59 */
+  BT_U32BIT tailPointer; /* bitsize 32, bitpos 0 */
+  BT_U16BIT playbackStatus; /* bitsize 16, bitpos 32 */
+  BT_INT playbackError; /* bitsize 32, bitpos 48 */
+  BT_U32BIT recordsProcessed; /* bitsize 32, bitpos 80 */
+};
+typedef struct api_playback_status /* id 59 */ API_PLAYBACK_STATUS;
+struct api_playback { /* size 560 id 60 */
+  BT1553_TIME timeStart; /* bitsize 64, bitpos 0 */
+  BT1553_TIME timeStop; /* bitsize 64, bitpos 64 */
+  BT_U32BIT messageStart; /* bitsize 32, bitpos 128 */
+  BT_U32BIT messageStop; /* bitsize 32, bitpos 160 */
+  BT_INT filterFlag; /* bitsize 32, bitpos 192 */
+  BT_U32BIT activeRT; /* bitsize 32, bitpos 224 */
+  BT_INT Subadress31Flag; /* bitsize 32, bitpos 256 */
+  BT_INT Rt31Flag; /* bitsize 32, bitpos 288 */
+  API_PLAYBACK_STATUS *status; /* bitsize 64, bitpos 320 */
+  char fileName[512]:uint32; /* bitsize 4096, bitpos 384 */
+};
+typedef struct api_playback /* id 60 */ API_PLAYBACK;
+struct BT_FIFO { /* size 32 id 9 */
+  BT_INT event_type; /* bitsize 32, bitpos 0 */
+  BT_INT buffer_off; /* bitsize 32, bitpos 32 */
+  BT_INT rtaddress; /* bitsize 32, bitpos 64 */
+  BT_INT transrec; /* bitsize 32, bitpos 96 */
+  BT_INT subaddress; /* bitsize 32, bitpos 128 */
+  BT_INT wordcount; /* bitsize 32, bitpos 160 */
+  BT_INT bufferID; /* bitsize 32, bitpos 192 */
+  BT_UINT reserved; /* bitsize 32, bitpos 224 */
+};
+struct api_int_fifo { /* size 24896 id 8 */
+  BT_INT (*function) (/* unknown */); /* bitsize 64, bitpos 0 */
+  int iPriority; /* bitsize 32, bitpos 64 */
+  long unsigned int dwMilliseconds; /* bitsize 64, bitpos 96 */
+  BT_INT iNotification; /* bitsize 32, bitpos 160 */
+  int nUser[8]:uint32; /* bitsize 256, bitpos 192 */
+  void *pUser[8]:uint32; /* bitsize 512, bitpos 448 */
+  BT_UINT FilterType; /* bitsize 32, bitpos 960 */
+  BT_UINT FilterMask[32][2][32]:uint32:uint32:uint32; /* bitsize 65536, bitpos 992 */
+  int bForceShutdown; /* bitsize 32, bitpos 66528 */
+  int bForceStartup; /* bitsize 32, bitpos 66560 */
+  int nPtrIndex; /* bitsize 32, bitpos 66592 */
+  BT_UINT cardnum; /* bitsize 32, bitpos 66624 */
+  BT_UINT numEvents; /* bitsize 32, bitpos 66656 */
+  BT_UINT queue_oflow; /* bitsize 32, bitpos 66688 */
+  pthread_t hThread; /* bitsize 64, bitpos 66720 */
+  pthread_cond_t hEvent; /* bitsize 384, bitpos 66784 */
+  pthread_cond_t hkEvent; /* bitsize 384, bitpos 67168 */
+  long unsigned int lThreadId; /* bitsize 64, bitpos 67552 */
+  BT_INT head_index; /* bitsize 32, bitpos 67616 */
+  BT_INT tail_index; /* bitsize 32, bitpos 67648 */
+  BT_INT mask_index; /* bitsize 32, bitpos 67680 */
+  struct BT_FIFO /* id 9 */ fifo[256]:uint32; /* bitsize 65536, bitpos 67712 */
+  BT_U32BIT EventMask[32][2][32]:uint32:uint32:uint32; /* bitsize 65536, bitpos 133248 */
+  BT_U32BIT EventInit; /* bitsize 32, bitpos 198784 */
+  pthread_mutex_t mutex; /* bitsize 320, bitpos 198816 */
+  BT_UINT timeout; /* bitsize 32, bitpos 199136 */
+};
+typedef struct api_int_fifo /* id 8 */ API_INT_FIFO;
+ //home/axel/workspace/projects/linux_drivers_rsc/rxmc1553_board_driver/Condor_Engineering/MIL-STD-1553/bt1553/Include/cei_types.h:
+typedef char CEI_CHAR;
+typedef unsigned char CEI_UCHAR;
+typedef short int CEI_INT16;
+typedef short unsigned int CEI_UINT16;
+typedef void CEI_VOID;
+typedef int CEI_INT32;
+typedef unsigned int CEI_UINT32;
+typedef long int CEI_INT64;
+typedef long unsigned int CEI_UINT64;
+typedef CEI_INT64 *pCEI_INT64;
+typedef CEI_INT64 *PCEI_INT64;
+typedef CEI_UINT64 *pCEI_UINT64;
+typedef CEI_UINT64 *PCEI_UINT64;
+typedef CEI_CHAR *pCEI_CHAR;
+typedef CEI_CHAR *PCEI_CHAR;
+typedef CEI_UCHAR *pCEI_UCHAR;
+typedef CEI_UCHAR *PCEI_UCHAR;
+typedef CEI_INT16 *pCEI_INT16;
+typedef CEI_INT16 *PCEI_INT16;
+typedef CEI_UINT16 *pCEI_UINT16;
+typedef CEI_UINT16 *PCEI_UINT16;
+typedef CEI_INT32 *pCEI_INT32;
+typedef CEI_INT32 *PCEI_INT32;
+typedef CEI_UINT32 *pCEI_UINT32;
+typedef CEI_UINT32 *PCEI_UINT32;
+typedef CEI_VOID *pCEI_VOID;
+typedef CEI_VOID *PCEI_VOID;
+typedef int CEI_NATIVE_INT;
+typedef unsigned int CEI_NATIVE_UINT;
+typedef long int CEI_NATIVE_LONG;
+typedef long unsigned int CEI_NATIVE_ULONG;
+typedef CEI_NATIVE_INT CEI_INT;
+typedef CEI_NATIVE_UINT CEI_UINT;
+typedef CEI_NATIVE_LONG CEI_LONG;
+typedef CEI_NATIVE_ULONG CEI_ULONG;
+ //home/axel/workspace/projects/linux_drivers_rsc/rxmc1553_board_driver/Condor_Engineering/MIL-STD-1553/bt1553/Include/target_defines.h:
+typedef short unsigned int WORD;
+typedef long unsigned int DWORD;
+typedef int HWND;
+typedef char *LPSTR;
+typedef int *LPINT;
+typedef WORD *LPWORD;
+typedef long int *LPLONG;
+typedef DWORD *LPDWORD;
+typedef void *LPVOID;
+typedef unsigned int UINT;
+ /usr/include/unistd.h:
+typedef __useconds_t useconds_t;
+typedef __socklen_t socklen_t;
+ /usr/include/x86_64-linux-gnu/bits/confname.h:
+ /usr/include/string.h:
+ /usr/include/xlocale.h:
+struct __locale_struct { /* size 232 id 61 */
+  struct __locale_data /* id 0 */ *__locales[13]:uint32; /* bitsize 832, bitpos 0 */
+  short unsigned int *__ctype_b; /* bitsize 64, bitpos 832 */
+  int *__ctype_tolower; /* bitsize 64, bitpos 896 */
+  int *__ctype_toupper; /* bitsize 64, bitpos 960 */
+  char *__names[13]:uint32; /* bitsize 832, bitpos 1024 */
+};
+typedef struct __locale_struct /* id 61 */ *__locale_t;
+typedef __locale_t locale_t;
+ /usr/include/x86_64-linux-gnu/sys/timeb.h:
+struct timeb { /* size 16 id 62 */
+  time_t time; /* bitsize 64, bitpos 0 */
+  short unsigned int millitm; /* bitsize 16, bitpos 64 */
+  short int timezone; /* bitsize 16, bitpos 80 */
+  short int dstflag; /* bitsize 16, bitpos 96 */
+};
+ /usr/include/pthread.h:
+struct _pthread_cleanup_buffer { /* size 32 id 63 */
+  void (*__routine) (/* unknown */); /* bitsize 64, bitpos 0 */
+  void *__arg; /* bitsize 64, bitpos 64 */
+  int __canceltype; /* bitsize 32, bitpos 128 */
+  struct _pthread_cleanup_buffer /* id 63 */ *__prev; /* bitsize 64, bitpos 192 */
+};
+typedef struct %anon64 { /* size 104 */
+  (struct %anon65 { /* size 72 */
+    long int __cancel_jmp_buf[8]:uint32; /* bitsize 512, bitpos 0 */
+    int __mask_was_saved; /* bitsize 32, bitpos 512 */
+  }) __cancel_jmp_buf[1]:uint32; /* bitsize 576, bitpos 0 */
+  void *__pad[4]:uint32; /* bitsize 256, bitpos 576 */
+} __pthread_unwind_buf_t;
+struct __pthread_cleanup_frame { /* size 24 id 66 */
+  void (*__cancel_routine) (/* unknown */); /* bitsize 64, bitpos 0 */
+  void *__cancel_arg; /* bitsize 64, bitpos 64 */
+  int __do_it; /* bitsize 32, bitpos 128 */
+  int __cancel_type; /* bitsize 32, bitpos 160 */
+};
+ /usr/include/sched.h:
+ /usr/include/x86_64-linux-gnu/bits/sched.h:
+struct sched_param { /* size 4 id 67 */
+  int __sched_priority; /* bitsize 32, bitpos 0 */
+};
+struct __sched_param { /* size 4 id 68 */
+  int __sched_priority; /* bitsize 32, bitpos 0 */
+};
+typedef long unsigned int __cpu_mask;
+typedef struct %anon69 { /* size 128 */
+  __cpu_mask __bits[16]:uint32; /* bitsize 1024, bitpos 0 */
+} cpu_set_t;
+ /usr/include/x86_64-linux-gnu/bits/setjmp.h:
+typedef long int __jmp_buf[8]:uint32;
+ prc_control.h:
+ /usr/include/semaphore.h:
+ /usr/include/x86_64-linux-gnu/bits/semaphore.h:
+typedef union %anon23 { /* size 32 */
+  char __size[32]:uint32; /* bitsize 256, bitpos 0 */
+  long int __align; /* bitsize 64, bitpos 0 */
+} sem_t;
+ lbm_bs.h:
+typedef uint64_t QWORD;
+typedef uint32_t LWORD;
+typedef uint16_t SWORD;
+typedef uint8_t BYTE;
+typedef int64_t Q_INT;
+typedef int16_t S_INT;
+typedef short unsigned int ushort_t;
+ dbf_dv.h:
+typedef struct %anon70 { /* size 16488 */
+  BYTE *RCV; /* bitsize 64, bitpos 0 */
+  BYTE *OUT; /* bitsize 64, bitpos 64 */
+  BYTE BUF_1[8192]:uint32; /* bitsize 65536, bitpos 128 */
+  BYTE BUF_2[8192]:uint32; /* bitsize 65536, bitpos 65664 */
+  BYTE DTL; /* bitsize 8, bitpos 131200 */
+  BYTE RVS; /* bitsize 8, bitpos 131208 */
+  FILE *OF; /* bitsize 64, bitpos 131264 */
+  pthread_mutex_t mu; /* bitsize 320, bitpos 131328 */
+  LWORD tm; /* bitsize 32, bitpos 131648 */
+  LWORD rx; /* bitsize 32, bitpos 131680 */
+  LWORD err; /* bitsize 32, bitpos 131712 */
+  LWORD lost; /* bitsize 32, bitpos 131744 */
+  LWORD lock_err; /* bitsize 32, bitpos 131776 */
+  LWORD unlock_err; /* bitsize 32, bitpos 131808 */
+  LWORD trylock_err; /* bitsize 32, bitpos 131840 */
+} DBF_TXT;
+typedef struct %anon71 { /* size 16584 */
+  BYTE *RCV; /* bitsize 64, bitpos 0 */
+  BYTE *OUT; /* bitsize 64, bitpos 64 */
+  BYTE BUF_1[8192]:uint32; /* bitsize 65536, bitpos 128 */
+  BYTE BUF_2[8192]:uint32; /* bitsize 65536, bitpos 65664 */
+  BYTE DTL; /* bitsize 8, bitpos 131200 */
+  BYTE RVS; /* bitsize 8, bitpos 131208 */
+  pthread_mutex_t mu; /* bitsize 320, bitpos 131264 */
+  LWORD tm; /* bitsize 32, bitpos 131584 */
+  LWORD rx; /* bitsize 32, bitpos 131616 */
+  LWORD sum_p; /* bitsize 32, bitpos 131648 */
+  LWORD lost_p; /* bitsize 32, bitpos 131680 */
+  LWORD sum_b; /* bitsize 32, bitpos 131712 */
+  LWORD lost_b; /* bitsize 32, bitpos 131744 */
+  LWORD sum_fb; /* bitsize 32, bitpos 131776 */
+  LWORD lock_err; /* bitsize 32, bitpos 131808 */
+  LWORD unlock_err; /* bitsize 32, bitpos 131840 */
+  LWORD trylock_err; /* bitsize 32, bitpos 131872 */
+  DBF_TXT *dbT; /* bitsize 64, bitpos 131904 */
+  int fD; /* bitsize 32, bitpos 131968 */
+  char *fN; /* bitsize 64, bitpos 132032 */
+  char fNS[64]:uint32; /* bitsize 512, bitpos 132096 */
+  LWORD wr_err; /* bitsize 32, bitpos 132608 */
+  int wr_err_code; /* bitsize 32, bitpos 132640 */
+} DBF_BIN;
+1553_error_protection.c:
+typedef int32 int;
+typedef int8 char;
+typedef uint32 long int;
+typedef uint32 unsigned int;
+typedef uint32 long unsigned int;
+typedef uint32 __int128;
+typedef uint32 __int128 unsigned;
+typedef uint32 long long int;
+typedef uint64 long long unsigned int;
+typedef int16 short int;
+typedef uint16 short unsigned int;
+typedef int8 signed char;
+typedef uint8 unsigned char;
+typedef float float;
+typedef double double;
+typedef float128 long double;
+typedef float _Decimal32;
+typedef double _Decimal64;
+typedef float128 _Decimal128;
+typedef void void;
+int check_bus_repeating_entry (LWORD bus_number /* 0xffffffec */, int dev /* 0xffffffe8 */, LWORD channel /* 0xffffffe4 */)
+{ /* 0x4019da */
+  { /* 0x4019da */
+    int i /* 0xfffffffc */;
+    /* file 1553_error_protection.c line 5 addr 0x4019da */
+    /* file 1553_error_protection.c line 7 addr 0x4019eb */
+    /* file 1553_error_protection.c line 8 addr 0x4019f7 */
+    /* file 1553_error_protection.c line 9 addr 0x401a10 */
+    /* file 1553_error_protection.c line 10 addr 0x401a26 */
+    /* file 1553_error_protection.c line 11 addr 0x401a3a */
+    /* file 1553_error_protection.c line 12 addr 0x401a49 */
+    /* file 1553_error_protection.c line 14 addr 0x401a50 */
+    /* file 1553_error_protection.c line 14 addr 0x401a66 */
+    /* file 1553_error_protection.c line 15 addr 0x401a7c */
+    /* file 1553_error_protection.c line 16 addr 0x401a93 */
+    /* file 1553_error_protection.c line 17 addr 0x401a9d */
+    /* file 1553_error_protection.c line 7 addr 0x401aa4 */
+    /* file 1553_error_protection.c line 7 addr 0x401aa8 */
+    /* file 1553_error_protection.c line 19 addr 0x401ab2 */
+    /* file 1553_error_protection.c line 20 addr 0x401ab7 */
+  } /* 0x401ab9 */
+} /* 0x401ab9 */
+int check_tr_entry (int transaction_index /* 0xfffffffc */)
+{ /* 0x401ab9 */
+  /* file 1553_error_protection.c line 24 addr 0x401ab9 */
+  /* file 1553_error_protection.c line 24 addr 0x401ac4 */
+  /* file 1553_error_protection.c line 24 addr 0x401ad2 */
+  /* file 1553_error_protection.c line 25 addr 0x401ad8 */
+  /* file 1553_error_protection.c line 27 addr 0x401aec */
+  /* file 1553_error_protection.c line 28 addr 0x401af6 */
+  /* file 1553_error_protection.c line 30 addr 0x401afd */
+  /* file 1553_error_protection.c line 31 addr 0x401b02 */
+} /* 0x401b04 */
+int check_bus_PK (int transaction_index /* 0xfffffffc */, int transaction_direction /* 0xfffffff8 */)
+{ /* 0x401b04 */
+  /* file 1553_error_protection.c line 35 addr 0x401b04 */
+  /* file 1553_error_protection.c line 35 addr 0x401b12 */
+  /* file 1553_error_protection.c line 36 addr 0x401b33 */
+  /* file 1553_error_protection.c line 37 addr 0x401b47 */
+  /* file 1553_error_protection.c line 38 addr 0x401b51 */
+  /* file 1553_error_protection.c line 39 addr 0x401b81 */
+  /* file 1553_error_protection.c line 42 addr 0x401b8b */
+  /* file 1553_error_protection.c line 43 addr 0x401b95 */
+  /* file 1553_error_protection.c line 44 addr 0x401b9f */
+  /* file 1553_error_protection.c line 45 addr 0x401bcf */
+  /* file 1553_error_protection.c line 48 addr 0x401bd9 */
+  /* file 1553_error_protection.c line 49 addr 0x401bf5 */
+  /* file 1553_error_protection.c line 48 addr 0x401bf8 */
+  /* file 1553_error_protection.c line 50 addr 0x401bfc */
+  /* file 1553_error_protection.c line 51 addr 0x401c0b */
+  /* file 1553_error_protection.c line 52 addr 0x401c15 */
+  /* file 1553_error_protection.c line 54 addr 0x401c1c */
+  /* file 1553_error_protection.c line 55 addr 0x401c21 */
+} /* 0x401c23 */
+pthread_cond_t thread_flag_cv /* 0x608260 */;
+pthread_mutex_t thread_flag_mutex /* 0x6082e0 */;
+int thread_flag /* 0x608258 */;
+LWORD stop_cmd /* 0x6081b0 */;
+1553_transaction_control.c:
+typedef int32 int;
+typedef int8 char;
+typedef uint32 long int;
+typedef uint32 unsigned int;
+typedef uint32 long unsigned int;
+typedef uint32 __int128;
+typedef uint32 __int128 unsigned;
+typedef uint32 long long int;
+typedef uint64 long long unsigned int;
+typedef int16 short int;
+typedef uint16 short unsigned int;
+typedef int8 signed char;
+typedef uint8 unsigned char;
+typedef float float;
+typedef double double;
+typedef float128 long double;
+typedef float _Decimal32;
+typedef double _Decimal64;
+typedef float128 _Decimal128;
+typedef void void;
+int standart_transaction_initialization (int bus_number /* 0xffffffec */, int remote_terminal /* 0xffffffe8 */, int sub_address /* 0xffffffe4 */, int word_count /* 0xffffffe0 */, int transaction_direction /* 0xffffffdc */)
+{ /* 0x401c23 */
+  { /* 0x401c23 */
+    BUS_PACKAGE *PK /* 0xfffffff8 */;
+    int transaction_index /* 0xfffffff0 */;
+    int status /* 0xfffffff4 */;
+    /* file 1553_transaction_control.c line 10 addr 0x401c23 */
+    /* file 1553_transaction_control.c line 15 addr 0x401c3b */
+    /* file 1553_transaction_control.c line 16 addr 0x401c46 */
+    /* file 1553_transaction_control.c line 17 addr 0x401c55 */
+    /* file 1553_transaction_control.c line 18 addr 0x401c5f */
+    /* file 1553_transaction_control.c line 20 addr 0x401c69 */
+    /* file 1553_transaction_control.c line 24 addr 0x401c85 */
+    /* file 1553_transaction_control.c line 25 addr 0x401c99 */
+    /* file 1553_transaction_control.c line 26 addr 0x401c9f */
+    /* file 1553_transaction_control.c line 27 addr 0x401ca9 */
+    /* file 1553_transaction_control.c line 29 addr 0x401cb3 */
+    /* file 1553_transaction_control.c line 30 addr 0x401cca */
+    /* file 1553_transaction_control.c line 31 addr 0x401cd0 */
+    /* file 1553_transaction_control.c line 32 addr 0x401cda */
+    /* file 1553_transaction_control.c line 34 addr 0x401ce4 */
+    /* file 1553_transaction_control.c line 35 addr 0x401cf0 */
+    /* file 1553_transaction_control.c line 36 addr 0x401cf6 */
+    /* file 1553_transaction_control.c line 37 addr 0x401d00 */
+    /* file 1553_transaction_control.c line 39 addr 0x401d0a */
+    /* file 1553_transaction_control.c line 40 addr 0x401d16 */
+    /* file 1553_transaction_control.c line 41 addr 0x401d1c */
+    /* file 1553_transaction_control.c line 42 addr 0x401d26 */
+    /* file 1553_transaction_control.c line 45 addr 0x401d30 */
+    /* file 1553_transaction_control.c line 46 addr 0x401d3a */
+    /* file 1553_transaction_control.c line 47 addr 0x401d44 */
+    /* file 1553_transaction_control.c line 48 addr 0x401d83 */
+    /* file 1553_transaction_control.c line 49 addr 0x401d9a */
+    /* file 1553_transaction_control.c line 50 addr 0x401db7 */
+    /* file 1553_transaction_control.c line 51 addr 0x401dcb */
+    /* file 1553_transaction_control.c line 52 addr 0x401ddf */
+    /* file 1553_transaction_control.c line 53 addr 0x401df3 */
+    /* file 1553_transaction_control.c line 54 addr 0x401e07 */
+    /* file 1553_transaction_control.c line 55 addr 0x401e2b */
+    /* file 1553_transaction_control.c line 56 addr 0x401e46 */
+    /* file 1553_transaction_control.c line 57 addr 0x401e5e */
+    /* file 1553_transaction_control.c line 60 addr 0x401e68 */
+    /* file 1553_transaction_control.c line 61 addr 0x401e6b */
+  } /* 0x401e6d */
+} /* 0x401e6d */
+int buffer_transmit (int transaction_index /* 0xffffff7c */, SWORD *DATA_BUFFER /* 0xffffff70 */, SWORD buffer_size /* 0xffffff78 */)
+{ /* 0x401e6d */
+  { /* 0x401e6d */
+    LWORD transaction_direction /* 0xffffffa4 */;
+    LWORD last_sub_address /* 0xffffffa0 */;
+    LWORD word_count /* 0xffffff90 */;
+    LWORD sub_address /* 0xffffff8c */;
+    LWORD remote_terminal /* 0xffffff9c */;
+    LWORD card_number /* 0xffffff98 */;
+    BUS_PACKAGE *PK /* 0xffffffa8 */;
+    API_RT_MBUF_WRITE MBF /* 0xffffffb0 */;
+    int i_max /* 0xffffff88 */;
+    int i /* 0xffffff84 */;
+    int cp /* 0xffffff80 */;
+    int status /* 0xffffff94 */;
+    /* file 1553_transaction_control.c line 66 addr 0x401e6d */
+    /* file 1553_transaction_control.c line 77 addr 0x401e8e */
+    /* file 1553_transaction_control.c line 79 addr 0x401e95 */
+    /* file 1553_transaction_control.c line 80 addr 0x401ea5 */
+    /* file 1553_transaction_control.c line 81 addr 0x401eab */
+    /* file 1553_transaction_control.c line 82 addr 0x401eba */
+    /* file 1553_transaction_control.c line 83 addr 0x401ec4 */
+    /* file 1553_transaction_control.c line 85 addr 0x401ece */
+    /* file 1553_transaction_control.c line 86 addr 0x401ee3 */
+    /* file 1553_transaction_control.c line 87 addr 0x401ee9 */
+    /* file 1553_transaction_control.c line 89 addr 0x401f00 */
+    /* file 1553_transaction_control.c line 90 addr 0x401f0a */
+    /* file 1553_transaction_control.c line 93 addr 0x401f14 */
+    /* file 1553_transaction_control.c line 94 addr 0x401f35 */
+    /* file 1553_transaction_control.c line 95 addr 0x401f3f */
+    /* file 1553_transaction_control.c line 96 addr 0x401f49 */
+    /* file 1553_transaction_control.c line 97 addr 0x401f53 */
+    /* file 1553_transaction_control.c line 98 addr 0x401f5d */
+    /* file 1553_transaction_control.c line 99 addr 0x401f67 */
+    /* file 1553_transaction_control.c line 102 addr 0x401f71 */
+    /* file 1553_transaction_control.c line 103 addr 0x401f83 */
+    /* file 1553_transaction_control.c line 105 addr 0x401f9a */
+    /* file 1553_transaction_control.c line 106 addr 0x401fa4 */
+    /* file 1553_transaction_control.c line 108 addr 0x401fc3 */
+    /* file 1553_transaction_control.c line 111 addr 0x401fcd */
+    /* file 1553_transaction_control.c line 112 addr 0x401fd4 */
+    /* file 1553_transaction_control.c line 114 addr 0x401fdb */
+    /* file 1553_transaction_control.c line 115 addr 0x401fe0 */
+    /* file 1553_transaction_control.c line 116 addr 0x401fe6 */
+    /* file 1553_transaction_control.c line 117 addr 0x401fed */
+    /* file 1553_transaction_control.c line 119 addr 0x401ff3 */
+    /* file 1553_transaction_control.c line 120 addr 0x401ff9 */
+    /* file 1553_transaction_control.c line 122 addr 0x402000 */
+    /* file 1553_transaction_control.c line 124 addr 0x402009 */
+    /* file 1553_transaction_control.c line 125 addr 0x40202d */
+    /* file 1553_transaction_control.c line 126 addr 0x402051 */
+    /* file 1553_transaction_control.c line 122 addr 0x402055 */
+    /* file 1553_transaction_control.c line 122 addr 0x402059 */
+    /* file 1553_transaction_control.c line 129 addr 0x402061 */
+    /* file 1553_transaction_control.c line 134 addr 0x402084 */
+    /* file 1553_transaction_control.c line 135 addr 0x40208a */
+    /* file 1553_transaction_control.c line 136 addr 0x402099 */
+    /* file 1553_transaction_control.c line 137 addr 0x4020a3 */
+    /* file 1553_transaction_control.c line 139 addr 0x4020aa */
+    /* file 1553_transaction_control.c line 140 addr 0x4020ae */
+    /* file 1553_transaction_control.c line 141 addr 0x4020ba */
+    /* file 1553_transaction_control.c line 114 addr 0x4020bc */
+    /* file 1553_transaction_control.c line 144 addr 0x4020c6 */
+    /* file 1553_transaction_control.c line 145 addr 0x4020cb */
+  } /* 0x4020cd */
+} /* 0x4020cd */
+int buffer_receive (int transaction_index /* 0xffffff5c */, SWORD *DATA_BUFFER /* 0xffffff50 */, SWORD buffer_size /* 0xffffff58 */)
+{ /* 0x4020cd */
+  { /* 0x4020cd */
+    LWORD transaction_direction /* 0xffffff90 */;
+    LWORD last_sub_address /* 0xffffff8c */;
+    LWORD word_count /* 0xffffff88 */;
+    LWORD slots_number /* 0xffffff94 */;
+    LWORD sub_address /* 0xffffff84 */;
+    LWORD remote_terminal /* 0xffffff80 */;
+    LWORD card_number /* 0xffffff7c */;
+    BUS_PACKAGE *PK /* 0xffffff98 */;
+    API_RT_MBUF_READ MBR /* 0xffffffa0 */;
+    int i /* 0xffffff74 */;
+    int nw /* 0xffffff70 */;
+    int cp /* 0xffffff6c */;
+    int sx /* 0xffffff68 */;
+    int status /* 0xffffff78 */;
+    /* file 1553_transaction_control.c line 149 addr 0x4020cd */
+    /* file 1553_transaction_control.c line 151 addr 0x4020ee */
+    /* file 1553_transaction_control.c line 152 addr 0x4020f8 */
+    /* file 1553_transaction_control.c line 162 addr 0x402102 */
+    /* file 1553_transaction_control.c line 163 addr 0x402115 */
+    /* file 1553_transaction_control.c line 164 addr 0x40211e */
+    /* file 1553_transaction_control.c line 165 addr 0x402128 */
+    /* file 1553_transaction_control.c line 166 addr 0x402137 */
+    /* file 1553_transaction_control.c line 169 addr 0x402141 */
+    /* file 1553_transaction_control.c line 170 addr 0x402159 */
+    /* file 1553_transaction_control.c line 171 addr 0x402162 */
+    /* file 1553_transaction_control.c line 173 addr 0x402179 */
+    /* file 1553_transaction_control.c line 174 addr 0x402183 */
+    /* file 1553_transaction_control.c line 177 addr 0x40218d */
+    /* file 1553_transaction_control.c line 178 addr 0x4021ae */
+    /* file 1553_transaction_control.c line 179 addr 0x4021bb */
+    /* file 1553_transaction_control.c line 180 addr 0x4021c5 */
+    /* file 1553_transaction_control.c line 181 addr 0x4021cf */
+    /* file 1553_transaction_control.c line 182 addr 0x4021d9 */
+    /* file 1553_transaction_control.c line 183 addr 0x4021e3 */
+    /* file 1553_transaction_control.c line 184 addr 0x4021ed */
+    /* file 1553_transaction_control.c line 186 addr 0x4021f7 */
+    /* file 1553_transaction_control.c line 187 addr 0x40220f */
+    /* file 1553_transaction_control.c line 188 addr 0x402226 */
+    /* file 1553_transaction_control.c line 190 addr 0x402230 */
+    /* file 1553_transaction_control.c line 189 addr 0x402237 */
+    /* file 1553_transaction_control.c line 191 addr 0x402255 */
+    /* file 1553_transaction_control.c line 194 addr 0x40225f */
+    /* file 1553_transaction_control.c line 195 addr 0x402269 */
+    /* file 1553_transaction_control.c line 196 addr 0x402273 */
+    /* file 1553_transaction_control.c line 199 addr 0x40227d */
+    /* file 1553_transaction_control.c line 202 addr 0x402282 */
+    /* file 1553_transaction_control.c line 203 addr 0x40228c */
+    /* file 1553_transaction_control.c line 205 addr 0x4022b8 */
+    /* file 1553_transaction_control.c line 208 addr 0x4022c2 */
+    /* file 1553_transaction_control.c line 213 addr 0x4022f8 */
+    /* file 1553_transaction_control.c line 214 addr 0x402301 */
+    /* file 1553_transaction_control.c line 215 addr 0x402310 */
+    /* file 1553_transaction_control.c line 216 addr 0x40231a */
+    /* file 1553_transaction_control.c line 218 addr 0x402337 */
+    /* file 1553_transaction_control.c line 220 addr 0x402341 */
+    /* file 1553_transaction_control.c line 222 addr 0x402351 */
+    /* file 1553_transaction_control.c line 223 addr 0x40235a */
+    /* file 1553_transaction_control.c line 226 addr 0x402364 */
+    /* file 1553_transaction_control.c line 227 addr 0x40236e */
+    /* file 1553_transaction_control.c line 228 addr 0x402385 */
+    /* file 1553_transaction_control.c line 232 addr 0x40238f */
+    /* file 1553_transaction_control.c line 233 addr 0x40239b */
+    /* file 1553_transaction_control.c line 232 addr 0x4023d7 */
+    /* file 1553_transaction_control.c line 232 addr 0x4023de */
+    /* file 1553_transaction_control.c line 235 addr 0x4023ec */
+    /* file 1553_transaction_control.c line 236 addr 0x402420 */
+    /* file 1553_transaction_control.c line 237 addr 0x40242c */
+    /* file 1553_transaction_control.c line 239 addr 0x402433 */
+    /* file 1553_transaction_control.c line 240 addr 0x40243c */
+    /* file 1553_transaction_control.c line 199 addr 0x40243e */
+    /* file 1553_transaction_control.c line 244 addr 0x40244d */
+    /* file 1553_transaction_control.c line 245 addr 0x402457 */
+    /* file 1553_transaction_control.c line 246 addr 0x402461 */
+    /* file 1553_transaction_control.c line 249 addr 0x40246b */
+    /* file 1553_transaction_control.c line 250 addr 0x402471 */
+  } /* 0x402473 */
+} /* 0x402473 */
+int Bus_PK_Init (int bus_number /* 0xffffffec */, int remote_terminal /* 0xffffffe8 */, int sub_address /* 0xffffffe4 */, int word_count /* 0xffffffe0 */, int transaction_direction /* 0xffffffdc */)
+{ /* 0x402473 */
+  { /* 0x402473 */
+    BUS_PACKAGE *PK /* 0xfffffff8 */;
+    /* file 1553_transaction_control.c line 256 addr 0x402473 */
+    /* file 1553_transaction_control.c line 259 addr 0x402487 */
+    /* file 1553_transaction_control.c line 260 addr 0x4024a8 */
+    /* file 1553_transaction_control.c line 263 addr 0x4024b7 */
+    /* file 1553_transaction_control.c line 264 addr 0x4024c0 */
+    /* file 1553_transaction_control.c line 265 addr 0x4024d3 */
+    /* file 1553_transaction_control.c line 266 addr 0x4024dd */
+    /* file 1553_transaction_control.c line 267 addr 0x4024e7 */
+    /* file 1553_transaction_control.c line 268 addr 0x4024f1 */
+    /* file 1553_transaction_control.c line 269 addr 0x4024fb */
+    /* file 1553_transaction_control.c line 270 addr 0x402509 */
+    /* file 1553_transaction_control.c line 272 addr 0x40251f */
+    /* file 1553_transaction_control.c line 273 addr 0x402532 */
+    /* file 1553_transaction_control.c line 274 addr 0x40254c */
+    /* file 1553_transaction_control.c line 276 addr 0x402557 */
+    /* file 1553_transaction_control.c line 279 addr 0x402562 */
+    /* file 1553_transaction_control.c line 280 addr 0x40256b */
+  } /* 0x40256d */
+} /* 0x40256d */
+int BUS_PK_Conv (BUS_PACKAGE *PK /* 0xfffffff8 */, LWORD *cN /* 0xfffffff0 */, LWORD *RT /* 0xffffffe8 */, LWORD *SA /* 0xffffffe0 */, LWORD *tr /* 0xffffffd8 */, LWORD *SN /* 0xffffffd0 */)
+{ /* 0x40256d */
+  /* file 1553_transaction_control.c line 284 addr 0x40256d */
+  /* file 1553_transaction_control.c line 286 addr 0x40258d */
+  /* file 1553_transaction_control.c line 287 addr 0x402594 */
+  /* file 1553_transaction_control.c line 288 addr 0x40259e */
+  /* file 1553_transaction_control.c line 290 addr 0x4025a5 */
+  /* file 1553_transaction_control.c line 291 addr 0x4025b1 */
+  /* file 1553_transaction_control.c line 292 addr 0x4025bb */
+  /* file 1553_transaction_control.c line 294 addr 0x4025c2 */
+  /* file 1553_transaction_control.c line 295 addr 0x4025cf */
+  /* file 1553_transaction_control.c line 296 addr 0x4025dc */
+  /* file 1553_transaction_control.c line 297 addr 0x4025e9 */
+  /* file 1553_transaction_control.c line 298 addr 0x4025f6 */
+  /* file 1553_transaction_control.c line 300 addr 0x402603 */
+  /* file 1553_transaction_control.c line 301 addr 0x402608 */
+} /* 0x40260a */
+int transaction_index_convert (int transaction_index /* 0xffffffec */, LWORD *cN /* 0xffffffe0 */, LWORD *RT /* 0xffffffd8 */, LWORD *SA /* 0xffffffd0 */, LWORD *tr /* 0xffffffc8 */, LWORD *SN /* 0xffffffc0 */)
+{ /* 0x40260a */
+  { /* 0x40260a */
+    BUS_PACKAGE *PK /* 0xfffffff8 */;
+    int status /* 0xfffffff4 */;
+    /* file 1553_transaction_control.c line 306 addr 0x40260a */
+    /* file 1553_transaction_control.c line 310 addr 0x402629 */
+    /* file 1553_transaction_control.c line 311 addr 0x402636 */
+    /* file 1553_transaction_control.c line 312 addr 0x40263c */
+    /* file 1553_transaction_control.c line 313 addr 0x402646 */
+    /* file 1553_transaction_control.c line 315 addr 0x402650 */
+    /* file 1553_transaction_control.c line 316 addr 0x40266e */
+    /* file 1553_transaction_control.c line 317 addr 0x40267a */
+    /* file 1553_transaction_control.c line 318 addr 0x402684 */
+    /* file 1553_transaction_control.c line 320 addr 0x40268b */
+    /* file 1553_transaction_control.c line 321 addr 0x402698 */
+    /* file 1553_transaction_control.c line 322 addr 0x4026a5 */
+    /* file 1553_transaction_control.c line 323 addr 0x4026b2 */
+    /* file 1553_transaction_control.c line 324 addr 0x4026bf */
+    /* file 1553_transaction_control.c line 326 addr 0x4026cc */
+    /* file 1553_transaction_control.c line 327 addr 0x4026d1 */
+  } /* 0x4026d3 */
+} /* 0x4026d3 */
+int tr_idx_to_BUS_PK_conv (int transaction_index /* 0xffffffec */, BUS_PACKAGE *PK /* 0xffffffe0 */)
+{ /* 0x4026d3 */
+  { /* 0x4026d3 */
+    int status /* 0xfffffff4 */;
+    /* file 1553_transaction_control.c line 331 addr 0x4026d3 */
+    /* file 1553_transaction_control.c line 334 addr 0x4026e2 */
+    /* file 1553_transaction_control.c line 335 addr 0x4026ef */
+    /* file 1553_transaction_control.c line 336 addr 0x4026f5 */
+    /* file 1553_transaction_control.c line 337 addr 0x4026ff */
+    /* file 1553_transaction_control.c line 339 addr 0x402706 */
+    /* file 1553_transaction_control.c line 340 addr 0x402724 */
+    /* file 1553_transaction_control.c line 341 addr 0x402730 */
+    /* file 1553_transaction_control.c line 342 addr 0x40273a */
+    /* file 1553_transaction_control.c line 344 addr 0x402741 */
+    /* file 1553_transaction_control.c line 345 addr 0x402746 */
+  } /* 0x402748 */
+} /* 0x402748 */
+pthread_cond_t thread_flag_cv /* 0x608260 */;
+pthread_mutex_t thread_flag_mutex /* 0x6082e0 */;
+int thread_flag /* 0x608258 */;
+LWORD stop_cmd /* 0x6081b0 */;
+BUS_PACKAGE busPK_heap[50]:uint32 /* 0x608320 */;
+int empty_tr /* 0x6081ac */;
+dbf_t.c:
+typedef int32 int;
+typedef int8 char;
+typedef uint32 long int;
+typedef uint32 unsigned int;
+typedef uint32 long unsigned int;
+typedef uint32 __int128;
+typedef uint32 __int128 unsigned;
+typedef uint32 long long int;
+typedef uint64 long long unsigned int;
+typedef int16 short int;
+typedef uint16 short unsigned int;
+typedef int8 signed char;
+typedef uint8 unsigned char;
+typedef float float;
+typedef double double;
+typedef float128 long double;
+typedef float _Decimal32;
+typedef double _Decimal64;
+typedef float128 _Decimal128;
+typedef void void;
+void TDB_Init (DBF_TXT *dbF /* 0xfffffff8 */)
+{ /* 0x402748 */
+  /* file dbf_t.c line 10 addr 0x402748 */
+  /* file dbf_t.c line 11 addr 0x402754 */
+  /* file dbf_t.c line 12 addr 0x40276b */
+  /* file dbf_t.c line 13 addr 0x402787 */
+  /* file dbf_t.c line 14 addr 0x4027a3 */
+  /* file dbf_t.c line 15 addr 0x4027cd */
+  /* file dbf_t.c line 16 addr 0x4027dc */
+  /* file dbf_t.c line 18 addr 0x402805 */
+  /* file dbf_t.c line 19 addr 0x402817 */
+} /* 0x402819 */
+void TDB_Push (DBF_TXT *dbF /* 0xfffffff8 */)
+{ /* 0x402819 */
+  /* file dbf_t.c line 23 addr 0x402819 */
+  /* file dbf_t.c line 23 addr 0x402825 */
+  /* file dbf_t.c line 23 addr 0x402833 */
+  /* file dbf_t.c line 23 addr 0x40283f */
+} /* 0x402841 */
+void TDB_Try_Switch (DBF_TXT *dbF /* 0xffffffe8 */)
+{ /* 0x402841 */
+  { /* 0x402841 */
+    int RSU /* 0xfffffffc */;
+    int RST /* 0xfffffff8 */;
+    /* file dbf_t.c line 27 addr 0x402841 */
+    /* file dbf_t.c line 28 addr 0x40284d */
+    /* file dbf_t.c line 29 addr 0x402862 */
+    /* file dbf_t.c line 29 addr 0x402868 */
+    /* file dbf_t.c line 31 addr 0x40286d */
+    /* file dbf_t.c line 34 addr 0x402877 */
+    /* file dbf_t.c line 36 addr 0x40288a */
+    /* file dbf_t.c line 37 addr 0x402899 */
+    /* file dbf_t.c line 38 addr 0x4028ab */
+    /* file dbf_t.c line 40 addr 0x4028c8 */
+    /* file dbf_t.c line 41 addr 0x4028d7 */
+    /* file dbf_t.c line 43 addr 0x4028f5 */
+    /* file dbf_t.c line 46 addr 0x402922 */
+    /* file dbf_t.c line 47 addr 0x402937 */
+    /* file dbf_t.c line 47 addr 0x40293d */
+    /* file dbf_t.c line 50 addr 0x402956 */
+    /* file dbf_t.c line 51 addr 0x40296d */
+  } /* 0x40296f */
+} /* 0x40296f */
+void TDB_Show (DBF_TXT *dbF /* 0xffffffc8 */)
+{ /* 0x40296f */
+  { /* 0x40296f */
+    int RS /* 0xffffffe4 */;
+    FILE *OF /* 0xfffffff8 */;
+    BYTE *OUT /* 0xfffffff0 */;
+    (union %anon3 { /* size 40 */
+      struct __pthread_mutex_s /* id 4 */ __data; /* bitsize 320, bitpos 0 */
+      char __size[40]:uint32; /* bitsize 320, bitpos 0 */
+      long int __align; /* bitsize 64, bitpos 0 */
+    }) *pmu /* 0xffffffe8 */;
+    LWORD tm /* 0xffffffe0 */;
+    LWORD nx /* 0xffffffdc */;
+    LWORD ix /* 0xffffffd8 */;
+    /* file dbf_t.c line 55 addr 0x40296f */
+    /* file dbf_t.c line 55 addr 0x40297b */
+    /* file dbf_t.c line 56 addr 0x402996 */
+    /* file dbf_t.c line 57 addr 0x4029a4 */
+    /* file dbf_t.c line 58 addr 0x4029b0 */
+    /* file dbf_t.c line 61 addr 0x4029bf */
+    /* file dbf_t.c line 62 addr 0x4029ce */
+    /* file dbf_t.c line 62 addr 0x4029d4 */
+    /* file dbf_t.c line 64 addr 0x4029f0 */
+    /* file dbf_t.c line 66 addr 0x4029ff */
+    /* file dbf_t.c line 68 addr 0x402a01 */
+    /* file dbf_t.c line 69 addr 0x402a12 */
+    /* file dbf_t.c line 71 addr 0x402a37 */
+    /* file dbf_t.c line 66 addr 0x402a3b */
+    /* file dbf_t.c line 73 addr 0x402a43 */
+    /* file dbf_t.c line 76 addr 0x402a4e */
+    /* file dbf_t.c line 77 addr 0x402a5d */
+    /* file dbf_t.c line 77 addr 0x402a63 */
+    /* file dbf_t.c line 78 addr 0x402a7a */
+  } /* 0x402a7c */
+} /* 0x402a7c */
+void TDB_ShowC (DBF_TXT *dbF /* 0xffffffc8 */)
+{ /* 0x402a7c */
+  { /* 0x402a7c */
+    int RS /* 0xffffffe4 */;
+    FILE *OF /* 0xfffffff8 */;
+    BYTE *OUT /* 0xfffffff0 */;
+    union %anon3 *pmu /* 0xffffffe8 */;
+    LWORD tm /* 0xffffffe0 */;
+    LWORD nx /* 0xffffffdc */;
+    LWORD ix /* 0xffffffd8 */;
+    /* file dbf_t.c line 82 addr 0x402a7c */
+    /* file dbf_t.c line 82 addr 0x402a88 */
+    /* file dbf_t.c line 83 addr 0x402aa3 */
+    /* file dbf_t.c line 84 addr 0x402ab1 */
+    /* file dbf_t.c line 85 addr 0x402abd */
+    /* file dbf_t.c line 88 addr 0x402acc */
+    /* file dbf_t.c line 89 addr 0x402adb */
+    /* file dbf_t.c line 89 addr 0x402ae1 */
+    /* file dbf_t.c line 91 addr 0x402afd */
+    /* file dbf_t.c line 93 addr 0x402b10 */
+    /* file dbf_t.c line 95 addr 0x402b12 */
+    /* file dbf_t.c line 96 addr 0x402b23 */
+    /* file dbf_t.c line 97 addr 0x402b48 */
+    /* file dbf_t.c line 98 addr 0x402b59 */
+    /* file dbf_t.c line 100 addr 0x402b7a */
+    /* file dbf_t.c line 93 addr 0x402b7e */
+    /* file dbf_t.c line 102 addr 0x402b86 */
+    /* file dbf_t.c line 105 addr 0x402b91 */
+    /* file dbf_t.c line 106 addr 0x402ba0 */
+    /* file dbf_t.c line 106 addr 0x402ba6 */
+    /* file dbf_t.c line 107 addr 0x402bbd */
+  } /* 0x402bbf */
+} /* 0x402bbf */
+void TDB_print (DBF_TXT *dbF /* 0xffffff18 */, char *format /* 0xffffff10 */)
+{ /* 0x402bbf */
+  { /* 0x402bbf */
+    int NS /* 0xffffff2c */;
+    char *out /* 0xffffff30 */;
+    __gnuc_va_list val /* 0xffffff38 */;
+    LWORD rx /* 0xffffff28 */;
+    /* file dbf_t.c line 111 addr 0x402bbf */
+    /* file dbf_t.c line 111 addr 0x402bf1 */
+    /* file dbf_t.c line 112 addr 0x402c18 */
+    /* file dbf_t.c line 117 addr 0x402c2b */
+    /* file dbf_t.c line 118 addr 0x402c37 */
+    /* file dbf_t.c line 122 addr 0x402c51 */
+    /* file dbf_t.c line 123 addr 0x402c7e */
+    /* file dbf_t.c line 126 addr 0x402ca4 */
+    /* file dbf_t.c line 120 addr 0x402caf */
+    /* file dbf_t.c line 126 addr 0x402cce */
+    /* file dbf_t.c line 127 addr 0x402cf5 */
+    /* file dbf_t.c line 128 addr 0x402d2f */
+  } /* 0x402d31 */
+} /* 0x402d31 */
+void TDB_puts (DBF_TXT *dbF /* 0xffffffe8 */, char *mess /* 0xffffffe0 */)
+{ /* 0x402d31 */
+  { /* 0x402d31 */
+    char *out /* 0xfffffff8 */;
+    int NS /* 0xfffffff4 */;
+    LWORD rx /* 0xfffffff0 */;
+    /* file dbf_t.c line 132 addr 0x402d31 */
+    /* file dbf_t.c line 133 addr 0x402d41 */
+    /* file dbf_t.c line 137 addr 0x402d4e */
+    /* file dbf_t.c line 138 addr 0x402d57 */
+    /* file dbf_t.c line 142 addr 0x402d68 */
+    /* file dbf_t.c line 143 addr 0x402d85 */
+    /* file dbf_t.c line 140 addr 0x402d8d */
+    /* file dbf_t.c line 143 addr 0x402da6 */
+    /* file dbf_t.c line 144 addr 0x402dc4 */
+    /* file dbf_t.c line 145 addr 0x402df2 */
+  } /* 0x402df4 */
+} /* 0x402df4 */
+void Show_Hex (char *head /* 0xffffffe8 */, SWORD *BUF /* 0xffffffe0 */, SWORD nw /* 0xffffffdc */)
+{ /* 0x402df4 */
+  { /* 0x402df4 */
+    SWORD pct /* 0xfffffffc */;
+    SWORD ll /* 0xfffffffe */;
+    SWORD ln /* 0xfffffffa */;
+    SWORD ix /* 0xfffffff8 */;
+    /* file dbf_t.c line 149 addr 0x402df4 */
+    /* file dbf_t.c line 149 addr 0x402e0a */
+    /* file dbf_t.c line 150 addr 0x402e1e */
+    /* file dbf_t.c line 151 addr 0x402e34 */
+    /* file dbf_t.c line 152 addr 0x402e3c */
+    /* file dbf_t.c line 152 addr 0x402e46 */
+    /* file dbf_t.c line 153 addr 0x402e6c */
+    /* file dbf_t.c line 151 addr 0x402e9d */
+    /* file dbf_t.c line 151 addr 0x402ea8 */
+    /* file dbf_t.c line 154 addr 0x402eb2 */
+    /* file dbf_t.c line 155 addr 0x402ebc */
+  } /* 0x402ebe */
+} /* 0x402ebe */
+void Show_Hex_DB (DBF_TXT *dbF /* 0xffffffe8 */, char *head /* 0xffffffe0 */, SWORD *BUF /* 0xffffffd8 */, SWORD nw /* 0xffffffd4 */)
+{ /* 0x402ebe */
+  { /* 0x402ebe */
+    SWORD pct /* 0xfffffffc */;
+    SWORD ll /* 0xfffffffe */;
+    SWORD ln /* 0xfffffffa */;
+    SWORD ix /* 0xfffffff8 */;
+    /* file dbf_t.c line 159 addr 0x402ebe */
+    /* file dbf_t.c line 159 addr 0x402ed8 */
+    /* file dbf_t.c line 160 addr 0x402eec */
+    /* file dbf_t.c line 161 addr 0x402f06 */
+    /* file dbf_t.c line 162 addr 0x402f0e */
+    /* file dbf_t.c line 162 addr 0x402f18 */
+    /* file dbf_t.c line 163 addr 0x402f43 */
+    /* file dbf_t.c line 161 addr 0x402f79 */
+    /* file dbf_t.c line 161 addr 0x402f84 */
+    /* file dbf_t.c line 164 addr 0x402f8e */
+    /* file dbf_t.c line 165 addr 0x402fa4 */
+  } /* 0x402fa6 */
+} /* 0x402fa6 */
+ /usr/include/stdio.h:
+typedef struct _IO_FILE /* id 24 */ FILE;
+typedef struct _IO_FILE /* id 24 */ __FILE;
+typedef __gnuc_va_list va_list;
+typedef __off_t off_t;
+typedef __ssize_t ssize_t;
+typedef _G_fpos_t fpos_t;
+ /usr/include/wchar.h:
+typedef struct %anon26 { /* size 8 */
+  int __count; /* bitsize 32, bitpos 0 */
+  union %anon27 { /* size 4 */
+    unsigned int __wch; /* bitsize 32, bitpos 0 */
+    char __wchb[4]:uint32; /* bitsize 32, bitpos 0 */
+  } __value; /* bitsize 32, bitpos 32 */
+} __mbstate_t;
+ /usr/include/sched.h:
+typedef __pid_t pid_t;
+ /usr/include/time.h:
+typedef __time_t time_t;
+struct timespec { /* size 16 id 11 */
+  __time_t tv_sec; /* bitsize 64, bitpos 0 */
+  __syscall_slong_t tv_nsec; /* bitsize 64, bitpos 64 */
+};
+typedef __clock_t clock_t;
+typedef __clockid_t clockid_t;
+typedef __timer_t timer_t;
+struct tm { /* size 56 id 12 */
+  int tm_sec; /* bitsize 32, bitpos 0 */
+  int tm_min; /* bitsize 32, bitpos 32 */
+  int tm_hour; /* bitsize 32, bitpos 64 */
+  int tm_mday; /* bitsize 32, bitpos 96 */
+  int tm_mon; /* bitsize 32, bitpos 128 */
+  int tm_year; /* bitsize 32, bitpos 160 */
+  int tm_wday; /* bitsize 32, bitpos 192 */
+  int tm_yday; /* bitsize 32, bitpos 224 */
+  int tm_isdst; /* bitsize 32, bitpos 256 */
+  long int tm_gmtoff; /* bitsize 64, bitpos 320 */
+  char *tm_zone; /* bitsize 64, bitpos 384 */
+};
+struct itimerspec { /* size 32 id 13 */
+  struct timespec /* id 11 */ it_interval; /* bitsize 128, bitpos 0 */
+  struct timespec /* id 11 */ it_value; /* bitsize 128, bitpos 128 */
+};
+ /usr/include/xlocale.h:
+struct __locale_struct { /* size 232 id 61 */
+  struct __locale_data /* id 0 */ *__locales[13]:uint32; /* bitsize 832, bitpos 0 */
+  short unsigned int *__ctype_b; /* bitsize 64, bitpos 832 */
+  int *__ctype_tolower; /* bitsize 64, bitpos 896 */
+  int *__ctype_toupper; /* bitsize 64, bitpos 960 */
+  char *__names[13]:uint32; /* bitsize 832, bitpos 1024 */
+};
+typedef struct __locale_struct /* id 61 */ *__locale_t;
+typedef __locale_t locale_t;
+ /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
+typedef long unsigned int pthread_t;
+union pthread_attr_t { /* size 56 id 17 */
+  char __size[56]:uint32; /* bitsize 448, bitpos 0 */
+  long int __align; /* bitsize 64, bitpos 0 */
+};
+typedef union pthread_attr_t /* id 17 */ pthread_attr_t;
+struct __pthread_internal_list { /* size 16 id 18 */
+  struct __pthread_internal_list /* id 18 */ *__prev; /* bitsize 64, bitpos 0 */
+  struct __pthread_internal_list /* id 18 */ *__next; /* bitsize 64, bitpos 64 */
+};
+typedef struct __pthread_internal_list /* id 18 */ __pthread_list_t;
+struct __pthread_mutex_s { /* size 40 id 4 */
+  int __lock; /* bitsize 32, bitpos 0 */
+  unsigned int __count; /* bitsize 32, bitpos 32 */
+  int __owner; /* bitsize 32, bitpos 64 */
+  unsigned int __nusers; /* bitsize 32, bitpos 96 */
+  int __kind; /* bitsize 32, bitpos 128 */
+  short int __spins; /* bitsize 16, bitpos 160 */
+  short int __elision; /* bitsize 16, bitpos 176 */
+  __pthread_list_t __list; /* bitsize 128, bitpos 192 */
+};
+typedef union %anon3 pthread_mutex_t;
+typedef union %anon19 { /* size 4 */
+  char __size[4]:uint32; /* bitsize 32, bitpos 0 */
+  int __align; /* bitsize 32, bitpos 0 */
+} pthread_mutexattr_t;
+typedef union %anon1 { /* size 48 */
+  struct %anon2 { /* size 48 */
+    int __lock; /* bitsize 32, bitpos 0 */
+    unsigned int __futex; /* bitsize 32, bitpos 32 */
+    long long unsigned int __total_seq; /* bitsize 64, bitpos 64 */
+    long long unsigned int __wakeup_seq; /* bitsize 64, bitpos 128 */
+    long long unsigned int __woken_seq; /* bitsize 64, bitpos 192 */
+    void *__mutex; /* bitsize 64, bitpos 256 */
+    unsigned int __nwaiters; /* bitsize 32, bitpos 320 */
+    unsigned int __broadcast_seq; /* bitsize 32, bitpos 352 */
+  } __data; /* bitsize 384, bitpos 0 */
+  char __size[48]:uint32; /* bitsize 384, bitpos 0 */
+  long long int __align; /* bitsize 64, bitpos 0 */
+} pthread_cond_t;
+typedef union %anon19 { /* size 4 */
+  char __size[4]:uint32; /* bitsize 32, bitpos 0 */
+  int __align; /* bitsize 32, bitpos 0 */
+} pthread_condattr_t;
+typedef unsigned int pthread_key_t;
+typedef int pthread_once_t;
+typedef union %anon20 { /* size 56 */
+  struct %anon21 { /* size 56 */
+    int __lock; /* bitsize 32, bitpos 0 */
+    unsigned int __nr_readers; /* bitsize 32, bitpos 32 */
+    unsigned int __readers_wakeup; /* bitsize 32, bitpos 64 */
+    unsigned int __writer_wakeup; /* bitsize 32, bitpos 96 */
+    unsigned int __nr_readers_queued; /* bitsize 32, bitpos 128 */
+    unsigned int __nr_writers_queued; /* bitsize 32, bitpos 160 */
+    int __writer; /* bitsize 32, bitpos 192 */
+    int __shared; /* bitsize 32, bitpos 224 */
+    long unsigned int __pad1; /* bitsize 64, bitpos 256 */
+    long unsigned int __pad2; /* bitsize 64, bitpos 320 */
+    unsigned int __flags; /* bitsize 32, bitpos 384 */
+  } __data; /* bitsize 448, bitpos 0 */
+  char __size[56]:uint32; /* bitsize 448, bitpos 0 */
+  long int __align; /* bitsize 64, bitpos 0 */
+} pthread_rwlock_t;
+typedef union %anon22 { /* size 8 */
+  char __size[8]:uint32; /* bitsize 64, bitpos 0 */
+  long int __align; /* bitsize 64, bitpos 0 */
+} pthread_rwlockattr_t;
+typedef int pthread_spinlock_t;
+typedef union %anon23 { /* size 32 */
+  char __size[32]:uint32; /* bitsize 256, bitpos 0 */
+  long int __align; /* bitsize 64, bitpos 0 */
+} pthread_barrier_t;
+typedef union %anon19 { /* size 4 */
+  char __size[4]:uint32; /* bitsize 32, bitpos 0 */
+  int __align; /* bitsize 32, bitpos 0 */
+} pthread_barrierattr_t;
+prc_func_task.c:
+typedef int32 int;
+typedef int8 char;
+typedef uint32 long int;
+typedef uint32 unsigned int;
+typedef uint32 long unsigned int;
+typedef uint32 __int128;
+typedef uint32 __int128 unsigned;
+typedef uint32 long long int;
+typedef uint64 long long unsigned int;
+typedef int16 short int;
+typedef uint16 short unsigned int;
+typedef int8 signed char;
+typedef uint8 unsigned char;
+typedef float float;
+typedef double double;
+typedef float128 long double;
+typedef float _Decimal32;
+typedef double _Decimal64;
+typedef float128 _Decimal128;
+typedef void void;
+int func_task_init ()
+{ /* 0x402fa6 */
+  /* file prc_func_task.c line 12 addr 0x402fa6 */
+  /* file prc_func_task.c line 14 addr 0x402faa */
+  /* file prc_func_task.c line 17 addr 0x402fcf */
+  /* file prc_func_task.c line 18 addr 0x402fd9 */
+  /* file prc_func_task.c line 19 addr 0x402fe8 */
+  /* file prc_func_task.c line 20 addr 0x402ff2 */
+  /* file prc_func_task.c line 22 addr 0x403010 */
+  /* file prc_func_task.c line 25 addr 0x40301a */
+  /* file prc_func_task.c line 26 addr 0x403024 */
+  /* file prc_func_task.c line 27 addr 0x40302e */
+  /* file prc_func_task.c line 28 addr 0x403045 */
+  /* file prc_func_task.c line 31 addr 0x40304f */
+  /* file prc_func_task.c line 33 addr 0x403074 */
+  /* file prc_func_task.c line 34 addr 0x40307e */
+  /* file prc_func_task.c line 35 addr 0x40308d */
+  /* file prc_func_task.c line 36 addr 0x403097 */
+  /* file prc_func_task.c line 38 addr 0x4030b5 */
+  /* file prc_func_task.c line 41 addr 0x4030bc */
+  /* file prc_func_task.c line 42 addr 0x4030c6 */
+  /* file prc_func_task.c line 43 addr 0x4030d0 */
+  /* file prc_func_task.c line 44 addr 0x4030e7 */
+  /* file prc_func_task.c line 47 addr 0x4030f1 */
+  /* file prc_func_task.c line 48 addr 0x403105 */
+  /* file prc_func_task.c line 49 addr 0x403119 */
+  /* file prc_func_task.c line 51 addr 0x403122 */
+  /* file prc_func_task.c line 53 addr 0x403136 */
+  /* file prc_func_task.c line 54 addr 0x40313b */
+} /* 0x40313d */
+int func_task_send_data ()
+{ /* 0x40313d */
+  { /* 0x40313d */
+    int i /* 0xfffffff8 */;
+    int status /* 0xfffffffc */;
+    /* file prc_func_task.c line 58 addr 0x40313d */
+    /* file prc_func_task.c line 61 addr 0x403145 */
+    /* file prc_func_task.c line 62 addr 0x40314e */
+    /* file prc_func_task.c line 61 addr 0x403169 */
+    /* file prc_func_task.c line 61 addr 0x40316d */
+    /* file prc_func_task.c line 63 addr 0x403173 */
+    /* file prc_func_task.c line 65 addr 0x40318d */
+    /* file prc_func_task.c line 66 addr 0x403193 */
+    /* file prc_func_task.c line 67 addr 0x40319d */
+    /* file prc_func_task.c line 71 addr 0x4031a4 */
+    /* file prc_func_task.c line 72 addr 0x4031a9 */
+  } /* 0x4031ab */
+} /* 0x4031ab */
+int func_task_get_data (DBF_TXT *DTX /* 0xffffffe8 */)
+{ /* 0x4031ab */
+  { /* 0x4031ab */
+    int i /* 0xfffffff8 */;
+    int status /* 0xfffffffc */;
+    /* file prc_func_task.c line 76 addr 0x4031ab */
+    /* file prc_func_task.c line 77 addr 0x4031b7 */
+    /* file prc_func_task.c line 80 addr 0x4031be */
+    /* file prc_func_task.c line 81 addr 0x4031c8 */
+    /* file prc_func_task.c line 82 addr 0x4031d2 */
+    /* file prc_func_task.c line 85 addr 0x4031dc */
+    /* file prc_func_task.c line 89 addr 0x4031f6 */
+    /* file prc_func_task.c line 90 addr 0x403200 */
+    /* file prc_func_task.c line 91 addr 0x40320a */
+    /* file prc_func_task.c line 94 addr 0x403214 */
+    /* file prc_func_task.c line 95 addr 0x40321a */
+    /* file prc_func_task.c line 96 addr 0x403224 */
+    /* file prc_func_task.c line 98 addr 0x40322b */
+    /* file prc_func_task.c line 98 addr 0x403231 */
+    /* file prc_func_task.c line 99 addr 0x403237 */
+    /* file prc_func_task.c line 100 addr 0x403241 */
+    /* file prc_func_task.c line 102 addr 0x403248 */
+    /* file prc_func_task.c line 103 addr 0x403263 */
+    /* file prc_func_task.c line 104 addr 0x403268 */
+  } /* 0x40326a */
+} /* 0x40326a */
+void *func_task_body (void *arg /* 0xffffffd8 */)
+{ /* 0x40326a */
+  { /* 0x40326a */
+    struct timespec /* id 11 */ TS /* 0xfffffff0 */;
+    int status /* 0xffffffec */;
+    /* file prc_func_task.c line 108 addr 0x40326a */
+    /* file prc_func_task.c line 111 addr 0x403276 */
+    /* file prc_func_task.c line 112 addr 0x40327e */
+    /* file prc_func_task.c line 114 addr 0x403286 */
+    /* file prc_func_task.c line 115 addr 0x40328e */
+    /* file prc_func_task.c line 116 addr 0x403294 */
+    /* file prc_func_task.c line 117 addr 0x4032a3 */
+    /* file prc_func_task.c line 118 addr 0x4032ad */
+    /* file prc_func_task.c line 120 addr 0x4032b2 */
+    /* file prc_func_task.c line 122 addr 0x4032b7 */
+    /* file prc_func_task.c line 124 addr 0x4032bc */
+    /* file prc_func_task.c line 126 addr 0x4032be */
+    /* file prc_func_task.c line 128 addr 0x4032c3 */
+    /* file prc_func_task.c line 129 addr 0x4032cc */
+    /* file prc_func_task.c line 130 addr 0x4032db */
+    /* file prc_func_task.c line 131 addr 0x4032e5 */
+    /* file prc_func_task.c line 133 addr 0x4032ea */
+    /* file prc_func_task.c line 135 addr 0x4032fb */
+    /* file prc_func_task.c line 136 addr 0x403309 */
+    /* file prc_func_task.c line 137 addr 0x403318 */
+    /* file prc_func_task.c line 138 addr 0x403322 */
+    /* file prc_func_task.c line 140 addr 0x403327 */
+    /* file prc_func_task.c line 124 addr 0x403331 */
+    /* file prc_func_task.c line 143 addr 0x40333b */
+  } /* 0x40333d */
+} /* 0x40333d */
+int ft_send_pulse ()
+{ /* 0x40333d */
+  /* file prc_func_task.c line 147 addr 0x40333d */
+  /* file prc_func_task.c line 148 addr 0x403341 */
+  /* file prc_func_task.c line 149 addr 0x40334b */
+  /* file prc_func_task.c line 150 addr 0x403350 */
+} /* 0x403352 */
+int ft_wait_pulse ()
+{ /* 0x403352 */
+  /* file prc_func_task.c line 154 addr 0x403352 */
+  /* file prc_func_task.c line 155 addr 0x403356 */
+  /* file prc_func_task.c line 156 addr 0x403360 */
+  /* file prc_func_task.c line 157 addr 0x403365 */
+} /* 0x403367 */
+pthread_cond_t thread_flag_cv /* 0x608260 */;
+pthread_mutex_t thread_flag_mutex /* 0x6082e0 */;
+int thread_flag /* 0x608258 */;
+unsigned int stop_cmd /* 0x6081b0 */;
+int transmit_idx /* 0x608180 */;
+int receive_idx /* 0x608184 */;
+sem_t ft_semaphore /* 0x608c20 */;
+short unsigned int GET_DATA_BUFFER[64]:uint32 /* 0x608b00 */;
+short unsigned int SEND_DATA_BUFFER[64]:uint32 /* 0x608ba0 */;
+short unsigned int GLOBAL_COUNTER /* 0x608b80 */;
+ /usr/include/endian.h:
+ /usr/include/x86_64-linux-gnu/bits/byteswap.h:
+ /usr/include/x86_64-linux-gnu/sys/types.h:
+typedef __u_char u_char;
+typedef __u_short u_short;
+typedef __u_int u_int;
+typedef __u_long u_long;
+typedef __quad_t quad_t;
+typedef __u_quad_t u_quad_t;
+typedef __fsid_t fsid_t;
+typedef __loff_t loff_t;
+typedef __ino_t ino_t;
+typedef __dev_t dev_t;
+typedef __gid_t gid_t;
+typedef __mode_t mode_t;
+typedef __nlink_t nlink_t;
+typedef __uid_t uid_t;
+typedef __id_t id_t;
+typedef __daddr_t daddr_t;
+typedef __caddr_t caddr_t;
+typedef __key_t key_t;
+typedef long unsigned int ulong;
+typedef short unsigned int ushort;
+typedef unsigned int uint;
+typedef signed char int8_t;
+typedef short int int16_t;
+typedef int int32_t;
+typedef long int int64_t;
+typedef unsigned char u_int8_t;
+typedef short unsigned int u_int16_t;
+typedef unsigned int u_int32_t;
+typedef long unsigned int u_int64_t;
+typedef long int register_t;
+typedef __blksize_t blksize_t;
+typedef __blkcnt_t blkcnt_t;
+typedef __fsblkcnt_t fsblkcnt_t;
+typedef __fsfilcnt_t fsfilcnt_t;
+ /usr/include/unistd.h:
+typedef __useconds_t useconds_t;
+typedef __intptr_t intptr_t;
+typedef __socklen_t socklen_t;
+ /usr/include/x86_64-linux-gnu/sys/timeb.h:
+struct timeb { /* size 16 id 62 */
+  time_t time; /* bitsize 64, bitpos 0 */
+  short unsigned int millitm; /* bitsize 16, bitpos 64 */
+  short int timezone; /* bitsize 16, bitpos 80 */
+  short int dstflag; /* bitsize 16, bitpos 96 */
+};
+ lbm_bs.h:
+typedef long unsigned int QWORD;
+typedef unsigned int LWORD;
+typedef short unsigned int SWORD;
+typedef unsigned char BYTE;
+typedef int64_t Q_INT;
+typedef int16_t S_INT;
+typedef short unsigned int ushort_t;
+ /usr/include/stdint.h:
+typedef unsigned char uint8_t;
+typedef short unsigned int uint16_t;
+typedef unsigned int uint32_t;
+typedef long unsigned int uint64_t;
+typedef signed char int_least8_t;
+typedef short int int_least16_t;
+typedef int int_least32_t;
+typedef long int int_least64_t;
+typedef unsigned char uint_least8_t;
+typedef short unsigned int uint_least16_t;
+typedef unsigned int uint_least32_t;
+typedef long unsigned int uint_least64_t;
+typedef signed char int_fast8_t;
+typedef long int int_fast16_t;
+typedef long int int_fast32_t;
+typedef long int int_fast64_t;
+typedef unsigned char uint_fast8_t;
+typedef long unsigned int uint_fast16_t;
+typedef long unsigned int uint_fast32_t;
+typedef long unsigned int uint_fast64_t;
+typedef long unsigned int uintptr_t;
+typedef long int intmax_t;
+typedef long unsigned int uintmax_t;
+prc_root_task.c:
+typedef int32 int;
+typedef int8 char;
+typedef uint32 long int;
+typedef uint32 unsigned int;
+typedef uint32 long unsigned int;
+typedef uint32 __int128;
+typedef uint32 __int128 unsigned;
+typedef uint32 long long int;
+typedef uint64 long long unsigned int;
+typedef int16 short int;
+typedef uint16 short unsigned int;
+typedef int8 signed char;
+typedef uint8 unsigned char;
+typedef float float;
+typedef double double;
+typedef float128 long double;
+typedef float _Decimal32;
+typedef double _Decimal64;
+typedef float128 _Decimal128;
+typedef void void;
+int main ()
+{ /* 0x403367 */
+  { /* 0x403367 */
+    pthread_t exch_task_id /* 0xffffffe8 */;
+    pthread_t func_task_id /* 0xffffffe0 */;
+    struct timespec /* id 11 */ TS /* 0xfffffff0 */;
+    int status /* 0xffffffdc */;
+    /* file prc_root_task.c line 9 addr 0x403367 */
+    /* file prc_root_task.c line 15 addr 0x40336f */
+    /* file prc_root_task.c line 17 addr 0x403379 */
+    /* file prc_root_task.c line 18 addr 0x403381 */
+    /* file prc_root_task.c line 19 addr 0x403389 */
+    /* file prc_root_task.c line 20 addr 0x403391 */
+    /* file prc_root_task.c line 21 addr 0x403399 */
+    /* file prc_root_task.c line 23 addr 0x4033a3 */
+    /* file prc_root_task.c line 24 addr 0x4033ad */
+    /* file prc_root_task.c line 26 addr 0x4033b7 */
+    /* file prc_root_task.c line 27 addr 0x4033bf */
+    /* file prc_root_task.c line 28 addr 0x4033c5 */
+    /* file prc_root_task.c line 29 addr 0x4033cf */
+    /* file prc_root_task.c line 30 addr 0x4033d9 */
+    /* file prc_root_task.c line 32 addr 0x4033e3 */
+    /* file prc_root_task.c line 33 addr 0x4033eb */
+    /* file prc_root_task.c line 34 addr 0x4033f1 */
+    /* file prc_root_task.c line 35 addr 0x4033fb */
+    /* file prc_root_task.c line 37 addr 0x403405 */
+    /* file prc_root_task.c line 39 addr 0x40340f */
+    /* file prc_root_task.c line 40 addr 0x403419 */
+    /* file prc_root_task.c line 42 addr 0x40342f */
+    /* file prc_root_task.c line 43 addr 0x403439 */
+    /* file prc_root_task.c line 45 addr 0x40344f */
+    /* file prc_root_task.c line 47 addr 0x403451 */
+    /* file prc_root_task.c line 48 addr 0x403462 */
+    /* file prc_root_task.c line 45 addr 0x40346c */
+    /* file prc_root_task.c line 51 addr 0x403476 */
+    /* file prc_root_task.c line 52 addr 0x403480 */
+    /* file prc_root_task.c line 53 addr 0x40348a */
+    /* file prc_root_task.c line 54 addr 0x40348f */
+  } /* 0x403491 */
+} /* 0x403491 */
+void rt_final ()
+{ /* 0x403491 */
+  /* file prc_root_task.c line 58 addr 0x403491 */
+  /* file prc_root_task.c line 59 addr 0x403495 */
+  /* file prc_root_task.c line 60 addr 0x40349f */
+} /* 0x4034a1 */
+void rt_halt ()
+{ /* 0x4034a1 */
+  /* file prc_root_task.c line 64 addr 0x4034a1 */
+  /* file prc_root_task.c line 65 addr 0x4034a5 */
+  /* file prc_root_task.c line 66 addr 0x4034b4 */
+  /* file prc_root_task.c line 67 addr 0x4034be */
+} /* 0x4034c0 */
+pthread_cond_t thread_flag_cv /* 0x608260 */;
+pthread_mutex_t thread_flag_mutex /* 0x6082e0 */;
+int thread_flag /* 0x608258 */;
+LWORD stop_cmd /* 0x6081b0 */;
+DBF_TXT DTX_1 /* 0x608c40 */;
+prc_exch_task.c:
+typedef int32 int;
+typedef int8 char;
+typedef uint32 long int;
+typedef uint32 unsigned int;
+typedef uint32 long unsigned int;
+typedef uint32 __int128;
+typedef uint32 __int128 unsigned;
+typedef uint32 long long int;
+typedef uint64 long long unsigned int;
+typedef int16 short int;
+typedef uint16 short unsigned int;
+typedef int8 signed char;
+typedef uint8 unsigned char;
+typedef float float;
+typedef double double;
+typedef float128 long double;
+typedef float _Decimal32;
+typedef double _Decimal64;
+typedef float128 _Decimal128;
+typedef void void;
+int exchange_task_init ()
+{ /* 0x4034c0 */
+  /* file prc_exch_task.c line 7 addr 0x4034c0 */
+  /* file prc_exch_task.c line 8 addr 0x4034c4 */
+  /* file prc_exch_task.c line 9 addr 0x4034cf */
+  /* file prc_exch_task.c line 10 addr 0x4034da */
+  /* file prc_exch_task.c line 11 addr 0x4034df */
+} /* 0x4034e1 */
+void *exchange_task_body (void *arg /* 0xffffffe8 */)
+{ /* 0x4034e1 */
+  { /* 0x4034e1 */
+    int status /* 0xfffffffc */;
+    /* file prc_exch_task.c line 15 addr 0x4034e1 */
+    /* file prc_exch_task.c line 18 addr 0x4034ed */
+    /* file prc_exch_task.c line 19 addr 0x4034f5 */
+    /* file prc_exch_task.c line 20 addr 0x4034fb */
+    /* file prc_exch_task.c line 21 addr 0x403505 */
+    /* file prc_exch_task.c line 23 addr 0x40350a */
+    /* file prc_exch_task.c line 25 addr 0x40350e */
+    /* file prc_exch_task.c line 26 addr 0x40351d */
+    /* file prc_exch_task.c line 23 addr 0x403522 */
+    /* file prc_exch_task.c line 28 addr 0x40352c */
+  } /* 0x40352e */
+} /* 0x40352e */
+pthread_cond_t thread_flag_cv /* 0x608260 */;
+pthread_mutex_t thread_flag_mutex /* 0x6082e0 */;
+int thread_flag /* 0x608258 */;
+LWORD stop_cmd /* 0x6081b0 */;
+struct timespec /* id 11 */ TS /* 0x60ccb0 */;
+thread_api.c:
+typedef int32 int;
+typedef int8 char;
+typedef uint32 long int;
+typedef uint32 unsigned int;
+typedef uint32 long unsigned int;
+typedef uint32 __int128;
+typedef uint32 __int128 unsigned;
+typedef uint32 long long int;
+typedef uint64 long long unsigned int;
+typedef int16 short int;
+typedef uint16 short unsigned int;
+typedef int8 signed char;
+typedef uint8 unsigned char;
+typedef float float;
+typedef double double;
+typedef float128 long double;
+typedef float _Decimal32;
+typedef double _Decimal64;
+typedef float128 _Decimal128;
+typedef void void;
+int thread_create (void *(*start_routine) (/* unknown */) /* 0xffffffa8 */, int priority /* 0xffffffa4 */, pthread_t *thread_id /* 0xffffff98 */)
+{ /* 0x40352e */
+  { /* 0x40352e */
+    struct sched_param /* id 67 */ SPR /* 0xffffffb0 */;
+    pthread_attr_t attr /* 0xffffffc0 */;
+    int status /* 0xffffffbc */;
+    /* file thread_api.c line 4 addr 0x40352e */
+    /* file thread_api.c line 4 addr 0x403542 */
+    /* file thread_api.c line 5 addr 0x403551 */
+    /* file thread_api.c line 9 addr 0x403558 */
+    /* file thread_api.c line 11 addr 0x403564 */
+    /* file thread_api.c line 12 addr 0x403578 */
+    /* file thread_api.c line 13 addr 0x40357e */
+    /* file thread_api.c line 14 addr 0x40358d */
+    /* file thread_api.c line 15 addr 0x40359c */
+    /* file thread_api.c line 17 addr 0x4035a6 */
+    /* file thread_api.c line 18 addr 0x4035b7 */
+    /* file thread_api.c line 19 addr 0x4035bd */
+    /* file thread_api.c line 20 addr 0x4035cc */
+    /* file thread_api.c line 21 addr 0x4035d6 */
+    /* file thread_api.c line 23 addr 0x4035e0 */
+    /* file thread_api.c line 25 addr 0x4035e6 */
+    /* file thread_api.c line 26 addr 0x4035f9 */
+    /* file thread_api.c line 27 addr 0x4035ff */
+    /* file thread_api.c line 28 addr 0x40360e */
+    /* file thread_api.c line 29 addr 0x40361d */
+    /* file thread_api.c line 31 addr 0x403624 */
+    /* file thread_api.c line 32 addr 0x403640 */
+    /* file thread_api.c line 33 addr 0x403646 */
+    /* file thread_api.c line 34 addr 0x403655 */
+    /* file thread_api.c line 35 addr 0x40365f */
+    /* file thread_api.c line 37 addr 0x403666 */
+    /* file thread_api.c line 38 addr 0x40366b */
+  } /* 0x403686 */
+} /* 0x403686 */
+int thread_flag_initialize ()
+{ /* 0x403686 */
+  /* file thread_api.c line 41 addr 0x403686 */
+  /* file thread_api.c line 42 addr 0x40368a */
+  /* file thread_api.c line 43 addr 0x403699 */
+  /* file thread_api.c line 44 addr 0x4036a8 */
+  /* file thread_api.c line 45 addr 0x4036b2 */
+  /* file thread_api.c line 46 addr 0x4036b7 */
+} /* 0x4036b9 */
+int set_thread_flag (int flag_value /* 0xfffffffc */)
+{ /* 0x4036b9 */
+  /* file thread_api.c line 49 addr 0x4036b9 */
+  /* file thread_api.c line 50 addr 0x4036c4 */
+  /* file thread_api.c line 51 addr 0x4036ce */
+  /* file thread_api.c line 52 addr 0x4036d7 */
+  /* file thread_api.c line 53 addr 0x4036e1 */
+  /* file thread_api.c line 54 addr 0x4036eb */
+} /* 0x4036ed */
+pthread_cond_t thread_flag_cv /* 0x608260 */;
+pthread_mutex_t thread_flag_mutex /* 0x6082e0 */;
+int thread_flag /* 0x608258 */;
+ thread_api.h:
+1553_buffers_operations.c:
+typedef int32 int;
+typedef int8 char;
+typedef uint32 long int;
+typedef uint32 unsigned int;
+typedef uint32 long unsigned int;
+typedef uint32 __int128;
+typedef uint32 __int128 unsigned;
+typedef uint32 long long int;
+typedef uint64 long long unsigned int;
+typedef int16 short int;
+typedef uint16 short unsigned int;
+typedef int8 signed char;
+typedef uint8 unsigned char;
+typedef float float;
+typedef double double;
+typedef float128 long double;
+typedef float _Decimal32;
+typedef double _Decimal64;
+typedef float128 _Decimal128;
+typedef void void;
+int BT_ABUF_Init (LWORD cN /* 0xffffffdc */, LWORD RT /* 0xffffffd8 */)
+{ /* 0x4036ed */
+  { /* 0x4036ed */
+    int status /* 0xffffffec */;
+    API_RT_ABUF ABF /* 0xfffffff0 */;
+    /* file 1553_buffers_operations.c line 5 addr 0x4036ed */
+    /* file 1553_buffers_operations.c line 8 addr 0x4036fb */
+    /* file 1553_buffers_operations.c line 9 addr 0x403701 */
+    /* file 1553_buffers_operations.c line 10 addr 0x403707 */
+    /* file 1553_buffers_operations.c line 11 addr 0x40370d */
+    /* file 1553_buffers_operations.c line 12 addr 0x403713 */
+    /* file 1553_buffers_operations.c line 13 addr 0x403719 */
+    /* file 1553_buffers_operations.c line 15 addr 0x40371f */
+    /* file 1553_buffers_operations.c line 16 addr 0x403735 */
+    /* file 1553_buffers_operations.c line 17 addr 0x40373b */
+    /* file 1553_buffers_operations.c line 18 addr 0x403745 */
+    /* file 1553_buffers_operations.c line 19 addr 0x403759 */
+    /* file 1553_buffers_operations.c line 20 addr 0x40376d */
+    /* file 1553_buffers_operations.c line 22 addr 0x403774 */
+    /* file 1553_buffers_operations.c line 23 addr 0x403779 */
+  } /* 0x40377b */
+} /* 0x40377b */
+int BT_CBUF_Init (BUS_PACKAGE *PK /* 0xffffffc8 */)
+{ /* 0x40377b */
+  { /* 0x40377b */
+    int status /* 0xfffffff4 */;
+    LWORD sx /* 0xfffffffc */;
+    LWORD RSZ /* 0xfffffff8 */;
+    LWORD SN /* 0xfffffff0 */;
+    LWORD tr /* 0xffffffec */;
+    LWORD SA /* 0xffffffe8 */;
+    LWORD RT /* 0xffffffe4 */;
+    LWORD cN /* 0xffffffe0 */;
+    API_RT_CBUF CBF /* 0xffffffd0 */;
+    /* file 1553_buffers_operations.c line 27 addr 0x40377b */
+    /* file 1553_buffers_operations.c line 32 addr 0x403787 */
+    /* file 1553_buffers_operations.c line 33 addr 0x4037b0 */
+    /* file 1553_buffers_operations.c line 34 addr 0x4037ba */
+    /* file 1553_buffers_operations.c line 35 addr 0x4037c0 */
+    /* file 1553_buffers_operations.c line 36 addr 0x4037ca */
+    /* file 1553_buffers_operations.c line 38 addr 0x4037d4 */
+    /* file 1553_buffers_operations.c line 39 addr 0x4037db */
+    /* file 1553_buffers_operations.c line 40 addr 0x4037ef */
+    /* file 1553_buffers_operations.c line 41 addr 0x40381c */
+    /* file 1553_buffers_operations.c line 43 addr 0x403848 */
+    /* file 1553_buffers_operations.c line 44 addr 0x40384e */
+    /* file 1553_buffers_operations.c line 45 addr 0x403858 */
+    /* file 1553_buffers_operations.c line 47 addr 0x40385f */
+    /* file 1553_buffers_operations.c line 48 addr 0x403869 */
+    /* file 1553_buffers_operations.c line 50 addr 0x403870 */
+  } /* 0x403872 */
+} /* 0x403872 */
+int BT_CBUFBroad_InitOne (BUS_PACKAGE *PK /* 0xffffff58 */, LWORD mask /* 0xffffff54 */)
+{ /* 0x403872 */
+  { /* 0x403872 */
+    int i /* 0xffffff78 */;
+    int status /* 0xffffff7c */;
+    LWORD SN /* 0xffffff74 */;
+    LWORD tr /* 0xffffff70 */;
+    LWORD SA /* 0xffffff6c */;
+    LWORD RT /* 0xffffff68 */;
+    LWORD cN /* 0xffffff64 */;
+    API_RT_CBUFBROAD CBF /* 0xffffff80 */;
+    /* file 1553_buffers_operations.c line 54 addr 0x403872 */
+    /* file 1553_buffers_operations.c line 58 addr 0x40388a */
+    /* file 1553_buffers_operations.c line 59 addr 0x4038c8 */
+    /* file 1553_buffers_operations.c line 60 addr 0x4038d1 */
+    /* file 1553_buffers_operations.c line 61 addr 0x4038e0 */
+    /* file 1553_buffers_operations.c line 62 addr 0x4038ea */
+    /* file 1553_buffers_operations.c line 63 addr 0x4038f5 */
+    /* file 1553_buffers_operations.c line 64 addr 0x40390c */
+    /* file 1553_buffers_operations.c line 65 addr 0x403916 */
+    /* file 1553_buffers_operations.c line 66 addr 0x403920 */
+    /* file 1553_buffers_operations.c line 67 addr 0x403937 */
+    /* file 1553_buffers_operations.c line 69 addr 0x403941 */
+    /* file 1553_buffers_operations.c line 71 addr 0x403948 */
+    /* file 1553_buffers_operations.c line 72 addr 0x403954 */
+    /* file 1553_buffers_operations.c line 71 addr 0x403966 */
+    /* file 1553_buffers_operations.c line 71 addr 0x40396d */
+    /* file 1553_buffers_operations.c line 74 addr 0x403976 */
+    /* file 1553_buffers_operations.c line 75 addr 0x4039a2 */
+    /* file 1553_buffers_operations.c line 77 addr 0x4039c5 */
+    /* file 1553_buffers_operations.c line 78 addr 0x4039ce */
+    /* file 1553_buffers_operations.c line 79 addr 0x4039dd */
+    /* file 1553_buffers_operations.c line 80 addr 0x4039e7 */
+    /* file 1553_buffers_operations.c line 82 addr 0x4039ee */
+    /* file 1553_buffers_operations.c line 83 addr 0x4039f3 */
+  } /* 0x4039f5 */
+} /* 0x4039f5 */
+int BT_MBUF_Init_NoQ (BUS_PACKAGE *PK /* 0xffffff88 */)
+{ /* 0x4039f5 */
+  { /* 0x4039f5 */
+    int i /* 0xffffffa8 */;
+    int status /* 0xffffffac */;
+    LWORD sx /* 0xffffffa4 */;
+    LWORD SN /* 0xffffffa0 */;
+    LWORD tr /* 0xffffff9c */;
+    LWORD SA /* 0xffffff98 */;
+    LWORD RT /* 0xffffff94 */;
+    LWORD cN /* 0xffffff90 */;
+    API_RT_MBUF_WRITE MBF /* 0xffffffb0 */;
+    /* file 1553_buffers_operations.c line 87 addr 0x4039f5 */
+    /* file 1553_buffers_operations.c line 91 addr 0x403a01 */
+    /* file 1553_buffers_operations.c line 92 addr 0x403a2a */
+    /* file 1553_buffers_operations.c line 93 addr 0x403a30 */
+    /* file 1553_buffers_operations.c line 94 addr 0x403a3a */
+    /* file 1553_buffers_operations.c line 96 addr 0x403a44 */
+    /* file 1553_buffers_operations.c line 97 addr 0x403a4b */
+    /* file 1553_buffers_operations.c line 99 addr 0x403a52 */
+    /* file 1553_buffers_operations.c line 100 addr 0x403a5b */
+    /* file 1553_buffers_operations.c line 101 addr 0x403a6b */
+    /* file 1553_buffers_operations.c line 99 addr 0x403a8c */
+    /* file 1553_buffers_operations.c line 99 addr 0x403a90 */
+    /* file 1553_buffers_operations.c line 103 addr 0x403a96 */
+    /* file 1553_buffers_operations.c line 104 addr 0x403a9f */
+    /* file 1553_buffers_operations.c line 107 addr 0x403ac5 */
+    /* file 1553_buffers_operations.c line 109 addr 0x403af2 */
+    /* file 1553_buffers_operations.c line 110 addr 0x403af8 */
+    /* file 1553_buffers_operations.c line 111 addr 0x403b07 */
+    /* file 1553_buffers_operations.c line 112 addr 0x403b11 */
+    /* file 1553_buffers_operations.c line 103 addr 0x403b18 */
+    /* file 1553_buffers_operations.c line 103 addr 0x403b1c */
+    /* file 1553_buffers_operations.c line 114 addr 0x403b28 */
+    /* file 1553_buffers_operations.c line 115 addr 0x403b2d */
+  } /* 0x403b2f */
+} /* 0x403b2f */
+int BT_MBUF_Init (BUS_PACKAGE *PK /* 0xffffff88 */)
+{ /* 0x403b2f */
+  { /* 0x403b2f */
+    int i /* 0xffffffa8 */;
+    int status /* 0xffffffac */;
+    LWORD sx /* 0xffffffa4 */;
+    LWORD SN /* 0xffffffa0 */;
+    LWORD tr /* 0xffffff9c */;
+    LWORD SA /* 0xffffff98 */;
+    LWORD RT /* 0xffffff94 */;
+    LWORD cN /* 0xffffff90 */;
+    API_RT_MBUF_WRITE MBF /* 0xffffffb0 */;
+    /* file 1553_buffers_operations.c line 119 addr 0x403b2f */
+    /* file 1553_buffers_operations.c line 124 addr 0x403b3b */
+    /* file 1553_buffers_operations.c line 125 addr 0x403b64 */
+    /* file 1553_buffers_operations.c line 126 addr 0x403b6a */
+    /* file 1553_buffers_operations.c line 127 addr 0x403b74 */
+    /* file 1553_buffers_operations.c line 130 addr 0x403b7e */
+    /* file 1553_buffers_operations.c line 132 addr 0x403b8c */
+    /* file 1553_buffers_operations.c line 133 addr 0x403b95 */
+    /* file 1553_buffers_operations.c line 134 addr 0x403ba5 */
+    /* file 1553_buffers_operations.c line 132 addr 0x403bc6 */
+    /* file 1553_buffers_operations.c line 132 addr 0x403bca */
+    /* file 1553_buffers_operations.c line 136 addr 0x403bd0 */
+    /* file 1553_buffers_operations.c line 137 addr 0x403bd9 */
+    /* file 1553_buffers_operations.c line 140 addr 0x403bff */
+    /* file 1553_buffers_operations.c line 142 addr 0x403c2c */
+    /* file 1553_buffers_operations.c line 143 addr 0x403c32 */
+    /* file 1553_buffers_operations.c line 144 addr 0x403c41 */
+    /* file 1553_buffers_operations.c line 145 addr 0x403c4b */
+    /* file 1553_buffers_operations.c line 136 addr 0x403c52 */
+    /* file 1553_buffers_operations.c line 136 addr 0x403c56 */
+    /* file 1553_buffers_operations.c line 147 addr 0x403c62 */
+    /* file 1553_buffers_operations.c line 148 addr 0x403c67 */
+  } /* 0x403c69 */
+} /* 0x403c69 */
+pthread_cond_t thread_flag_cv /* 0x608260 */;
+pthread_mutex_t thread_flag_mutex /* 0x6082e0 */;
+int thread_flag /* 0x608258 */;
+LWORD stop_cmd /* 0x6081b0 */;
+1553_fifo_operations.c:
+typedef int32 int;
+typedef int8 char;
+typedef uint32 long int;
+typedef uint32 unsigned int;
+typedef uint32 long unsigned int;
+typedef uint32 __int128;
+typedef uint32 __int128 unsigned;
+typedef uint32 long long int;
+typedef uint64 long long unsigned int;
+typedef int16 short int;
+typedef uint16 short unsigned int;
+typedef int8 signed char;
+typedef uint8 unsigned char;
+typedef float float;
+typedef double double;
+typedef float128 long double;
+typedef float _Decimal32;
+typedef double _Decimal64;
+typedef float128 _Decimal128;
+typedef void void;
+void BT_AIF_Init (API_INT_FIFO *PIF /* 0xfffffff8 */, MessPL *MPL /* 0xfffffff0 */, P_AIF_FUNC PF /* 0xffffffe8 */, int prio /* 0xffffffe4 */, LWORD cN /* 0xffffffe0 */)
+{ /* 0x403c69 */
+  /* file 1553_fifo_operations.c line 5 addr 0x403c69 */
+  /* file 1553_fifo_operations.c line 6 addr 0x403c84 */
+  /* file 1553_fifo_operations.c line 8 addr 0x403c9a */
+  /* file 1553_fifo_operations.c line 9 addr 0x403cb0 */
+  /* file 1553_fifo_operations.c line 10 addr 0x403cbb */
+  /* file 1553_fifo_operations.c line 11 addr 0x403cc5 */
+  /* file 1553_fifo_operations.c line 12 addr 0x403cd1 */
+  /* file 1553_fifo_operations.c line 15 addr 0x403cdc */
+  /* file 1553_fifo_operations.c line 16 addr 0x403ce8 */
+  /* file 1553_fifo_operations.c line 17 addr 0x403cf4 */
+  /* file 1553_fifo_operations.c line 18 addr 0x403cfe */
+} /* 0x403d00 */
+int BT_AIF_SetFilter (API_INT_FIFO *PIF /* 0xffffffd8 */, BUS_PACKAGE *PK /* 0xffffffd0 */, LWORD fType /* 0xffffffcc */, LWORD fMask /* 0xffffffc8 */)
+{ /* 0x403d00 */
+  { /* 0x403d00 */
+    LWORD n /* 0xffffffe8 */;
+    LWORD SN /* 0xfffffffc */;
+    LWORD tr /* 0xfffffff8 */;
+    LWORD SA /* 0xfffffff4 */;
+    LWORD RT /* 0xfffffff0 */;
+    LWORD cN /* 0xffffffec */;
+    /* file 1553_fifo_operations.c line 22 addr 0x403d00 */
+    /* file 1553_fifo_operations.c line 24 addr 0x403d16 */
+    /* file 1553_fifo_operations.c line 25 addr 0x403d20 */
+    /* file 1553_fifo_operations.c line 26 addr 0x403d2a */
+    /* file 1553_fifo_operations.c line 27 addr 0x403d34 */
+    /* file 1553_fifo_operations.c line 28 addr 0x403d3e */
+    /* file 1553_fifo_operations.c line 30 addr 0x403d48 */
+    /* file 1553_fifo_operations.c line 31 addr 0x403d52 */
+    /* file 1553_fifo_operations.c line 32 addr 0x403d5b */
+    /* file 1553_fifo_operations.c line 33 addr 0x403d87 */
+    /* file 1553_fifo_operations.c line 31 addr 0x403dad */
+    /* file 1553_fifo_operations.c line 31 addr 0x403db1 */
+    /* file 1553_fifo_operations.c line 35 addr 0x403db9 */
+    /* file 1553_fifo_operations.c line 36 addr 0x403dbe */
+  } /* 0x403dc0 */
+} /* 0x403dc0 */
+int BT_AIF_AddFilter (API_INT_FIFO *PIF /* 0xffffffd8 */, BUS_PACKAGE *PK /* 0xffffffd0 */, LWORD fMask /* 0xffffffcc */)
+{ /* 0x403dc0 */
+  { /* 0x403dc0 */
+    LWORD n /* 0xffffffe8 */;
+    LWORD SN /* 0xfffffffc */;
+    LWORD tr /* 0xfffffff8 */;
+    LWORD SA /* 0xfffffff4 */;
+    LWORD RT /* 0xfffffff0 */;
+    LWORD cN /* 0xffffffec */;
+    /* file 1553_fifo_operations.c line 40 addr 0x403dc0 */
+    /* file 1553_fifo_operations.c line 43 addr 0x403dd3 */
+    /* file 1553_fifo_operations.c line 44 addr 0x403ddd */
+    /* file 1553_fifo_operations.c line 45 addr 0x403de7 */
+    /* file 1553_fifo_operations.c line 46 addr 0x403df1 */
+    /* file 1553_fifo_operations.c line 47 addr 0x403dfb */
+    /* file 1553_fifo_operations.c line 49 addr 0x403e05 */
+    /* file 1553_fifo_operations.c line 50 addr 0x403e11 */
+    /* file 1553_fifo_operations.c line 51 addr 0x403e69 */
+    /* file 1553_fifo_operations.c line 49 addr 0x403e8f */
+    /* file 1553_fifo_operations.c line 49 addr 0x403e93 */
+    /* file 1553_fifo_operations.c line 53 addr 0x403e9f */
+    /* file 1553_fifo_operations.c line 54 addr 0x403ea4 */
+  } /* 0x403ea6 */
+} /* 0x403ea6 */
+int BT_AIF_SetFilterRTM (API_INT_FIFO *PIF /* 0xffffffd8 */, BUS_PACKAGE *PK /* 0xffffffd0 */)
+{ /* 0x403ea6 */
+  { /* 0x403ea6 */
+    LWORD fMask /* 0xfffffffc */;
+    LWORD n /* 0xffffffe4 */;
+    LWORD SN /* 0xfffffff8 */;
+    LWORD tr /* 0xfffffff4 */;
+    LWORD SA /* 0xfffffff0 */;
+    LWORD RT /* 0xffffffec */;
+    LWORD cN /* 0xffffffe8 */;
+    /* file 1553_fifo_operations.c line 58 addr 0x403ea6 */
+    /* file 1553_fifo_operations.c line 62 addr 0x403eb6 */
+    /* file 1553_fifo_operations.c line 63 addr 0x403ec0 */
+    /* file 1553_fifo_operations.c line 64 addr 0x403eca */
+    /* file 1553_fifo_operations.c line 65 addr 0x403ed4 */
+    /* file 1553_fifo_operations.c line 66 addr 0x403ede */
+    /* file 1553_fifo_operations.c line 68 addr 0x403ee8 */
+    /* file 1553_fifo_operations.c line 69 addr 0x403ef3 */
+    /* file 1553_fifo_operations.c line 70 addr 0x403efc */
+    /* file 1553_fifo_operations.c line 71 addr 0x403f28 */
+    /* file 1553_fifo_operations.c line 69 addr 0x403f4e */
+    /* file 1553_fifo_operations.c line 69 addr 0x403f52 */
+    /* file 1553_fifo_operations.c line 72 addr 0x403f5a */
+    /* file 1553_fifo_operations.c line 73 addr 0x403f5f */
+  } /* 0x403f61 */
+} /* 0x403f61 */
+int BT_AIF_Connect (API_INT_FIFO *PIF /* 0xffffffe8 */)
+{ /* 0x403f61 */
+  { /* 0x403f61 */
+    MessPL *MPL /* 0xfffffff8 */;
+    int status /* 0xfffffff4 */;
+    /* file 1553_fifo_operations.c line 77 addr 0x403f61 */
+    /* file 1553_fifo_operations.c line 81 addr 0x403f6d */
+    /* file 1553_fifo_operations.c line 82 addr 0x403f81 */
+    /* file 1553_fifo_operations.c line 83 addr 0x403f87 */
+    /* file 1553_fifo_operations.c line 84 addr 0x403f91 */
+    /* file 1553_fifo_operations.c line 86 addr 0x403f98 */
+    /* file 1553_fifo_operations.c line 88 addr 0x403fa4 */
+    /* file 1553_fifo_operations.c line 89 addr 0x403fc1 */
+    /* file 1553_fifo_operations.c line 90 addr 0x403fc7 */
+    /* file 1553_fifo_operations.c line 91 addr 0x403fd1 */
+    /* file 1553_fifo_operations.c line 92 addr 0x403fdb */
+    /* file 1553_fifo_operations.c line 94 addr 0x403fe2 */
+    /* file 1553_fifo_operations.c line 95 addr 0x403fec */
+    /* file 1553_fifo_operations.c line 96 addr 0x403ff1 */
+  } /* 0x403ff3 */
+} /* 0x403ff3 */
+void BT_AIF_Close (API_INT_FIFO *PIF /* 0xffffffe8 */)
+{ /* 0x403ff3 */
+  { /* 0x403ff3 */
+    MessPL *MPL /* 0xfffffff8 */;
+    int status /* 0xfffffff4 */;
+    /* file 1553_fifo_operations.c line 100 addr 0x403ff3 */
+    /* file 1553_fifo_operations.c line 103 addr 0x403fff */
+    /* file 1553_fifo_operations.c line 104 addr 0x404013 */
+    /* file 1553_fifo_operations.c line 105 addr 0x404019 */
+    /* file 1553_fifo_operations.c line 106 addr 0x404023 */
+    /* file 1553_fifo_operations.c line 108 addr 0x404025 */
+    /* file 1553_fifo_operations.c line 110 addr 0x404031 */
+    /* file 1553_fifo_operations.c line 111 addr 0x40403c */
+    /* file 1553_fifo_operations.c line 112 addr 0x404046 */
+    /* file 1553_fifo_operations.c line 113 addr 0x404063 */
+    /* file 1553_fifo_operations.c line 114 addr 0x404069 */
+    /* file 1553_fifo_operations.c line 116 addr 0x404073 */
+  } /* 0x404075 */
+} /* 0x404075 */
+int BT_AIF_Check (API_INT_FIFO *PIF /* 0xffffffe8 */)
+{ /* 0x404075 */
+  { /* 0x404075 */
+    MessPL *MPL /* 0xfffffff8 */;
+    /* file 1553_fifo_operations.c line 120 addr 0x404075 */
+    /* file 1553_fifo_operations.c line 122 addr 0x404081 */
+    /* file 1553_fifo_operations.c line 123 addr 0x40408e */
+    /* file 1553_fifo_operations.c line 124 addr 0x404098 */
+    /* file 1553_fifo_operations.c line 126 addr 0x40409f */
+    /* file 1553_fifo_operations.c line 127 addr 0x4040ab */
+    /* file 1553_fifo_operations.c line 128 addr 0x4040b7 */
+    /* file 1553_fifo_operations.c line 129 addr 0x4040c1 */
+    /* file 1553_fifo_operations.c line 130 addr 0x4040c8 */
+    /* file 1553_fifo_operations.c line 131 addr 0x4040cd */
+  } /* 0x4040cf */
+} /* 0x4040cf */
+pthread_cond_t thread_flag_cv /* 0x608260 */;
+pthread_mutex_t thread_flag_mutex /* 0x6082e0 */;
+int thread_flag /* 0x608258 */;
+LWORD stop_cmd /* 0x6081b0 */;
+1553_broadcast_messages.c:
+typedef int32 int;
+typedef int8 char;
+typedef uint32 long int;
+typedef uint32 unsigned int;
+typedef uint32 long unsigned int;
+typedef uint32 __int128;
+typedef uint32 __int128 unsigned;
+typedef uint32 long long int;
+typedef uint64 long long unsigned int;
+typedef int16 short int;
+typedef uint16 short unsigned int;
+typedef int8 signed char;
+typedef uint8 unsigned char;
+typedef float float;
+typedef double double;
+typedef float128 long double;
+typedef float _Decimal32;
+typedef double _Decimal64;
+typedef float128 _Decimal128;
+typedef void void;
+int Init_BMP ()
+{ /* 0x4040cf */
+  { /* 0x4040cf */
+    int i /* 0xfffffff0 */;
+    int status /* 0xfffffffc */;
+    LWORD CX /* 0xfffffff8 */;
+    LWORD bus_number /* 0xfffffff4 */;
+    /* file 1553_broadcast_messages.c line 10 addr 0x4040cf */
+    /* file 1553_broadcast_messages.c line 15 addr 0x4040d7 */
+    /* file 1553_broadcast_messages.c line 17 addr 0x4040e1 */
+    /* file 1553_broadcast_messages.c line 18 addr 0x4040ea */
+    /* file 1553_broadcast_messages.c line 17 addr 0x4040fa */
+    /* file 1553_broadcast_messages.c line 17 addr 0x4040fe */
+    /* file 1553_broadcast_messages.c line 20 addr 0x404104 */
+    /* file 1553_broadcast_messages.c line 21 addr 0x40410d */
+    /* file 1553_broadcast_messages.c line 20 addr 0x40411d */
+    /* file 1553_broadcast_messages.c line 20 addr 0x404121 */
+    /* file 1553_broadcast_messages.c line 24 addr 0x404127 */
+    /* file 1553_broadcast_messages.c line 25 addr 0x40412e */
+    /* file 1553_broadcast_messages.c line 26 addr 0x404135 */
+    /* file 1553_broadcast_messages.c line 27 addr 0x404147 */
+    /* file 1553_broadcast_messages.c line 28 addr 0x40414d */
+    /* file 1553_broadcast_messages.c line 29 addr 0x404157 */
+    /* file 1553_broadcast_messages.c line 30 addr 0x40416b */
+    /* file 1553_broadcast_messages.c line 32 addr 0x404172 */
+    /* file 1553_broadcast_messages.c line 33 addr 0x404179 */
+    /* file 1553_broadcast_messages.c line 34 addr 0x404180 */
+    /* file 1553_broadcast_messages.c line 35 addr 0x404192 */
+    /* file 1553_broadcast_messages.c line 36 addr 0x404198 */
+    /* file 1553_broadcast_messages.c line 37 addr 0x4041a2 */
+    /* file 1553_broadcast_messages.c line 38 addr 0x4041b6 */
+    /* file 1553_broadcast_messages.c line 41 addr 0x4041bd */
+    /* file 1553_broadcast_messages.c line 42 addr 0x4041c2 */
+    /* file 1553_broadcast_messages.c line 43 addr 0x4041c7 */
+    /* file 1553_broadcast_messages.c line 44 addr 0x4041d1 */
+    /* file 1553_broadcast_messages.c line 45 addr 0x4041d6 */
+  } /* 0x4041d8 */
+} /* 0x4041d8 */
+int Init_BMPchan (LWORD bus_number /* 0xffffffcc */, LWORD CX /* 0xffffffc8 */)
+{ /* 0x4041d8 */
+  { /* 0x4041d8 */
+    MessPL *MPL /* 0xfffffff8 */;
+    API_INT_FIFO *PIF /* 0xfffffff0 */;
+    LWORD TR /* 0xffffffe8 */;
+    LWORD WC /* 0xffffffe4 */;
+    LWORD SA /* 0xffffffe0 */;
+    LWORD RT /* 0xffffffdc */;
+    LWORD card_number /* 0xffffffec */;
+    /* file 1553_broadcast_messages.c line 49 addr 0x4041d8 */
+    /* file 1553_broadcast_messages.c line 64 addr 0x4041e6 */
+    /* file 1553_broadcast_messages.c line 65 addr 0x4041fa */
+    /* file 1553_broadcast_messages.c line 69 addr 0x40420b */
+    /* file 1553_broadcast_messages.c line 70 addr 0x404212 */
+    /* file 1553_broadcast_messages.c line 71 addr 0x404219 */
+    /* file 1553_broadcast_messages.c line 72 addr 0x404220 */
+    /* file 1553_broadcast_messages.c line 74 addr 0x404227 */
+    /* file 1553_broadcast_messages.c line 76 addr 0x404234 */
+    /* file 1553_broadcast_messages.c line 77 addr 0x40423e */
+    /* file 1553_broadcast_messages.c line 173 addr 0x404243 */
+  } /* 0x404245 */
+} /* 0x404245 */
+int BMP_Task (LWORD cN /* 0xffffffdc */, struct api_int_fifo /* id 8 */ *PIF /* 0xffffffd0 */)
+{ /* 0x404245 */
+  { /* 0x404245 */
+    MessPL *MPL /* 0xfffffff8 */;
+    int CX /* 0xffffffec */;
+    int mask /* 0xfffffff4 */;
+    int head /* 0xfffffff0 */;
+    int tail /* 0xffffffe4 */;
+    int status /* 0xffffffe8 */;
+    /* file 1553_broadcast_messages.c line 177 addr 0x404245 */
+    /* file 1553_broadcast_messages.c line 181 addr 0x404254 */
+    /* file 1553_broadcast_messages.c line 182 addr 0x404268 */
+    /* file 1553_broadcast_messages.c line 183 addr 0x40426e */
+    /* file 1553_broadcast_messages.c line 185 addr 0x404278 */
+    /* file 1553_broadcast_messages.c line 186 addr 0x40427d */
+    /* file 1553_broadcast_messages.c line 188 addr 0x404287 */
+    /* file 1553_broadcast_messages.c line 190 addr 0x404293 */
+    /* file 1553_broadcast_messages.c line 191 addr 0x40429f */
+    /* file 1553_broadcast_messages.c line 193 addr 0x4042a9 */
+    /* file 1553_broadcast_messages.c line 194 addr 0x4042ae */
+    /* file 1553_broadcast_messages.c line 196 addr 0x4042b8 */
+    /* file 1553_broadcast_messages.c line 197 addr 0x4042c2 */
+    /* file 1553_broadcast_messages.c line 198 addr 0x4042c8 */
+    /* file 1553_broadcast_messages.c line 200 addr 0x4042dc */
+    /* file 1553_broadcast_messages.c line 201 addr 0x4042e1 */
+    /* file 1553_broadcast_messages.c line 203 addr 0x4042eb */
+    /* file 1553_broadcast_messages.c line 204 addr 0x4042f8 */
+    /* file 1553_broadcast_messages.c line 205 addr 0x404305 */
+    /* file 1553_broadcast_messages.c line 207 addr 0x404312 */
+    /* file 1553_broadcast_messages.c line 208 addr 0x404317 */
+    /* file 1553_broadcast_messages.c line 209 addr 0x404337 */
+    /* file 1553_broadcast_messages.c line 211 addr 0x404341 */
+    /* file 1553_broadcast_messages.c line 212 addr 0x404346 */
+    /* file 1553_broadcast_messages.c line 214 addr 0x404350 */
+    /* file 1553_broadcast_messages.c line 215 addr 0x404379 */
+    /* file 1553_broadcast_messages.c line 216 addr 0x40437f */
+    /* file 1553_broadcast_messages.c line 217 addr 0x404389 */
+    /* file 1553_broadcast_messages.c line 219 addr 0x40439d */
+    /* file 1553_broadcast_messages.c line 221 addr 0x4043a7 */
+    /* file 1553_broadcast_messages.c line 223 addr 0x4043ad */
+    /* file 1553_broadcast_messages.c line 224 addr 0x4043d6 */
+    /* file 1553_broadcast_messages.c line 225 addr 0x4043dc */
+    /* file 1553_broadcast_messages.c line 226 addr 0x4043e6 */
+    /* file 1553_broadcast_messages.c line 228 addr 0x4043fa */
+    /* file 1553_broadcast_messages.c line 229 addr 0x4043ff */
+    /* file 1553_broadcast_messages.c line 232 addr 0x404406 */
+    /* file 1553_broadcast_messages.c line 233 addr 0x40440a */
+    /* file 1553_broadcast_messages.c line 207 addr 0x404410 */
+    /* file 1553_broadcast_messages.c line 236 addr 0x40441c */
+    /* file 1553_broadcast_messages.c line 237 addr 0x404429 */
+    /* file 1553_broadcast_messages.c line 238 addr 0x40442e */
+  } /* 0x404430 */
+} /* 0x404430 */
+int Start_BMP ()
+{ /* 0x404430 */
+  { /* 0x404430 */
+    int CX /* 0xfffffff8 */;
+    int status /* 0xfffffffc */;
+    /* file 1553_broadcast_messages.c line 242 addr 0x404430 */
+    /* file 1553_broadcast_messages.c line 246 addr 0x404438 */
+    /* file 1553_broadcast_messages.c line 247 addr 0x404441 */
+    /* file 1553_broadcast_messages.c line 248 addr 0x404463 */
+    /* file 1553_broadcast_messages.c line 249 addr 0x404469 */
+    /* file 1553_broadcast_messages.c line 250 addr 0x404473 */
+    /* file 1553_broadcast_messages.c line 251 addr 0x404487 */
+    /* file 1553_broadcast_messages.c line 246 addr 0x40448e */
+    /* file 1553_broadcast_messages.c line 246 addr 0x404492 */
+    /* file 1553_broadcast_messages.c line 253 addr 0x404498 */
+    /* file 1553_broadcast_messages.c line 254 addr 0x40449d */
+  } /* 0x40449f */
+} /* 0x40449f */
+void Stop_BMP ()
+{ /* 0x40449f */
+  { /* 0x40449f */
+    int CX /* 0xfffffffc */;
+    /* file 1553_broadcast_messages.c line 258 addr 0x40449f */
+    /* file 1553_broadcast_messages.c line 260 addr 0x4044a7 */
+    /* file 1553_broadcast_messages.c line 261 addr 0x4044b0 */
+    /* file 1553_broadcast_messages.c line 260 addr 0x4044cf */
+    /* file 1553_broadcast_messages.c line 260 addr 0x4044d3 */
+    /* file 1553_broadcast_messages.c line 262 addr 0x4044d9 */
+  } /* 0x4044db */
+} /* 0x4044db */
+API_INT_FIFO *BT_Get_AIF_BM (LWORD CardN /* 0xffffffdc */)
+{ /* 0x4044db */
+  { /* 0x4044db */
+    int cnt /* 0xffffffe8 */;
+    int CX /* 0xffffffec */;
+    int ix /* 0xffffffe4 */;
+    MessPL *MPL /* 0xfffffff8 */;
+    API_INT_FIFO *PIF /* 0xfffffff0 */;
+    /* file 1553_broadcast_messages.c line 266 addr 0x4044db */
+    /* file 1553_broadcast_messages.c line 268 addr 0x4044e2 */
+    /* file 1553_broadcast_messages.c line 270 addr 0x4044e9 */
+    /* file 1553_broadcast_messages.c line 271 addr 0x4044f2 */
+    /* file 1553_broadcast_messages.c line 272 addr 0x404508 */
+    /* file 1553_broadcast_messages.c line 273 addr 0x404514 */
+    /* file 1553_broadcast_messages.c line 274 addr 0x404520 */
+    /* file 1553_broadcast_messages.c line 275 addr 0x404526 */
+    /* file 1553_broadcast_messages.c line 270 addr 0x40452a */
+    /* file 1553_broadcast_messages.c line 270 addr 0x40452e */
+    /* file 1553_broadcast_messages.c line 277 addr 0x404534 */
+    /* file 1553_broadcast_messages.c line 278 addr 0x40453a */
+    /* file 1553_broadcast_messages.c line 280 addr 0x404540 */
+    /* file 1553_broadcast_messages.c line 281 addr 0x404545 */
+  } /* 0x404547 */
+} /* 0x404547 */
+pthread_cond_t thread_flag_cv /* 0x608260 */;
+pthread_mutex_t thread_flag_mutex /* 0x6082e0 */;
+int thread_flag /* 0x608258 */;
+LWORD stop_cmd /* 0x6081b0 */;
+API_INT_FIFO AIF_bm[2]:uint32 /* 0x60ccc0 */;
+MessPL MPL_bm[2]:uint32 /* 0x618f40 */;
+int bt_transactions[2]:uint32 /* 0x618f60 */;
+int bs_transactions[2]:uint32 /* 0x618f68 */;
+1553_bsync_processing.c:
+typedef int32 int;
+typedef int8 char;
+typedef uint32 long int;
+typedef uint32 unsigned int;
+typedef uint32 long unsigned int;
+typedef uint32 __int128;
+typedef uint32 __int128 unsigned;
+typedef uint32 long long int;
+typedef uint64 long long unsigned int;
+typedef int16 short int;
+typedef uint16 short unsigned int;
+typedef int8 signed char;
+typedef uint8 unsigned char;
+typedef float float;
+typedef double double;
+typedef float128 long double;
+typedef float _Decimal32;
+typedef double _Decimal64;
+typedef float128 _Decimal128;
+typedef void void;
+void Init_Proc_BSync ()
+{ /* 0x404547 */
+  { /* 0x404547 */
+    int i /* 0xfffffffc */;
+    /* file 1553_bsync_processing.c line 20 addr 0x404547 */
+    /* file 1553_bsync_processing.c line 21 addr 0x40454f */
+    /* file 1553_bsync_processing.c line 22 addr 0x404559 */
+    /* file 1553_bsync_processing.c line 23 addr 0x404563 */
+    /* file 1553_bsync_processing.c line 24 addr 0x40456d */
+    /* file 1553_bsync_processing.c line 26 addr 0x404572 */
+    /* file 1553_bsync_processing.c line 27 addr 0x40457b */
+    /* file 1553_bsync_processing.c line 28 addr 0x40458b */
+    /* file 1553_bsync_processing.c line 29 addr 0x40459b */
+    /* file 1553_bsync_processing.c line 26 addr 0x4045ab */
+    /* file 1553_bsync_processing.c line 26 addr 0x4045af */
+    /* file 1553_bsync_processing.c line 31 addr 0x4045b5 */
+    /* file 1553_bsync_processing.c line 32 addr 0x4045c4 */
+  } /* 0x4045c6 */
+} /* 0x4045c6 */
+int Proc_BSync (LWORD cN /* 0xffffff5c */, int CX /* 0xffffff58 */, MESS_FIFO *FM /* 0xffffff50 */)
+{ /* 0x4045c6 */
+  { /* 0x4045c6 */
+    int common_status /* 0xffffff6c */;
+    int status3 /* 0xffffff88 */;
+    int status2 /* 0xffffff8c */;
+    int status1 /* 0xffffff84 */;
+    int status /* 0xffffff80 */;
+    LWORD WC /* 0xffffff7c */;
+    LWORD tr /* 0xffffff78 */;
+    LWORD SA /* 0xffffff74 */;
+    LWORD RT /* 0xffffff70 */;
+    BT1553_TIME tgC /* 0xffffff90 */;
+    API_RT_MBUF_READ MBR /* 0xffffffa0 */;
+    /* file 1553_bsync_processing.c line 36 addr 0x4045c6 */
+    /* file 1553_bsync_processing.c line 41 addr 0x4045e4 */
+    /* file 1553_bsync_processing.c line 42 addr 0x4045f4 */
+    /* file 1553_bsync_processing.c line 43 addr 0x4045fd */
+    /* file 1553_bsync_processing.c line 45 addr 0x404607 */
+    /* file 1553_bsync_processing.c line 46 addr 0x404617 */
+    /* file 1553_bsync_processing.c line 46 addr 0x404620 */
+    /* file 1553_bsync_processing.c line 47 addr 0x404629 */
+    /* file 1553_bsync_processing.c line 49 addr 0x404633 */
+    /* file 1553_bsync_processing.c line 50 addr 0x404643 */
+    /* file 1553_bsync_processing.c line 51 addr 0x40464c */
+    /* file 1553_bsync_processing.c line 53 addr 0x404656 */
+    /* file 1553_bsync_processing.c line 54 addr 0x404666 */
+    /* file 1553_bsync_processing.c line 55 addr 0x40466f */
+    /* file 1553_bsync_processing.c line 59 addr 0x404679 */
+    /* file 1553_bsync_processing.c line 60 addr 0x404686 */
+    /* file 1553_bsync_processing.c line 62 addr 0x4046a7 */
+    /* file 1553_bsync_processing.c line 63 addr 0x4046ad */
+    /* file 1553_bsync_processing.c line 64 addr 0x4046b7 */
+    /* file 1553_bsync_processing.c line 66 addr 0x4046c1 */
+    /* file 1553_bsync_processing.c line 67 addr 0x4046d4 */
+    /* file 1553_bsync_processing.c line 68 addr 0x4046de */
+    /* file 1553_bsync_processing.c line 69 addr 0x4046f0 */
+    /* file 1553_bsync_processing.c line 70 addr 0x404728 */
+    /* file 1553_bsync_processing.c line 72 addr 0x404735 */
+    /* file 1553_bsync_processing.c line 74 addr 0x404756 */
+    /* file 1553_bsync_processing.c line 76 addr 0x40475b */
+    /* file 1553_bsync_processing.c line 77 addr 0x404769 */
+    /* file 1553_bsync_processing.c line 79 addr 0x40477e */
+    /* file 1553_bsync_processing.c line 80 addr 0x404795 */
+    /* file 1553_bsync_processing.c line 82 addr 0x4047b1 */
+    /* file 1553_bsync_processing.c line 83 addr 0x4047b7 */
+    /* file 1553_bsync_processing.c line 84 addr 0x4047c1 */
+    /* file 1553_bsync_processing.c line 85 addr 0x4047cb */
+    /* file 1553_bsync_processing.c line 86 addr 0x4047d1 */
+    /* file 1553_bsync_processing.c line 87 addr 0x4047db */
+    /* file 1553_bsync_processing.c line 88 addr 0x4047e5 */
+    /* file 1553_bsync_processing.c line 89 addr 0x4047eb */
+    /* file 1553_bsync_processing.c line 90 addr 0x4047f5 */
+    /* file 1553_bsync_processing.c line 93 addr 0x4047ff */
+    /* file 1553_bsync_processing.c line 94 addr 0x40480c */
+    /* file 1553_bsync_processing.c line 95 addr 0x404812 */
+    /* file 1553_bsync_processing.c line 96 addr 0x40481c */
+    /* file 1553_bsync_processing.c line 98 addr 0x404826 */
+    /* file 1553_bsync_processing.c line 99 addr 0x40482c */
+  } /* 0x40482e */
+} /* 0x40482e */
+void Check_BSync ()
+{ /* 0x40482e */
+  { /* 0x40482e */
+    LWORD FREE_RUN /* 0xfffffff8 */;
+    LWORD cx /* 0xfffffff4 */;
+    int status /* 0xfffffffc */;
+    /* file 1553_bsync_processing.c line 103 addr 0x40482e */
+    /* file 1553_bsync_processing.c line 105 addr 0x404836 */
+    /* file 1553_bsync_processing.c line 106 addr 0x40483d */
+    /* file 1553_bsync_processing.c line 107 addr 0x40484a */
+    /* file 1553_bsync_processing.c line 109 addr 0x404850 */
+    /* file 1553_bsync_processing.c line 111 addr 0x404855 */
+    /* file 1553_bsync_processing.c line 112 addr 0x40485e */
+    /* file 1553_bsync_processing.c line 113 addr 0x404875 */
+    /* file 1553_bsync_processing.c line 114 addr 0x404886 */
+    /* file 1553_bsync_processing.c line 111 addr 0x404894 */
+    /* file 1553_bsync_processing.c line 111 addr 0x404898 */
+    /* file 1553_bsync_processing.c line 116 addr 0x40489e */
+    /* file 1553_bsync_processing.c line 117 addr 0x4048b7 */
+    /* file 1553_bsync_processing.c line 120 addr 0x4048be */
+    /* file 1553_bsync_processing.c line 121 addr 0x4048d2 */
+    /* file 1553_bsync_processing.c line 122 addr 0x4048db */
+    /* file 1553_bsync_processing.c line 123 addr 0x4048ea */
+    /* file 1553_bsync_processing.c line 124 addr 0x4048ec */
+    /* file 1553_bsync_processing.c line 125 addr 0x4048f0 */
+    /* file 1553_bsync_processing.c line 126 addr 0x4048f6 */
+    /* file 1553_bsync_processing.c line 127 addr 0x4048fd */
+    /* file 1553_bsync_processing.c line 128 addr 0x4048ff */
+    /* file 1553_bsync_processing.c line 130 addr 0x404901 */
+    /* file 1553_bsync_processing.c line 131 addr 0x404907 */
+    /* file 1553_bsync_processing.c line 133 addr 0x40490e */
+    /* file 1553_bsync_processing.c line 135 addr 0x404913 */
+    /* file 1553_bsync_processing.c line 136 addr 0x404920 */
+    /* file 1553_bsync_processing.c line 137 addr 0x404926 */
+    /* file 1553_bsync_processing.c line 138 addr 0x404930 */
+    /* file 1553_bsync_processing.c line 139 addr 0x404935 */
+  } /* 0x404937 */
+} /* 0x404937 */
+void FreeRun_Step ()
+{ /* 0x404937 */
+  /* file 1553_bsync_processing.c line 143 addr 0x404937 */
+  /* file 1553_bsync_processing.c line 144 addr 0x40493b */
+  /* file 1553_bsync_processing.c line 145 addr 0x40494a */
+  /* file 1553_bsync_processing.c line 147 addr 0x404955 */
+  /* file 1553_bsync_processing.c line 148 addr 0x40495f */
+  /* file 1553_bsync_processing.c line 149 addr 0x40496e */
+  /* file 1553_bsync_processing.c line 150 addr 0x40497d */
+  /* file 1553_bsync_processing.c line 151 addr 0x404988 */
+  /* file 1553_bsync_processing.c line 153 addr 0x404992 */
+  /* file 1553_bsync_processing.c line 156 addr 0x404997 */
+} /* 0x404999 */
+void FreeRun_Reset ()
+{ /* 0x404999 */
+  /* file 1553_bsync_processing.c line 160 addr 0x404999 */
+  /* file 1553_bsync_processing.c line 161 addr 0x40499d */
+  /* file 1553_bsync_processing.c line 162 addr 0x4049a7 */
+} /* 0x4049a9 */
+void Load_PRF ()
+{ /* 0x4049a9 */
+  { /* 0x4049a9 */
+    int status /* 0xfffffffc */;
+    /* file 1553_bsync_processing.c line 166 addr 0x4049a9 */
+    /* file 1553_bsync_processing.c line 168 addr 0x4049b1 */
+    /* file 1553_bsync_processing.c line 169 addr 0x4049be */
+    /* file 1553_bsync_processing.c line 170 addr 0x4049ca */
+    /* file 1553_bsync_processing.c line 171 addr 0x4049d7 */
+  } /* 0x4049d9 */
+} /* 0x4049d9 */
+pthread_cond_t thread_flag_cv /* 0x608260 */;
+pthread_mutex_t thread_flag_mutex /* 0x6082e0 */;
+int thread_flag /* 0x608258 */;
+LWORD stop_cmd /* 0x6081b0 */;
+int sei7_pf /* 0x618f84 */;
+Q_INT BSyncTC /* 0x618fe8 */;
+Q_INT BSyncTP /* 0x618f88 */;
+int Proc_CX /* 0x618fe0 */;
+pthread_mutex_t muBS /* 0x618fa0 */;
+int prf_c /* 0x6081b4 */;
+LWORD BSYNC_age[2]:uint32 /* 0x618fd8 */;
+LWORD BSYNC_cnt[2]:uint32 /* 0x618fd0 */;
+LWORD BSYNC_pul[2]:uint32 /* 0x618ff4 */;
+LWORD BSYNC_PulT /* 0x6081b8 */;
+LWORD BSYNC_sw /* 0x6081bc */;
+LWORD BS_Age_Fail /* 0x618ff0 */;
+LWORD BS_Age_Work /* 0x618f80 */;
+Q_INT BSyncMP /* 0x618fc8 */;
+LWORD BSYNC_tc /* 0x6081c0 */;
+1553_btime_processing.c:
+typedef int32 int;
+typedef int8 char;
+typedef uint32 long int;
+typedef uint32 unsigned int;
+typedef uint32 long unsigned int;
+typedef uint32 __int128;
+typedef uint32 __int128 unsigned;
+typedef uint32 long long int;
+typedef uint64 long long unsigned int;
+typedef int16 short int;
+typedef uint16 short unsigned int;
+typedef int8 signed char;
+typedef uint8 unsigned char;
+typedef float float;
+typedef double double;
+typedef float128 long double;
+typedef float _Decimal32;
+typedef double _Decimal64;
+typedef float128 _Decimal128;
+typedef void void;
+void Init_Proc_BTime ()
+{ /* 0x4049d9 */
+  { /* 0x4049d9 */
+    LWORD i /* 0xfffffffc */;
+    /* file 1553_btime_processing.c line 13 addr 0x4049d9 */
+    /* file 1553_btime_processing.c line 14 addr 0x4049e1 */
+    /* file 1553_btime_processing.c line 15 addr 0x4049ea */
+    /* file 1553_btime_processing.c line 14 addr 0x4049f8 */
+    /* file 1553_btime_processing.c line 14 addr 0x4049fc */
+    /* file 1553_btime_processing.c line 16 addr 0x404a02 */
+    /* file 1553_btime_processing.c line 17 addr 0x404a0b */
+    /* file 1553_btime_processing.c line 18 addr 0x404a18 */
+    /* file 1553_btime_processing.c line 16 addr 0x404a25 */
+    /* file 1553_btime_processing.c line 16 addr 0x404a29 */
+    /* file 1553_btime_processing.c line 20 addr 0x404a2f */
+    /* file 1553_btime_processing.c line 21 addr 0x404a3e */
+  } /* 0x404a40 */
+} /* 0x404a40 */
+void Load_BTime ()
+{ /* 0x404a40 */
+  { /* 0x404a40 */
+    int status /* 0xfffffffc */;
+    /* file 1553_btime_processing.c line 25 addr 0x404a40 */
+    /* file 1553_btime_processing.c line 26 addr 0x404a48 */
+    /* file 1553_btime_processing.c line 28 addr 0x404a53 */
+    /* file 1553_btime_processing.c line 29 addr 0x404a60 */
+    /* file 1553_btime_processing.c line 30 addr 0x404a6a */
+    /* file 1553_btime_processing.c line 31 addr 0x404a7e */
+    /* file 1553_btime_processing.c line 32 addr 0x404a8b */
+  } /* 0x404a8d */
+} /* 0x404a8d */
+int Proc_BTime (LWORD cN /* 0xffffff6c */, int CX /* 0xffffff68 */, MESS_FIFO *FM /* 0xffffff60 */)
+{ /* 0x404a8d */
+  { /* 0x404a8d */
+    int status /* 0xffffff8c */;
+    void *DST /* 0xffffff90 */;
+    void *SRC /* 0xffffff98 */;
+    LWORD WC /* 0xffffff88 */;
+    LWORD tr /* 0xffffff84 */;
+    LWORD SA /* 0xffffff80 */;
+    LWORD RT /* 0xffffff7c */;
+    API_RT_MBUF_READ MBR /* 0xffffffa0 */;
+    /* file 1553_btime_processing.c line 36 addr 0x404a8d */
+    /* file 1553_btime_processing.c line 42 addr 0x404aab */
+    /* file 1553_btime_processing.c line 43 addr 0x404abb */
+    /* file 1553_btime_processing.c line 44 addr 0x404ac4 */
+    /* file 1553_btime_processing.c line 45 addr 0x404ace */
+    /* file 1553_btime_processing.c line 46 addr 0x404adb */
+    /* file 1553_btime_processing.c line 47 addr 0x404ae1 */
+    /* file 1553_btime_processing.c line 48 addr 0x404aeb */
+    /* file 1553_btime_processing.c line 49 addr 0x404af8 */
+    /* file 1553_btime_processing.c line 50 addr 0x404afe */
+    /* file 1553_btime_processing.c line 51 addr 0x404b08 */
+    /* file 1553_btime_processing.c line 52 addr 0x404b15 */
+    /* file 1553_btime_processing.c line 53 addr 0x404b1b */
+    /* file 1553_btime_processing.c line 55 addr 0x404b25 */
+    /* file 1553_btime_processing.c line 56 addr 0x404b32 */
+    /* file 1553_btime_processing.c line 57 addr 0x404b38 */
+    /* file 1553_btime_processing.c line 58 addr 0x404b47 */
+    /* file 1553_btime_processing.c line 60 addr 0x404b51 */
+    /* file 1553_btime_processing.c line 62 addr 0x404b72 */
+    /* file 1553_btime_processing.c line 63 addr 0x404b80 */
+    /* file 1553_btime_processing.c line 64 addr 0x404bb2 */
+    /* file 1553_btime_processing.c line 65 addr 0x404bb8 */
+    /* file 1553_btime_processing.c line 66 addr 0x404bc2 */
+    /* file 1553_btime_processing.c line 68 addr 0x404bc9 */
+    /* file 1553_btime_processing.c line 69 addr 0x404bd1 */
+    /* file 1553_btime_processing.c line 71 addr 0x404bdd */
+    /* file 1553_btime_processing.c line 74 addr 0x404bf5 */
+    /* file 1553_btime_processing.c line 77 addr 0x404bff */
+    /* file 1553_btime_processing.c line 78 addr 0x404c0c */
+    /* file 1553_btime_processing.c line 79 addr 0x404c12 */
+    /* file 1553_btime_processing.c line 80 addr 0x404c1c */
+    /* file 1553_btime_processing.c line 82 addr 0x404c23 */
+    /* file 1553_btime_processing.c line 83 addr 0x404c28 */
+  } /* 0x404c2a */
+} /* 0x404c2a */
+pthread_cond_t thread_flag_cv /* 0x608260 */;
+pthread_mutex_t thread_flag_mutex /* 0x6082e0 */;
+int thread_flag /* 0x608258 */;
+LWORD stop_cmd /* 0x6081b0 */;
+ushort_t sei7_bt[8]:uint32 /* 0x619050 */;
+ushort_t bt_BUF[8]:uint32 /* 0x619000 */;
+LWORD bt_new /* 0x6081c4 */;
+LWORD BTime_cnt[2]:uint32 /* 0x619060 */;
+pthread_mutex_t mu_BT /* 0x619020 */;
+1553_time_tags.c:
+typedef int32 int;
+typedef int8 char;
+typedef uint32 long int;
+typedef uint32 unsigned int;
+typedef uint32 long unsigned int;
+typedef uint32 __int128;
+typedef uint32 __int128 unsigned;
+typedef uint32 long long int;
+typedef uint64 long long unsigned int;
+typedef int16 short int;
+typedef uint16 short unsigned int;
+typedef int8 signed char;
+typedef uint8 unsigned char;
+typedef float float;
+typedef double double;
+typedef float128 long double;
+typedef float _Decimal32;
+typedef double _Decimal64;
+typedef float128 _Decimal128;
+typedef void void;
+void BT_TTag_Diff (BT1553_TIME *tG1 /* 0xffffffc8 */, BT1553_TIME *tG2 /* 0xffffffc0 */, Q_INT *df /* 0xffffffb8 */)
+{ /* 0x404c2a */
+  { /* 0x404c2a */
+    Q_INT dif /* 0xfffffff8 */;
+    Q_INT ms2 /* 0xfffffff0 */;
+    Q_INT ms1 /* 0xffffffe8 */;
+    QWORD us2 /* 0xffffffe0 */;
+    QWORD us1 /* 0xffffffd8 */;
+    /* file 1553_time_tags.c line 5 addr 0x404c2a */
+    /* file 1553_time_tags.c line 8 addr 0x404c3a */
+    /* file 1553_time_tags.c line 9 addr 0x404c47 */
+    /* file 1553_time_tags.c line 10 addr 0x404c4c */
+    /* file 1553_time_tags.c line 12 addr 0x404c58 */
+    /* file 1553_time_tags.c line 13 addr 0x404c65 */
+    /* file 1553_time_tags.c line 14 addr 0x404c6a */
+    /* file 1553_time_tags.c line 16 addr 0x404c76 */
+    /* file 1553_time_tags.c line 17 addr 0x404c7e */
+    /* file 1553_time_tags.c line 18 addr 0x404c86 */
+    /* file 1553_time_tags.c line 19 addr 0x404c98 */
+    /* file 1553_time_tags.c line 20 addr 0x404ca3 */
+  } /* 0x404ca5 */
+} /* 0x404ca5 */
+void BT_TTag_Conv (BT1553_TIME *ttG /* 0xffffffe8 */, Q_INT *ms /* 0xffffffe0 */)
+{ /* 0x404ca5 */
+  { /* 0x404ca5 */
+    QWORD us1 /* 0xfffffff8 */;
+    /* file 1553_time_tags.c line 24 addr 0x404ca5 */
+    /* file 1553_time_tags.c line 25 addr 0x404cb1 */
+    /* file 1553_time_tags.c line 26 addr 0x404cbe */
+    /* file 1553_time_tags.c line 27 addr 0x404cc3 */
+    /* file 1553_time_tags.c line 28 addr 0x404ccf */
+    /* file 1553_time_tags.c line 29 addr 0x404cda */
+  } /* 0x404cdc */
+} /* 0x404cdc */
+pthread_cond_t thread_flag_cv /* 0x608260 */;
+pthread_mutex_t thread_flag_mutex /* 0x6082e0 */;
+int thread_flag /* 0x608258 */;
+LWORD stop_cmd /* 0x6081b0 */;
+struct __locale_data { /* id 0 */
+};
+struct __va_list_tag { /* id 0 */
+};

@@ -1,0 +1,282 @@
+------------------------------------------------------------------------------
+
+                          GE Intelligent Platforms, Inc.
+                                 Goleta, CA.
+                                copyright 2012
+
+------------------------------------------------------------------------------
+
+This document covers GE Intelligent Platforms avionics Linux support that is
+current with the Linux support package (v1.22).  Unfortunately, because of the
+almost infinite variety of Linux distributions, GE Intelligent Platforms can
+only provide limited support for system configuration or troubleshooting 
+issues with Linux kernels or Linux distributions.  Our released Linux support 
+has been tested with kernels/distributions as listed below.  It is therefore
+recommended to use the associated Linux kernel version as tested.
+
+This document is organized into the following sections:
+
+1. System compliance
+
+2. Tested kernel versions
+
+3. Tested API distributions
+
+4. Linux distribution support
+
+5. Linux kernel support
+
+6. Revisions
+
+7. Contact Information
+
+
+===============================================================================
+1.  System compliance
+===============================================================================
+
+1. The kernel 3.0 PCI device driver supports kernels 3.0.0 to 3.0.32, 3.1.0 to
+    3.1.10, kernels 3.2.0 to 3.2.32, kernels 3.3.0 to 3.3.8, kernels 3.4.0 to
+    3.4.15, kernels 3.5.0 to 3.5.7, and kernels 3.6.0 to 3.6.3 for PCI devices.
+2. The kernel 2.6 PCI/ISA device drivers support kernels 2.6.0 to 2.6.39
+3. The kernel 2.6 PCMCIA device driver support kernels 2.6.0 to 2.6.14. The
+    driver is dependent on card services and PCMICA 16-bit support, no
+    support for PCMCIAutils.
+4. The kernel 2.4 device drivers will support kernels 2.4.0 to 2.4.37
+5. Support for PCI on IA32, x86_64, PowerPC, and PPC64.
+6. Support for ISA/PCMCIA on IA32.
+7. The APIs and low-level libraries are not reentrant.
+
+
+===============================================================================
+2.  Tested Linux kernel versions
+===============================================================================
+
+The following kernel versions were compile using the offical released kernel
+source code and tested on the identified Linux distribution.
+  kernel               distribution
+  ------               ------------
+   2.4.37 (x86)     ->  Slackware 10.2
+   2.6.9  (x86)     ->  Fedora 3
+   2.6.39 (x86_64)  ->  Fedora 15
+   3.0.47 (x86_64)  ->  Fedora 15
+   3.1.10 (x86_64)  ->  Fedora 16
+   3.2.32 (x86_64)  ->  Fedora 16
+   3.3.8  (x86_64)  ->  Fedora 16
+   3.4.15 (x86_64)  ->  Fedora 17
+   3.5.7  (x86_64)  ->  Fedora 17
+   3.6.3  (x86_64)  ->  Fedora 17
+
+===============================================================================
+3.  Tested GE Intelligent Platforms avionics API distributions
+===============================================================================
+
+The following API versions are supported with this version of the LSP.  Earlier
+API Linux distributions may work but there are no guarantees.  Therefore it is
+recommended to use the tested API distribution version.  The "source_check"
+script will test for the minimum API distribution version requirement during
+installation.
+
+  distribution       version
+  ------------       -------
+   BusTools/1553  ->  8.06
+   CEI-x20        ->  4.30
+   CEI-x30        ->  4.01
+   P-708          ->  1.63
+   P-SER          ->  1.60
+   P-DIS          ->  1.10
+
+
+===============================================================================
+4.  Linux distribution support
+===============================================================================
+
+We utilize one Linux distribution per kernel version to test the Linux support
+package and APIs.  Therefore not all Linux distributions are tested with a
+specified kernel version.  Keep in mind that Linux distributions may modify the
+official released kernel source, which may cause the associated device drivers,
+low-level library and/or the API libraries to fail, not compile or to execute
+properly.  Therefore results may vary when executing the Linux support
+package/API in an untested Linux distribution.  Refer to your specific Linux
+distributor for technical support.
+
+
+===============================================================================
+5.  Linux kernel support
+===============================================================================
+
+Functionality of the Linux support package and API may be affected when used
+with a newer kernel than what was tested.  The user will need to determine the
+changes that occurred with each of the Linux kernel system calls that are
+utilized in the device drivers and low-level library.
+
+
+=================================================================================
+6. Revisions
+=================================================================================
+
+Release Notes - v1.22, 24 October 2012
+--------------------------------------
+* added support for Linux kernels 3.0.13 to 3.0.32, kernels 3.1.5 to 3.1.10,
+   kernels 3.2.0 to 3.2.32, kernels 3.3.0 to 3.3.8, kernels 3.4.0 to 3.4.15,
+   kernels 3.5.0 to 3.5.7, and kernels 3.6.0 to 3.6.3 for PCI devices.
+
+Release Notes - v1.21, 06 December 2011
+---------------------------------------
+* added support for Linux kernels 3.0.5 to 3.0.12 and kernels 3.1.1 to 3.1.4 for
+   PCI devices
+
+Release Notes - v1.20, 25 October 2011
+--------------------------------------
+* added support for Linux kernel 3.1.0 for PCI devices
+* added support for Linux kernels 3.0.0 to 3.0.4 for PCI devices
+* added support for Linux kernel 2.6.39 for PCI devices
+* added x86_64 support for Linux kernel 2.4 PCI driver
+* added support for the CEI-430A
+* added hardware interrupt support for CEI-x30 boards in Linux kernel 2.4 PCI driver
+* added multiple wait queue support for PCI devices  
+
+Release Notes - v1.19, 12 April 2011
+------------------------------------
+* added support for Linux kernels 2.6.37 and 2.6.38 for PCI devices
+* added support for Linux kernels 2.6.22 to 2.6.38 for ISA devices
+* modified distribution shell scripts to use bash instead of sh
+
+Release Notes - v1.18, 9 November 2010
+--------------------------------------
+* added support for Linux kernels 2.6.36 for PCI devices
+
+Release Notes - v1.17, 17 August 2010
+-------------------------------------
+* added support for Linux kernels 2.6.35 for PCI devices
+
+Release Notes - v1.16, 14 July 2010
+-----------------------------------
+* added support for Linux kernels 2.6.33 and 2.6.34 for PCI devices
+* added support for the RAR-PCIE in the kernel 2.6 driver
+
+Release Notes - v1.15, 01 February 2010
+---------------------------------------
+* added support for Linux kernel 2.6.32 for PCI devices
+* added PowerPC support for PCI devices with kernel 2.4
+
+Release Notes - v1.14, 20 October 2009
+--------------------------------------
+* added support for Linux kernel 2.6.31 for PCI devices
+* added support for the RPCIE-1553 in the kernel 2.6 driver
+
+Release Notes - v1.13, 21 July 2009
+-----------------------------------
+* added support for Linux kernel 2.6.30 for PCI devices
+* added support for the RXMC-1553 in the kernel 2.6 driver
+* added hardware interrupt support for CEI-x30 boards in kernel 2.6 driver 
+
+Release Notes - v1.12, 10 April 2009
+------------------------------------
+* added support for Linux kernels 2.6.29 for PCI devices
+
+Release Notes - v1.11, 27 February 2009
+---------------------------------------
+* added support for Linux kernels 2.6.28 for PCI devices
+* added hardware interrupt support for P-Ser in kernel 2.6 driver
+* modified initialzation of PCI devices in 2.6 driver
+
+Release Notes - v1.10, 18 November 2008
+---------------------------------------
+* added support for Linux kernels 2.6.24 to 2.6.27 for PCI devices
+* added support for the R15-AMC
+* removed support for Linux kernel 2.2.x
+* added "cei_types" to low-level library
+
+Release Notes - v1.09, 24 January 2008
+--------------------------------------
+* added support for Linux kernel 2.6.23 and 2.4.36 for PCI devices
+* added support for the RAR-CPCI and RAR-EC
+* added support for the P-SER, P-DIS, P-MIO and P-708
+* removed setting "devID" for AMC-A30 to "0xA30"
+* replaced product name RCEI-830RX with R830RX
+
+Release Notes - v1.08, 11 September 2007
+----------------------------------------
+* added support for the RCEI-830RX
+* added support for Linux kernel 2.6.22 for PCI devices
+* provided a "build only" and a "32 bit emulation mode for 64 bit systems"
+   option in installation
+* added PowerPC support for PCI devices with kernel 2.6
+
+Release Notes - v1.07, 9 July 2007
+----------------------------------
+* added support for the CEI-530
+
+Release Notes - v1.06, 15 June 2007
+-----------------------------------
+* added support for Linux kernel 2.6.21 for PCI/ISA devices
+* added support for multiple process (2.6 PCI only)
+* added support for hardware interrupts with CEI-820
+* added hardware interrupt control for PCI/ISA devices on 2.6.x
+
+Release Notes - v1.05, 27 March 2007
+------------------------------------
+* added support for Linux kernels 2.6.18 to 2.6.20 for PCI/ISA devices
+* added support for the QPCX-1553
+* added support for the EPMC-1553
+
+Release Notes - v1.04, 22 September 2006
+----------------------------------------
+* added support for the AMC-1553 and AMC-A30
+* added PCI/ISA support for Linux kernels 2.6.15 to 2.6.17
+* added PCMCIA support for kernels 2.6.13 and 2.6.14
+
+Release Notes - v1.03, 25 May 2006
+----------------------------------
+* modified the hardware interrupt notification (signals) from the drivers to the
+   low-level library (CEI_SIGNAL)
+
+Release Notes - v1.02, 14 April 2006
+------------------------------------
+* added support for Linux kernels 2.6.13 to 2.6.14
+* added x86_64 support for PCI devices
+* added POSIX support to low-level library for APIs
+* added support for the IP-Avionics CEI-500 device
+* added common data types to low-level
+* renamed "mem_unix.c" and "unix_config.c" to "mem.c" and "config.c"
+* modified "config.c" to handle multiple "ceidev.conf" files
+
+Release Notes - v1.01, 12 September 2005
+----------------------------------------
+* added support for Linux kernels 2.6.9 to 2.6.12
+* added support for the CEI-x30 devices
+* added PCMCIA support for kernel 2.6, supports sysfs with kernel 2.6.11+
+* improved the "install" and "build_conf" scripts
+* added the "source_check" script
+* modified the kernel 2.4 PCI drivers for interrupt vectors
+* removed dependency on /dev/mem
+* removed dependency on "libsysfs" (sysfsutils package)
+* added "Linux_support.txt" file
+
+Release Notes - v1.0, 21 April 2005
+-----------------------------------
+* initial release of LSP is a merge of the previous versions of Bustools/1553
+   API and CEI-x20 API Linux distribution's kernel 2.4 drivers, low-level
+   library and install script
+* added kernel support for 2.6.0 to 2.6.8
+* no support for PCMCIA on kernel 2.6
+* sysfs support only for the kernel 2.6 PCI driver
+
+
+===============================================================================
+7. Contact Information
+===============================================================================
+
+If you have any questions or need more technical information, please contact:
+
+GE Intelligent Platforms, Inc.
+6769 Hollister Suite 200
+Goleta, CA. 93117
+USA
+
+phone:  (805) 965-8000
+fax:    (805) 965-2498
+
+email:  support.avionics.ip@ge.com
+url:    http://www.ge-ip.com

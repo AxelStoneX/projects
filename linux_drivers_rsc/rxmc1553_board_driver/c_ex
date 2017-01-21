@@ -1,0 +1,100 @@
+# Shell script for compiling applications using BusToolsAPI
+# Prior to this compiling BusAPI library should be installed in Linux System.
+# To install library go to "Condor_Engineering/Install" directory and launch "install" script.
+# This script should automatically place all library files in some system folder with 
+# libraries (check API_User_Manual for further information)
+
+TARGET_OS=_LINUX_X86_
+#Condor Engineering Directory which contains all
+#device drivers and API source files
+BT_DIR=`pwd`/Condor_Engineering/MIL-STD-1553/bt1553
+
+#Options for compiling BusTools related applications
+BT_OPT="-D${TARGET_OS} -I/${BT_DIR}/Include -lbusapi"
+
+BIN_DIR=`pwd`/bin
+
+# Classic "C" compilation, .c extension is supposed
+comp_c()
+{
+ local src_f=$1.c
+ local out_f=${BIN_DIR}/$1.o
+
+ if test -e $out_f;  then
+  rm -f $out_f
+ fi
+
+ gcc -c -gstabs -o $out_f $BT_OPT $src_f
+  
+ echo -n "Compilation  $src_f is "
+ if test -e $out_f;  then
+  echo "correct"
+ else
+  echo "failed"
+ fi
+}
+
+cd rtc
+echo " ----- /RTC directory ----- "
+#======== Insert here list of your application source files ======
+
+comp_c 1553_broadcast_messages
+comp_c 1553_bsync_processing
+comp_c 1553_btime_processing
+comp_c 1553_buffers_operations
+comp_c 1553_card_control
+comp_c 1553_error_protection
+comp_c 1553_fifo_operations
+comp_c 1553_time_tags
+comp_c 1553_transaction_control
+comp_c dbf_t
+comp_c prc_exch_task
+comp_c prc_func_task
+comp_c prc_root_task
+comp_c thread_api
+
+
+
+#---> End of application's source file list
+cd ..
+
+#========== Linking ==============================================
+
+TARGET_NAME=ex
+TARGET_FILE=../${TARGET_NAME}
+DBG_FILE=../${TARGET_NAME}.dbg
+
+cd bin
+echo " ---- /BIN directory ----- "
+#--->Insert here list of all objective files that should exist
+if test -e 1553_card_control.o -a -e 1553_error_protection.o -a -e 1553_transaction_control.o -a -e dbf_t.o -a -e prc_func_task.o -a -e prc_root_task.o -a -e prc_exch_task.o -a -e thread_api.o -a -e 1553_buffers_operations.o -a -e 1553_fifo_operations.o -a -e 1553_broadcast_messages.o -a -e 1553_bsync_processing.o -a -e 1553_btime_processing.o -a -e 1553_time_tags.o; then
+
+  echo "Linking BIN/( *.o ) -> ${TARGET_NAME} started"
+
+  if test -e ${TARGET_FILE}; then
+    rm -f ${TARGET_FILE}
+  fi
+
+#---> Insert here list of all objective files again
+gcc -g -o ${TARGET_FILE} 1553_card_control.o 1553_error_protection.o 1553_transaction_control.o dbf_t.o prc_func_task.o prc_root_task.o prc_exch_task.o thread_api.o 1553_buffers_operations.o 1553_fifo_operations.o  1553_broadcast_messages.o 1553_bsync_processing.o 1553_btime_processing.o 1553_time_tags.o -lbusapi -lpthread
+
+  echo -n "Linking BIN/( *.o) -> ${TARGET_NAME} is "
+  if test -e ${TARGET_FILE}; then
+    echo "correct"
+
+  if test -e ${DBG_FILE}; then
+    rm -f ${DBG_FILE}
+  fi
+
+  objdump -g ${TARGET_FILE} > ${DBG_FILE} 2>/dev/null
+
+  else
+    echo "failed"
+  fi
+
+else
+  echo "Not all object files are available"
+fi
+
+cd ..
+#---> End of object file list
